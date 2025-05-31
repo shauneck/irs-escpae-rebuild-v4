@@ -408,6 +408,30 @@ You now have the lens. Every tax strategy moving forward pulls on one or more of
             correct_answer="A set of incentives",
             explanation="The tax code is designed as a blueprint for wealth-building behavior, rewarding investment, ownership, and risk-taking through various incentives.",
             course_id=primer_course.id
+        ),
+        QuizQuestion(
+            question="Which of the following is NOT one of the 6 tax control levers?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["Entity Type", "Income Type", "Filing Method", "Exit Planning"],
+            correct_answer="Filing Method",
+            explanation="The 6 tax control levers are: Entity Type, Income Type, Timing, Asset Location, Deduction Strategy, and Exit Planning. Filing Method is not one of the core levers.",
+            course_id=primer_course.id
+        ),
+        QuizQuestion(
+            question="Why does income type matter?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["Different income types get different tax treatments", "Income type sets your credit score", "It determines your CPA's fee", "It changes your audit rate"],
+            correct_answer="Different income types get different tax treatments",
+            explanation="Different types of income (W-2 wages, capital gains, dividends, rental income) are taxed at different rates and have different deduction opportunities.",
+            course_id=primer_course.id
+        ),
+        QuizQuestion(
+            question="What's the main reason timing is important in tax strategy?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["It affects bank interest", "It reduces IRS penalties", "It lets you control when income hits", "It locks in your deductions"],
+            correct_answer="It lets you control when income hits",
+            explanation="Strategic timing allows you to control when income is recognized, which can shift tax liability between years and optimize your overall tax burden.",
+            course_id=primer_course.id
         )
     ]
     
