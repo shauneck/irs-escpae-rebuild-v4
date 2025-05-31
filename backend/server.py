@@ -462,6 +462,30 @@ The difference between these clients and most high earners isn't access to secre
             course_id=primer_course.id
         ),
         QuizQuestion(
+            question="What's the benefit of investing RSU capital gains into a QOF?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["Locks in early retirement", "Defers capital gains and allows long-term tax-free growth", "Eliminates W-2 tax", "Converts gains into passive interest"],
+            correct_answer="Defers capital gains and allows long-term tax-free growth",
+            explanation="Qualified Opportunity Funds allow you to defer capital gains taxes and potentially eliminate them entirely if held for 10+ years, while the investment grows tax-free.",
+            course_id=primer_course.id
+        ),
+        QuizQuestion(
+            question="What's the function of routing income through a C-Corp MSO?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["To access SBA loans", "To avoid LLC fees", "To reposition retained earnings into tax-leveraged assets", "To create employee stock options"],
+            correct_answer="To reposition retained earnings into tax-leveraged assets",
+            explanation="A C-Corp MSO structure allows business owners to retain earnings at lower corporate tax rates and invest them in bonus depreciation assets for additional tax benefits.",
+            course_id=primer_course.id
+        ),
+        QuizQuestion(
+            question="How did Liam offset his W-2 income?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["Oil & Gas credits", "Deductions from charity", "REPS status + STR depreciation", "Cost segregation of his home"],
+            correct_answer="REPS status + STR depreciation",
+            explanation="By qualifying for Real Estate Professional Status, Liam could use depreciation from his short-term rental properties to offset his W-2 income from his medical practice.",
+            course_id=primer_course.id
+        ),
+        QuizQuestion(
             question="What is the IRS's primary function?",
             type=QuizQuestionType.MULTIPLE_CHOICE,
             options=["Protect taxpayers", "Penalize business owners", "Reconcile tax credits", "Collect revenue"],
