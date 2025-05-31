@@ -222,10 +222,20 @@ const CourseViewer = ({ course, onBack }) => {
     if (term) {
       setShowGlossary(term);
       
-      // Award XP for first-time viewing
-      if (!viewedGlossaryTerms.has(term.id)) {
-        setViewedGlossaryTerms(new Set([...viewedGlossaryTerms, term.id]));
+      // Award XP for first-time viewing with better tracking
+      const termKey = `${term.id}_${course.id}_${lesson.order_index}`;
+      if (!viewedGlossaryTerms.has(termKey)) {
+        const newViewedTerms = new Set([...viewedGlossaryTerms, termKey]);
+        setViewedGlossaryTerms(newViewedTerms);
         setGlossaryXP(glossaryXP + 5); // 5 XP per new term viewed
+        
+        // Store in localStorage for persistence
+        try {
+          localStorage.setItem('viewedGlossaryTerms', JSON.stringify([...newViewedTerms]));
+          localStorage.setItem('glossaryXP', String(glossaryXP + 5));
+        } catch (error) {
+          console.warn('Could not save XP to localStorage:', error);
+        }
       }
     }
   };
