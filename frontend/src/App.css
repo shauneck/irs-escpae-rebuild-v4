@@ -368,3 +368,42 @@ textarea:focus-visible {
   outline: 2px solid var(--emerald-500);
   outline-offset: 2px;
 }
+
+/* Glossary term styling */
+.glossary-term {
+  position: relative;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(16, 185, 129, 0.05) 100%);
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.glossary-term:hover {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(16, 185, 129, 0.1) 100%);
+}
+
+.glossary-repeat {
+  position: relative;
+  padding: 2px 4px;
+  border-radius: 4px;
+  border-bottom: 1px dotted #10b981;
+}
+
+.glossary-repeat:hover {
+  background: rgba(16, 185, 129, 0.05);
+}
+
+.glossary-repeat:hover::after {
+  content: "↑ Jump to definition";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #0f172a;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 1000;
+  pointer-events: none;
+}
