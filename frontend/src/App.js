@@ -437,6 +437,39 @@ const CourseViewer = ({ course, onBack }) => {
                           📚 Entity Exposure
                         </button>
                       </>
+                    ) : lesson.order_index === 5 ? (
+                      <>
+                        <button
+                          onClick={() => openGlossary('Tax Exposure')}
+                          className="bg-navy-100 hover:bg-navy-200 text-navy-800 px-3 py-2 rounded-lg text-sm transition-colors duration-200"
+                        >
+                          📚 Tax Exposure
+                        </button>
+                        <button
+                          onClick={() => openGlossary('Lever Hierarchy')}
+                          className="bg-navy-100 hover:bg-navy-200 text-navy-800 px-3 py-2 rounded-lg text-sm transition-colors duration-200"
+                        >
+                          📚 Lever Hierarchy
+                        </button>
+                        <button
+                          onClick={() => openGlossary('Personalized Planning')}
+                          className="bg-navy-100 hover:bg-navy-200 text-navy-800 px-3 py-2 rounded-lg text-sm transition-colors duration-200"
+                        >
+                          📚 Personalized Planning
+                        </button>
+                        <button
+                          onClick={() => openGlossary('Strategy Stack')}
+                          className="bg-navy-100 hover:bg-navy-200 text-navy-800 px-3 py-2 rounded-lg text-sm transition-colors duration-200"
+                        >
+                          📚 Strategy Stack
+                        </button>
+                        <button
+                          onClick={() => openGlossary('Advisor Integration')}
+                          className="bg-navy-100 hover:bg-navy-200 text-navy-800 px-3 py-2 rounded-lg text-sm transition-colors duration-200"
+                        >
+                          📚 Advisor Integration
+                        </button>
+                      </>
                     ) : null}
                   </div>
                 </div>
