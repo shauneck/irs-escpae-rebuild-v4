@@ -530,6 +530,15 @@ const CourseViewer = ({ course, onBack }) => {
                             )}
                           </div>
                           <p className="text-sm text-gray-600 mt-2">{result.explanation}</p>
+                          {/* Add glossary links for quiz explanations */}
+                          <div className="mt-2">
+                            <button
+                              onClick={() => setShowGlossary(false)}
+                              className="text-emerald-600 hover:text-emerald-800 text-sm underline"
+                            >
+                              View Related Glossary Terms →
+                            </button>
+                          </div>
                         </div>
                       ))}
                     </div>
