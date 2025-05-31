@@ -245,53 +245,51 @@ Filing saves nothing. Planning changes everything. Now that you've seen why most
             CourseContent(
                 title="The 6 Levers That Actually Shift Your Tax Outcome",
                 description="Module 2 of 5 - Master the fundamental levers that control all tax outcomes and strategies",
-                content="""Every tax strategy, regardless of complexity, ultimately pulls on one or more of these 6 core levers. Understanding these levers gives you the framework to evaluate any tax advice and identify real opportunities.
+                content="""You don't need 600 tax strategies. You need 6 levers — the ones that actually move the needle. Every dollar you keep starts with one or more of these.
 
-## The 6 Core Tax Control Levers:
+Most people think taxes are about forms. They're not — they're about structure, timing, and positioning. In this module, you'll learn the six foundational levers that every high-income strategy is built around:
+
+## The 6 Core Levers
 
 ### 1. Entity Type
-Your business structure (LLC, S-Corp, C-Corp, Partnership) determines how income flows to you and what tax rates apply. Different entities offer different advantages for different situations.
-
-**Key Insight:** The same income can be taxed dramatically differently depending on the entity structure holding it.
+• **Your entity structure determines your tax ceiling.**
+• C-Corp, S-Corp, MSO, or Schedule C — they're not all created equal.
+• Strategically managing entity types is how business owners avoid double taxation and unlock deduction control.
 
 ### 2. Income Type
-Not all income is created equal in the eyes of the IRS. W-2 wages, 1099 income, capital gains, dividends, and rental income all receive different tax treatment.
-
-**Key Insight:** Converting high-tax income types to low-tax income types is foundational to tax strategy.
+• **Not all income is taxed equally.**
+• W-2, 1099, K-1, capital gains, passive flow — each has a different tax treatment.
+• You don't need to earn less. You need to earn differently.
 
 ### 3. Timing
-When you recognize income and deductions can be just as important as the amounts. Strategic timing allows you to shift income between tax years to optimize your overall tax burden.
-
-**Key Insight:** Controlling WHEN income hits is often more powerful than controlling HOW MUCH income you earn.
+• **Tax timing is a weapon — not a constraint.**
+• Installment sales, deferred comp, Roth conversions, asset rollovers all leverage when income hits.
 
 ### 4. Asset Location
-Where you hold different types of investments (taxable accounts, IRAs, 401(k)s, Roth accounts) affects how they're taxed both now and in the future.
-
-**Key Insight:** The right asset in the wrong account can cost you thousands annually in unnecessary taxes.
+• **Where your assets live changes how they're taxed.**
+• Insurance wrappers, retirement accounts, real estate, and Opportunity Zones all have unique benefits.
 
 ### 5. Deduction Strategy
-Beyond standard deductions, strategic business and investment deductions can significantly reduce taxable income when properly structured and documented.
-
-**Key Insight:** Deductions aren't just about what you spend—they're about how you structure and categorize those expenditures.
+• **Most CPAs miss over 50% of the deductions available.**
+• True planning involves orchestrating deductions through energy, depreciation, trust layering, and timing.
 
 ### 6. Exit Planning
-How you ultimately exit investments, businesses, or transfer wealth determines the final tax impact of years of planning and growth.
+• **If you build wealth but don't plan your exit, the IRS cashes out with you.**
+• QSBS, Opportunity Zones, charitable trusts, and stepped-up basis strategy all come into play here.
 
-**Key Insight:** Many great accumulation strategies are undermined by poor exit planning that triggers unnecessary tax events.
+## Application
 
-## The Strategic Framework:
+These levers apply to:
+• ✅ **Business owners** shifting to MSO or C-Corp models
+• ✅ **W-2 earners** creating deduction pathways using asset placement
+• ✅ **Real estate professionals** leveraging depreciation
+• ✅ **Exit events** (business sale, asset sale, vesting RSUs)
 
-Every tax opportunity can be analyzed through these 6 lenses:
-- Which entity should hold this income or asset?
-- Can we change the income type classification?
-- When should this income or deduction be recognized?
-- Which account or structure should hold this asset?
-- What deductions can be optimized or restructured?
-- How does this fit into the long-term exit strategy?
+Each future module in this course — and in the full IRS Escape Plan platform — ties back to one or more of these 6 levers.
 
-## Moving Forward:
+## Moving Forward
 
-You now have the lens. Every tax strategy moving forward pulls on one or more of these levers. Next, we'll walk through real-world case studies — showing exactly how W-2 earners and business owners legally reposition their income, time their exits, and keep hundreds of thousands more.""",
+You now have the lens. Every tax strategy moving forward pulls on one or more of these levers. In the next module, we'll walk through real-world case studies — showing exactly how W-2 earners and business owners legally reposition their income, time their exits, and keep hundreds of thousands more. Let's get tactical.""",
                 duration_minutes=35,
                 order_index=2
             ),
