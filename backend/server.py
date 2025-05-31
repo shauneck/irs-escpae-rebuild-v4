@@ -632,13 +632,15 @@ In the final module, you'll learn how to build your personalized roadmap using t
             course_id=primer_course.id,
             module_id=2
         ),
+        # Module 4 Questions
         QuizQuestion(
             question="What determines your exposure to W-2 tax rates?",
             type=QuizQuestionType.MULTIPLE_CHOICE,
             options=["CPA filing method", "The number of dependents", "Type and timing of income", "Your employer's tax strategy"],
             correct_answer="Type and timing of income",
             explanation="Your exposure to high W-2 tax rates is determined by the type of income you receive and when you receive it. Different income types have different tax treatments.",
-            course_id=primer_course.id
+            course_id=primer_course.id,
+            module_id=4
         ),
         QuizQuestion(
             question="Which of the following directly impacts deduction limits?",
