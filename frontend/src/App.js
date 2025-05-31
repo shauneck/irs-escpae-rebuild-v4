@@ -242,13 +242,13 @@ const CourseViewer = ({ course, onBack }) => {
       
       processedContent = processedContent.replace(boldPattern, (match) => {
         if (isFirstOccurrence && !processedTerms.has(term.term.toLowerCase())) {
-          // First occurrence - make it clickable with popover
+          // First occurrence - make it clickable with teal pill styling
           processedTerms.add(term.term.toLowerCase());
           isFirstOccurrence = false;
-          return `<span id="glossary-${term.term.toLowerCase().replace(/\s+/g, '-')}" class="glossary-term cursor-pointer text-emerald-600 font-bold hover:text-emerald-800 transition-colors duration-200 border-b-2 border-emerald-300 hover:border-emerald-500" data-term="${term.term}" title="Click to view definition">**${term.term}**</span>`;
+          return `<span id="glossary-${term.term.toLowerCase().replace(/\s+/g, '-')}" class="glossary-term" data-term="${term.term}" title="Click to view definition">${term.term}</span>`;
         } else {
-          // Subsequent occurrences - bold with subtle link back to first instance
-          return `<span class="glossary-repeat font-bold text-emerald-700 hover:text-emerald-900 cursor-pointer transition-colors duration-200" onclick="document.getElementById('glossary-${term.term.toLowerCase().replace(/\s+/g, '-')}').scrollIntoView({behavior: 'smooth', block: 'center'}); document.getElementById('glossary-${term.term.toLowerCase().replace(/\s+/g, '-')}').style.backgroundColor='#fef3c7'; setTimeout(() => document.getElementById('glossary-${term.term.toLowerCase().replace(/\s+/g, '-')}').style.backgroundColor='', 2000);" title="Jump to first occurrence">**${term.term}**</span>`;
+          // Subsequent occurrences - subtle link back to first instance
+          return `<span class="glossary-repeat" onclick="document.getElementById('glossary-${term.term.toLowerCase().replace(/\s+/g, '-')}').scrollIntoView({behavior: 'smooth', block: 'center'}); document.getElementById('glossary-${term.term.toLowerCase().replace(/\s+/g, '-')}').style.backgroundColor='#fef3c7'; setTimeout(() => document.getElementById('glossary-${term.term.toLowerCase().replace(/\s+/g, '-')}').style.backgroundColor='', 2000);" title="Jump to first occurrence">${term.term}</span>`;
         }
       });
     });
