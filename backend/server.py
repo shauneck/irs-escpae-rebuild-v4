@@ -625,7 +625,8 @@ In the final module, you'll learn how to build your personalized roadmap using t
             options=["It affects bank interest", "It reduces IRS penalties", "It lets you control when income hits", "It locks in your deductions"],
             correct_answer="It lets you control when income hits",
             explanation="Strategic timing allows you to control when income is recognized, which can shift tax liability between years and optimize your overall tax burden.",
-            course_id=primer_course.id
+            course_id=primer_course.id,
+            module_id=2
         ),
         QuizQuestion(
             question="What determines your exposure to W-2 tax rates?",
