@@ -657,7 +657,8 @@ In the final module, you'll learn how to build your personalized roadmap using t
             options=["File early", "Review prior returns", "Map your income, entity, and deduction levers", "Ask your CPA to amend"],
             correct_answer="Map your income, entity, and deduction levers",
             explanation="The first step to reducing tax exposure is mapping your current situation across the 6 levers: income type, entity structure, timing, asset location, deductions, and exit planning.",
-            course_id=primer_course.id
+            course_id=primer_course.id,
+            module_id=4
         )
     ]
     
