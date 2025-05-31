@@ -555,7 +555,8 @@ In the final module, you'll learn how to build your personalized roadmap using t
             options=["They cost too much", "They can't access your financials", "They focus on filing, not planning", "They don't understand deductions"],
             correct_answer="They focus on filing, not planning",
             explanation="Traditional CPAs focus on compliance and filing returns, while tax strategists focus on proactive planning to minimize future tax liability.",
-            course_id=primer_course.id
+            course_id=primer_course.id,
+            module_id=1
         ),
         QuizQuestion(
             question="What's the benefit of investing RSU capital gains into a QOF?",
