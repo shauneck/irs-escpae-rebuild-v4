@@ -746,6 +746,30 @@ The goal isn't to implement every strategy - it's to identify the 2-3 levers tha
             definition="Short-Term Rental - Rental properties (like Airbnb) rented for less than 30 days, which receive favorable tax treatment including accelerated depreciation and business expense deductions.",
             category="Real Estate Tax",
             related_terms=["Real Estate", "REPS", "Depreciation Offset"]
+        ),
+        GlossaryTerm(
+            term="AGI",
+            definition="Adjusted Gross Income - Your total income minus specific deductions allowed by the IRS. AGI determines your tax bracket and eligibility for various deductions and credits.",
+            category="Tax Terms",
+            related_terms=["Gross Income", "Deductions", "Tax Liability", "Income Type Stack"]
+        ),
+        GlossaryTerm(
+            term="Deduction Bandwidth",
+            definition="The gap between what you're currently claiming in deductions and what you could legally claim with proper structuring and planning. Most high earners have significant unused deduction bandwidth.",
+            category="Tax Strategy",
+            related_terms=["Strategic Deductions", "Tax Planning", "Business Deductions"]
+        ),
+        GlossaryTerm(
+            term="Income Type Stack",
+            definition="The combination and layering of different income types (W-2, 1099, K-1, capital gains, passive) that determines not just how much tax you pay, but when you pay it and what deductions are available.",
+            category="Tax Strategy",
+            related_terms=["Income Shifting", "W-2 Income", "AGI", "Tax Planning"]
+        ),
+        GlossaryTerm(
+            term="Entity Exposure",
+            definition="The risk and inefficiency created by operating under a suboptimal business entity structure for your income level and business activities. Higher income often requires more sophisticated entity structures.",
+            category="Business Tax",
+            related_terms=["Entity Planning", "Business Structure", "Tax Planning"]
         )
     ]
     
