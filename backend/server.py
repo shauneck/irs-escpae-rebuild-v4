@@ -448,7 +448,9 @@ Most high earners leave significant deductions on the table because they don't h
 
 ## Your Next Steps
 
-The goal isn't to implement every strategy - it's to identify the 2-3 levers that will have the biggest impact on your specific situation and create a plan to implement them systematically.""",
+The goal isn't to implement every strategy - it's to identify the 2-3 levers that will have the biggest impact on your specific situation and create a plan to implement them systematically.
+
+In the final module, you'll learn how to build your personalized roadmap using the tools, glossary terms, and playbooks in your account. You're almost there.""",
                 duration_minutes=40,
                 order_index=4
             ),
