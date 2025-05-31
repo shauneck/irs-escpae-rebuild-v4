@@ -599,7 +599,18 @@ Knowing when and how to work with tax strategists vs. traditional CPAs:
 
 ## Moving Beyond the Course
 
-You now have the framework to evaluate any tax strategy through the lens of the 6 levers. Every opportunity, every advisor recommendation, every major financial decision can be analyzed using this systematic approach.""",
+You now have the framework to evaluate any tax strategy through the lens of the 6 levers. Every opportunity, every advisor recommendation, every major financial decision can be analyzed using this systematic approach.
+
+## Your Escape Plan is Complete
+
+You've built your foundation. You've seen the levers. You've reviewed real case studies. And now — you've drafted your own escape framework.
+
+From here, you unlock access to:
+• **The full IRS Escape Plan course tracks** (W-2 and Business Owner)
+• **Strategy tools** tailored to your profile
+• **Personalized glossary and playbook dashboards**
+
+**Let's move from course to command. Your plan starts now.**""",
                 duration_minutes=50,
                 order_index=5
             ),
