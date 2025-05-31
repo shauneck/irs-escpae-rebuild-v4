@@ -368,7 +368,7 @@ The difference between these clients and most high earners isn't access to secre
             CourseContent(
                 title="Mapping Your Tax Exposure",
                 description="Module 4 of 5 - Guide yourself through self-assessment of income, entity structure, deduction strategy, and potential risk exposure",
-                content="""Now that you understand the levers and have seen them in action, it's time to map your own tax exposure. This module will guide you through a systematic self-assessment of your current situation and help you identify which levers apply to your specific circumstances.
+                content="""Now that you understand the levers and have seen them in action, it's time to map your own **tax exposure**. This module will guide you through a systematic self-assessment of your current situation and help you identify which levers apply to your specific circumstances.
 
 ## Your Tax Exposure Assessment
 
@@ -379,30 +379,30 @@ Understanding your tax exposure requires analyzing four key areas:
 **Current Income Sources:**
 • What types of income do you currently receive? (W-2, 1099, K-1, capital gains, rental, etc.)
 • How much control do you have over the timing of this income?
-• Are you maximizing or minimizing the **AGI** that determines your tax bracket?
+• Are you maximizing or minimizing the AGI that determines your tax bracket?
 
 **Income Type Stack Assessment:**
-Your **Income Type Stack** determines not just how much you pay, but when you pay it. W-2 income hits immediately with limited deferral options, while business income offers significantly more control. Understanding your **AGI** composition is crucial for optimization.
+Your **Income Type Stack** determines not just how much you pay, but when you pay it. W-2 income hits immediately with limited deferral options, while business income offers significantly more control. Understanding your AGI composition is crucial for optimization.
 
 ### 2. Entity Structure Review - Your **Entity Exposure**
 
 **Current Structure:**
 • Are you operating as a sole proprietor, LLC, S-Corp, or C-Corp?
 • Is your current entity structure optimized for your income level and business activities?
-• What is your **Entity Exposure** - how much risk are you taking by not optimizing your structure?
+• What is your Entity Exposure - how much risk are you taking by not optimizing your structure?
 
 **Optimization Opportunities:**
-Different entity types offer different advantages. Higher-income individuals often benefit from more sophisticated structures that provide better tax treatment and asset protection. Reducing your **Entity Exposure** should be a priority for growing businesses.
+Different entity types offer different advantages. Higher-income individuals often benefit from more sophisticated structures that provide better tax treatment and asset protection. Reducing your Entity Exposure should be a priority for growing businesses.
 
 ### 3. Deduction Strategy Analysis - Your **Deduction Bandwidth**
 
 **Current Deductions:**
 • Are you maximizing standard vs. itemized deductions?
 • What business deductions are you currently claiming?
-• How much **Deduction Bandwidth** do you have - the gap between what you're claiming and what you could legally claim?
+• How much Deduction Bandwidth do you have - the gap between what you're claiming and what you could legally claim?
 
 **Missed Opportunities:**
-Most high earners leave significant deductions on the table because they don't have the right structures in place to capture them. Expanding your **Deduction Bandwidth** often requires proactive planning and proper documentation.
+Most high earners leave significant deductions on the table because they don't have the right structures in place to capture them. Expanding your Deduction Bandwidth often requires proactive planning and proper documentation.
 
 ### 4. Risk Exposure Mapping
 
