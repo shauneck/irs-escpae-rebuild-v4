@@ -402,7 +402,7 @@ Different entity types offer different advantages. Higher-income individuals oft
 • How much **Deduction Bandwidth** do you have - the gap between what you're claiming and what you could legally claim?
 
 **Missed Opportunities:**
-Most high earners leave significant deductions on the table because they don't have the right structures in place to capture them.
+Most high earners leave significant deductions on the table because they don't have the right structures in place to capture them. Expanding your **Deduction Bandwidth** often requires proactive planning and proper documentation.
 
 ### 4. Risk Exposure Mapping
 
