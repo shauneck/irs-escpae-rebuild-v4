@@ -218,9 +218,9 @@ async def initialize_sample_data():
             CourseContent(
                 title="Why You're Overpaying the IRS (and What to Do About It)",
                 description="Module 1 of 5 - Discover why the tax code rewards wealth-building behavior and how strategists differ from traditional CPAs",
-                content="""The U.S. tax code is not a punishment — it's a blueprint for wealth-building behavior. It rewards investment, ownership, and risk — and penalizes passive employment without structure.
+                content="""The U.S. **tax code** is not a punishment — it's a blueprint for **wealth-building behavior**. It rewards investment, ownership, and risk — and penalizes passive employment without structure.
 
-Most CPAs file and reconcile. Strategists build infrastructure and optimize. High-income earners without proactive planning are the IRS's favorite clients.
+Most **CPAs** file and reconcile. **Strategists** build infrastructure and optimize. High-income earners without proactive planning are the IRS's favorite clients.
 
 ## Core Concepts:
 
@@ -228,7 +228,7 @@ Most CPAs file and reconcile. Strategists build infrastructure and optimize. Hig
    The tax system is designed with clear rules and incentives. When you understand these rules, you can work within them to your advantage.
 
 2. **CPAs file. Strategists plan.**
-   Traditional CPAs focus on compliance and filing returns. Tax strategists focus on proactive planning to minimize future tax liability.
+   Traditional CPAs focus on compliance and filing returns. **Tax strategists** focus on proactive planning to minimize future tax liability.
 
 3. **There are only two outcomes in tax: proactive and overpaying**
    You either take control of your tax situation through strategic planning, or you accept whatever the default tax treatment gives you.
@@ -236,8 +236,8 @@ Most CPAs file and reconcile. Strategists build infrastructure and optimize. Hig
 ## Key Takeaways:
 
 - The tax code rewards investment, business ownership, and calculated risk-taking
-- Passive W-2 income without additional structure is taxed at the highest rates
-- Strategic tax planning requires shifting from reactive filing to proactive structuring
+- Passive **W-2 income** without additional structure is taxed at the highest rates
+- Strategic **tax planning** requires shifting from reactive filing to proactive structuring
 - High-income earners without strategy consistently overpay taxes
 
 ## What's Next:
