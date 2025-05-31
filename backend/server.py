@@ -648,7 +648,8 @@ In the final module, you'll learn how to build your personalized roadmap using t
             options=["Filing software", "Where you bank", "Your income type and asset structure", "Credit card rewards"],
             correct_answer="Your income type and asset structure",
             explanation="Deduction limits are directly impacted by your income type and how your assets are structured, as these determine what deductions you're eligible for and at what levels.",
-            course_id=primer_course.id
+            course_id=primer_course.id,
+            module_id=4
         ),
         QuizQuestion(
             question="What is the first step to reducing your tax exposure?",
