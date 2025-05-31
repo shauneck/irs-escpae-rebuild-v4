@@ -204,7 +204,7 @@ async def initialize_sample_data():
     # Sample courses
     primer_course = Course(
         type=CourseType.PRIMER,
-        title="IRS Escape Plan Primer",
+        title="The Escape Blueprint",
         description="Essential fundamentals to understand your tax situation and escape IRS problems",
         thumbnail_url="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400",
         is_free=True,
