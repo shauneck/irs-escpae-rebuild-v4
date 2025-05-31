@@ -72,6 +72,7 @@ class QuizQuestion(BaseModel):
     explanation: str
     points: int = 10
     course_id: str
+    module_id: int = 1  # Which module this question belongs to
 
 class GlossaryTerm(BaseModel):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
