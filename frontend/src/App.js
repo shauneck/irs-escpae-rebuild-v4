@@ -1,54 +1,447 @@
-import { useEffect } from "react";
-import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
+import React, { useState, useEffect } from 'react';
+import './App.css';
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
+const API_BASE_URL = process.env.REACT_APP_BACKEND_URL;
 
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
-
-  useEffect(() => {
-    helloWorldApi();
-  }, []);
-
+// Header Component
+const Header = ({ activeSection, setActiveSection }) => {
   return (
-    <div>
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
+    <header className="bg-navy-900 text-white shadow-lg sticky top-0 z-50">
+      <div className="container mx-auto px-6 py-4">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center space-x-4">
+            <div className="text-2xl font-bold text-emerald-400">
+              IRS Escape Plan
+            </div>
+            <div className="hidden md:block text-sm text-gray-300">
+              Your Path to Tax Freedom
+            </div>
+          </div>
+          
+          <nav className="hidden md:flex space-x-6">
+            {['courses', 'tools', 'glossary', 'marketplace'].map((section) => (
+              <button
+                key={section}
+                onClick={() => setActiveSection(section)}
+                className={`capitalize transition-colors duration-200 ${
+                  activeSection === section
+                    ? 'text-emerald-400 border-b-2 border-emerald-400'
+                    : 'text-gray-300 hover:text-emerald-400'
+                }`}
+              >
+                {section}
+              </button>
+            ))}
+          </nav>
+          
+          <div className="flex items-center space-x-4">
+            <button className="bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded-lg transition-colors duration-200">
+              Get Started Free
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+// Hero Section Component
+const HeroSection = () => {
+  return (
+    <section className="bg-gradient-to-br from-navy-900 via-navy-800 to-emerald-900 text-white py-20">
+      <div className="container mx-auto px-6 text-center">
+        <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+          Escape IRS Problems
+          <span className="block text-emerald-400">Forever</span>
+        </h1>
+        <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto">
+          Master the strategies used by tax professionals to minimize your tax burden 
+          and resolve IRS issues permanently.
+        </p>
+        <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
+          <button className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors duration-200">
+            Start Free Primer Course
+          </button>
+          <button className="border-2 border-white text-white hover:bg-white hover:text-navy-900 px-8 py-4 rounded-lg text-lg font-semibold transition-colors duration-200">
+            View All Courses
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+// Course Card Component
+const CourseCard = ({ course, onCourseClick }) => {
+  return (
+    <div 
+      className="group cursor-pointer transform transition-all duration-300 hover:scale-105"
+      onClick={() => onCourseClick(course)}
+    >
+      <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+        <div className="relative">
+          <img 
+            src={course.thumbnail_url} 
+            alt={course.title}
+            className="w-full h-48 object-cover"
+          />
+          <div className="absolute top-4 left-4">
+            {course.is_free ? (
+              <span className="bg-emerald-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                FREE
+              </span>
+            ) : (
+              <span className="bg-navy-900 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                PREMIUM
+              </span>
+            )}
+          </div>
+          <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+            <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="bg-white rounded-full p-4">
+                <svg className="w-8 h-8 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div className="p-6">
+          <h3 className="text-xl font-bold text-navy-900 mb-3">{course.title}</h3>
+          <p className="text-gray-600 mb-4 line-clamp-3">{course.description}</p>
+          
+          <div className="flex items-center justify-between text-sm text-gray-500">
+            <span>{course.total_lessons} lessons</span>
+            <span>{course.estimated_hours}h total</span>
+          </div>
+          
+          <div className="mt-4 pt-4 border-t border-gray-200">
+            <button className="w-full bg-emerald-500 hover:bg-emerald-600 text-white py-2 rounded-lg transition-colors duration-200">
+              {course.is_free ? 'Start Free Course' : 'Learn More'}
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
-function App() {
+// Course Viewer Component
+const CourseViewer = ({ course, onBack }) => {
+  const [currentLesson, setCurrentLesson] = useState(0);
+  
+  if (!course || !course.lessons) return null;
+  
+  const lesson = course.lessons[currentLesson];
+  
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+    <div className="min-h-screen bg-gray-50">
+      {/* Course Header */}
+      <div className="bg-navy-900 text-white py-8">
+        <div className="container mx-auto px-6">
+          <button 
+            onClick={onBack}
+            className="flex items-center text-emerald-400 hover:text-emerald-300 mb-4 transition-colors duration-200"
+          >
+            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+            Back to Courses
+          </button>
+          <h1 className="text-3xl font-bold mb-2">{course.title}</h1>
+          <p className="text-gray-300">{course.description}</p>
+        </div>
+      </div>
+      
+      <div className="container mx-auto px-6 py-8">
+        <div className="flex flex-col lg:flex-row gap-8">
+          {/* Main Content */}
+          <div className="lg:w-2/3">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              {/* Video Player Placeholder */}
+              <div className="bg-black h-64 md:h-96 flex items-center justify-center">
+                <div className="text-white text-center">
+                  <svg className="w-16 h-16 mx-auto mb-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+                  </svg>
+                  <p className="text-lg">Video Player</p>
+                  <p className="text-sm text-gray-400">Duration: {lesson.duration_minutes} minutes</p>
+                </div>
+              </div>
+              
+              {/* Lesson Content */}
+              <div className="p-6">
+                <h2 className="text-2xl font-bold text-navy-900 mb-4">{lesson.title}</h2>
+                <p className="text-gray-600 mb-6">{lesson.description}</p>
+                <div className="prose max-w-none">
+                  <p className="text-gray-700 leading-relaxed">{lesson.content}</p>
+                </div>
+                
+                {/* Navigation */}
+                <div className="flex justify-between mt-8 pt-6 border-t border-gray-200">
+                  <button 
+                    onClick={() => setCurrentLesson(Math.max(0, currentLesson - 1))}
+                    disabled={currentLesson === 0}
+                    className="flex items-center px-6 py-3 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200"
+                  >
+                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                    </svg>
+                    Previous
+                  </button>
+                  
+                  <button 
+                    onClick={() => setCurrentLesson(Math.min(course.lessons.length - 1, currentLesson + 1))}
+                    disabled={currentLesson === course.lessons.length - 1}
+                    className="flex items-center px-6 py-3 bg-emerald-500 text-white rounded-lg hover:bg-emerald-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200"
+                  >
+                    Next
+                    <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Sidebar */}
+          <div className="lg:w-1/3">
+            <div className="bg-white rounded-lg shadow-lg p-6">
+              <h3 className="text-lg font-bold text-navy-900 mb-4">Course Lessons</h3>
+              <div className="space-y-3">
+                {course.lessons.map((lessonItem, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentLesson(index)}
+                    className={`w-full text-left p-3 rounded-lg transition-colors duration-200 ${
+                      index === currentLesson
+                        ? 'bg-emerald-100 border-l-4 border-emerald-500'
+                        : 'bg-gray-50 hover:bg-gray-100'
+                    }`}
+                  >
+                    <div className="font-medium text-navy-900">{lessonItem.title}</div>
+                    <div className="text-sm text-gray-600">{lessonItem.duration_minutes} minutes</div>
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
-}
+};
+
+// Tools Section Component
+const ToolsSection = ({ tools }) => {
+  return (
+    <div className="py-12">
+      <div className="container mx-auto px-6">
+        <h2 className="text-3xl font-bold text-navy-900 mb-8 text-center">Tax Tools & Calculators</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {tools.map((tool) => (
+            <div key={tool.id} className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center mb-4">
+                <div className="bg-emerald-100 p-3 rounded-lg mr-4">
+                  <svg className="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-navy-900">{tool.name}</h3>
+                  {tool.is_free ? (
+                    <span className="text-emerald-600 text-sm font-semibold">FREE</span>
+                  ) : (
+                    <span className="text-amber-600 text-sm font-semibold">PREMIUM</span>
+                  )}
+                </div>
+              </div>
+              <p className="text-gray-600 mb-4">{tool.description}</p>
+              <button className="w-full bg-emerald-500 hover:bg-emerald-600 text-white py-2 rounded-lg transition-colors duration-200">
+                {tool.is_free ? 'Use Tool' : 'Upgrade to Access'}
+              </button>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// Glossary Section Component
+const GlossarySection = ({ glossaryTerms }) => {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [filteredTerms, setFilteredTerms] = useState(glossaryTerms);
+  
+  useEffect(() => {
+    if (searchTerm) {
+      const filtered = glossaryTerms.filter(term =>
+        term.term.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        term.definition.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+      setFilteredTerms(filtered);
+    } else {
+      setFilteredTerms(glossaryTerms);
+    }
+  }, [searchTerm, glossaryTerms]);
+  
+  return (
+    <div className="py-12">
+      <div className="container mx-auto px-6">
+        <h2 className="text-3xl font-bold text-navy-900 mb-8 text-center">Tax Glossary</h2>
+        
+        <div className="max-w-2xl mx-auto mb-8">
+          <div className="relative">
+            <input
+              type="text"
+              placeholder="Search tax terms..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="w-full px-4 py-3 pl-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"
+            />
+            <svg className="absolute left-4 top-3.5 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          {filteredTerms.map((term) => (
+            <div key={term.id} className="bg-white rounded-lg shadow-lg p-6">
+              <h3 className="text-lg font-bold text-navy-900 mb-2">{term.term}</h3>
+              <p className="text-gray-600 mb-4">{term.definition}</p>
+              <div className="flex flex-wrap gap-2">
+                <span className="text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded">
+                  {term.category}
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// Marketplace Section Component
+const MarketplaceSection = () => {
+  return (
+    <div className="py-12">
+      <div className="container mx-auto px-6 text-center">
+        <h2 className="text-3xl font-bold text-navy-900 mb-8">Marketplace</h2>
+        <div className="bg-white rounded-lg shadow-lg p-12 max-w-2xl mx-auto">
+          <div className="mb-6">
+            <svg className="w-16 h-16 mx-auto text-emerald-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-4m-5 0H9m0 0H5m4 0V9a2 2 0 012-2h2a2 2 0 012 2v12M13 7h.01M9 7h.01" />
+            </svg>
+          </div>
+          <h3 className="text-2xl font-bold text-navy-900 mb-4">Coming Soon</h3>
+          <p className="text-gray-600 mb-6">
+            The marketplace will feature additional premium courses, one-on-one consultations, 
+            and specialized tax tools from certified professionals.
+          </p>
+          <button className="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3 rounded-lg transition-colors duration-200">
+            Notify Me When Available
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// Main App Component
+const App = () => {
+  const [activeSection, setActiveSection] = useState('courses');
+  const [courses, setCourses] = useState([]);
+  const [tools, setTools] = useState([]);
+  const [glossaryTerms, setGlossaryTerms] = useState([]);
+  const [selectedCourse, setSelectedCourse] = useState(null);
+  const [loading, setLoading] = useState(true);
+  
+  useEffect(() => {
+    fetchData();
+  }, []);
+  
+  const fetchData = async () => {
+    try {
+      setLoading(true);
+      
+      // Fetch courses
+      const coursesResponse = await fetch(`${API_BASE_URL}/api/courses`);
+      const coursesData = await coursesResponse.json();
+      setCourses(coursesData);
+      
+      // Fetch tools
+      const toolsResponse = await fetch(`${API_BASE_URL}/api/tools`);
+      const toolsData = await toolsResponse.json();
+      setTools(toolsData);
+      
+      // Fetch glossary
+      const glossaryResponse = await fetch(`${API_BASE_URL}/api/glossary`);
+      const glossaryData = await glossaryResponse.json();
+      setGlossaryTerms(glossaryData);
+      
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+  
+  const handleCourseClick = (course) => {
+    setSelectedCourse(course);
+  };
+  
+  const handleBackToCourses = () => {
+    setSelectedCourse(null);
+  };
+  
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-navy-900 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-emerald-400 mx-auto mb-4"></div>
+          <p className="text-white text-xl">Loading IRS Escape Plan...</p>
+        </div>
+      </div>
+    );
+  }
+  
+  if (selectedCourse) {
+    return <CourseViewer course={selectedCourse} onBack={handleBackToCourses} />;
+  }
+  
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <Header activeSection={activeSection} setActiveSection={setActiveSection} />
+      
+      {activeSection === 'courses' && (
+        <>
+          <HeroSection />
+          <section className="py-12">
+            <div className="container mx-auto px-6">
+              <h2 className="text-3xl font-bold text-navy-900 mb-8 text-center">Choose Your Path</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {courses.map((course) => (
+                  <CourseCard 
+                    key={course.id} 
+                    course={course} 
+                    onCourseClick={handleCourseClick}
+                  />
+                ))}
+              </div>
+            </div>
+          </section>
+        </>
+      )}
+      
+      {activeSection === 'tools' && <ToolsSection tools={tools} />}
+      {activeSection === 'glossary' && <GlossarySection glossaryTerms={glossaryTerms} />}
+      {activeSection === 'marketplace' && <MarketplaceSection />}
+    </div>
+  );
+};
 
 export default App;
