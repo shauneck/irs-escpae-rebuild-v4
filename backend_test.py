@@ -64,6 +64,23 @@ class IRSEscapePlanAPITest(unittest.TestCase):
             free_courses = [c for c in self.courses if c["is_free"]]
             self.assertGreaterEqual(len(free_courses), 1)
             print(f"✅ Found {len(free_courses)} free courses")
+            
+            # Verify course names match the expected names
+            expected_course_names = {
+                "primer": "The Escape Blueprint",
+                "w2": "W-2 Escape Plan",
+                "business": "Business Owner Escape Plan"
+            }
+            
+            for course_type, expected_name in expected_course_names.items():
+                course = next((c for c in self.courses if c["type"] == course_type), None)
+                if course:
+                    self.assertEqual(course["title"], expected_name, 
+                                    f"Course of type '{course_type}' has incorrect name: '{course['title']}' (expected: '{expected_name}')")
+                    print(f"✅ Verified course name: {course['title']}")
+                else:
+                    print(f"⚠️ Course of type '{course_type}' not found")
+                    
         except Exception as e:
             print(f"❌ Get courses test failed: {str(e)}")
             raise
