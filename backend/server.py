@@ -212,7 +212,7 @@ async def initialize_sample_data():
         description="Essential fundamentals to understand your tax situation and escape IRS problems",
         thumbnail_url="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400",
         is_free=True,
-        total_lessons=8,
+        total_lessons=9,
         estimated_hours=2,
         lessons=[
             CourseContent(
