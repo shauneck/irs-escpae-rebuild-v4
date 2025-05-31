@@ -147,7 +147,7 @@ const CourseViewer = ({ course, onBack }) => {
   useEffect(() => {
     fetchQuizQuestions();
     fetchGlossaryTerms();
-  }, [course.id]);
+  }, [course.id, lesson.order_index]);
   
   const fetchQuizQuestions = async () => {
     try {
