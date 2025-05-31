@@ -277,7 +277,7 @@ async def initialize_sample_data():
     
     business_course = Course(
         type=CourseType.BUSINESS,
-        title="Business Owner Tax Freedom",
+        title="Business Owner Escape Plan",
         description="Comprehensive tax strategies for business owners and entrepreneurs",
         thumbnail_url="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400",
         is_free=False,
