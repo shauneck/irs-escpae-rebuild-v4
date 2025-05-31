@@ -558,13 +558,15 @@ In the final module, you'll learn how to build your personalized roadmap using t
             course_id=primer_course.id,
             module_id=1
         ),
+        # Module 3 Questions
         QuizQuestion(
             question="What's the benefit of investing RSU capital gains into a QOF?",
             type=QuizQuestionType.MULTIPLE_CHOICE,
             options=["Locks in early retirement", "Defers capital gains and allows long-term tax-free growth", "Eliminates W-2 tax", "Converts gains into passive interest"],
             correct_answer="Defers capital gains and allows long-term tax-free growth",
             explanation="Qualified Opportunity Funds allow you to defer capital gains taxes and potentially eliminate them entirely if held for 10+ years, while the investment grows tax-free.",
-            course_id=primer_course.id
+            course_id=primer_course.id,
+            module_id=3
         ),
         QuizQuestion(
             question="What's the function of routing income through a C-Corp MSO?",
