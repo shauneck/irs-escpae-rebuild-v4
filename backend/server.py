@@ -382,7 +382,7 @@ Understanding your tax exposure requires analyzing four key areas:
 • Are you maximizing or minimizing the **AGI** that determines your tax bracket?
 
 **Income Type Stack Assessment:**
-Your **Income Type Stack** determines not just how much you pay, but when you pay it. W-2 income hits immediately with limited deferral options, while business income offers significantly more control.
+Your **Income Type Stack** determines not just how much you pay, but when you pay it. W-2 income hits immediately with limited deferral options, while business income offers significantly more control. Understanding your **AGI** composition is crucial for optimization.
 
 ### 2. Entity Structure Review - Your **Entity Exposure**
 
