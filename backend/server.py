@@ -548,6 +548,7 @@ In the final module, you'll learn how to build your personalized roadmap using t
     
     # Sample quiz questions
     quiz_questions = [
+        # Module 1 Questions
         QuizQuestion(
             question="What's the biggest weakness of a traditional CPA?",
             type=QuizQuestionType.MULTIPLE_CHOICE,
