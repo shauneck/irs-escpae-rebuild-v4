@@ -270,24 +270,67 @@ const CourseViewer = ({ course, onBack }) => {
                     <h2 className="text-2xl font-bold text-navy-900">{lesson.title}</h2>
                   </div>
                   <div className="flex space-x-3">
-                    <button
-                      onClick={() => openGlossary('Tax Planning')}
-                      className="bg-navy-100 hover:bg-navy-200 text-navy-800 px-3 py-2 rounded-lg text-sm transition-colors duration-200"
-                    >
-                      📚 Tax Planning
-                    </button>
-                    <button
-                      onClick={() => openGlossary('W-2 Income')}
-                      className="bg-navy-100 hover:bg-navy-200 text-navy-800 px-3 py-2 rounded-lg text-sm transition-colors duration-200"
-                    >
-                      📚 W-2 Income
-                    </button>
-                    <button
-                      onClick={() => openGlossary('CPA vs Strategist')}
-                      className="bg-navy-100 hover:bg-navy-200 text-navy-800 px-3 py-2 rounded-lg text-sm transition-colors duration-200"
-                    >
-                      📚 CPA vs Strategist
-                    </button>
+                    {lesson.order_index === 1 ? (
+                      <>
+                        <button
+                          onClick={() => openGlossary('Tax Planning')}
+                          className="bg-navy-100 hover:bg-navy-200 text-navy-800 px-3 py-2 rounded-lg text-sm transition-colors duration-200"
+                        >
+                          📚 Tax Planning
+                        </button>
+                        <button
+                          onClick={() => openGlossary('W-2 Income')}
+                          className="bg-navy-100 hover:bg-navy-200 text-navy-800 px-3 py-2 rounded-lg text-sm transition-colors duration-200"
+                        >
+                          📚 W-2 Income
+                        </button>
+                        <button
+                          onClick={() => openGlossary('CPA vs Strategist')}
+                          className="bg-navy-100 hover:bg-navy-200 text-navy-800 px-3 py-2 rounded-lg text-sm transition-colors duration-200"
+                        >
+                          📚 CPA vs Strategist
+                        </button>
+                      </>
+                    ) : lesson.order_index === 2 ? (
+                      <>
+                        <button
+                          onClick={() => openGlossary('Entity Planning')}
+                          className="bg-navy-100 hover:bg-navy-200 text-navy-800 px-3 py-2 rounded-lg text-sm transition-colors duration-200"
+                        >
+                          📚 Entity Planning
+                        </button>
+                        <button
+                          onClick={() => openGlossary('Income Shifting')}
+                          className="bg-navy-100 hover:bg-navy-200 text-navy-800 px-3 py-2 rounded-lg text-sm transition-colors duration-200"
+                        >
+                          📚 Income Shifting
+                        </button>
+                        <button
+                          onClick={() => openGlossary('Timing Arbitrage')}
+                          className="bg-navy-100 hover:bg-navy-200 text-navy-800 px-3 py-2 rounded-lg text-sm transition-colors duration-200"
+                        >
+                          📚 Timing Arbitrage
+                        </button>
+                        <button
+                          onClick={() => openGlossary('Asset Location')}
+                          className="bg-navy-100 hover:bg-navy-200 text-navy-800 px-3 py-2 rounded-lg text-sm transition-colors duration-200"
+                        >
+                          📚 Asset Location
+                        </button>
+                        <button
+                          onClick={() => openGlossary('Strategic Deductions')}
+                          className="bg-navy-100 hover:bg-navy-200 text-navy-800 px-3 py-2 rounded-lg text-sm transition-colors duration-200"
+                        >
+                          📚 Strategic Deductions
+                        </button>
+                        <button
+                          onClick={() => openGlossary('Exit Structuring')}
+                          className="bg-navy-100 hover:bg-navy-200 text-navy-800 px-3 py-2 rounded-lg text-sm transition-colors duration-200"
+                        >
+                          📚 Exit Structuring
+                        </button>
+                      </>
+                    ) : null}
                   </div>
                 </div>
               </div>
