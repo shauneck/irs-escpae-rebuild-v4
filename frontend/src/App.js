@@ -611,7 +611,12 @@ const CourseViewer = ({ course, onBack }) => {
           <div className="bg-white rounded-lg max-w-2xl w-full max-h-96 overflow-y-auto">
             <div className="p-6">
               <div className="flex items-center justify-between mb-4">
-                <h3 className="text-xl font-bold text-navy-900">{showGlossary.term}</h3>
+                <div>
+                  <h3 className="text-xl font-bold text-navy-900">{showGlossary.term}</h3>
+                  {!viewedGlossaryTerms.has(showGlossary.id) && (
+                    <span className="text-sm text-emerald-600 font-semibold">+5 XP for viewing!</span>
+                  )}
+                </div>
                 <button
                   onClick={() => setShowGlossary(false)}
                   className="text-gray-500 hover:text-gray-700"
