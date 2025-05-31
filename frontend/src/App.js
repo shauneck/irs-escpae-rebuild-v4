@@ -150,6 +150,23 @@ const CourseViewer = ({ course, onBack }) => {
   useEffect(() => {
     fetchQuizQuestions();
     fetchGlossaryTerms();
+    
+    // Load saved XP from localStorage
+    try {
+      const savedGlossaryXP = localStorage.getItem('glossaryXP');
+      const savedViewedTerms = localStorage.getItem('viewedGlossaryTerms');
+      
+      if (savedGlossaryXP) {
+        setGlossaryXP(parseInt(savedGlossaryXP, 10) || 0);
+      }
+      
+      if (savedViewedTerms) {
+        const terms = JSON.parse(savedViewedTerms);
+        setViewedGlossaryTerms(new Set(terms));
+      }
+    } catch (error) {
+      console.warn('Could not load XP from localStorage:', error);
+    }
   }, [course.id, lesson.order_index]);
   
   const fetchQuizQuestions = async () => {
