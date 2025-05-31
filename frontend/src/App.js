@@ -442,9 +442,14 @@ const CourseViewer = ({ course, onBack }) => {
               </div>
               
               {/* Lesson Content */}
-              <div className="p-6">
+              <div className="p-6" onClick={handleContentClick}>
                 <div className="prose max-w-none">
-                  <div className="text-gray-700 leading-relaxed whitespace-pre-line">{lesson.content}</div>
+                  <div 
+                    className="text-gray-700 leading-relaxed whitespace-pre-line"
+                    dangerouslySetInnerHTML={{
+                      __html: renderContentWithGlossary(lesson.content)
+                    }}
+                  />
                 </div>
                 
                 {/* Quiz Section */}
