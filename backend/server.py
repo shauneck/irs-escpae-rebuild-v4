@@ -364,6 +364,24 @@ Filing saves nothing. Planning changes everything. Now that you've seen why most
     # Sample glossary terms
     glossary_terms = [
         GlossaryTerm(
+            term="Tax Planning",
+            definition="Proactively structuring income and assets to legally reduce taxes through strategic timing, entity selection, and asset positioning.",
+            category="Tax Strategy",
+            related_terms=["CPA vs Strategist", "W-2 Income", "Tax Strategy"]
+        ),
+        GlossaryTerm(
+            term="W-2 Income",
+            definition="Employee wages that are taxed at the highest effective rate with limited deduction opportunities and no control over timing.",
+            category="Income Types",
+            related_terms=["Tax Planning", "Business Income", "1099 Income"]
+        ),
+        GlossaryTerm(
+            term="CPA vs Strategist",
+            definition="CPAs focus on compliance and filing returns after the fact. Tax strategists proactively plan and structure to minimize future tax liability before income is earned.",
+            category="Professional Services",
+            related_terms=["Tax Planning", "Tax Strategy", "Proactive Planning"]
+        ),
+        GlossaryTerm(
             term="AGI",
             definition="Adjusted Gross Income - Your total income minus specific deductions allowed by the IRS",
             category="Tax Terms",
