@@ -302,7 +302,7 @@ You now have the lens. Every tax strategy moving forward pulls on one or more of
                 description="Module 3 of 5 - See how real people used the 6 levers to keep six figures more through strategic tax planning",
                 content="""You've seen the levers — now see what happens when real people pull them. These are not theoretical savings. These are real shifts from W-2 earners and business owners who rewired their tax exposure and kept six figures more.
 
-This module walks through anonymized client **case studies** that reflect exactly how the 6 levers are used in real scenarios. These examples will show you how a shift in entity, income type, deduction strategy, or timing can result in transformational tax savings.
+This module walks through anonymized client case studies that reflect exactly how the 6 levers are used in real scenarios. These examples will show you how a shift in entity, income type, deduction strategy, or timing can result in transformational tax savings.
 
 ## Case Study 1 – W-2 Earner With RSUs
 
@@ -326,7 +326,7 @@ Noah was facing a massive tax bill from his RSU vesting. Instead of paying capit
 
 **Levers Pulled:**
 • Management fee routed to C-Corp MSO (Management Services Organization)
-• **Retained earnings** invested into Oil & Gas and equipment **bonus depreciation**
+• Retained earnings invested into Oil & Gas and equipment **bonus depreciation**
 • Effective tax liability dropped from $278K → $122K
 
 **Key Insight:** Entity structure and asset pairing can transform the taxation of earned income and convert retained earnings into deduction-fueled passive cash flow.
