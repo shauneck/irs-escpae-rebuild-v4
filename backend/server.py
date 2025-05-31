@@ -467,7 +467,7 @@ This module guides you through building your **personalized planning** approach 
 
 ## Your Profile Assessment
 
-Understanding your profile type determines which strategies will have the biggest impact on your **tax exposure**:
+Understanding your profile type determines which strategies will have the biggest impact on your tax exposure:
 
 ### Profile Type Identification
 
@@ -488,27 +488,27 @@ Understanding your profile type determines which strategies will have the bigges
 
 ## Building Your **Lever Hierarchy**
 
-Not all levers are equally valuable for your situation. Your **Lever Hierarchy** prioritizes where to focus first:
+Not all levers are equally valuable for your situation. Your Lever Hierarchy prioritizes where to focus first:
 
 ### High-Impact Levers (Start Here)
 **For W-2 Earners:**
-1. **Deduction Strategy** - Maximize available deductions
-2. **Asset Location** - Optimize account placement
-3. **Timing** - Control when income hits
+1. Deduction Strategy - Maximize available deductions
+2. Asset Location - Optimize account placement
+3. Timing - Control when income hits
 
 **For Business Owners:**
-1. **Entity Type** - Optimize business structure
-2. **Exit Planning** - Plan for business growth and sale
-3. **Deduction Strategy** - Maximize business deductions
+1. Entity Type - Optimize business structure
+2. Exit Planning - Plan for business growth and sale
+3. Deduction Strategy - Maximize business deductions
 
 **For Investors:**
-1. **Asset Location** - Strategic account management
-2. **Timing** - Harvest losses and control recognition
-3. **Income Type** - Convert ordinary income to capital gains
+1. Asset Location - Strategic account management
+2. Timing - Harvest losses and control recognition
+3. Income Type - Convert ordinary income to capital gains
 
 ### Your **Strategy Stack**
 
-Your **Strategy Stack** combines multiple approaches for maximum impact:
+Your Strategy Stack combines multiple approaches for maximum impact:
 
 **Foundation Layer:**
 • Optimize current entity structure
