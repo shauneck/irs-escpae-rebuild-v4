@@ -330,6 +330,39 @@ const CourseViewer = ({ course, onBack }) => {
                           📚 Exit Structuring
                         </button>
                       </>
+                    ) : lesson.order_index === 3 ? (
+                      <>
+                        <button
+                          onClick={() => openGlossary('Qualified Opportunity Fund')}
+                          className="bg-navy-100 hover:bg-navy-200 text-navy-800 px-3 py-2 rounded-lg text-sm transition-colors duration-200"
+                        >
+                          📚 QOF
+                        </button>
+                        <button
+                          onClick={() => openGlossary('Bonus Depreciation')}
+                          className="bg-navy-100 hover:bg-navy-200 text-navy-800 px-3 py-2 rounded-lg text-sm transition-colors duration-200"
+                        >
+                          📚 Bonus Depreciation
+                        </button>
+                        <button
+                          onClick={() => openGlossary('REPS')}
+                          className="bg-navy-100 hover:bg-navy-200 text-navy-800 px-3 py-2 rounded-lg text-sm transition-colors duration-200"
+                        >
+                          📚 REPS
+                        </button>
+                        <button
+                          onClick={() => openGlossary('Depreciation Offset')}
+                          className="bg-navy-100 hover:bg-navy-200 text-navy-800 px-3 py-2 rounded-lg text-sm transition-colors duration-200"
+                        >
+                          📚 Depreciation Offset
+                        </button>
+                        <button
+                          onClick={() => openGlossary('STR')}
+                          className="bg-navy-100 hover:bg-navy-200 text-navy-800 px-3 py-2 rounded-lg text-sm transition-colors duration-200"
+                        >
+                          📚 STR
+                        </button>
+                      </>
                     ) : null}
                   </div>
                 </div>
