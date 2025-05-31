@@ -1,0 +1,130 @@
+{
+  "terms": [
+    {
+      "term": "Tax Planning",
+      "definition": "Proactively structuring income and assets to legally reduce taxes through strategic timing, entity selection, and asset positioning.",
+      "category": "Tax Strategy",
+      "related_terms": ["CPA vs Strategist", "W-2 Income", "Tax Strategy"],
+      "module": 1
+    },
+    {
+      "term": "W-2 Income", 
+      "definition": "Employee wages that are taxed at the highest effective rate with limited deduction opportunities and no control over timing.",
+      "category": "Income Types",
+      "related_terms": ["Tax Planning", "Business Income", "1099 Income"],
+      "module": 1
+    },
+    {
+      "term": "CPA vs Strategist",
+      "definition": "CPAs focus on compliance and filing returns after the fact. Tax strategists proactively plan and structure to minimize future tax liability before income is earned.",
+      "category": "Professional Services", 
+      "related_terms": ["Tax Planning", "Tax Strategy", "Proactive Planning"],
+      "module": 1
+    },
+    {
+      "term": "Entity Planning",
+      "definition": "Strategic selection and structuring of business entities (LLC, S-Corp, C-Corp, Partnership) to optimize tax treatment based on income type, business activities, and long-term goals.",
+      "category": "Tax Strategy",
+      "related_terms": ["Tax Planning", "Business Structure", "Income Type"],
+      "module": 2
+    },
+    {
+      "term": "Income Shifting",
+      "definition": "Legal strategies to convert high-tax income types (like W-2 wages) into lower-tax income types (like capital gains or qualified dividends) through proper structuring.",
+      "category": "Tax Strategy",
+      "related_terms": ["Income Type", "Tax Planning", "W-2 Income"],
+      "module": 2
+    },
+    {
+      "term": "Timing Arbitrage",
+      "definition": "Strategic control of when income and deductions are recognized to optimize tax liability across multiple years and take advantage of rate differences.",
+      "category": "Advanced Strategy",
+      "related_terms": ["Tax Planning", "Income Shifting", "Strategic Deductions"],
+      "module": 2
+    },
+    {
+      "term": "Asset Location",
+      "definition": "The strategic placement of different investment types in tax-advantaged vs. taxable accounts to minimize overall tax burden and maximize after-tax returns.",
+      "category": "Investment Strategy",
+      "related_terms": ["Tax Planning", "Investment Tax", "Retirement Planning"],
+      "module": 2
+    },
+    {
+      "term": "Strategic Deductions",
+      "definition": "Proactive structuring and timing of business and investment expenses to maximize tax deductions while maintaining proper documentation and compliance.",
+      "category": "Tax Strategy", 
+      "related_terms": ["Tax Planning", "Business Deductions", "Timing Arbitrage"],
+      "module": 2
+    },
+    {
+      "term": "Exit Structuring",
+      "definition": "Strategic planning for how to exit investments, businesses, or transfer wealth to minimize tax impact and maximize after-tax proceeds for beneficiaries.",
+      "category": "Advanced Strategy",
+      "related_terms": ["Tax Planning", "Estate Planning", "Capital Gains"],
+      "module": 2
+    },
+    {
+      "term": "Qualified Opportunity Fund",
+      "definition": "A tax-advantaged investment vehicle that allows investors to defer and potentially eliminate capital gains taxes by investing in designated low-income communities for 10+ years.",
+      "category": "Advanced Strategy",
+      "related_terms": ["Capital Gains", "Tax Deferral", "Investment Strategy"],
+      "module": 3
+    },
+    {
+      "term": "Bonus Depreciation",
+      "definition": "A tax incentive that allows businesses to immediately deduct a large percentage (often 100%) of eligible asset purchases in the year of acquisition, rather than depreciating over time.",
+      "category": "Business Tax",
+      "related_terms": ["Depreciation", "Business Deductions", "Strategic Deductions"],
+      "module": 3
+    },
+    {
+      "term": "REPS",
+      "definition": "Real Estate Professional Status - A tax classification that allows qualifying individuals to deduct rental real estate losses against other income, including W-2 wages.",
+      "category": "Real Estate Tax",
+      "related_terms": ["Real Estate", "W-2 Income", "Depreciation Offset"],
+      "module": 3
+    },
+    {
+      "term": "Depreciation Offset", 
+      "definition": "Using depreciation deductions from real estate or business assets to reduce taxable income from other sources, such as W-2 wages or business profits.",
+      "category": "Tax Strategy",
+      "related_terms": ["REPS", "Real Estate", "Strategic Deductions"],
+      "module": 3
+    },
+    {
+      "term": "STR",
+      "definition": "Short-Term Rental - Rental properties (like Airbnb) rented for less than 30 days, which receive favorable tax treatment including accelerated depreciation and business expense deductions.",
+      "category": "Real Estate Tax",
+      "related_terms": ["Real Estate", "REPS", "Depreciation Offset"],
+      "module": 3
+    },
+    {
+      "term": "AGI",
+      "definition": "Adjusted Gross Income - Your total income minus specific deductions allowed by the IRS. AGI determines your tax bracket and eligibility for various deductions and credits.",
+      "category": "Tax Terms",
+      "related_terms": ["Gross Income", "Deductions", "Tax Liability", "Income Type Stack"],
+      "module": 4
+    },
+    {
+      "term": "Deduction Bandwidth",
+      "definition": "The gap between what you're currently claiming in deductions and what you could legally claim with proper structuring and planning. Most high earners have significant unused deduction bandwidth.",
+      "category": "Tax Strategy",
+      "related_terms": ["Strategic Deductions", "Tax Planning", "Business Deductions"],
+      "module": 4
+    },
+    {
+      "term": "Income Type Stack",
+      "definition": "The combination and layering of different income types (W-2, 1099, K-1, capital gains, passive) that determines not just how much tax you pay, but when you pay it and what deductions are available.",
+      "category": "Tax Strategy",
+      "related_terms": ["Income Shifting", "W-2 Income", "AGI", "Tax Planning"],
+      "module": 4
+    },
+    {
+      "term": "Entity Exposure",
+      "definition": "The risk and inefficiency created by operating under a suboptimal business entity structure for your income level and business activities. Higher income often requires more sophisticated entity structures.",
+      "category": "Business Tax",
+      "related_terms": ["Entity Planning", "Business Structure", "Tax Planning"],
+      "module": 4
+    }
+  ]
+}
