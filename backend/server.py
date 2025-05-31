@@ -333,19 +333,27 @@ Filing saves nothing. Planning changes everything. Now that you've seen why most
     # Sample quiz questions
     quiz_questions = [
         QuizQuestion(
-            question="What is the first step when you receive an IRS notice?",
+            question="What's the biggest weakness of a traditional CPA?",
             type=QuizQuestionType.MULTIPLE_CHOICE,
-            options=["Ignore it", "Read it carefully", "Call a lawyer immediately", "Throw it away"],
-            correct_answer="Read it carefully",
-            explanation="Always read IRS notices carefully to understand what action is required and any deadlines.",
+            options=["They cost too much", "They can't access your financials", "They focus on filing, not planning", "They don't understand deductions"],
+            correct_answer="They focus on filing, not planning",
+            explanation="Traditional CPAs focus on compliance and filing returns, while tax strategists focus on proactive planning to minimize future tax liability.",
             course_id=primer_course.id
         ),
         QuizQuestion(
-            question="Payment plans with the IRS require a setup fee.",
-            type=QuizQuestionType.TRUE_FALSE,
-            options=["True", "False"],
-            correct_answer="True",
-            explanation="The IRS charges a setup fee for payment plans, though it may be reduced for low-income taxpayers.",
+            question="What is the IRS's primary function?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["Protect taxpayers", "Penalize business owners", "Reconcile tax credits", "Collect revenue"],
+            correct_answer="Collect revenue",
+            explanation="The IRS's primary function is to collect revenue for the federal government through tax collection and enforcement.",
+            course_id=primer_course.id
+        ),
+        QuizQuestion(
+            question="The tax code is best understood as:",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["A punishment", "A charity tool", "A set of incentives", "A list of penalties"],
+            correct_answer="A set of incentives",
+            explanation="The tax code is designed as a blueprint for wealth-building behavior, rewarding investment, ownership, and risk-taking through various incentives.",
             course_id=primer_course.id
         )
     ]
