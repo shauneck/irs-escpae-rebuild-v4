@@ -616,7 +616,8 @@ In the final module, you'll learn how to build your personalized roadmap using t
             options=["Different income types get different tax treatments", "Income type sets your credit score", "It determines your CPA's fee", "It changes your audit rate"],
             correct_answer="Different income types get different tax treatments",
             explanation="Different types of income (W-2 wages, capital gains, dividends, rental income) are taxed at different rates and have different deduction opportunities.",
-            course_id=primer_course.id
+            course_id=primer_course.id,
+            module_id=2
         ),
         QuizQuestion(
             question="What's the main reason timing is important in tax strategy?",
