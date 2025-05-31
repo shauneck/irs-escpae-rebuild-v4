@@ -130,10 +130,96 @@ const CourseCard = ({ course, onCourseClick }) => {
 // Course Viewer Component
 const CourseViewer = ({ course, onBack }) => {
   const [currentLesson, setCurrentLesson] = useState(0);
+  const [showQuiz, setShowQuiz] = useState(false);
+  const [quizQuestions, setQuizQuestions] = useState([]);
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [selectedAnswer, setSelectedAnswer] = useState('');
+  const [quizResults, setQuizResults] = useState([]);
+  const [showQuizResults, setShowQuizResults] = useState(false);
+  const [userXP, setUserXP] = useState(0);
+  const [showGlossary, setShowGlossary] = useState(false);
+  const [glossaryTerms, setGlossaryTerms] = useState([]);
   
   if (!course || !course.lessons) return null;
   
   const lesson = course.lessons[currentLesson];
+  
+  useEffect(() => {
+    fetchQuizQuestions();
+    fetchGlossaryTerms();
+  }, [course.id]);
+  
+  const fetchQuizQuestions = async () => {
+    try {
+      const response = await fetch(`${API_BASE_URL}/api/courses/${course.id}/quiz`);
+      const questions = await response.json();
+      setQuizQuestions(questions);
+    } catch (error) {
+      console.error('Error fetching quiz questions:', error);
+    }
+  };
+  
+  const fetchGlossaryTerms = async () => {
+    try {
+      const response = await fetch(`${API_BASE_URL}/api/glossary`);
+      const terms = await response.json();
+      setGlossaryTerms(terms);
+    } catch (error) {
+      console.error('Error fetching glossary terms:', error);
+    }
+  };
+  
+  const startQuiz = () => {
+    setShowQuiz(true);
+    setCurrentQuestion(0);
+    setSelectedAnswer('');
+    setQuizResults([]);
+    setShowQuizResults(false);
+  };
+  
+  const submitAnswer = async () => {
+    if (!selectedAnswer) return;
+    
+    try {
+      const response = await fetch(`${API_BASE_URL}/api/quiz/submit?course_id=${course.id}&question_id=${quizQuestions[currentQuestion].id}&answer=${selectedAnswer}`, {
+        method: 'POST'
+      });
+      const result = await response.json();
+      
+      const newResult = {
+        ...result,
+        question: quizQuestions[currentQuestion].question,
+        selectedAnswer,
+        correctAnswer: quizQuestions[currentQuestion].correct_answer
+      };
+      
+      setQuizResults([...quizResults, newResult]);
+      
+      if (result.correct) {
+        setUserXP(userXP + result.points);
+      }
+      
+      if (currentQuestion < quizQuestions.length - 1) {
+        setCurrentQuestion(currentQuestion + 1);
+        setSelectedAnswer('');
+      } else {
+        setShowQuizResults(true);
+      }
+    } catch (error) {
+      console.error('Error submitting answer:', error);
+    }
+  };
+  
+  const getGlossaryTerm = (termName) => {
+    return glossaryTerms.find(term => term.term.toLowerCase() === termName.toLowerCase());
+  };
+  
+  const openGlossary = (termName) => {
+    const term = getGlossaryTerm(termName);
+    if (term) {
+      setShowGlossary(term);
+    }
+  };
   
   return (
     <div className="min-h-screen bg-gray-50">
@@ -149,8 +235,18 @@ const CourseViewer = ({ course, onBack }) => {
             </svg>
             Back to Courses
           </button>
-          <h1 className="text-3xl font-bold mb-2">{course.title}</h1>
-          <p className="text-gray-300">{course.description}</p>
+          <div className="flex items-center justify-between">
+            <div>
+              <h1 className="text-3xl font-bold mb-2">{course.title}</h1>
+              <p className="text-gray-300">{course.description}</p>
+            </div>
+            <div className="text-right">
+              <div className="bg-emerald-500 text-white px-4 py-2 rounded-lg">
+                <div className="text-sm">Total XP</div>
+                <div className="text-2xl font-bold">{userXP}</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       
@@ -159,6 +255,43 @@ const CourseViewer = ({ course, onBack }) => {
           {/* Main Content */}
           <div className="lg:w-2/3">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              {/* Lesson Header with XP Badge */}
+              <div className="bg-emerald-50 border-b border-emerald-200 p-6">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <div className="flex items-center mb-2">
+                      <span className="bg-emerald-500 text-white text-sm px-3 py-1 rounded-full mr-3">
+                        XP Available: {lesson.order_index * 10}
+                      </span>
+                      <span className="text-emerald-700 font-semibold">
+                        {lesson.description}
+                      </span>
+                    </div>
+                    <h2 className="text-2xl font-bold text-navy-900">{lesson.title}</h2>
+                  </div>
+                  <div className="flex space-x-3">
+                    <button
+                      onClick={() => openGlossary('Tax Planning')}
+                      className="bg-navy-100 hover:bg-navy-200 text-navy-800 px-3 py-2 rounded-lg text-sm transition-colors duration-200"
+                    >
+                      📚 Tax Planning
+                    </button>
+                    <button
+                      onClick={() => openGlossary('W-2 Income')}
+                      className="bg-navy-100 hover:bg-navy-200 text-navy-800 px-3 py-2 rounded-lg text-sm transition-colors duration-200"
+                    >
+                      📚 W-2 Income
+                    </button>
+                    <button
+                      onClick={() => openGlossary('CPA vs Strategist')}
+                      className="bg-navy-100 hover:bg-navy-200 text-navy-800 px-3 py-2 rounded-lg text-sm transition-colors duration-200"
+                    >
+                      📚 CPA vs Strategist
+                    </button>
+                  </div>
+                </div>
+              </div>
+              
               {/* Video Player Placeholder */}
               <div className="bg-black h-64 md:h-96 flex items-center justify-center">
                 <div className="text-white text-center">
@@ -172,11 +305,93 @@ const CourseViewer = ({ course, onBack }) => {
               
               {/* Lesson Content */}
               <div className="p-6">
-                <h2 className="text-2xl font-bold text-navy-900 mb-4">{lesson.title}</h2>
-                <p className="text-gray-600 mb-6">{lesson.description}</p>
                 <div className="prose max-w-none">
-                  <p className="text-gray-700 leading-relaxed">{lesson.content}</p>
+                  <div className="text-gray-700 leading-relaxed whitespace-pre-line">{lesson.content}</div>
                 </div>
+                
+                {/* Quiz Section */}
+                {!showQuiz && !showQuizResults && (
+                  <div className="mt-8 p-6 bg-emerald-50 rounded-lg border border-emerald-200">
+                    <h3 className="text-xl font-bold text-navy-900 mb-4">Test Your Knowledge</h3>
+                    <p className="text-gray-700 mb-4">Complete the quiz to earn XP and reinforce your learning.</p>
+                    <button
+                      onClick={startQuiz}
+                      className="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200"
+                    >
+                      Start Quiz (30 XP Available)
+                    </button>
+                  </div>
+                )}
+                
+                {/* Quiz Interface */}
+                {showQuiz && !showQuizResults && quizQuestions.length > 0 && (
+                  <div className="mt-8 p-6 bg-white border border-gray-200 rounded-lg">
+                    <div className="mb-4">
+                      <span className="text-sm text-gray-500">
+                        Question {currentQuestion + 1} of {quizQuestions.length}
+                      </span>
+                    </div>
+                    <h3 className="text-xl font-bold text-navy-900 mb-6">
+                      {quizQuestions[currentQuestion].question}
+                    </h3>
+                    <div className="space-y-3 mb-6">
+                      {quizQuestions[currentQuestion].options.map((option, index) => (
+                        <button
+                          key={index}
+                          onClick={() => setSelectedAnswer(option)}
+                          className={`w-full text-left p-4 border-2 rounded-lg transition-colors duration-200 ${
+                            selectedAnswer === option
+                              ? 'border-emerald-500 bg-emerald-100'
+                              : 'border-gray-200 hover:border-emerald-400 hover:bg-emerald-50'
+                          }`}
+                        >
+                          {option}
+                        </button>
+                      ))}
+                    </div>
+                    <button
+                      onClick={submitAnswer}
+                      disabled={!selectedAnswer}
+                      className="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3 rounded-lg font-semibold disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200"
+                    >
+                      Submit Answer
+                    </button>
+                  </div>
+                )}
+                
+                {/* Quiz Results */}
+                {showQuizResults && (
+                  <div className="mt-8 p-6 bg-emerald-50 rounded-lg border border-emerald-200">
+                    <h3 className="text-xl font-bold text-navy-900 mb-4">Quiz Complete!</h3>
+                    <div className="mb-4">
+                      <span className="text-2xl font-bold text-emerald-600">
+                        +{quizResults.filter(r => r.correct).length * 10} XP Earned
+                      </span>
+                    </div>
+                    <div className="space-y-4">
+                      {quizResults.map((result, index) => (
+                        <div key={index} className="bg-white p-4 rounded-lg">
+                          <p className="font-medium text-navy-900 mb-2">{result.question}</p>
+                          <div className="flex items-center space-x-4">
+                            <span className={`px-3 py-1 rounded-full text-sm ${
+                              result.correct 
+                                ? 'bg-green-100 text-green-700' 
+                                : 'bg-red-100 text-red-700'
+                            }`}>
+                              {result.correct ? '✅ Correct' : '❌ Incorrect'}
+                            </span>
+                            {!result.correct && (
+                              <span className="text-gray-600 text-sm">
+                                Correct: {result.correctAnswer}
+                              </span>
+                            )}
+                          </div>
+                          <p className="text-sm text-gray-600 mt-2">{result.explanation}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
                 
                 {/* Navigation */}
                 <div className="flex justify-between mt-8 pt-6 border-t border-gray-200">
@@ -223,6 +438,13 @@ const CourseViewer = ({ course, onBack }) => {
                   >
                     <div className="font-medium text-navy-900">{lessonItem.title}</div>
                     <div className="text-sm text-gray-600">{lessonItem.duration_minutes} minutes</div>
+                    {index === 0 && (
+                      <div className="flex items-center mt-2">
+                        <span className="text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded">
+                          XP Available: {lessonItem.order_index * 10}
+                        </span>
+                      </div>
+                    )}
                   </button>
                 ))}
               </div>
@@ -230,6 +452,42 @@ const CourseViewer = ({ course, onBack }) => {
           </div>
         </div>
       </div>
+      
+      {/* Glossary Modal */}
+      {showGlossary && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-lg max-w-2xl w-full max-h-96 overflow-y-auto">
+            <div className="p-6">
+              <div className="flex items-center justify-between mb-4">
+                <h3 className="text-xl font-bold text-navy-900">{showGlossary.term}</h3>
+                <button
+                  onClick={() => setShowGlossary(false)}
+                  className="text-gray-500 hover:text-gray-700"
+                >
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              <p className="text-gray-700 mb-4">{showGlossary.definition}</p>
+              <div className="flex flex-wrap gap-2">
+                <span className="text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded">
+                  {showGlossary.category}
+                </span>
+                {showGlossary.related_terms.map((term, index) => (
+                  <button
+                    key={index}
+                    onClick={() => openGlossary(term)}
+                    className="text-xs bg-navy-100 text-navy-700 px-2 py-1 rounded hover:bg-navy-200 transition-colors duration-200"
+                  >
+                    {term}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
