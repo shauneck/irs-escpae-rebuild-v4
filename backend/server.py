@@ -921,7 +921,7 @@ From here, you unlock access to:
         ),
         GlossaryTerm(
             term="STR",
-            definition="Short-Term Rental - Rental properties (like Airbnb) rented for less than 30 days, which receive favorable tax treatment including accelerated depreciation and business expense deductions.",
+            definition="Short-Term Rental (STR): A property rented for an average stay of 7 days or less, qualifying for different tax treatment under IRC §469 and Treas. Reg. §1.469-1T(e)(3).",
             category="Real Estate Tax",
             related_terms=["Real Estate", "REPS", "Depreciation Offset"]
         ),
