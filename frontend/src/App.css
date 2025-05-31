@@ -369,27 +369,42 @@ textarea:focus-visible {
   outline-offset: 2px;
 }
 
-/* Glossary term styling */
+/* Glossary term styling with teal pill design */
 .glossary-term {
-  position: relative;
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(16, 185, 129, 0.05) 100%);
-  padding: 2px 4px;
-  border-radius: 4px;
+  display: inline-block;
+  background: linear-gradient(135deg, #14b8a6 0%, #0f766e 100%);
+  color: white;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin: 0 2px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+  font-size: 0.95em;
 }
 
 .glossary-term:hover {
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(16, 185, 129, 0.1) 100%);
+  background: linear-gradient(135deg, #0f766e 0%, #0d5c55 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(20, 184, 166, 0.4);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .glossary-repeat {
   position: relative;
-  padding: 2px 4px;
+  padding: 2px 6px;
   border-radius: 4px;
-  border-bottom: 1px dotted #10b981;
+  border-bottom: 2px dotted #14b8a6;
+  color: #0f766e;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 .glossary-repeat:hover {
-  background: rgba(16, 185, 129, 0.05);
+  background: rgba(20, 184, 166, 0.1);
+  color: #0d5c55;
 }
 
 .glossary-repeat:hover::after {
@@ -400,10 +415,24 @@ textarea:focus-visible {
   transform: translateX(-50%);
   background: #0f172a;
   color: white;
-  padding: 4px 8px;
-  border-radius: 4px;
+  padding: 6px 10px;
+  border-radius: 6px;
   font-size: 12px;
   white-space: nowrap;
   z-index: 1000;
+  pointer-events: none;
+  margin-bottom: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.glossary-repeat:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #0f172a;
+  z-index: 1001;
   pointer-events: none;
 }
