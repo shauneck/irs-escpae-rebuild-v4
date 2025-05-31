@@ -965,6 +965,36 @@ You now have the framework to evaluate any tax strategy through the lens of the 
             definition="The risk and inefficiency created by operating under a suboptimal business entity structure for your income level and business activities. Higher income often requires more sophisticated entity structures.",
             category="Business Tax",
             related_terms=["Entity Planning", "Business Structure", "Tax Planning"]
+        ),
+        GlossaryTerm(
+            term="Tax Exposure",
+            definition="The total amount of tax liability you face based on your current income structure, entity choices, and planning strategies. Reducing tax exposure is the goal of strategic tax planning.",
+            category="Tax Strategy",
+            related_terms=["Tax Planning", "AGI", "Entity Exposure", "Deduction Bandwidth"]
+        ),
+        GlossaryTerm(
+            term="Lever Hierarchy",
+            definition="The prioritized ranking of which of the 6 tax levers will have the most impact for your specific situation, based on your income type, entity structure, and goals.",
+            category="Strategic Framework",
+            related_terms=["Tax Planning", "Strategy Stack", "Personalized Planning"]
+        ),
+        GlossaryTerm(
+            term="Personalized Planning",
+            definition="Customized tax strategy development based on your specific income profile, entity structure, goals, and circumstances rather than generic tax advice.",
+            category="Tax Strategy",
+            related_terms=["Tax Planning", "Lever Hierarchy", "Strategy Stack", "Advisor Integration"]
+        ),
+        GlossaryTerm(
+            term="Strategy Stack",
+            definition="A layered approach to tax optimization that combines multiple strategies across foundation, growth, and advanced levels for maximum tax reduction.",
+            category="Strategic Framework",
+            related_terms=["Lever Hierarchy", "Personalized Planning", "Tax Planning"]
+        ),
+        GlossaryTerm(
+            term="Advisor Integration",
+            definition="The strategic coordination between different tax professionals (CPAs, strategists, attorneys) to ensure compliance while maximizing tax optimization opportunities.",
+            category="Professional Services",
+            related_terms=["CPA vs Strategist", "Tax Planning", "Personalized Planning"]
         )
     ]
     
