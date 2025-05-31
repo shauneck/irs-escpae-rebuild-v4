@@ -230,25 +230,64 @@ const CourseViewer = ({ course, onBack }) => {
     }
   };
   
-  // Enhanced content renderer with inline glossary popovers (fixed duplication)
+  // Enhanced content renderer with improved term matching and popover functionality
   const renderContentWithGlossary = (content) => {
     let processedContent = content;
     const processedTerms = new Set(); // Track which terms we've already processed
     
-    // Find bolded terms that match glossary entries
+    // Create a comprehensive term map including variations
+    const termVariations = new Map();
     glossaryTerms.forEach(term => {
-      const boldPattern = new RegExp(`\\*\\*${term.term}\\*\\*`, 'gi');
+      const baseTerm = term.term.toLowerCase();
+      termVariations.set(baseTerm, term);
+      
+      // Add common variations
+      if (baseTerm.endsWith('s')) {
+        // Plural to singular
+        termVariations.set(baseTerm.slice(0, -1), term);
+      } else {
+        // Singular to plural
+        termVariations.set(baseTerm + 's', term);
+      }
+      
+      // Add specific variations for known terms
+      const variations = {
+        'cpa': ['cpas', 'cpa'],
+        'strategist': ['strategists', 'strategist', 'tax strategist', 'tax strategists'],
+        'entity planning': ['entity structure', 'entity type'],
+        'asset location': ['asset placement'],
+        'opportunity zones': ['opportunity zone'],
+        'reps': ['real estate professional', 'real estate professional status'],
+        'str': ['short-term rental', 'short-term rentals'],
+        'qof': ['qualified opportunity fund', 'qualified opportunity funds']
+      };
+      
+      Object.entries(variations).forEach(([key, vars]) => {
+        if (baseTerm.includes(key) || key.includes(baseTerm)) {
+          vars.forEach(variation => {
+            termVariations.set(variation.toLowerCase(), term);
+          });
+        }
+      });
+    });
+    
+    // Process each term variation
+    termVariations.forEach((glossaryTerm, searchTerm) => {
+      // Create case-insensitive regex pattern for bolded terms
+      const escapedTerm = searchTerm.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const boldPattern = new RegExp(`\\*\\*${escapedTerm}\\*\\*`, 'gi');
       let isFirstOccurrence = true;
       
       processedContent = processedContent.replace(boldPattern, (match) => {
-        if (isFirstOccurrence && !processedTerms.has(term.term.toLowerCase())) {
+        const termKey = glossaryTerm.term.toLowerCase();
+        if (isFirstOccurrence && !processedTerms.has(termKey)) {
           // First occurrence - make it clickable with teal pill styling
-          processedTerms.add(term.term.toLowerCase());
+          processedTerms.add(termKey);
           isFirstOccurrence = false;
-          return `<span id="glossary-${term.term.toLowerCase().replace(/\s+/g, '-')}" class="glossary-term" data-term="${term.term}" title="Click to view definition">${term.term}</span>`;
+          return `<span id="glossary-${termKey.replace(/\s+/g, '-')}" class="glossary-term" data-term="${glossaryTerm.term}" title="Click to view definition">${glossaryTerm.term}</span>`;
         } else {
           // Subsequent occurrences - subtle link back to first instance
-          return `<span class="glossary-repeat" onclick="document.getElementById('glossary-${term.term.toLowerCase().replace(/\s+/g, '-')}').scrollIntoView({behavior: 'smooth', block: 'center'}); document.getElementById('glossary-${term.term.toLowerCase().replace(/\s+/g, '-')}').style.backgroundColor='#fef3c7'; setTimeout(() => document.getElementById('glossary-${term.term.toLowerCase().replace(/\s+/g, '-')}').style.backgroundColor='', 2000);" title="Jump to first occurrence">${term.term}</span>`;
+          return `<span class="glossary-repeat" onclick="document.getElementById('glossary-${termKey.replace(/\s+/g, '-')}')?.scrollIntoView({behavior: 'smooth', block: 'center'}); const elem = document.getElementById('glossary-${termKey.replace(/\s+/g, '-')}'); if(elem) { elem.style.backgroundColor='#fef3c7'; setTimeout(() => elem.style.backgroundColor='', 2000); }" title="Jump to first occurrence">${match.replace(/\*\*/g, '')}</span>`;
         }
       });
     });
@@ -256,11 +295,15 @@ const CourseViewer = ({ course, onBack }) => {
     return processedContent;
   };
   
-  // Handle inline glossary clicks
+  // Handle inline glossary clicks with improved event handling
   const handleContentClick = (e) => {
     if (e.target.classList.contains('glossary-term')) {
+      e.preventDefault();
+      e.stopPropagation();
       const termName = e.target.dataset.term;
-      openGlossary(termName);
+      if (termName) {
+        openGlossary(termName);
+      }
     }
   };
   
