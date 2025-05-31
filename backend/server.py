@@ -392,7 +392,7 @@ Your **Income Type Stack** determines not just how much you pay, but when you pa
 • What is your **Entity Exposure** - how much risk are you taking by not optimizing your structure?
 
 **Optimization Opportunities:**
-Different entity types offer different advantages. Higher-income individuals often benefit from more sophisticated structures that provide better tax treatment and asset protection.
+Different entity types offer different advantages. Higher-income individuals often benefit from more sophisticated structures that provide better tax treatment and asset protection. Reducing your **Entity Exposure** should be a priority for growing businesses.
 
 ### 3. Deduction Strategy Analysis - Your **Deduction Bandwidth**
 
