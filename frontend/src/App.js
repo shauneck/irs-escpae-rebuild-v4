@@ -541,7 +541,7 @@ const CourseViewer = ({ course, onBack }) => {
                   >
                     <div className="font-medium text-navy-900">{lessonItem.title}</div>
                     <div className="text-sm text-gray-600">{lessonItem.duration_minutes} minutes</div>
-                    {(index === 0 || index === 1 || index === 2) && (
+                    {(index === 0 || index === 1 || index === 2 || index === 3) && (
                       <div className="flex items-center mt-2">
                         <span className="text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded">
                           XP Available: {lessonItem.order_index * 10}
