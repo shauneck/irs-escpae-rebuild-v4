@@ -459,6 +459,151 @@ In the final module, you'll learn how to build your personalized roadmap using t
                 order_index=4
             ),
             CourseContent(
+                title="Building Your Custom Escape Plan",
+                description="Module 5 of 5 - Create your personalized tax escape plan using the 6 levers, case studies, and strategic framework",
+                content="""You've built your foundation. You've seen the levers. You've reviewed real case studies. And now — it's time to draft your own escape framework.
+
+This module guides you through building your **personalized planning** approach based on your unique situation and the knowledge you've gained throughout this course.
+
+## Your Profile Assessment
+
+Understanding your profile type determines which strategies will have the biggest impact on your **tax exposure**:
+
+### Profile Type Identification
+
+**W-2 Dominant (70%+ W-2 income):**
+• Primary focus: Deduction strategies and asset location
+• Secondary opportunities: Real estate depreciation and timing
+• Long-term goal: Building business income streams
+
+**Business Owner (50%+ business income):**
+• Primary focus: Entity optimization and exit planning
+• Secondary opportunities: Timing and asset location
+• Long-term goal: Scaling and succession planning
+
+**Investor/Hybrid (Multiple income streams):**
+• Primary focus: Asset location and timing arbitrage
+• Secondary opportunities: Entity structures for investment activities
+• Long-term goal: Coordinated wealth management
+
+## Building Your **Lever Hierarchy**
+
+Not all levers are equally valuable for your situation. Your **Lever Hierarchy** prioritizes where to focus first:
+
+### High-Impact Levers (Start Here)
+**For W-2 Earners:**
+1. **Deduction Strategy** - Maximize available deductions
+2. **Asset Location** - Optimize account placement
+3. **Timing** - Control when income hits
+
+**For Business Owners:**
+1. **Entity Type** - Optimize business structure
+2. **Exit Planning** - Plan for business growth and sale
+3. **Deduction Strategy** - Maximize business deductions
+
+**For Investors:**
+1. **Asset Location** - Strategic account management
+2. **Timing** - Harvest losses and control recognition
+3. **Income Type** - Convert ordinary income to capital gains
+
+### Your **Strategy Stack**
+
+Your **Strategy Stack** combines multiple approaches for maximum impact:
+
+**Foundation Layer:**
+• Optimize current entity structure
+• Maximize available deductions
+• Implement proper asset location
+
+**Growth Layer:**
+• Add income diversification strategies
+• Implement timing optimization
+• Build depreciation assets
+
+**Advanced Layer:**
+• Sophisticated exit planning
+• Multi-entity strategies
+• Advanced timing arbitrage
+
+## Mapping Your Resources
+
+### Case Study Alignment
+Review the case studies from Module 3 and identify which scenarios align with your profile:
+• **Noah's QOF Strategy** - Best for high W-2 + capital gains
+• **Jessica's Entity Optimization** - Best for profitable S-Corps
+• **Liam's Real Estate Strategy** - Best for W-2 + real estate opportunities
+
+### Tool Integration
+From your assessment in Module 4, prioritize which tools and calculators will serve your specific situation:
+• Tax liability calculators for scenario planning
+• Payment plan estimators if dealing with current issues
+• Deduction bandwidth analysis for optimization opportunities
+
+## Implementation Timeline
+
+### Year 1 (Foundation)
+• Implement high-impact, low-complexity strategies
+• Optimize current entity structure if needed
+• Maximize available deductions
+• Set up proper asset location
+
+### Year 2-3 (Growth)
+• Add income diversification strategies
+• Implement depreciation assets if applicable
+• Optimize timing of major income events
+• Build relationships with specialists
+
+### Year 3+ (Advanced)
+• Implement sophisticated exit planning
+• Consider multi-entity strategies
+• Optimize for long-term wealth transfer
+• Regular strategy reviews and updates
+
+## **Advisor Integration**
+
+Knowing when and how to work with tax strategists vs. traditional CPAs:
+
+**DIY Appropriate:**
+• Basic deduction optimization
+• Simple asset location strategies
+• Standard timing decisions
+
+**Strategist Recommended:**
+• Complex entity restructuring
+• Multi-state tax planning
+• Significant income events (business sale, large bonuses)
+• Advanced depreciation strategies
+
+**Team Approach:**
+• CPA for compliance and filing
+• Strategist for proactive planning
+• Attorney for complex structures
+• Financial advisor for investment coordination
+
+## Your Action Plan Template
+
+**Step 1: Immediate (Next 30 Days)**
+• Document current tax situation
+• Identify 2-3 highest-impact opportunities
+• Gather necessary documentation
+
+**Step 2: Short-term (3-6 Months)**
+• Implement foundation strategies
+• Set up necessary structures
+• Begin tracking and measuring results
+
+**Step 3: Long-term (6+ Months)**
+• Monitor and adjust strategies
+• Add growth layer strategies
+• Plan for major upcoming events
+
+## Moving Beyond the Course
+
+You now have the framework to evaluate any tax strategy through the lens of the 6 levers. Every opportunity, every advisor recommendation, every major financial decision can be analyzed using this systematic approach.""",
+                duration_minutes=50,
+                order_index=5
+            ),
+            CourseContent(
                 title="IRS Communication Basics",
                 description="How to interpret and respond to IRS notices",
                 content="Understanding IRS letters and notices is crucial. This lesson teaches you how to read IRS correspondence, identify urgent vs. routine notices, and respond appropriately.",
