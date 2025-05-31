@@ -574,7 +574,8 @@ In the final module, you'll learn how to build your personalized roadmap using t
             options=["To access SBA loans", "To avoid LLC fees", "To reposition retained earnings into tax-leveraged assets", "To create employee stock options"],
             correct_answer="To reposition retained earnings into tax-leveraged assets",
             explanation="A C-Corp MSO structure allows business owners to retain earnings at lower corporate tax rates and invest them in bonus depreciation assets for additional tax benefits.",
-            course_id=primer_course.id
+            course_id=primer_course.id,
+            module_id=3
         ),
         QuizQuestion(
             question="How did Liam offset his W-2 income?",
