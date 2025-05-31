@@ -212,9 +212,33 @@ async def initialize_sample_data():
         estimated_hours=2,
         lessons=[
             CourseContent(
-                title="Understanding Your Tax Burden",
-                description="Learn the basics of tax liability and common IRS issues",
-                content="This lesson covers the fundamental concepts of tax burden, including how taxes are calculated, common mistakes that lead to IRS problems, and the first steps to take when facing tax issues.",
+                title="Why You're Overpaying the IRS (and What to Do About It)",
+                description="Module 1 of 5 - Discover why the tax code rewards wealth-building behavior and how strategists differ from traditional CPAs",
+                content="""The U.S. tax code is not a punishment — it's a blueprint for wealth-building behavior. It rewards investment, ownership, and risk — and penalizes passive employment without structure.
+
+Most CPAs file and reconcile. Strategists build infrastructure and optimize. High-income earners without proactive planning are the IRS's favorite clients.
+
+## Core Concepts:
+
+1. **The IRS is not your enemy — your ignorance is**
+   The tax system is designed with clear rules and incentives. When you understand these rules, you can work within them to your advantage.
+
+2. **CPAs file. Strategists plan.**
+   Traditional CPAs focus on compliance and filing returns. Tax strategists focus on proactive planning to minimize future tax liability.
+
+3. **There are only two outcomes in tax: proactive and overpaying**
+   You either take control of your tax situation through strategic planning, or you accept whatever the default tax treatment gives you.
+
+## Key Takeaways:
+
+- The tax code rewards investment, business ownership, and calculated risk-taking
+- Passive W-2 income without additional structure is taxed at the highest rates
+- Strategic tax planning requires shifting from reactive filing to proactive structuring
+- High-income earners without strategy consistently overpay taxes
+
+## What's Next:
+
+Filing saves nothing. Planning changes everything. Now that you've seen why most high-income earners overpay, let's look at the 6 Levers of Tax Control that shift the entire outcome.""",
                 duration_minutes=25,
                 order_index=1
             ),
