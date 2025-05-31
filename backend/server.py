@@ -613,6 +613,30 @@ The goal isn't to implement every strategy - it's to identify the 2-3 levers tha
             correct_answer="It lets you control when income hits",
             explanation="Strategic timing allows you to control when income is recognized, which can shift tax liability between years and optimize your overall tax burden.",
             course_id=primer_course.id
+        ),
+        QuizQuestion(
+            question="What determines your exposure to W-2 tax rates?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["CPA filing method", "The number of dependents", "Type and timing of income", "Your employer's tax strategy"],
+            correct_answer="Type and timing of income",
+            explanation="Your exposure to high W-2 tax rates is determined by the type of income you receive and when you receive it. Different income types have different tax treatments.",
+            course_id=primer_course.id
+        ),
+        QuizQuestion(
+            question="Which of the following directly impacts deduction limits?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["Filing software", "Where you bank", "Your income type and asset structure", "Credit card rewards"],
+            correct_answer="Your income type and asset structure",
+            explanation="Deduction limits are directly impacted by your income type and how your assets are structured, as these determine what deductions you're eligible for and at what levels.",
+            course_id=primer_course.id
+        ),
+        QuizQuestion(
+            question="What is the first step to reducing your tax exposure?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["File early", "Review prior returns", "Map your income, entity, and deduction levers", "Ask your CPA to amend"],
+            correct_answer="Map your income, entity, and deduction levers",
+            explanation="The first step to reducing tax exposure is mapping your current situation across the 6 levers: income type, entity structure, timing, asset location, deductions, and exit planning.",
+            course_id=primer_course.id
         )
     ]
     
