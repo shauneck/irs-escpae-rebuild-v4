@@ -140,6 +140,9 @@ const CourseViewer = ({ course, onBack }) => {
   const [showGlossary, setShowGlossary] = useState(false);
   const [glossaryTerms, setGlossaryTerms] = useState([]);
   
+  const [glossaryXP, setGlossaryXP] = useState(0);
+  const [viewedGlossaryTerms, setViewedGlossaryTerms] = useState(new Set());
+  
   if (!course || !course.lessons) return null;
   
   const lesson = course.lessons[currentLesson];
@@ -218,6 +221,34 @@ const CourseViewer = ({ course, onBack }) => {
     const term = getGlossaryTerm(termName);
     if (term) {
       setShowGlossary(term);
+      
+      // Award XP for first-time viewing
+      if (!viewedGlossaryTerms.has(term.id)) {
+        setViewedGlossaryTerms(new Set([...viewedGlossaryTerms, term.id]));
+        setGlossaryXP(glossaryXP + 5); // 5 XP per new term viewed
+      }
+    }
+  };
+  
+  // Enhanced content renderer with inline glossary popovers
+  const renderContentWithGlossary = (content) => {
+    let processedContent = content;
+    
+    // Find bolded terms that match glossary entries
+    glossaryTerms.forEach(term => {
+      const boldPattern = new RegExp(`\\*\\*${term.term}\\*\\*`, 'gi');
+      const replacement = `<span class="glossary-term cursor-pointer text-emerald-600 font-bold hover:text-emerald-800 transition-colors duration-200" data-term="${term.term}">**${term.term}**</span>`;
+      processedContent = processedContent.replace(boldPattern, replacement);
+    });
+    
+    return processedContent;
+  };
+  
+  // Handle inline glossary clicks
+  const handleContentClick = (e) => {
+    if (e.target.classList.contains('glossary-term')) {
+      const termName = e.target.dataset.term;
+      openGlossary(termName);
     }
   };
   
