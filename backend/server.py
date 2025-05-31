@@ -475,6 +475,42 @@ You now have the lens. Every tax strategy moving forward pulls on one or more of
             definition="IRS status that temporarily delays collection due to financial hardship",
             category="IRS Programs",
             related_terms=["Offer in Compromise", "Payment Plan", "Financial Hardship"]
+        ),
+        GlossaryTerm(
+            term="Entity Planning",
+            definition="Strategic selection and structuring of business entities (LLC, S-Corp, C-Corp, Partnership) to optimize tax treatment based on income type, business activities, and long-term goals.",
+            category="Tax Strategy",
+            related_terms=["Tax Planning", "Business Structure", "Income Type"]
+        ),
+        GlossaryTerm(
+            term="Income Shifting",
+            definition="Legal strategies to convert high-tax income types (like W-2 wages) into lower-tax income types (like capital gains or qualified dividends) through proper structuring.",
+            category="Tax Strategy",
+            related_terms=["Income Type", "Tax Planning", "W-2 Income"]
+        ),
+        GlossaryTerm(
+            term="Timing Arbitrage",
+            definition="Strategic control of when income and deductions are recognized to optimize tax liability across multiple years and take advantage of rate differences.",
+            category="Advanced Strategy",
+            related_terms=["Tax Planning", "Income Shifting", "Strategic Deductions"]
+        ),
+        GlossaryTerm(
+            term="Asset Location",
+            definition="The strategic placement of different investment types in tax-advantaged vs. taxable accounts to minimize overall tax burden and maximize after-tax returns.",
+            category="Investment Strategy",
+            related_terms=["Tax Planning", "Investment Tax", "Retirement Planning"]
+        ),
+        GlossaryTerm(
+            term="Strategic Deductions",
+            definition="Proactive structuring and timing of business and investment expenses to maximize tax deductions while maintaining proper documentation and compliance.",
+            category="Tax Strategy",
+            related_terms=["Tax Planning", "Business Deductions", "Timing Arbitrage"]
+        ),
+        GlossaryTerm(
+            term="Exit Structuring",
+            definition="Strategic planning for how to exit investments, businesses, or transfer wealth to minimize tax impact and maximize after-tax proceeds for beneficiaries.",
+            category="Advanced Strategy",
+            related_terms=["Tax Planning", "Estate Planning", "Capital Gains"]
         )
     ]
     
