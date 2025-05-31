@@ -583,7 +583,8 @@ In the final module, you'll learn how to build your personalized roadmap using t
             options=["Oil & Gas credits", "Deductions from charity", "REPS status + STR depreciation", "Cost segregation of his home"],
             correct_answer="REPS status + STR depreciation",
             explanation="By qualifying for Real Estate Professional Status, Liam could use depreciation from his short-term rental properties to offset his W-2 income from his medical practice.",
-            course_id=primer_course.id
+            course_id=primer_course.id,
+            module_id=3
         ),
         QuizQuestion(
             question="What is the IRS's primary function?",
