@@ -273,8 +273,12 @@ const CourseViewer = ({ course, onBack }) => {
             </div>
             <div className="text-right">
               <div className="bg-emerald-500 text-white px-4 py-2 rounded-lg">
-                <div className="text-sm">Total XP</div>
+                <div className="text-sm">Quiz XP</div>
                 <div className="text-2xl font-bold">{userXP}</div>
+              </div>
+              <div className="bg-blue-500 text-white px-4 py-2 rounded-lg mt-2">
+                <div className="text-sm">Glossary XP</div>
+                <div className="text-xl font-bold">{glossaryXP}</div>
               </div>
             </div>
           </div>
