@@ -363,6 +363,33 @@ const CourseViewer = ({ course, onBack }) => {
                           📚 STR
                         </button>
                       </>
+                    ) : lesson.order_index === 4 ? (
+                      <>
+                        <button
+                          onClick={() => openGlossary('AGI')}
+                          className="bg-navy-100 hover:bg-navy-200 text-navy-800 px-3 py-2 rounded-lg text-sm transition-colors duration-200"
+                        >
+                          📚 AGI
+                        </button>
+                        <button
+                          onClick={() => openGlossary('Deduction Bandwidth')}
+                          className="bg-navy-100 hover:bg-navy-200 text-navy-800 px-3 py-2 rounded-lg text-sm transition-colors duration-200"
+                        >
+                          📚 Deduction Bandwidth
+                        </button>
+                        <button
+                          onClick={() => openGlossary('Income Type Stack')}
+                          className="bg-navy-100 hover:bg-navy-200 text-navy-800 px-3 py-2 rounded-lg text-sm transition-colors duration-200"
+                        >
+                          📚 Income Type Stack
+                        </button>
+                        <button
+                          onClick={() => openGlossary('Entity Exposure')}
+                          className="bg-navy-100 hover:bg-navy-200 text-navy-800 px-3 py-2 rounded-lg text-sm transition-colors duration-200"
+                        >
+                          📚 Entity Exposure
+                        </button>
+                      </>
                     ) : null}
                   </div>
                 </div>
