@@ -251,7 +251,7 @@ async def initialize_sample_data():
     
     w2_course = Course(
         type=CourseType.W2,
-        title="W-2 Employee Tax Strategy",
+        title="W-2 Escape Plan",
         description="Advanced strategies for W-2 employees to minimize taxes and resolve IRS issues",
         thumbnail_url="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400",
         is_free=False,
