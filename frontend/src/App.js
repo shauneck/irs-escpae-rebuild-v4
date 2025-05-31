@@ -151,7 +151,7 @@ const CourseViewer = ({ course, onBack }) => {
   
   const fetchQuizQuestions = async () => {
     try {
-      const response = await fetch(`${API_BASE_URL}/api/courses/${course.id}/quiz`);
+      const response = await fetch(`${API_BASE_URL}/api/courses/${course.id}/quiz?module_id=${lesson.order_index}`);
       const questions = await response.json();
       setQuizQuestions(questions);
     } catch (error) {
