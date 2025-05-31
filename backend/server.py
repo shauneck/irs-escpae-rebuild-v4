@@ -600,13 +600,15 @@ In the final module, you'll learn how to build your personalized roadmap using t
             course_id=primer_course.id,
             module_id=1
         ),
+        # Module 2 Questions
         QuizQuestion(
             question="Which of the following is NOT one of the 6 tax control levers?",
             type=QuizQuestionType.MULTIPLE_CHOICE,
             options=["Entity Type", "Income Type", "Filing Method", "Exit Planning"],
             correct_answer="Filing Method",
             explanation="The 6 tax control levers are: Entity Type, Income Type, Timing, Asset Location, Deduction Strategy, and Exit Planning. Filing Method is not one of the core levers.",
-            course_id=primer_course.id
+            course_id=primer_course.id,
+            module_id=2
         ),
         QuizQuestion(
             question="Why does income type matter?",
