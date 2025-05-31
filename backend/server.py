@@ -368,28 +368,28 @@ The difference between these clients and most high earners isn't access to secre
                 description="How to interpret and respond to IRS notices",
                 content="Understanding IRS letters and notices is crucial. This lesson teaches you how to read IRS correspondence, identify urgent vs. routine notices, and respond appropriately.",
                 duration_minutes=30,
-                order_index=3
+                order_index=4
             ),
             CourseContent(
                 title="Payment Options Overview",
                 description="Explore different ways to resolve tax debt",
                 content="The IRS offers several payment options including payment plans, offers in compromise, and currently not collectible status. Learn which option might work for your situation.",
                 duration_minutes=35,
-                order_index=4
+                order_index=5
             ),
             CourseContent(
                 title="Professional Help: When and How",
                 description="Understanding when to seek professional assistance",
                 content="Some tax situations require professional help. Learn when to contact a tax professional, what credentials to look for, and how to work effectively with tax representatives.",
                 duration_minutes=20,
-                order_index=5
+                order_index=6
             ),
             CourseContent(
                 title="Creating Your Action Plan",
                 description="Develop a personalized strategy for your tax situation",
                 content="Put everything together to create a step-by-step action plan tailored to your specific tax situation and goals.",
                 duration_minutes=30,
-                order_index=6
+                order_index=7
             )
         ]
     )
