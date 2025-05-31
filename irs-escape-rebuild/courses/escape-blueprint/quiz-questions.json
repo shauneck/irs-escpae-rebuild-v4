@@ -1,0 +1,166 @@
+{
+  "module_1": [
+    {
+      "question": "What's the biggest weakness of a traditional CPA?",
+      "type": "multiple_choice",
+      "options": [
+        "They cost too much",
+        "They can't access your financials", 
+        "They focus on filing, not planning",
+        "They don't understand deductions"
+      ],
+      "correct_answer": "They focus on filing, not planning",
+      "explanation": "Traditional CPAs focus on compliance and filing returns, while tax strategists focus on proactive planning to minimize future tax liability.",
+      "points": 10
+    },
+    {
+      "question": "What is the IRS's primary function?",
+      "type": "multiple_choice", 
+      "options": [
+        "Protect taxpayers",
+        "Penalize business owners",
+        "Reconcile tax credits",
+        "Collect revenue"
+      ],
+      "correct_answer": "Collect revenue",
+      "explanation": "The IRS's primary function is to collect revenue for the federal government through tax collection and enforcement.",
+      "points": 10
+    },
+    {
+      "question": "The tax code is best understood as:",
+      "type": "multiple_choice",
+      "options": [
+        "A punishment",
+        "A charity tool", 
+        "A set of incentives",
+        "A list of penalties"
+      ],
+      "correct_answer": "A set of incentives",
+      "explanation": "The tax code is designed as a blueprint for wealth-building behavior, rewarding investment, ownership, and risk-taking through various incentives.",
+      "points": 10
+    }
+  ],
+  "module_2": [
+    {
+      "question": "Which of the following is NOT one of the 6 tax control levers?",
+      "type": "multiple_choice",
+      "options": [
+        "Entity Type",
+        "Income Type",
+        "Filing Method", 
+        "Exit Planning"
+      ],
+      "correct_answer": "Filing Method",
+      "explanation": "The 6 tax control levers are: Entity Type, Income Type, Timing, Asset Location, Deduction Strategy, and Exit Planning. Filing Method is not one of the core levers.",
+      "points": 10
+    },
+    {
+      "question": "Why does income type matter?",
+      "type": "multiple_choice",
+      "options": [
+        "Different income types get different tax treatments",
+        "Income type sets your credit score",
+        "It determines your CPA's fee",
+        "It changes your audit rate"
+      ],
+      "correct_answer": "Different income types get different tax treatments", 
+      "explanation": "Different types of income (W-2 wages, capital gains, dividends, rental income) are taxed at different rates and have different deduction opportunities.",
+      "points": 10
+    },
+    {
+      "question": "What's the main reason timing is important in tax strategy?",
+      "type": "multiple_choice",
+      "options": [
+        "It affects bank interest",
+        "It reduces IRS penalties",
+        "It lets you control when income hits",
+        "It locks in your deductions"
+      ],
+      "correct_answer": "It lets you control when income hits",
+      "explanation": "Strategic timing allows you to control when income is recognized, which can shift tax liability between years and optimize your overall tax burden.",
+      "points": 10
+    }
+  ],
+  "module_3": [
+    {
+      "question": "What's the benefit of investing RSU capital gains into a QOF?",
+      "type": "multiple_choice",
+      "options": [
+        "Locks in early retirement",
+        "Defers capital gains and allows long-term tax-free growth",
+        "Eliminates W-2 tax", 
+        "Converts gains into passive interest"
+      ],
+      "correct_answer": "Defers capital gains and allows long-term tax-free growth",
+      "explanation": "Qualified Opportunity Funds allow you to defer capital gains taxes and potentially eliminate them entirely if held for 10+ years, while the investment grows tax-free.",
+      "points": 10
+    },
+    {
+      "question": "What's the function of routing income through a C-Corp MSO?",
+      "type": "multiple_choice",
+      "options": [
+        "To access SBA loans",
+        "To avoid LLC fees",
+        "To reposition retained earnings into tax-leveraged assets",
+        "To create employee stock options"
+      ],
+      "correct_answer": "To reposition retained earnings into tax-leveraged assets",
+      "explanation": "A C-Corp MSO structure allows business owners to retain earnings at lower corporate tax rates and invest them in bonus depreciation assets for additional tax benefits.",
+      "points": 10
+    },
+    {
+      "question": "How did Liam offset his W-2 income?",
+      "type": "multiple_choice",
+      "options": [
+        "Oil & Gas credits",
+        "Deductions from charity",
+        "REPS status + STR depreciation",
+        "Cost segregation of his home"
+      ],
+      "correct_answer": "REPS status + STR depreciation",
+      "explanation": "By qualifying for Real Estate Professional Status, Liam could use depreciation from his short-term rental properties to offset his W-2 income from his medical practice.",
+      "points": 10
+    }
+  ],
+  "module_4": [
+    {
+      "question": "What determines your exposure to W-2 tax rates?",
+      "type": "multiple_choice", 
+      "options": [
+        "CPA filing method",
+        "The number of dependents",
+        "Type and timing of income",
+        "Your employer's tax strategy"
+      ],
+      "correct_answer": "Type and timing of income",
+      "explanation": "Your exposure to high W-2 tax rates is determined by the type of income you receive and when you receive it. Different income types have different tax treatments.",
+      "points": 10
+    },
+    {
+      "question": "Which of the following directly impacts deduction limits?",
+      "type": "multiple_choice",
+      "options": [
+        "Filing software",
+        "Where you bank", 
+        "Your income type and asset structure",
+        "Credit card rewards"
+      ],
+      "correct_answer": "Your income type and asset structure",
+      "explanation": "Deduction limits are directly impacted by your income type and how your assets are structured, as these determine what deductions you're eligible for and at what levels.",
+      "points": 10
+    },
+    {
+      "question": "What is the first step to reducing your tax exposure?",
+      "type": "multiple_choice",
+      "options": [
+        "File early",
+        "Review prior returns",
+        "Map your income, entity, and deduction levers", 
+        "Ask your CPA to amend"
+      ],
+      "correct_answer": "Map your income, entity, and deduction levers",
+      "explanation": "The first step to reducing tax exposure is mapping your current situation across the 6 levers: income type, entity structure, timing, asset location, deductions, and exit planning.",
+      "points": 10
+    }
+  ]
+}
