@@ -120,9 +120,12 @@ async def get_course_lessons(course_id: str):
     return [CourseContent(**lesson) for lesson in course.get("lessons", [])]
 
 # Quiz endpoints
-@api_router.get("/courses/{course_id}/quiz", response_model=List[QuizQuestion])
-async def get_course_quiz(course_id: str):
-    questions = await db.quiz_questions.find({"course_id": course_id}).to_list(1000)
+@api_router.get("/courses/{course_id}/quiz")
+async def get_course_quiz(course_id: str, module_id: int = None):
+    if module_id:
+        questions = await db.quiz_questions.find({"course_id": course_id, "module_id": module_id}).to_list(1000)
+    else:
+        questions = await db.quiz_questions.find({"course_id": course_id}).to_list(1000)
     return [QuizQuestion(**q) for q in questions]
 
 @api_router.post("/quiz/submit")
