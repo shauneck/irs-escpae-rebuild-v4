@@ -302,17 +302,17 @@ You now have the lens. Every tax strategy moving forward pulls on one or more of
                 description="Module 3 of 5 - See how real people used the 6 levers to keep six figures more through strategic tax planning",
                 content="""You've seen the levers — now see what happens when real people pull them. These are not theoretical savings. These are real shifts from W-2 earners and business owners who rewired their tax exposure and kept six figures more.
 
-This module walks through anonymized client case studies that reflect exactly how the 6 levers are used in real scenarios. These examples will show you how a shift in entity, income type, deduction strategy, or timing can result in transformational tax savings.
+This module walks through anonymized client **case studies** that reflect exactly how the 6 levers are used in real scenarios. These examples will show you how a shift in entity, income type, deduction strategy, or timing can result in transformational tax savings.
 
 ## Case Study 1 – W-2 Earner With RSUs
 
 **Client:** "Noah" (Tech Executive)
-**Income:** $550K W-2 + $380K capital gains from RSUs
+**Income:** $550K W-2 + $380K **capital gains** from RSUs
 
 **Levers Pulled:**
-• **Capital gains deferred** using a Qualified Opportunity Fund (QOF)
-• **Basis invested** in STR real estate for depreciation
-• **Net W-2 tax liability reduced by $96K**
+• Capital gains deferred using a **Qualified Opportunity Fund (QOF)**
+• Basis invested in **STR** real estate for depreciation
+• Net W-2 tax liability reduced by $96K
 
 **Key Insight:** Capital gains don't need to be cashed out — they can be repositioned for long-term tax-free growth while offsetting current W-2 tax.
 
@@ -325,9 +325,9 @@ Noah was facing a massive tax bill from his RSU vesting. Instead of paying capit
 **Income:** $720K net income via S-Corp
 
 **Levers Pulled:**
-• **Management fee routed** to C-Corp MSO (Management Services Organization)
-• **Retained earnings invested** into Oil & Gas and equipment bonus depreciation
-• **Effective tax liability dropped from $278K → $122K**
+• Management fee routed to C-Corp MSO (Management Services Organization)
+• **Retained earnings** invested into Oil & Gas and equipment **bonus depreciation**
+• Effective tax liability dropped from $278K → $122K
 
 **Key Insight:** Entity structure and asset pairing can transform the taxation of earned income and convert retained earnings into deduction-fueled passive cash flow.
 
@@ -340,9 +340,9 @@ Jessica's agency was generating substantial profits as an S-Corp, but she was pa
 **Income:** $400K W-2 + $120K net from STR (Virginia)
 
 **Levers Pulled:**
-• **Qualified as Real Estate Professional (REPS)** via material participation
-• **STR depreciation offset $118K of W-2** income
-• **Rental income reinvested** into index fund via DCA
+• Qualified as **Real Estate Professional (REPS)** via material participation
+• STR **depreciation offset** $118K of W-2 income
+• Rental income reinvested into index fund via DCA
 
 **Key Insight:** You don't need a business to get proactive. Real estate and depreciation rules can transform how income is taxed — even if you have a W-2 job.
 
