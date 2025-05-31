@@ -421,7 +421,7 @@ const CourseViewer = ({ course, onBack }) => {
                       onClick={startQuiz}
                       className="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200"
                     >
-                      Start Quiz (30 XP Available)
+                      Start Quiz ({lesson.order_index * 10} XP Available)
                     </button>
                   </div>
                 )}
