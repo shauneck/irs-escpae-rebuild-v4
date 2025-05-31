@@ -230,15 +230,27 @@ const CourseViewer = ({ course, onBack }) => {
     }
   };
   
-  // Enhanced content renderer with inline glossary popovers
+  // Enhanced content renderer with inline glossary popovers (fixed duplication)
   const renderContentWithGlossary = (content) => {
     let processedContent = content;
+    const processedTerms = new Set(); // Track which terms we've already processed
     
     // Find bolded terms that match glossary entries
     glossaryTerms.forEach(term => {
       const boldPattern = new RegExp(`\\*\\*${term.term}\\*\\*`, 'gi');
-      const replacement = `<span class="glossary-term cursor-pointer text-emerald-600 font-bold hover:text-emerald-800 transition-colors duration-200" data-term="${term.term}">**${term.term}**</span>`;
-      processedContent = processedContent.replace(boldPattern, replacement);
+      let isFirstOccurrence = true;
+      
+      processedContent = processedContent.replace(boldPattern, (match) => {
+        if (isFirstOccurrence && !processedTerms.has(term.term.toLowerCase())) {
+          // First occurrence - make it clickable with popover
+          processedTerms.add(term.term.toLowerCase());
+          isFirstOccurrence = false;
+          return `<span id="glossary-${term.term.toLowerCase().replace(/\s+/g, '-')}" class="glossary-term cursor-pointer text-emerald-600 font-bold hover:text-emerald-800 transition-colors duration-200 border-b-2 border-emerald-300 hover:border-emerald-500" data-term="${term.term}" title="Click to view definition">**${term.term}**</span>`;
+        } else {
+          // Subsequent occurrences - bold with subtle link back to first instance
+          return `<span class="glossary-repeat font-bold text-emerald-700 hover:text-emerald-900 cursor-pointer transition-colors duration-200" onclick="document.getElementById('glossary-${term.term.toLowerCase().replace(/\s+/g, '-')}').scrollIntoView({behavior: 'smooth', block: 'center'}); document.getElementById('glossary-${term.term.toLowerCase().replace(/\s+/g, '-')}').style.backgroundColor='#fef3c7'; setTimeout(() => document.getElementById('glossary-${term.term.toLowerCase().replace(/\s+/g, '-')}').style.backgroundColor='', 2000);" title="Jump to first occurrence">**${term.term}**</span>`;
+        }
+      });
     });
     
     return processedContent;
