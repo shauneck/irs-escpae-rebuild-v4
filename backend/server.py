@@ -588,7 +588,8 @@ In the final module, you'll learn how to build your personalized roadmap using t
             options=["Protect taxpayers", "Penalize business owners", "Reconcile tax credits", "Collect revenue"],
             correct_answer="Collect revenue",
             explanation="The IRS's primary function is to collect revenue for the federal government through tax collection and enforcement.",
-            course_id=primer_course.id
+            course_id=primer_course.id,
+            module_id=1
         ),
         QuizQuestion(
             question="The tax code is best understood as:",
