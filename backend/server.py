@@ -218,7 +218,7 @@ async def initialize_sample_data():
             CourseContent(
                 title="Why You're Overpaying the IRS (and What to Do About It)",
                 description="Module 1 of 5 - Discover why the tax code rewards wealth-building behavior and how strategists differ from traditional CPAs",
-                content="""The U.S. **tax code** is not a punishment — it's a blueprint for **wealth-building behavior**. It rewards investment, ownership, and risk — and penalizes passive employment without structure.
+                content="""The U.S. tax code is not a punishment — it's a blueprint for wealth-building behavior. It rewards investment, ownership, and risk — and penalizes passive employment without structure.
 
 Most **CPAs** file and reconcile. **Strategists** build infrastructure and optimize. High-income earners without proactive planning are the IRS's favorite clients.
 
