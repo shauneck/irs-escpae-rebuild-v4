@@ -597,7 +597,8 @@ In the final module, you'll learn how to build your personalized roadmap using t
             options=["A punishment", "A charity tool", "A set of incentives", "A list of penalties"],
             correct_answer="A set of incentives",
             explanation="The tax code is designed as a blueprint for wealth-building behavior, rewarding investment, ownership, and risk-taking through various incentives.",
-            course_id=primer_course.id
+            course_id=primer_course.id,
+            module_id=1
         ),
         QuizQuestion(
             question="Which of the following is NOT one of the 6 tax control levers?",
