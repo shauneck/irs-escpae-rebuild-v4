@@ -603,6 +603,36 @@ The difference between these clients and most high earners isn't access to secre
             definition="Strategic planning for how to exit investments, businesses, or transfer wealth to minimize tax impact and maximize after-tax proceeds for beneficiaries.",
             category="Advanced Strategy",
             related_terms=["Tax Planning", "Estate Planning", "Capital Gains"]
+        ),
+        GlossaryTerm(
+            term="Qualified Opportunity Fund",
+            definition="A tax-advantaged investment vehicle that allows investors to defer and potentially eliminate capital gains taxes by investing in designated low-income communities for 10+ years.",
+            category="Advanced Strategy",
+            related_terms=["Capital Gains", "Tax Deferral", "Investment Strategy"]
+        ),
+        GlossaryTerm(
+            term="Bonus Depreciation",
+            definition="A tax incentive that allows businesses to immediately deduct a large percentage (often 100%) of eligible asset purchases in the year of acquisition, rather than depreciating over time.",
+            category="Business Tax",
+            related_terms=["Depreciation", "Business Deductions", "Strategic Deductions"]
+        ),
+        GlossaryTerm(
+            term="REPS",
+            definition="Real Estate Professional Status - A tax classification that allows qualifying individuals to deduct rental real estate losses against other income, including W-2 wages.",
+            category="Real Estate Tax",
+            related_terms=["Real Estate", "W-2 Income", "Depreciation Offset"]
+        ),
+        GlossaryTerm(
+            term="Depreciation Offset",
+            definition="Using depreciation deductions from real estate or business assets to reduce taxable income from other sources, such as W-2 wages or business profits.",
+            category="Tax Strategy",
+            related_terms=["REPS", "Real Estate", "Strategic Deductions"]
+        ),
+        GlossaryTerm(
+            term="STR",
+            definition="Short-Term Rental - Rental properties (like Airbnb) rented for less than 30 days, which receive favorable tax treatment including accelerated depreciation and business expense deductions.",
+            category="Real Estate Tax",
+            related_terms=["Real Estate", "REPS", "Depreciation Offset"]
         )
     ]
     
