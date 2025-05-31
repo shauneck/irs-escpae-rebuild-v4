@@ -255,39 +255,39 @@ Most people think taxes are about forms. They're not — they're about structure
 
 ## The 6 Core Levers
 
-### 1. **Entity Type**
+### 1. Entity Type
 • Your **entity structure** determines your tax ceiling.
 • C-Corp, S-Corp, MSO, or Schedule C — they're not all created equal.
 • Strategically managing entity types is how business owners avoid double taxation and unlock deduction control.
 
-### 2. **Income Type**
+### 2. Income Type
 • Not all income is taxed equally.
 • W-2, 1099, K-1, capital gains, passive flow — each has a different tax treatment.
 • You don't need to earn less. You need to earn differently.
 
-### 3. **Timing**
-• Tax **timing** is a weapon — not a constraint.
-• Installment sales, deferred comp, Roth conversions, **asset rollovers** all leverage when income hits.
+### 3. Timing
+• Tax timing is a weapon — not a constraint.
+• Installment sales, deferred comp, Roth conversions, asset rollovers all leverage when income hits.
 
-### 4. **Asset Location**
+### 4. Asset Location
 • Where your assets live changes how they're taxed.
-• Insurance wrappers, retirement accounts, real estate, and Opportunity Zones all have unique benefits.
+• Insurance wrappers, retirement accounts, real estate, and **Opportunity Zones** all have unique benefits.
 
-### 5. **Deduction Strategy**
-• Most CPAs miss over 50% of the **deductions** available.
+### 5. Deduction Strategy
+• Most CPAs miss over 50% of the deductions available.
 • True planning involves orchestrating deductions through energy, depreciation, trust layering, and timing.
 
-### 6. **Exit Planning**
+### 6. Exit Planning
 • If you build wealth but don't plan your exit, the IRS cashes out with you.
 • QSBS, Opportunity Zones, charitable trusts, and stepped-up basis strategy all come into play here.
 
 ## Application
 
 These levers apply to:
-• ✅ **Business owners** shifting to MSO or C-Corp models
-• ✅ **W-2 earners** creating deduction pathways using asset placement
-• ✅ **Real estate professionals** leveraging depreciation
-• ✅ **Exit events** (business sale, asset sale, vesting RSUs)
+• ✅ Business owners shifting to MSO or C-Corp models
+• ✅ W-2 earners creating deduction pathways using **asset location**
+• ✅ Real estate professionals leveraging depreciation
+• ✅ Exit events (business sale, asset sale, vesting RSUs)
 
 Each future module in this course — and in the full IRS Escape Plan platform — ties back to one or more of these 6 levers.
 
