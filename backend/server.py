@@ -243,6 +243,59 @@ Filing saves nothing. Planning changes everything. Now that you've seen why most
                 order_index=1
             ),
             CourseContent(
+                title="The 6 Levers That Actually Shift Your Tax Outcome",
+                description="Module 2 of 5 - Master the fundamental levers that control all tax outcomes and strategies",
+                content="""Every tax strategy, regardless of complexity, ultimately pulls on one or more of these 6 core levers. Understanding these levers gives you the framework to evaluate any tax advice and identify real opportunities.
+
+## The 6 Core Tax Control Levers:
+
+### 1. Entity Type
+Your business structure (LLC, S-Corp, C-Corp, Partnership) determines how income flows to you and what tax rates apply. Different entities offer different advantages for different situations.
+
+**Key Insight:** The same income can be taxed dramatically differently depending on the entity structure holding it.
+
+### 2. Income Type
+Not all income is created equal in the eyes of the IRS. W-2 wages, 1099 income, capital gains, dividends, and rental income all receive different tax treatment.
+
+**Key Insight:** Converting high-tax income types to low-tax income types is foundational to tax strategy.
+
+### 3. Timing
+When you recognize income and deductions can be just as important as the amounts. Strategic timing allows you to shift income between tax years to optimize your overall tax burden.
+
+**Key Insight:** Controlling WHEN income hits is often more powerful than controlling HOW MUCH income you earn.
+
+### 4. Asset Location
+Where you hold different types of investments (taxable accounts, IRAs, 401(k)s, Roth accounts) affects how they're taxed both now and in the future.
+
+**Key Insight:** The right asset in the wrong account can cost you thousands annually in unnecessary taxes.
+
+### 5. Deduction Strategy
+Beyond standard deductions, strategic business and investment deductions can significantly reduce taxable income when properly structured and documented.
+
+**Key Insight:** Deductions aren't just about what you spend—they're about how you structure and categorize those expenditures.
+
+### 6. Exit Planning
+How you ultimately exit investments, businesses, or transfer wealth determines the final tax impact of years of planning and growth.
+
+**Key Insight:** Many great accumulation strategies are undermined by poor exit planning that triggers unnecessary tax events.
+
+## The Strategic Framework:
+
+Every tax opportunity can be analyzed through these 6 lenses:
+- Which entity should hold this income or asset?
+- Can we change the income type classification?
+- When should this income or deduction be recognized?
+- Which account or structure should hold this asset?
+- What deductions can be optimized or restructured?
+- How does this fit into the long-term exit strategy?
+
+## Moving Forward:
+
+You now have the lens. Every tax strategy moving forward pulls on one or more of these levers. Next, we'll walk through real-world case studies — showing exactly how W-2 earners and business owners legally reposition their income, time their exits, and keep hundreds of thousands more.""",
+                duration_minutes=35,
+                order_index=2
+            ),
+            CourseContent(
                 title="IRS Communication Basics",
                 description="How to interpret and respond to IRS notices",
                 content="Understanding IRS letters and notices is crucial. This lesson teaches you how to read IRS correspondence, identify urgent vs. routine notices, and respond appropriately.",
