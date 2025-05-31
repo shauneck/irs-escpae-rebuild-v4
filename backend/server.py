@@ -804,6 +804,34 @@ You now have the framework to evaluate any tax strategy through the lens of the 
             explanation="The first step to reducing tax exposure is mapping your current situation across the 6 levers: income type, entity structure, timing, asset location, deductions, and exit planning.",
             course_id=primer_course.id,
             module_id=4
+        ),
+        # Module 5 Questions
+        QuizQuestion(
+            question="What determines which levers apply to you?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["Your income type, entity structure, and timing flexibility", "Your age", "Your tax bracket", "Your CPA's filing software"],
+            correct_answer="Your income type, entity structure, and timing flexibility",
+            explanation="The levers that apply to your situation are determined by your specific income profile, current entity structure, and flexibility to control timing of income and deductions.",
+            course_id=primer_course.id,
+            module_id=5
+        ),
+        QuizQuestion(
+            question="What's the purpose of building a glossary + case study reference set?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["To impress your CPA", "To help you align the right tools and strategies with your profile", "To get better IRS emails", "To automatically lower AGI"],
+            correct_answer="To help you align the right tools and strategies with your profile",
+            explanation="Building a reference set helps you match the most appropriate strategies and tools to your specific tax situation and profile type.",
+            course_id=primer_course.id,
+            module_id=5
+        ),
+        QuizQuestion(
+            question="What is the goal of an Escape Plan?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["To avoid taxes forever", "To replace CPAs", "To apply the tax code proactively and reduce lifetime tax burden", "To defer all income"],
+            correct_answer="To apply the tax code proactively and reduce lifetime tax burden",
+            explanation="The goal of an Escape Plan is to use the tax code's existing incentives proactively to legally minimize your lifetime tax burden through strategic planning.",
+            course_id=primer_course.id,
+            module_id=5
         )
     ]
     
