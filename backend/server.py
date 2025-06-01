@@ -3889,46 +3889,46 @@ The most successful energy investors don't just seek tax deductions—they strat
             course_id=w2_course.id,
             module_id=5
         ),
-        # W-2 Escape Plan Module 6 Questions (STRs) (50 XP each, 4 questions)
+        # W-2 Escape Plan Module 7 Questions (Oil & Gas) (50 XP each, 4 questions)
         QuizQuestion(
-            question="What is the average stay requirement for STR exemption?",
+            question="What does IDC stand for?",
             type=QuizQuestionType.MULTIPLE_CHOICE,
-            options=["Less than 14 days", "Less than 7 days", "Less than 30 days", "Less than 3 days"],
-            correct_answer="Less than 7 days",
-            explanation="For STR exemption qualification, the average period of customer use must be 7 days or less. This average is calculated annually across all bookings.",
+            options=["Initial Development Costs", "Intangible Drilling Costs", "Investment Depreciation Credits", "Income Deferral Calculations"],
+            correct_answer="Intangible Drilling Costs",
+            explanation="IDC stands for Intangible Drilling Costs - these are costs associated with drilling that have no salvage value and can be immediately deducted under IRC §263(c).",
             points=50,
             course_id=w2_course.id,
-            module_id=6
+            module_id=7
         ),
         QuizQuestion(
-            question="What disqualifies you from STR exemption?",
+            question="What type of oil & gas structure allows W-2 offsets?",
             type=QuizQuestionType.MULTIPLE_CHOICE,
-            options=["Having multiple properties", "Hiring a third-party property manager", "Charging premium rates", "Operating seasonally"],
-            correct_answer="Hiring a third-party property manager",
-            explanation="Hiring a full-service third-party property manager typically disqualifies you from material participation, which is required for STR exemption. You must participate more than any other individual.",
+            options=["Royalty interest with limited partnership", "Working interest with general partner status", "Master limited partnership units", "Energy sector REITs"],
+            correct_answer="Working interest with general partner status",
+            explanation="Working interest with general partner status is required for IDC deductions to be treated as active losses that can offset W-2 income without passive activity limitations.",
             points=50,
             course_id=w2_course.id,
-            module_id=6
+            module_id=7
         ),
         QuizQuestion(
-            question="What does a cost segregation study do?",
+            question="What IRC section governs IDC deductions?",
             type=QuizQuestionType.MULTIPLE_CHOICE,
-            options=["Reduces property taxes", "Accelerates depreciation deductions into year one", "Eliminates maintenance costs", "Guarantees rental income"],
-            correct_answer="Accelerates depreciation deductions into year one",
-            explanation="Cost segregation reclassifies property components from 27.5-year depreciation to accelerated 5-year, 7-year, and 15-year schedules, enabling immediate bonus depreciation benefits.",
+            options=["§199A", "§263(c)", "§469", "§1031"],
+            correct_answer="§263(c)",
+            explanation="IRC §263(c) provides the statutory authority for Intangible Drilling Costs (IDC) deductions, allowing immediate expensing of qualifying drilling costs.",
             points=50,
             course_id=w2_course.id,
-            module_id=6
+            module_id=7
         ),
         QuizQuestion(
-            question="Why is STR exemption powerful for W-2 earners?",
+            question="What is a common deduction range from IDCs?",
             type=QuizQuestionType.MULTIPLE_CHOICE,
-            options=["It guarantees profits", "Allows losses to offset W-2 income without REPS", "Eliminates all taxes", "Provides passive income only"],
-            correct_answer="Allows losses to offset W-2 income without REPS",
-            explanation="STR exemption allows rental activities to be treated as active businesses, enabling losses to offset W-2 income without requiring Real Estate Professional Status (REPS) qualification.",
+            options=["30-50% of invested capital", "70-90% of invested capital", "50-70% of invested capital", "90-100% of invested capital"],
+            correct_answer="70-90% of invested capital",
+            explanation="IDC deductions typically range from 70-90% of the total investment, representing the intangible costs associated with drilling operations that qualify for immediate deduction.",
             points=50,
             course_id=w2_course.id,
-            module_id=6
+            module_id=7
         )
     ]
     
