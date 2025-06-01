@@ -19,7 +19,7 @@ const Header = ({ activeSection, setActiveSection }) => {
           </div>
           
           <nav className="hidden md:flex space-x-6">
-            {['courses', 'premium-tools', 'tools', 'glossary', 'marketplace'].map((section) => (
+            {['courses', 'taxbot', 'premium-tools', 'tools', 'glossary', 'marketplace'].map((section) => (
               <button
                 key={section}
                 onClick={() => setActiveSection(section)}
