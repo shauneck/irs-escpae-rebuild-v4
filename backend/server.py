@@ -3050,6 +3050,503 @@ The most successful STR investors don't just buy properties—they strategically
 🎯 **Ready to implement STR strategies in your portfolio?** Take the Module 6 quiz to earn +25 XP and prepare for Module 7's advanced entity optimization strategies.""",
                 duration_minutes=70,
                 order_index=6
+            ),
+            CourseContent(
+                title="Oil & Gas Deductions",
+                description="Module 7 of 8 - Master aggressive IDC deductions through oil & gas working interests to unlock 70-90% first-year deductions",
+                content="""**Oil & Gas Deductions** represent one of the most aggressive yet completely IRS-sanctioned tax strategies available to high-income W-2 earners. Through direct investment in domestic oil & gas drilling partnerships, investors can unlock **Intangible Drilling Costs (IDC)** deductions that often eliminate 70%–90% of invested capital as active deductions in year one.
+
+This strategy offers one of the last "above-the-line" deduction structures still available under the tax code — providing immediate and substantial tax relief while creating potential long-term energy income streams.
+
+## Understanding Oil & Gas Tax Benefits: The IDC Advantage
+
+The U.S. tax code provides extraordinary incentives for domestic energy production through **IRC §263(c)**, which allows investors to immediately deduct the **Intangible Drilling Costs (IDC)** associated with oil and gas development projects.
+
+### The Power of IDC Deductions
+
+**Traditional Investment (No IDCs):**
+• Capital invested is depreciated over multiple years
+• Limited first-year tax benefits
+• No immediate offset against ordinary income
+• Standard investment tax treatment
+
+**Oil & Gas Investment with IDCs:**
+• 70-90% of investment immediately deductible
+• **Active losses** that offset W-2 income directly
+• No **passive activity** limitations
+• Substantial first-year tax relief with potential ongoing income
+
+### What Qualifies as Intangible Drilling Costs
+
+**Qualifying IDC Components:**
+• Labor costs for drilling and completion operations
+• Fuel, power, and utilities for drilling activities
+• Materials and supplies consumed in drilling process
+• Contractor services for drilling and completion
+• Site preparation and access road construction
+• Drilling mud, completion fluids, and chemicals
+
+**Non-Qualifying Costs (Tangible Costs):**
+• Drilling equipment and machinery (depreciated over time)
+• Casing, tubing, and wellhead equipment
+• Pumping units and surface facilities
+• Land acquisition and lease bonus payments
+• Geological and geophysical survey costs
+
+## IRC §263(c): The Legal Foundation
+
+**IRC §263(c)** provides the statutory authority for **Intangible Drilling Costs (IDC)** deductions, representing one of the most favorable tax provisions in the U.S. tax code.
+
+### Historical Context and Congressional Intent
+
+**Energy Independence Policy:**
+• Enacted to incentivize domestic energy production
+• Reduces U.S. dependence on foreign energy sources
+• Supports American energy infrastructure development
+• Creates economic incentives for domestic drilling activities
+
+**Tax Policy Rationale:**
+• Recognizes high-risk nature of energy exploration
+• Compensates for significant upfront capital requirements
+• Encourages private investment in domestic energy production
+• Balances public policy goals with private investment incentives
+
+### Technical Requirements for IDC Election
+
+**Statutory Framework:**
+• Election must be made for first taxable year with IDCs
+• Once elected, applies to all future intangible costs
+• Cannot be revoked without IRS consent
+• Must be documented in partnership agreements and tax filings
+
+**Documentation Requirements:**
+• Clear designation of IDC vs. tangible costs in partnership structure
+• Proper election statements filed with tax returns
+• Detailed cost allocation supporting IDC treatment
+• Compliance with **At-Risk Capital** rules under IRC §465
+
+## Working Interest vs. Royalty Interest: Structure Matters
+
+The structure of oil & gas investment is critical for IDC deduction eligibility and tax treatment.
+
+### Working Interest: Active Investment Structure
+
+**Working Interest Characteristics:**
+• **General Partner** status with operational control
+• Unlimited liability for development and operating costs
+• Right to extract and market oil & gas production
+• **Material participation** through partnership involvement
+• Eligible for IDC deductions and active loss treatment
+
+**Tax Benefits:**
+• IDC deductions treated as **active losses**
+• Can offset W-2 income without limitation
+• No **passive activity** restrictions
+• Eligible for depletion allowances on production
+
+**Risks and Obligations:**
+• Personal liability for cost overruns and operational expenses
+• Ongoing financial obligations for well maintenance and operations
+• Market risk from commodity price fluctuations
+• Technical risk from drilling and production uncertainties
+
+### Royalty Interest: Passive Investment Structure
+
+**Royalty Interest Characteristics:**
+• Limited partnership or passive investor status
+• No operational control or management rights
+• Fixed percentage of production revenue
+• No liability for development or operating costs
+• **Passive activity** treatment for tax purposes
+
+**Tax Limitations:**
+• IDC deductions treated as passive losses
+• Cannot offset W-2 income without passive income
+• Subject to **passive activity** loss limitations
+• Limited to passive investment deduction rules
+
+**Benefits:**
+• No personal liability for operational costs
+• Simplified investment structure
+• Predictable cash flow from production
+• No ongoing management responsibilities
+
+## Strategic Implementation: Qualifying Investment Structures
+
+### Direct Working Interest Partnerships
+
+**General Partnership Structure:**
+• Investor becomes **General Partner** with operational control
+• Full liability for partnership obligations and costs
+• Direct ownership of oil & gas assets
+• Maximum IDC deduction eligibility
+
+**Implementation Requirements:**
+• Partnership agreement documenting **General Partner** status
+• **At-Risk Capital** rules compliance under IRC §465
+• **Material participation** documentation and involvement
+• Proper IDC election filing and cost allocation
+
+**Advantages:**
+• Maximum IDC deduction potential (typically 80-90% of investment)
+• **Active losses** eligible to offset any income type
+• Direct ownership of energy assets and reserves
+• Full participation in operational decisions and upside potential
+
+### Sponsor-Managed Working Interest Programs
+
+**Professional Management Model:**
+• Experienced energy operator manages day-to-day operations
+• Investor maintains **Working Interest** legal status
+• Professional expertise reduces operational risk
+• Balanced approach between control and delegation
+
+**Structure Benefits:**
+• Access to professional energy expertise and operations
+• Reduced time commitment while maintaining IDC eligibility
+• Professional due diligence and project selection
+• Operational efficiency through experienced management
+
+**Due Diligence Considerations:**
+• Sponsor track record and operational history
+• Geographic focus and technical expertise areas
+• Financial strength and project completion rates
+• Investor communication and reporting practices
+
+## Case Study: Miles J. - Oil & Gas IDC Implementation
+
+**Miles's Strategic Context:**
+As a Fortune 500 logistics executive earning $480,000 annually, Miles faced a substantial federal tax burden of approximately $158,000. After consulting with his tax advisor, he identified oil & gas IDC deductions as an optimal strategy for his tax situation.
+
+**Investment Selection Process:**
+
+**Sponsor Evaluation:**
+• Target: Established West Texas drilling operation with 15+ year track record
+• Focus: Multi-well development program in proven Permian Basin formations
+• Operator: Experienced team with extensive regional geological expertise
+• Financial Strength: Well-capitalized sponsor with successful completion history
+
+**Investment Structure:**
+• **Investment Amount:** $125,000 in working interest partnership
+• **Partnership Structure:** General partnership with **Working Interest** status
+• **IDC Allocation:** 82% of investment eligible for IDC treatment
+• **Geographic Focus:** West Texas Permian Basin multi-well development program
+
+**Tax Optimization Planning:**
+
+**Timing Strategy:**
+• Investment made in Q4 2024 to offset highest W-2 income year
+• IDC election filed with 2024 tax return for immediate deduction
+• **At-Risk Capital** documentation completed for full deduction eligibility
+• Coordinated with tax advisor for optimal timing and documentation
+
+**IDC Deduction Results:**
+• **Total Investment:** $125,000
+• **IDC Allocation:** 82% = $102,500 immediate deduction
+• **W-2 Income Reduction:** $480,000 to $377,500
+• **Marginal Tax Rate:** 38% (federal + state)
+• **First-Year Tax Savings:** $38,940
+
+**Ongoing Investment Performance:**
+
+**Production Timeline:**
+• Wells spudded and completed within 8 months of investment
+• Initial production commenced in Q3 following investment year
+• Projected revenue-based distributions beginning 12 months post-investment
+• Expected payback period: 3-5 years based on commodity price assumptions
+
+**Economic Projections:**
+• Estimated cumulative cash distributions: $75,000-$95,000 over well life
+• **Net Investment After Tax Savings:** $86,060 ($125,000 - $38,940)
+• Projected total return: 15-25% IRR based on production performance
+• Additional tax benefits through depletion allowances on production income
+
+**Miles's Results Summary:**
+• **Immediate Tax Relief:** $38,940 first-year federal tax savings
+• **Effective Investment Cost:** $86,060 after tax benefits
+• **Income Diversification:** New energy income stream outside of W-2 employment
+• **Strategic Portfolio Addition:** Inflation-hedged energy assets with tax advantages
+
+**Quote from Miles:**
+> "I was shocked I could deduct that much from my W-2 income in a single year. This strategy changed the way I look at investing."
+
+## Advanced IDC Strategy Implementation
+
+### Timing Optimization for Maximum Benefit
+
+**High-Income Year Coordination:**
+• Identify years with exceptional W-2 income (bonuses, RSU vesting, promotions)
+• Coordinate investment timing with tax year-end planning
+• Consider multi-year investment strategies for consistent tax benefits
+• Plan for Alternative Minimum Tax (AMT) considerations and optimization
+
+**Calendar Year Planning:**
+• Q4 investments for current-year IDC deductions
+• January investments for full-year IDC benefit realization
+• Coordination with other tax strategies and deduction timing
+• Cash flow planning for investment funding and tax savings utilization
+
+### Multi-Well Development Programs
+
+**Portfolio Diversification Benefits:**
+• Multiple wells spread geological and technical risk
+• Staged drilling programs extend IDC deduction periods
+• Geographic diversification across proven formations
+• Operational efficiencies through economies of scale
+
+**Implementation Strategies:**
+• Annual investment programs for consistent IDC benefits
+• Graduated investment amounts based on income fluctuations
+• Partnership with established sponsors for multiple project access
+• Long-term energy portfolio development through systematic participation
+
+### Alternative Minimum Tax (AMT) Considerations
+
+**AMT Impact on IDC Benefits:**
+• IDC deductions may be preference items for AMT calculation
+• Potential reduction in tax benefits for high-income earners
+• Strategic planning to minimize AMT exposure
+• Coordination with other AMT preference items and planning strategies
+
+**AMT Mitigation Strategies:**
+• Timing IDC investments to minimize AMT impact
+• Coordination with other tax strategies to optimize overall benefit
+• Professional tax planning to model AMT scenarios
+• Consider alternative investment structures if AMT exposure is significant
+
+## Risk Assessment and Management
+
+### Investment Risk Factors
+
+**Geological and Technical Risks:**
+• Dry hole risk - possibility of non-productive wells
+• Lower-than-expected production rates and reserve estimates
+• Technical drilling complications increasing costs
+• Formation characteristics different from geological projections
+
+**Market and Economic Risks:**
+• Commodity price volatility affecting production revenue
+• Operating cost inflation reducing project economics
+• Interest rate changes affecting financing and valuations
+• Economic recession impacting energy demand and pricing
+
+**Regulatory and Environmental Risks:**
+• Changes in federal or state energy regulations
+• Environmental compliance costs and restrictions
+• Pipeline and transportation capacity limitations
+• Local permitting and zoning changes affecting operations
+
+### Due Diligence Framework
+
+**Sponsor Evaluation Criteria:**
+• **Track Record:** Minimum 10+ years operational history with audited performance data
+• **Financial Strength:** Adequate capitalization and credit quality for project completion
+• **Technical Expertise:** Proven expertise in target geological formations
+• **Operational Excellence:** History of on-time, on-budget project completion
+
+**Project Analysis Requirements:**
+• **Geological Assessment:** Professional reserve studies and formation analysis
+• **Economic Modeling:** Conservative commodity price assumptions and sensitivity analysis
+• **Legal Structure:** Attorney review of partnership documents and tax elections
+• **Insurance Coverage:** Adequate coverage for operational and environmental risks
+
+### Portfolio Allocation Guidelines
+
+**Conservative Approach:**
+• Maximum 5-10% of investment portfolio in oil & gas
+• Diversification across multiple projects and sponsors
+• Focus on proven formations with established production history
+• Emphasis on immediate tax benefits over speculative returns
+
+**Risk Management Principles:**
+• Never invest more than can be afforded to lose completely
+• Diversify across multiple wells and sponsors
+• Focus on established operators in proven formations
+• Maintain adequate liquidity for ongoing obligations
+
+## Legal and Tax Compliance
+
+### **At-Risk Capital** Rules (IRC §465)
+
+**At-Risk Requirements:**
+• Investor must have real economic risk in the investment
+• No guarantees or protected investment structures
+• Personal liability for partnership obligations
+• Actual capital contribution rather than borrowed funds
+
+**Documentation Requirements:**
+• Partnership agreements clearly establishing **At-Risk Capital** status
+• Investor personal guarantees for operational obligations
+• Documentation of actual cash investment rather than financed amounts
+• Compliance certification for **At-Risk Capital** rules
+
+### **Material Participation** Documentation
+
+**Participation Requirements:**
+• Active involvement in partnership decisions and operations
+• Regular communication with operators and partners
+• Participation in major operational and financial decisions
+• Documentation of time and involvement in partnership activities
+
+**Documentation Best Practices:**
+• Partnership meeting attendance and participation records
+• Email and communication logs with operators
+• Decision-making involvement documentation
+• Professional relationship maintenance with partnership management
+
+### Tax Election and Filing Requirements
+
+**IDC Election Process:**
+• Election must be made for first taxable year with IDCs
+• Filed with tax return including required statements
+• Cannot be revoked without IRS consent
+• Applies to all future intangible drilling costs
+
+**Ongoing Compliance:**
+• Annual reporting of IDC deductions and production income
+• **At-Risk Capital** limitation monitoring and reporting
+• **Material participation** status maintenance and documentation
+• Coordination with tax professionals for complex partnership tax issues
+
+## Oil & Gas vs. Other Tax Strategies
+
+### Comparison with Real Estate Strategies
+
+**Oil & Gas Advantages:**
+• Higher percentage deductions (70-90% vs. 20-30% for real estate)
+• No REPS qualification required for active treatment
+• Immediate deduction without depreciation limitations
+• Potential for substantial ongoing income streams
+
+**Real Estate Advantages:**
+• Lower risk profile with tangible asset backing
+• More predictable cash flows and appreciation potential
+• Greater operational control and management flexibility
+• Established investment and financing markets
+
+**Strategic Integration:**
+• Combine oil & gas IDCs with real estate depreciation for maximum benefit
+• Use tax savings from IDCs to fund real estate investments
+• Diversify across both energy and real estate for balanced portfolio
+• Coordinate timing of investments across strategies for optimal tax planning
+
+### Integration with REPS and STR Strategies
+
+**Comprehensive Tax Planning Approach:**
+• Use oil & gas IDCs for immediate high-income year relief
+• Implement STR or REPS strategies for ongoing annual tax optimization
+• Layer strategies based on income levels and tax planning objectives
+• Create diversified income streams across real estate and energy sectors
+
+**Multi-Strategy Coordination:**
+• Oil & gas for aggressive first-year deductions
+• Real estate for sustained annual tax benefits
+• Business entities for ongoing operational tax optimization
+• Retirement planning coordination for long-term wealth building
+
+## Measuring Oil & Gas Investment Success
+
+### Tax Benefit Realization
+
+**Immediate Tax Metrics:**
+• **IDC Deduction Percentage:** Actual IDC deduction as percentage of investment
+• **Effective Tax Rate Reduction:** Marginal tax rate reduction achieved
+• **Cash Tax Savings:** Actual tax liability reduction in dollars
+• **Net Investment Cost:** Investment amount minus immediate tax savings
+
+**Long-Term Performance Tracking:**
+• **Production Revenue:** Actual vs. projected production income
+• **Total Return Analysis:** Combined tax benefits and production income returns
+• **Risk-Adjusted Returns:** Performance adjusted for investment risk profile
+• **Portfolio Integration:** Contribution to overall tax strategy and wealth building
+
+### Investment Performance Evaluation
+
+**Production Metrics:**
+• **Well Performance:** Actual vs. projected production rates
+• **Reserve Recovery:** Percentage of proven reserves successfully extracted
+• **Operating Efficiency:** Cost control and operational performance
+• **Economic Performance:** Project IRR and cash flow generation
+
+**Risk Assessment:**
+• **Downside Protection:** Tax benefits as percentage of total investment
+• **Upside Potential:** Production income potential beyond tax benefits
+• **Diversification Benefits:** Contribution to overall portfolio risk reduction
+• **Strategic Fit:** Alignment with overall tax planning and wealth building objectives
+
+## Oil & Gas Quiz Questions and XP Structure
+
+Understanding oil & gas tax strategies is essential for high-income W-2 earners seeking aggressive deduction opportunities. Test your knowledge and earn XP:
+
+### Quiz Questions:
+1. **What does IDC stand for?**
+   - ✅ **Intangible Drilling Costs**
+
+2. **What type of oil & gas structure allows W-2 offsets?**
+   - ✅ **Working interest with general partner status**
+
+3. **What IRC section governs IDC deductions?**
+   - ✅ **§263(c)**
+
+4. **What is a common deduction range from IDCs?**
+   - ✅ **70–90% of invested capital**
+
+### XP Rewards:
+• Complete Module 7 lesson: +10 XP
+• Score 100% on quiz: +15 XP
+• View Miles's full case study: +5 XP
+• Reach 200 XP across modules: Unlock "Energy Strategist" badge
+
+## Key Glossary Terms
+
+Understanding these terms is essential for oil & gas investment mastery:
+
+• **Intangible Drilling Costs (IDC)** - Costs associated with drilling that have no salvage value
+• **Working Interest** - Operating interest in oil & gas property with general partner status
+• **IRC §263(c)** - Tax code section allowing IDC deductions
+• **At-Risk Capital** - Investment capital subject to real economic loss
+• **General Partner Deduction Eligibility** - Status required for active loss treatment
+
+## The Oil & Gas Outcome: Miles's Strategic Success
+
+Miles's oil & gas investment delivered exceptional tax benefits:
+
+**Immediate Tax Impact:**
+• **Investment:** $125,000 in West Texas drilling program
+• **IDC Deduction:** $102,500 (82% of investment)
+• **Tax Savings:** $38,940 at 38% marginal rate
+• **Net Investment Cost:** $86,060 after tax benefits
+
+**Long-Term Benefits:**
+• **Production Income:** Projected $75,000-$95,000 over well life
+• **Total Return Potential:** 15-25% IRR including tax benefits
+• **Portfolio Diversification:** Energy income stream outside W-2 employment
+• **Inflation Protection:** Commodity-based income with inflation hedging potential
+
+**Strategic Advantages:**
+• **Immediate Relief:** Substantial first-year tax deduction
+• **Active Treatment:** No passive loss limitations or REPS requirements
+• **Income Diversification:** New income stream outside traditional employment
+• **Wealth Building:** Long-term energy asset ownership with ongoing cash flow
+
+**Quote from Miles:**
+> "I was shocked I could deduct that much from my W-2 income in a single year. This strategy changed the way I look at investing."
+
+## What's Next: Advanced Entity Optimization
+
+Module 7 has equipped you with the knowledge to implement **Oil & Gas IDC deductions**, one of the most aggressive yet completely IRS-sanctioned tax strategies available. Miles's example demonstrates how strategic energy investments can deliver immediate tax relief while creating long-term income diversification.
+
+In Module 8, we'll explore the culmination of sophisticated tax planning through advanced entity structures, coordination strategies, and comprehensive wealth building systems that integrate all the strategies learned throughout the W-2 Escape Plan.
+
+**Key Takeaway:** **Oil & Gas IDC deductions** offer high-income W-2 earners immediate and substantial tax relief through aggressive but completely legal deduction opportunities. The combination of **IRC §263(c)** benefits, **Working Interest** structures, and professional energy partnerships creates powerful tax optimization with wealth building potential.
+
+The most successful energy investors don't just seek tax deductions—they strategically build diversified income streams while maximizing immediate tax benefits through professional partnership structures and conservative risk management.
+
+---
+
+🎯 **Ready to explore oil & gas strategies for your situation?** Take the Module 7 quiz to earn +25 XP and prepare for Module 8's comprehensive entity optimization and wealth building integration strategies.""",
+                duration_minutes=75,
+                order_index=7
             )
         ]
     )
