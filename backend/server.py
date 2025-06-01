@@ -1314,8 +1314,8 @@ From here, you unlock access to:
         description="Advanced strategies for W-2 employees to minimize taxes and resolve IRS issues",
         thumbnail_url="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400",
         is_free=False,
-        total_lessons=8,
-        estimated_hours=4,
+        total_lessons=5,
+        estimated_hours=5,
         lessons=[
             CourseContent(
                 title="The Real Problem with W-2 Income",
