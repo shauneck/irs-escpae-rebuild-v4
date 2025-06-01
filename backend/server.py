@@ -1235,6 +1235,18 @@ In Module 2, we'll dive deep into the specific deduction strategies available to
             related_terms=["Lever Hierarchy", "Personalized Planning", "Tax Planning"]
         ),
         GlossaryTerm(
+            term="Effective Tax Rate",
+            definition="The percentage of total income that is actually paid in taxes, calculated by dividing total tax liability by total income. This provides a more accurate picture of tax burden than marginal tax rates.",
+            category="Tax Terms",
+            related_terms=["Tax Liability", "AGI", "W-2 Income", "Tax Planning"]
+        ),
+        GlossaryTerm(
+            term="Forward-Looking Planning",
+            definition="Proactive tax strategy that focuses on structuring future income and investments to optimize tax outcomes, rather than simply reacting to past year tax liabilities.",
+            category="Tax Strategy",
+            related_terms=["Tax Planning", "CPA vs Strategist", "Strategic Planning"]
+        ),
+        GlossaryTerm(
             term="Advisor Integration",
             definition="The strategic coordination between different tax professionals (CPAs, strategists, attorneys) to ensure compliance while maximizing tax optimization opportunities.",
             category="Professional Services",
