@@ -18,6 +18,7 @@ class IRSEscapePlanAPITest(unittest.TestCase):
         self.courses = []
         self.tools = []
         self.glossary_terms = []
+        self.marketplace_items = []
         
         # Initialize test data
         self.initialize_data()
