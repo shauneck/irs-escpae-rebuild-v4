@@ -731,10 +731,167 @@ From here, you unlock access to:
         estimated_hours=4,
         lessons=[
             CourseContent(
-                title="W-2 Employee Tax Basics",
-                description="Understanding payroll taxes and withholdings",
-                content="Deep dive into how payroll taxes work, understanding your pay stub, and optimizing your withholdings.",
-                duration_minutes=40,
+                title="The Real Problem with W-2 Income",
+                description="Module 1 of 8 - W-2 Income Mapping - Understand the disadvantages of W-2 income and discover strategic alternatives",
+                content="""The **W-2 income** structure is designed for maximum tax extraction with minimal taxpayer control. Understanding why W-2 income is taxed the way it is — and what alternatives exist — is the first step to building a strategic escape plan.
+
+Most W-2 earners accept their tax situation as unchangeable. This module shows you why that's not true, and how strategic planning can transform your **effective tax rate** even while maintaining W-2 employment.
+
+## The W-2 Disadvantage
+
+**W-2 income** faces the highest effective tax rates in the U.S. tax system:
+
+### 1. **Limited Deduction Control**
+• Most W-2 expenses are non-deductible after the 2017 Tax Cuts and Jobs Act
+• No control over payroll tax timing or deferral
+• Minimal opportunity for depreciation or timing strategies
+
+### 2. **Immediate Tax Recognition**
+• Taxes withheld from every paycheck with no deferral options
+• No control over when income hits your tax return
+• Limited ability to shift income between tax years
+
+### 3. **No Entity Leverage**
+• Unable to access business deductions without additional structure
+• No path to corporate tax rates or retained earnings benefits
+• Limited asset protection and wealth-building tax incentives
+
+### 4. **Payroll Tax Exposure**
+• Subject to full Social Security and Medicare taxes (15.3% combined employer/employee)
+• No strategies to reduce FICA exposure without business structure
+
+## W-2 Profile Mapping Exercise
+
+Understanding your W-2 profile helps identify which escape strategies will have the biggest impact:
+
+### **High-Income W-2 ($200K+)**
+**Primary Challenges:**
+• High marginal tax rates (32-37%)
+• Limited deduction opportunities
+• Potential for RSU or bonus income creating tax spikes
+
+**Primary Opportunities:**
+• **Real estate depreciation** strategies through STR or rental properties
+• Strategic timing of equity compensation
+• Qualified retirement plan contributions and backdoor Roth strategies
+
+### **W-2 + Side Business**
+**Primary Challenges:**
+• Mixing W-2 and business income creates complexity
+• Self-employment tax on business income
+• Limited business deduction opportunities without proper structure
+
+**Primary Opportunities:**
+• **Entity planning** to optimize business structure
+• Business expense deductions to offset W-2 income
+• Strategic equipment purchases for **bonus depreciation**
+
+### **W-2 + Investment Income**
+**Primary Challenges:**
+• Multiple income types with different tax treatments
+• Potential for higher Medicare surtaxes (3.8% NIIT)
+• Complex tax planning across different asset classes
+
+**Primary Opportunities:**
+• **Asset location** strategies across account types
+• Tax-loss harvesting and gain/loss timing
+• Opportunity Zone investments for capital gains deferral
+
+## Case Study: Olivia – Tech Sales Executive
+
+**Background:**
+Olivia earns $180K in W-2 income plus $220K in annual RSU vesting from her tech company. Her **effective tax rate** was 34% before implementing strategic planning.
+
+**The Problem:**
+• High ordinary income tax rates on W-2 wages
+• Large capital gains from RSU vesting creating tax spikes
+• Limited deduction opportunities as a W-2 employee
+• No strategic planning beyond standard 401(k) contributions
+
+**The Strategy:**
+1. **QOF Investment:** Used RSU gains to fund a **Qualified Opportunity Fund** investment, deferring $220K in capital gains
+2. **STR Investment:** QOF proceeds invested in short-term rental properties
+3. **REPS Qualification:** Qualified for **Real Estate Professional Status** through material participation
+4. **Depreciation Offset:** STR depreciation offsets W-2 income dollar-for-dollar
+
+**The Results:**
+• **Effective tax rate** dropped from 34% to 21%
+• $220K in capital gains deferred for 10+ years
+• $48K in annual STR depreciation offsetting W-2 income
+• Built a growing real estate portfolio through tax-advantaged investment
+
+**Key Insight:** Even high-income W-2 earners can access sophisticated tax strategies through proper structuring and **forward-looking planning**.
+
+## Strategic Alternatives to W-2 Limitations
+
+### **Real Estate Professional Status (REPS)**
+• Qualify through material participation in real estate activities
+• Use rental property depreciation to offset W-2 income
+• Build long-term wealth through appreciating assets
+
+### **Business Entity Creation**
+• Establish side businesses to access business deductions
+• Convert personal expenses into legitimate business deductions
+• Create pathways to more sophisticated tax planning
+
+### **Investment Structure Optimization**
+• Strategic use of retirement accounts vs. taxable accounts
+• Tax-loss harvesting and gain recognition timing
+• Opportunity Zone investments for capital gains management
+
+### **Timing and Deferral Strategies**
+• Strategic timing of equity compensation vesting
+• Deferred compensation arrangements where available
+• Charitable giving strategies for high-income years
+
+## The **Forward-Looking Planning** Approach
+
+Traditional **CPA vs Strategist** differences are most apparent with W-2 income:
+
+**Traditional CPA Approach:**
+• File W-2 returns as received
+• Maximize standard or itemized deductions
+• Focus on compliance and current-year filing
+
+**Strategic Tax Planning Approach:**
+• Proactively structure additional income sources
+• Create deduction opportunities through proper entity planning
+• Implement multi-year tax optimization strategies
+• Use W-2 income as foundation for broader wealth-building tax strategies
+
+## Your W-2 Escape Framework
+
+**Phase 1: Assessment (Months 1-2)**
+• Calculate your true **effective tax rate** including all taxes
+• Identify your W-2 profile type and primary limitations
+• Evaluate current deduction bandwidth and missed opportunities
+
+**Phase 2: Foundation Building (Months 3-6)**
+• Implement immediate deduction optimization strategies
+• Establish business entities or real estate investments if applicable
+• Optimize retirement account contributions and asset location
+
+**Phase 3: Advanced Structuring (Months 6-12)**
+• Implement real estate or business depreciation strategies
+• Execute timing optimization for equity compensation
+• Build systematic approach to ongoing tax planning
+
+## What's Next
+
+You don't need to abandon your W-2 career to escape W-2 tax limitations. Strategic planning creates opportunities to:
+
+• **Reduce your effective tax rate** through depreciation and timing strategies
+• **Build wealth** through tax-advantaged real estate and business investments  
+• **Create long-term tax benefits** that compound over time
+
+In Module 2, we'll dive deep into the specific deduction strategies available to W-2 earners and show you how to implement them systematically.
+
+**Your W-2 escape plan starts with understanding that your current tax situation is a choice, not a limitation.**
+
+---
+
+🎯 **Ready to test your knowledge?** Take the Module 1 quiz to earn +50 XP and reinforce these key concepts before moving to Module 2.""",
+                duration_minutes=45,
                 order_index=1
             ),
             CourseContent(
