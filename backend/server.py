@@ -199,8 +199,8 @@ async def get_tool(tool_id: str):
     return Tool(**tool)
 
 # XP tracking endpoints
-@api_router.get("/users/xp")
-async def get_user_xp(user_id: str = "default_user"):
+@api_router.get("/users/xp/{user_id}")
+async def get_user_xp(user_id: str):
     user_xp = await db.user_xp.find_one({"user_id": user_id})
     if not user_xp:
         # Create default XP record if it doesn't exist
@@ -208,6 +208,10 @@ async def get_user_xp(user_id: str = "default_user"):
         await db.user_xp.insert_one(new_xp.dict())
         return new_xp
     return UserXP(**user_xp)
+
+@api_router.get("/users/xp")
+async def get_default_user_xp():
+    return await get_user_xp("default_user")
 
 class XPRequest(BaseModel):
     user_id: str = "default_user"
