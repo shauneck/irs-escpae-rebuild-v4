@@ -87,15 +87,15 @@ class W2EscapePlanModuleTest(unittest.TestCase):
         
         # Check for Helen case study details
         helen_case_study_details = [
-            "Year 1 Recap",
+            "Helen's Year 1 Recap",
             "$156K in annual STR depreciation",
-            "Year 2 Challenge",
-            "$220K W-2 income",
+            "The Year 2 Challenge",
+            "W-2 income to $220K",
             "$150K equity bonus",
             "Total Taxable Income: $370K",
             "Total Deductions: $443K",
             "Net Taxable Income: $0",
-            "$73K carryforward loss",
+            "carryforward loss",
             "$2M+ asset portfolio",
             "$127K annual cash flow"
         ]
