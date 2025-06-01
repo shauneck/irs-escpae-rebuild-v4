@@ -209,26 +209,31 @@ async def get_user_xp(user_id: str = "default_user"):
         return new_xp
     return UserXP(**user_xp)
 
+class XPRequest(BaseModel):
+    user_id: str = "default_user"
+    term_id: Optional[str] = None
+    points: Optional[int] = None
+
 @api_router.post("/users/xp/glossary")
-async def award_glossary_xp(term_id: str, user_id: str = "default_user"):
+async def award_glossary_xp(request: XPRequest):
     """Award 5 XP for viewing a glossary term"""
-    user_xp = await db.user_xp.find_one({"user_id": user_id})
+    user_xp = await db.user_xp.find_one({"user_id": request.user_id})
     if not user_xp:
-        new_xp = UserXP(user_id=user_id, glossary_xp=5, total_xp=5)
+        new_xp = UserXP(user_id=request.user_id, glossary_xp=5, total_xp=5)
         await db.user_xp.insert_one(new_xp.dict())
-        return {"xp_awarded": 5, "total_xp": 5}
+        return {"status": "success", "xp_earned": 5, "total_xp": 5}
     else:
         new_glossary_xp = user_xp["glossary_xp"] + 5
         new_total_xp = user_xp["total_xp"] + 5
         await db.user_xp.update_one(
-            {"user_id": user_id},
+            {"user_id": request.user_id},
             {"$set": {
                 "glossary_xp": new_glossary_xp,
                 "total_xp": new_total_xp,
                 "last_updated": datetime.utcnow()
             }}
         )
-        return {"xp_awarded": 5, "total_xp": new_total_xp}
+        return {"status": "success", "xp_earned": 5, "total_xp": new_total_xp}
 
 @api_router.post("/users/xp/quiz")
 async def award_quiz_xp(points: int, user_id: str = "default_user"):
