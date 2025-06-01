@@ -1617,6 +1617,37 @@ The most successful W-2 earners don't just find one good tax strategy — they b
             points=50,
             course_id=w2_course.id,
             module_id=2
+        ),
+        # W-2 Escape Plan Module 3 Questions (50 XP each, 3 questions)
+        QuizQuestion(
+            question="What is the primary benefit of 'offset stacking' compared to single-strategy tax planning?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["It's less risky than single strategies", "It systematically layers multiple deduction strategies for maximum tax benefit", "It requires less documentation", "It only works for high-income earners"],
+            correct_answer="It systematically layers multiple deduction strategies for maximum tax benefit",
+            explanation="Offset stacking strategically combines multiple tax deduction sources to maximize overall tax benefit, creating far more tax savings than any single strategy alone through synergistic layering.",
+            points=50,
+            course_id=w2_course.id,
+            module_id=3
+        ),
+        QuizQuestion(
+            question="In Helen's Year 2 case study, how did she eliminate taxes on $370K of income?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["Used only STR depreciation", "Combined STR depreciation ($223K) + Energy IDCs ($175K) + Equipment depreciation ($45K)", "Moved to a tax-free state", "Converted to contractor status"],
+            correct_answer="Combined STR depreciation ($223K) + Energy IDCs ($175K) + Equipment depreciation ($45K)",
+            explanation="Helen used offset stacking to combine $223K in STR depreciation, $175K in energy IDCs, and $45K in equipment depreciation for total deductions of $443K, which exceeded her $370K income and created a $73K carryforward loss.",
+            points=50,
+            course_id=w2_course.id,
+            module_id=3
+        ),
+        QuizQuestion(
+            question="What is the strategic purpose of generating 'carryforward losses' in offset stacking?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["To reduce current year income only", "To create excess deductions that can offset future high-income years", "To avoid paying any taxes ever", "To qualify for government benefits"],
+            correct_answer="To create excess deductions that can offset future high-income years",
+            explanation="Carryforward losses are strategically generated to create a buffer of excess deductions that can be used to offset future income spikes, bonus years, or equity compensation, providing multi-year tax planning flexibility.",
+            points=50,
+            course_id=w2_course.id,
+            module_id=3
         )
     ]
     
