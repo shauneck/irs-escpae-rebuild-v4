@@ -1,533 +1,243 @@
 import requests
 import unittest
-import json
-import uuid
-import os
 import sys
+from pprint import pprint
 
-# Use the localhost URL for testing
-BACKEND_URL = "http://localhost:8001"
-
-class IRSEscapePlanAPITest(unittest.TestCase):
-    """Test suite for the IRS Escape Plan API"""
+class W2EscapePlanModuleTest(unittest.TestCase):
+    def __init__(self, *args, **kwargs):
+        super(W2EscapePlanModuleTest, self).__init__(*args, **kwargs)
+        self.base_url = "https://5cae3060-20f9-4b8b-b436-5b7713b729a5.preview.emergentagent.com/api"
+        self.w2_course_id = None
+        self.module_2_id = None
+        self.glossary_terms = []
 
     def setUp(self):
-        """Initialize test data"""
-        self.api_url = f"{BACKEND_URL}/api"
-        self.test_user_id = str(uuid.uuid4())
-        self.courses = []
-        self.tools = []
-        self.glossary_terms = []
-        self.marketplace_items = []
+        # Get all courses to find the W-2 Escape Plan course
+        response = requests.get(f"{self.base_url}/courses")
+        self.assertEqual(response.status_code, 200, "Failed to fetch courses")
         
-        # Initialize test data
-        self.initialize_data()
+        courses = response.json()
+        for course in courses:
+            if course["title"] == "W-2 Escape Plan":
+                self.w2_course_id = course["id"]
+                break
         
-    def initialize_data(self):
-        """Initialize sample data in the database"""
-        try:
-            response = requests.post(f"{self.api_url}/initialize-data")
-            self.assertEqual(response.status_code, 200)
-            print("✅ Sample data initialized successfully")
-        except Exception as e:
-            print(f"❌ Failed to initialize data: {str(e)}")
-            sys.exit(1)
-    
-    def test_01_health_check(self):
-        """Test the API health check endpoint"""
-        try:
-            response = requests.get(f"{self.api_url}/")
-            self.assertEqual(response.status_code, 200)
-            data = response.json()
-            self.assertEqual(data["message"], "IRS Escape Plan API is running")
-            print("✅ API health check passed")
-        except Exception as e:
-            print(f"❌ API health check failed: {str(e)}")
-            raise
-    
-    def test_02_get_courses(self):
-        """Test getting all courses"""
-        try:
-            response = requests.get(f"{self.api_url}/courses")
-            self.assertEqual(response.status_code, 200)
-            self.courses = response.json()
-            self.assertGreaterEqual(len(self.courses), 1)
-            print(f"✅ Retrieved {len(self.courses)} courses")
-            
-            # Verify course structure
-            course = self.courses[0]
-            required_fields = ["id", "type", "title", "description", "thumbnail_url", 
-                              "is_free", "total_lessons", "estimated_hours"]
-            for field in required_fields:
-                self.assertIn(field, course)
-                
-            # Verify at least one free course exists
-            free_courses = [c for c in self.courses if c["is_free"]]
-            self.assertGreaterEqual(len(free_courses), 1)
-            print(f"✅ Found {len(free_courses)} free courses")
-            
-            # Verify course names match the expected names
-            expected_course_names = {
-                "primer": "The Escape Blueprint",
-                "w2": "W-2 Escape Plan",
-                "business": "Business Owner Escape Plan"
-            }
-            
-            for course_type, expected_name in expected_course_names.items():
-                course = next((c for c in self.courses if c["type"] == course_type), None)
-                if course:
-                    self.assertEqual(course["title"], expected_name, 
-                                    f"Course of type '{course_type}' has incorrect name: '{course['title']}' (expected: '{expected_name}')")
-                    print(f"✅ Verified course name: {course['title']}")
-                else:
-                    print(f"⚠️ Course of type '{course_type}' not found")
-                    
-        except Exception as e:
-            print(f"❌ Get courses test failed: {str(e)}")
-            raise
-    
-    def test_03_get_course_by_id(self):
-        """Test getting a specific course by ID"""
-        if not self.courses:
-            self.test_02_get_courses()
+        self.assertIsNotNone(self.w2_course_id, "W-2 Escape Plan course not found")
         
-        try:
-            course_id = self.courses[0]["id"]
-            response = requests.get(f"{self.api_url}/courses/{course_id}")
-            self.assertEqual(response.status_code, 200)
-            course = response.json()
-            self.assertEqual(course["id"], course_id)
-            print(f"✅ Retrieved course: {course['title']}")
-        except Exception as e:
-            print(f"❌ Get course by ID test failed: {str(e)}")
-            raise
-    
-    def test_04_get_course_lessons(self):
-        """Test getting lessons for a specific course"""
-        if not self.courses:
-            self.test_02_get_courses()
+        # Get glossary terms
+        response = requests.get(f"{self.base_url}/glossary")
+        self.assertEqual(response.status_code, 200, "Failed to fetch glossary terms")
+        self.glossary_terms = response.json()
+
+    def test_w2_course_exists(self):
+        """Test that the W-2 Escape Plan course exists"""
+        response = requests.get(f"{self.base_url}/courses/{self.w2_course_id}")
+        self.assertEqual(response.status_code, 200, "Failed to fetch W-2 course")
         
-        try:
-            course_id = self.courses[0]["id"]
-            response = requests.get(f"{self.api_url}/courses/{course_id}/lessons")
-            self.assertEqual(response.status_code, 200)
-            lessons = response.json()
-            self.assertGreaterEqual(len(lessons), 1)
-            print(f"✅ Retrieved {len(lessons)} lessons for course {course_id}")
-            
-            # Verify lesson structure
-            lesson = lessons[0]
-            required_fields = ["id", "title", "description", "content", "duration_minutes", "order_index"]
-            for field in required_fields:
-                self.assertIn(field, lesson)
-        except Exception as e:
-            print(f"❌ Get course lessons test failed: {str(e)}")
-            raise
-    
-    def test_05_get_course_quiz(self):
-        """Test getting quiz questions for a specific course"""
-        if not self.courses:
-            self.test_02_get_courses()
+        course = response.json()
+        self.assertEqual(course["title"], "W-2 Escape Plan", "Course title mismatch")
+        self.assertEqual(course["type"], "w2", "Course type mismatch")
+        self.assertEqual(len(course["lessons"]), 3, "Course should have 3 modules")
         
-        try:
-            # Use the free primer course which should have quiz questions
-            primer_course = next((c for c in self.courses if c["type"] == "primer"), None)
-            if not primer_course:
-                print("⚠️ No primer course found, using first course")
-                primer_course = self.courses[0]
-                
-            course_id = primer_course["id"]
-            response = requests.get(f"{self.api_url}/courses/{course_id}/quiz")
-            self.assertEqual(response.status_code, 200)
-            questions = response.json()
-            
-            # There might not be quiz questions for every course
-            if questions:
-                print(f"✅ Retrieved {len(questions)} quiz questions for course {course_id}")
-                
-                # Verify question structure
-                question = questions[0]
-                required_fields = ["id", "question", "type", "options", "correct_answer", "explanation"]
-                for field in required_fields:
-                    self.assertIn(field, question)
-            else:
-                print(f"⚠️ No quiz questions found for course {course_id}")
-        except Exception as e:
-            print(f"❌ Get course quiz test failed: {str(e)}")
-            raise
-    
-    def test_06_submit_quiz_answer(self):
-        """Test submitting a quiz answer"""
-        if not self.courses:
-            self.test_02_get_courses()
+        # Verify Module 2 exists
+        module_2 = None
+        for lesson in course["lessons"]:
+            if lesson["order_index"] == 2:
+                module_2 = lesson
+                self.module_2_id = lesson["id"]
+                break
         
-        try:
-            # Use the free primer course which should have quiz questions
-            primer_course = next((c for c in self.courses if c["type"] == "primer"), None)
-            if not primer_course:
-                print("⚠️ No primer course found, using first course")
-                primer_course = self.courses[0]
-                
-            course_id = primer_course["id"]
-            response = requests.get(f"{self.api_url}/courses/{course_id}/quiz")
-            
-            if response.status_code == 200:
-                questions = response.json()
-                if questions:
-                    question = questions[0]
-                    question_id = question["id"]
-                    correct_answer = question["correct_answer"]
-                    
-                    # Test with correct answer
-                    response = requests.post(
-                        f"{self.api_url}/quiz/submit",
-                        params={"course_id": course_id, "question_id": question_id, "answer": correct_answer}
-                    )
-                    self.assertEqual(response.status_code, 200)
-                    result = response.json()
-                    self.assertTrue(result["correct"])
-                    self.assertGreater(result["points"], 0)
-                    print(f"✅ Submitted correct quiz answer successfully")
-                    
-                    # Test with incorrect answer
-                    wrong_answer = "Wrong Answer"
-                    response = requests.post(
-                        f"{self.api_url}/quiz/submit",
-                        params={"course_id": course_id, "question_id": question_id, "answer": wrong_answer}
-                    )
-                    self.assertEqual(response.status_code, 200)
-                    result = response.json()
-                    self.assertFalse(result["correct"])
-                    self.assertEqual(result["points"], 0)
-                    print(f"✅ Submitted incorrect quiz answer successfully")
-                else:
-                    print(f"⚠️ No quiz questions found for course {course_id}, skipping test")
-            else:
-                print(f"⚠️ Failed to get quiz questions, skipping test")
-        except Exception as e:
-            print(f"❌ Submit quiz answer test failed: {str(e)}")
-            raise
-    
-    def test_07_get_glossary(self):
-        """Test getting all glossary terms"""
-        try:
-            response = requests.get(f"{self.api_url}/glossary")
-            self.assertEqual(response.status_code, 200)
-            self.glossary_terms = response.json()
-            self.assertGreaterEqual(len(self.glossary_terms), 1)
-            print(f"✅ Retrieved {len(self.glossary_terms)} glossary terms")
-            
-            # Verify glossary term structure
-            term = self.glossary_terms[0]
-            required_fields = ["id", "term", "definition", "category", "related_terms"]
-            for field in required_fields:
-                self.assertIn(field, term)
-        except Exception as e:
-            print(f"❌ Get glossary test failed: {str(e)}")
-            raise
-    
-    def test_08_search_glossary(self):
-        """Test searching glossary terms"""
-        if not self.glossary_terms:
-            self.test_07_get_glossary()
+        self.assertIsNotNone(module_2, "Module 2 not found in W-2 course")
+        self.assertEqual(module_2["title"], "Repositioning W-2 Income for Strategic Impact", "Module 2 title mismatch")
+        self.assertEqual(module_2["description"], "Module 2 of 8 - Repositioning RSUs & Bonus Income - Learn advanced strategies to reposition already-taxed W-2 income for maximum tax benefits", "Module 2 description mismatch")
+        self.assertEqual(module_2["duration_minutes"], 50, "Module 2 duration mismatch")
         
-        try:
-            # Use a term from the first glossary entry
-            if self.glossary_terms:
-                search_term = self.glossary_terms[0]["term"][:4]  # Use first few characters
-                response = requests.get(f"{self.api_url}/glossary/search", params={"q": search_term})
-                self.assertEqual(response.status_code, 200)
-                results = response.json()
-                self.assertGreaterEqual(len(results), 1)
-                print(f"✅ Search for '{search_term}' returned {len(results)} results")
-            else:
-                print("⚠️ No glossary terms found, skipping test")
-        except Exception as e:
-            print(f"❌ Search glossary test failed: {str(e)}")
-            raise
-    
-    def test_09_get_tools(self):
-        """Test getting all tools"""
-        try:
-            response = requests.get(f"{self.api_url}/tools")
-            self.assertEqual(response.status_code, 200)
-            self.tools = response.json()
-            self.assertGreaterEqual(len(self.tools), 1)
-            print(f"✅ Retrieved {len(self.tools)} tools")
-            
-            # Verify tool structure
-            tool = self.tools[0]
-            required_fields = ["id", "name", "description", "type", "icon", "is_free"]
-            for field in required_fields:
-                self.assertIn(field, tool)
-                
-            # Verify at least one free tool exists
-            free_tools = [t for t in self.tools if t["is_free"]]
-            self.assertGreaterEqual(len(free_tools), 1)
-            print(f"✅ Found {len(free_tools)} free tools")
-        except Exception as e:
-            print(f"❌ Get tools test failed: {str(e)}")
-            raise
-    
-    def test_10_get_tool_by_id(self):
-        """Test getting a specific tool by ID"""
-        if not self.tools:
-            self.test_09_get_tools()
+        print("✅ W-2 Escape Plan course and Module 2 exist with correct metadata")
+
+    def test_module_2_content(self):
+        """Test that Module 2 content is complete and contains all required sections"""
+        response = requests.get(f"{self.base_url}/courses/{self.w2_course_id}")
+        self.assertEqual(response.status_code, 200, "Failed to fetch W-2 course")
         
-        try:
-            if self.tools:
-                tool_id = self.tools[0]["id"]
-                response = requests.get(f"{self.api_url}/tools/{tool_id}")
-                self.assertEqual(response.status_code, 200)
-                tool = response.json()
-                self.assertEqual(tool["id"], tool_id)
-                print(f"✅ Retrieved tool: {tool['name']}")
-            else:
-                print("⚠️ No tools found, skipping test")
-        except Exception as e:
-            print(f"❌ Get tool by ID test failed: {str(e)}")
-            raise
-    
-    def test_11_update_progress(self):
-        """Test updating user progress"""
-        if not self.courses:
-            self.test_02_get_courses()
+        course = response.json()
+        module_2 = None
+        for lesson in course["lessons"]:
+            if lesson["order_index"] == 2:
+                module_2 = lesson
+                break
         
-        try:
-            if self.courses and self.courses[0]["lessons"]:
-                course_id = self.courses[0]["id"]
-                lesson_id = self.courses[0]["lessons"][0]["id"]
-                
-                # Create progress data
-                progress_data = {
-                    "user_id": self.test_user_id,
-                    "course_id": course_id,
-                    "lesson_id": lesson_id,
-                    "completed": True,
-                    "score": 100
-                }
-                
-                response = requests.post(f"{self.api_url}/progress", json=progress_data)
-                self.assertEqual(response.status_code, 200)
-                result = response.json()
-                self.assertEqual(result["status"], "success")
-                print(f"✅ Updated user progress successfully")
-            else:
-                print("⚠️ No courses or lessons found, skipping test")
-        except Exception as e:
-            print(f"❌ Update progress test failed: {str(e)}")
-            raise
-    
-    def test_12_get_user_progress(self):
-        """Test getting user progress"""
-        # First, make sure we have some progress data
-        self.test_11_update_progress()
+        self.assertIsNotNone(module_2, "Module 2 not found in W-2 course")
         
-        try:
-            response = requests.get(f"{self.api_url}/progress/{self.test_user_id}")
-            self.assertEqual(response.status_code, 200)
-            progress = response.json()
-            self.assertGreaterEqual(len(progress), 1)
-            print(f"✅ Retrieved {len(progress)} progress records for user")
-            
-            # Verify progress structure
-            if progress:
-                record = progress[0]
-                required_fields = ["user_id", "course_id", "lesson_id", "completed"]
-                for field in required_fields:
-                    self.assertIn(field, record)
-        except Exception as e:
-            print(f"❌ Get user progress test failed: {str(e)}")
-            raise
-            
-    def test_13_get_glossary_term_by_id(self):
-        """Test getting a specific glossary term by ID"""
-        if not self.glossary_terms:
-            self.test_07_get_glossary()
+        # Check for required sections in content
+        required_sections = [
+            "The Repositioning Framework",
+            "Understanding Qualified Opportunity Funds",
+            "Short-Term Rental (STR) Strategy for W-2 Earners",
+            "Case Study: Helen",
+            "Advanced Repositioning Strategies",
+            "Implementation Timeline for W-2 Repositioning",
+            "Common W-2 Repositioning Mistakes to Avoid",
+            "Measuring Repositioning Success",
+            "What's Next: Advanced Entity Strategies"
+        ]
         
-        try:
-            if self.glossary_terms:
-                term_id = self.glossary_terms[0]["id"]
-                response = requests.get(f"{self.api_url}/glossary/{term_id}")
-                self.assertEqual(response.status_code, 200)
-                term = response.json()
-                self.assertEqual(term["id"], term_id)
-                print(f"✅ Retrieved glossary term: {term['term']}")
-            else:
-                print("⚠️ No glossary terms found, skipping test")
-        except Exception as e:
-            print(f"❌ Get glossary term by ID test failed: {str(e)}")
-            raise
-            
-    def test_14_get_user_xp(self):
-        """Test getting user XP"""
-        try:
-            # First, submit a quiz answer to earn some XP
-            self.test_06_submit_quiz_answer()
-            
-            # Then, view a glossary term to earn some XP
-            if self.glossary_terms:
-                term_id = self.glossary_terms[0]["id"]
-                response = requests.post(
-                    f"{self.api_url}/users/xp/glossary",
-                    json={"user_id": self.test_user_id, "term_id": term_id}
-                )
-                self.assertEqual(response.status_code, 200)
-                
-            # Now get the user's XP
-            response = requests.get(f"{self.api_url}/users/xp/{self.test_user_id}")
-            self.assertEqual(response.status_code, 200)
-            xp_data = response.json()
-            
-            # Verify XP structure
-            required_fields = ["total_xp", "quiz_xp", "glossary_xp"]
-            for field in required_fields:
-                self.assertIn(field, xp_data)
-                
-            print(f"✅ Retrieved user XP: Total={xp_data['total_xp']}, Quiz={xp_data['quiz_xp']}, Glossary={xp_data['glossary_xp']}")
-        except Exception as e:
-            print(f"❌ Get user XP test failed: {str(e)}")
-            raise
-            
-    def test_15_update_glossary_xp(self):
-        """Test updating glossary XP"""
-        if not self.glossary_terms:
-            self.test_07_get_glossary()
-            
-        try:
-            if self.glossary_terms:
-                term_id = self.glossary_terms[0]["id"]
-                
-                # Create XP data
-                xp_data = {
-                    "user_id": self.test_user_id,
-                    "term_id": term_id
-                }
-                
-                response = requests.post(f"{self.api_url}/users/xp/glossary", json=xp_data)
-                self.assertEqual(response.status_code, 200)
-                result = response.json()
-                self.assertEqual(result["status"], "success")
-                self.assertEqual(result["xp_earned"], 5)  # Glossary terms should award 5 XP
-                print(f"✅ Updated glossary XP successfully")
-            else:
-                print("⚠️ No glossary terms found, skipping test")
-        except Exception as e:
-            print(f"❌ Update glossary XP test failed: {str(e)}")
-            raise
-            
-    def test_16_update_quiz_xp(self):
-        """Test updating quiz XP"""
-        if not self.courses:
-            self.test_02_get_courses()
-            
-        try:
-            # Use the free primer course which should have quiz questions
-            primer_course = next((c for c in self.courses if c["type"] == "primer"), None)
-            if not primer_course:
-                print("⚠️ No primer course found, using first course")
-                primer_course = self.courses[0]
-                
-            course_id = primer_course["id"]
-            response = requests.get(f"{self.api_url}/courses/{course_id}/quiz")
-            
-            if response.status_code == 200:
-                questions = response.json()
-                if questions:
-                    question = questions[0]
-                    question_id = question["id"]
-                    
-                    # Create XP data
-                    xp_data = {
-                        "user_id": self.test_user_id,
-                        "course_id": course_id,
-                        "question_id": question_id,
-                        "correct": True
-                    }
-                    
-                    response = requests.post(f"{self.api_url}/users/xp/quiz", json=xp_data)
-                    self.assertEqual(response.status_code, 200)
-                    result = response.json()
-                    self.assertEqual(result["status"], "success")
-                    self.assertEqual(result["xp_earned"], 10)  # Quiz questions should award 10 XP
-                    print(f"✅ Updated quiz XP successfully")
-                else:
-                    print(f"⚠️ No quiz questions found for course {course_id}, skipping test")
-            else:
-                print(f"⚠️ Failed to get quiz questions, skipping test")
-        except Exception as e:
-            print(f"❌ Update quiz XP test failed: {str(e)}")
-            raise
-            
-    def test_17_get_marketplace_items(self):
-        """Test getting all marketplace items"""
-        try:
-            response = requests.get(f"{self.api_url}/marketplace")
-            self.assertEqual(response.status_code, 200)
-            self.marketplace_items = response.json()
-            self.assertGreaterEqual(len(self.marketplace_items), 1)
-            print(f"✅ Retrieved {len(self.marketplace_items)} marketplace items")
-            
-            # Verify marketplace item structure
-            item = self.marketplace_items[0]
-            required_fields = ["id", "name", "description", "price", "is_featured"]
-            for field in required_fields:
-                self.assertIn(field, item)
-                
-            # Verify expected marketplace items
-            expected_items = [
-                "Advanced Tax Strategy Consultation",
-                "Entity Structure Analysis",
-                "Tax Planning Template Library"
-            ]
-            
-            found_items = [item["name"] for item in self.marketplace_items]
-            for expected_item in expected_items:
-                self.assertIn(expected_item, found_items, f"Expected marketplace item '{expected_item}' not found")
-                
-            print(f"✅ Verified marketplace items: {', '.join(found_items)}")
-        except Exception as e:
-            print(f"❌ Get marketplace items test failed: {str(e)}")
-            raise
-            
-    def test_18_get_marketplace_item_by_id(self):
-        """Test getting a specific marketplace item by ID"""
-        if not self.marketplace_items:
-            self.test_17_get_marketplace_items()
+        for section in required_sections:
+            self.assertIn(section, module_2["content"], f"Section '{section}' not found in Module 2 content")
         
-        try:
-            if self.marketplace_items:
-                item_id = self.marketplace_items[0]["id"]
-                response = requests.get(f"{self.api_url}/marketplace/{item_id}")
-                self.assertEqual(response.status_code, 200)
-                item = response.json()
-                self.assertEqual(item["id"], item_id)
-                print(f"✅ Retrieved marketplace item: {item['name']}")
-            else:
-                print("⚠️ No marketplace items found, skipping test")
-        except Exception as e:
-            print(f"❌ Get marketplace item by ID test failed: {str(e)}")
-            raise
+        # Check for Helen case study details
+        helen_case_study_details = [
+            "$160K in W-2 wages plus $180K annually in RSU vesting",
+            "$540K in accumulated RSU gains",
+            "$183K in capital gains taxes",
+            "QOF Capital Gain Deferral",
+            "STR Property Acquisition",
+            "Material Participation & Depreciation",
+            "W-2 Income Offset"
+        ]
+        
+        for detail in helen_case_study_details:
+            self.assertIn(detail, module_2["content"], f"Helen case study detail '{detail}' not found in Module 2 content")
+        
+        print("✅ Module 2 content contains all required sections and Helen case study details")
+
+    def test_module_2_glossary_terms(self):
+        """Test that required glossary terms for Module 2 exist"""
+        required_terms = [
+            "Repositioning",
+            "Qualified Opportunity Fund",
+            "Short-Term Rental",
+            "Bonus Depreciation",
+            "Material Participation",
+            "Depreciation Loss",
+            "Capital Gain Deferral"
+        ]
+        
+        found_terms = []
+        for term in self.glossary_terms:
+            for required_term in required_terms:
+                if required_term.lower() in term["term"].lower():
+                    found_terms.append(required_term)
+                    break
+        
+        for term in required_terms:
+            self.assertIn(term, found_terms, f"Glossary term '{term}' not found")
+        
+        print("✅ All required glossary terms for Module 2 exist")
+
+    def test_module_2_quiz(self):
+        """Test that Module 2 quiz questions exist and have correct XP values"""
+        response = requests.get(f"{self.base_url}/courses/{self.w2_course_id}/quiz?module_id=2")
+        self.assertEqual(response.status_code, 200, "Failed to fetch Module 2 quiz questions")
+        
+        questions = response.json()
+        self.assertEqual(len(questions), 3, "Module 2 should have 3 quiz questions")
+        
+        # Verify the specific questions
+        expected_questions = [
+            "What is the primary purpose of 'repositioning' already-taxed W-2 income?",
+            "In Helen's case study, what was the key strategy that allowed her to eliminate her W-2 tax burden?",
+            "What is the key requirement to use Short-Term Rental depreciation losses against W-2 income?"
+        ]
+        
+        for question in questions:
+            self.assertIn(question["question"], expected_questions, f"Unexpected quiz question: {question['question']}")
+            self.assertEqual(question["points"], 50, f"Quiz question should be worth 50 XP: {question['question']}")
+            self.assertEqual(question["module_id"], 2, f"Quiz question should be for module 2: {question['question']}")
+        
+        print("✅ Module 2 quiz has 3 questions worth 50 XP each (150 XP total)")
+
+    def test_quiz_submission(self):
+        """Test that quiz submission works and awards correct XP"""
+        # Get quiz questions
+        response = requests.get(f"{self.base_url}/courses/{self.w2_course_id}/quiz?module_id=2")
+        self.assertEqual(response.status_code, 200, "Failed to fetch Module 2 quiz questions")
+        
+        questions = response.json()
+        self.assertTrue(len(questions) > 0, "No quiz questions found")
+        
+        # Test submitting a correct answer
+        question = questions[0]
+        response = requests.post(
+            f"{self.base_url}/quiz/submit?course_id={self.w2_course_id}&question_id={question['id']}&answer={question['correct_answer']}"
+        )
+        self.assertEqual(response.status_code, 200, "Failed to submit quiz answer")
+        
+        result = response.json()
+        self.assertTrue(result["correct"], "Answer should be marked as correct")
+        self.assertEqual(result["points"], 50, "Correct answer should award 50 XP")
+        
+        # Test submitting an incorrect answer
+        wrong_answer = "Wrong answer"
+        for option in question["options"]:
+            if option != question["correct_answer"]:
+                wrong_answer = option
+                break
+                
+        response = requests.post(
+            f"{self.base_url}/quiz/submit?course_id={self.w2_course_id}&question_id={question['id']}&answer={wrong_answer}"
+        )
+        self.assertEqual(response.status_code, 200, "Failed to submit quiz answer")
+        
+        result = response.json()
+        self.assertFalse(result["correct"], "Answer should be marked as incorrect")
+        self.assertEqual(result["points"], 0, "Incorrect answer should award 0 XP")
+        
+        print("✅ Quiz submission works correctly, awarding 50 XP for correct answers")
+
+    def test_xp_tracking(self):
+        """Test that XP tracking works for quiz and glossary terms"""
+        # Get initial XP
+        response = requests.get(f"{self.base_url}/users/xp")
+        self.assertEqual(response.status_code, 200, "Failed to fetch user XP")
+        
+        initial_xp = response.json()["total_xp"]
+        
+        # Award glossary XP
+        if len(self.glossary_terms) > 0:
+            response = requests.post(
+                f"{self.base_url}/users/xp/glossary",
+                json={"term_id": self.glossary_terms[0]["id"]}
+            )
+            self.assertEqual(response.status_code, 200, "Failed to award glossary XP")
+            
+            # Verify XP increased
+            response = requests.get(f"{self.base_url}/users/xp")
+            self.assertEqual(response.status_code, 200, "Failed to fetch updated user XP")
+            
+            updated_xp = response.json()["total_xp"]
+            self.assertEqual(updated_xp, initial_xp + 5, "Glossary term should award 5 XP")
+        
+        # Award quiz XP
+        response = requests.post(
+            f"{self.base_url}/users/xp/quiz",
+            json={"points": 50}
+        )
+        self.assertEqual(response.status_code, 200, "Failed to award quiz XP")
+        
+        # Verify XP increased
+        response = requests.get(f"{self.base_url}/users/xp")
+        self.assertEqual(response.status_code, 200, "Failed to fetch updated user XP")
+        
+        final_xp = response.json()["total_xp"]
+        self.assertEqual(final_xp, initial_xp + 5 + 50, "Total XP should increase by 55")
+        
+        print("✅ XP tracking works correctly for both quiz and glossary terms")
 
 def run_tests():
-    """Run all tests and print a summary"""
-    test_suite = unittest.TestLoader().loadTestsFromTestCase(IRSEscapePlanAPITest)
-    test_result = unittest.TextTestRunner(verbosity=2).run(test_suite)
+    suite = unittest.TestSuite()
+    suite.addTest(W2EscapePlanModuleTest('test_w2_course_exists'))
+    suite.addTest(W2EscapePlanModuleTest('test_module_2_content'))
+    suite.addTest(W2EscapePlanModuleTest('test_module_2_glossary_terms'))
+    suite.addTest(W2EscapePlanModuleTest('test_module_2_quiz'))
+    suite.addTest(W2EscapePlanModuleTest('test_quiz_submission'))
+    suite.addTest(W2EscapePlanModuleTest('test_xp_tracking'))
     
-    print("\n=== TEST SUMMARY ===")
-    print(f"Total tests: {test_result.testsRun}")
-    print(f"Passed: {test_result.testsRun - len(test_result.failures) - len(test_result.errors)}")
-    print(f"Failed: {len(test_result.failures)}")
-    print(f"Errors: {len(test_result.errors)}")
+    runner = unittest.TextTestRunner(verbosity=2)
+    result = runner.run(suite)
     
-    if test_result.failures or test_result.errors:
-        print("\n=== FAILED TESTS ===")
-        for test, error in test_result.failures + test_result.errors:
-            print(f"- {test.id()}")
-        return 1
-    else:
-        print("\n✅ All API tests passed successfully!")
-        return 0
+    return result.wasSuccessful()
 
 if __name__ == "__main__":
-    sys.exit(run_tests())
+    print("🔍 Testing W-2 Escape Plan Module 2 API functionality...")
+    success = run_tests()
+    sys.exit(0 if success else 1)
