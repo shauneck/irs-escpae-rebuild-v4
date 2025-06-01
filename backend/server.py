@@ -4588,8 +4588,8 @@ The most successful tax strategists don't just minimize taxes—they use tax opt
         description="Comprehensive tax strategies for business owners and entrepreneurs",
         thumbnail_url="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400",
         is_free=False,
-        total_lessons=4,
-        estimated_hours=4,
+        total_lessons=5,
+        estimated_hours=5,
         lessons=[
             CourseContent(
                 title="Who This Is For & What You're About to Learn",
@@ -4820,19 +4820,316 @@ Understanding these terms is essential for entity structuring mastery:
                 xp_available=150
             ),
             CourseContent(
-                title="Business Structure Tax Implications",
-                description="Module 2 of 12 - Choosing the right business structure for tax benefits",
-                content="Compare sole proprietorship, LLC, S-Corp, and C-Corp structures and their tax implications.",
+                title="Strategic Deductions & Asset Repositioning",
+                description="Module 2 of 12 - Transform captured MSO income into high-leverage deductions that build wealth while reducing taxes",
+                content="""**Module 2: Strategic Deductions & Asset Repositioning**
+
+Now that you've structured your income more efficiently using a **C-Corp MSO**, it's time to move to the next level — turning that captured income into deductions that not only reduce taxes, but also **build long-term assets and income**.
+
+Most business owners operate in the shallow end of the deduction pool:
+• Meals  
+• Vehicles  
+• Maybe a SEP IRA
+
+**Those deductions barely move the needle** — especially when you're earning real money.
+
+This module shows you how to reposition income into **high-leverage, code-backed deductions** like:
+• **Cost segregation**  
+• **Real Estate Professional Status (REPS)**  
+• **Oil & gas IDC investments**
+
+## Traditional vs. Strategic Deductions
+
+### The Traditional Approach: Expenses That Disappear
+
+**Traditional Deductions:**
+• **Meals and Entertainment** - Consumed and gone
+• **Vehicles** - Depreciating assets with limited business use
+• **Office Expenses** - Necessary but non-wealth-building
+• **Professional Services** - Ongoing costs with no asset value
+
+**Limited Impact:**
+• Small dollar amounts relative to high business income
+• No wealth building component
+• No ongoing income generation
+• Maximum benefit typically under $50K annually
+
+### The Strategic Approach: Investments That Build Wealth
+
+**Strategic Deductions:**
+• **Real Estate** - Appreciating assets with depreciation benefits
+• **Energy Investments** - Production income plus immediate deductions
+• **Equipment-Heavy Businesses** - Operational assets with bonus depreciation
+• **Professional Development** - Skills and credentials that increase earning capacity
+
+**Transformational Impact:**
+• Six-figure and seven-figure deduction potential
+• Wealth building through asset accumulation
+• Ongoing income generation from investments
+• Compound benefits over multiple years
+
+**Key Principle:** These aren't sunk costs — they're **income-generating, equity-building assets**.
+
+## Real Client Success Stories
+
+### Dr. Ben - Strategic Stack Execution
+
+**Background:** Dr. Ben had already implemented his C-Corp MSO and was capturing $2M annually at 21% corporate rates. Now it was time to deploy that captured income strategically.
+
+**Strategic Implementation:**
+
+**Phase 1: Real Estate Cost Segregation**
+• **Asset Acquisition:** Purchased $3M medical facility for practice operations
+• **Traditional Approach:** Would depreciate over 39 years = $77K annually
+• **Strategic Approach:** Implemented cost segregation study
+
+**Cost Segregation Results:**
+• **Engineering Analysis:** Professional cost segregation study identified accelerated components
+• **5-Year Assets:** HVAC, electrical, plumbing systems = $405K
+• **7-Year Assets:** Medical equipment, built-ins = $243K  
+• **15-Year Assets:** Parking, landscaping = $162K
+• **Total Reclassified:** 27% of building cost = $810K
+
+**First-Year Impact:**
+• **Bonus Depreciation:** $810,000 in first-year depreciation
+• **Tax Rate:** Funded through MSO at 21% corporate rate
+• **Tax Savings:** $810K × 21% = $170,100 in year one
+
+**Phase 2: Energy Investment Integration**
+• **Oil & Gas Investment:** $300K working interest in Texas drilling program
+• **IDC Deduction:** $255K immediate deduction (85% of investment)
+• **Production Income:** Ongoing revenue from successful wells
+• **Tax Benefit:** $255K × 21% = $53,550 additional savings
+
+**Phase 3: Expansion and Scaling**
+• **Second Building:** Acquired expansion facility for $4M
+• **Second Cost Seg:** $1.4M in accelerated depreciation
+• **Portfolio Approach:** Multiple income-producing, deduction-generating assets
+
+**Dr. Ben's Total Results:**
+• **Total First-Year Deductions:** $2.46M across all strategies
+• **Tax Savings:** $517,560 (at 21% corporate rate)
+• **Asset Base:** $7M+ in income-producing real estate
+• **Energy Income:** Ongoing production revenue
+• **Strategic Position:** Fully audit-defensible, fully legal structure
+
+### Lena - Small Business Owner Stack
+
+**Background:** Lena runs a solo PR consultancy earning $260K annually. She doesn't need millions in assets — she needs a structure that works at her scale.
+
+**Constraint-Based Strategy:**
+• **Limited Capital:** Focused on maximum impact with available resources
+• **Time Constraints:** Solo practitioner with limited time for complex management
+• **Scalable Approach:** Strategies that grow with business success
+
+**Implementation Steps:**
+
+**Step 1: Entity Optimization**
+• **C-Corp MSO Setup:** Established management services organization
+• **Income Repositioning:** Routed $80K through MSO structure
+• **Immediate Savings:** $12,000 in year one (16% rate differential)
+
+**Step 2: Real Estate Entry**
+• **Property Acquisition:** $110K rental property in emerging market
+• **REPS Qualification:** Structured for Real Estate Professional Status
+• **Cost Segregation:** Identified $38K in bonus depreciation components
+• **Active Treatment:** Losses offset active business income
+
+**Step 3: Energy Investment**
+• **Modest Investment:** $50K in oil & gas working interest
+• **IDC Deduction:** $42.5K immediate deduction (85% of investment)
+• **Diversification:** Energy sector exposure with tax benefits
+
+**Lena's Results:**
+• **Total First-Year Deductions:** $90K+ from strategic repositioning
+• **Tax Savings:** $19K+ in year one
+• **Asset Portfolio:** Real estate + energy investments
+• **Income Streams:** Rental income + energy production
+• **Scalable Foundation:** Structure ready for business growth
+
+**Key Insight:** Lena didn't need millions — she needed a **systematic structure** that could scale with her success.
+
+## Advanced Strategic Deduction Categories
+
+### Real Estate: The Foundation Strategy
+
+**Cost Segregation Fundamentals:**
+• **Engineering-Based Analysis** - Professional identification of accelerated components
+• **Component Reclassification** - Moving assets from 27.5/39-year to 5/7/15-year depreciation
+• **Bonus Depreciation** - 100% first-year deduction for qualified components
+• **Audit Protection** - IRS-approved methodology with professional documentation
+
+**Qualifying Properties:**
+• **Commercial Buildings** - Office, retail, industrial facilities
+• **Residential Rentals** - Single-family and multi-family properties  
+• **Medical Facilities** - Specialized equipment and systems
+• **Manufacturing** - Production equipment and facility improvements
+
+**Implementation Process:**
+1. **Property Acquisition** - Purchase or construct qualifying real estate
+2. **Professional Study** - Engage qualified cost segregation engineer
+3. **Component Analysis** - Detailed breakdown of building systems and components
+4. **Tax Filing** - Implement accelerated depreciation on tax returns
+5. **Documentation** - Maintain professional reports for audit defense
+
+### Energy Investments: High-Impact Deductions
+
+**Oil & Gas Working Interests:**
+• **Intangible Drilling Costs (IDC)** - 70-90% of investment immediately deductible
+• **Active Income Treatment** - Offsets business income without passive limitations
+• **Production Revenue** - Ongoing income from successful wells
+• **Depletion Allowances** - Additional tax benefits from production
+
+**Implementation Considerations:**
+• **Working Interest Structure** - Must have operational control for active treatment
+• **Professional Operators** - Partner with experienced drilling companies
+• **Geographic Diversification** - Spread risk across multiple projects/regions
+• **Due Diligence** - Thorough evaluation of operators and geological prospects
+
+### Equipment and Technology: Operational Deductions
+
+**Section 179 and Bonus Depreciation:**
+• **Equipment Purchases** - Immediate expensing of qualifying business equipment
+• **Technology Investments** - Software, computers, and systems
+• **Vehicle Fleet** - Business vehicles with substantial business use
+• **Leasehold Improvements** - Office and facility improvements
+
+**Strategic Timing:**
+• **Year-End Planning** - Coordinate purchases with high-income years
+• **Cash Flow Management** - Balance tax benefits with operational needs
+• **Upgrade Cycles** - Plan equipment replacements for maximum benefit
+
+## The MSO Integration Advantage
+
+### Why Route Through MSO
+
+**Tax Rate Arbitrage:**
+• **Personal Rates:** Up to 37% for high-income business owners
+• **Corporate Rates:** 21% for C-Corp MSO income
+• **Net Benefit:** 16% additional deduction value
+
+**Example Calculation:**
+• **$500K Strategic Deduction**
+• **Personal Benefit:** $500K × 37% = $185K tax savings
+• **MSO Benefit:** $500K × 21% = $105K corporate tax savings
+• **Plus:** $500K income never hits personal return
+• **Total Benefit:** $185K + ($500K × 16%) = $265K total value
+
+### Implementation Strategy
+
+**Capital Deployment Process:**
+1. **Income Capture** - Route business income through MSO at 21%
+2. **Strategic Investment** - Deploy captured income into deduction-generating assets
+3. **Deduction Realization** - Claim deductions against MSO income
+4. **Asset Management** - Manage income-producing assets for ongoing returns
+
+**Documentation Requirements:**
+• **Business Purpose** - Clear operational reasons for asset acquisitions
+• **Fair Market Value** - Market-rate transactions and valuations
+• **Separate Entity** - Maintain distinct MSO operations and decision-making
+• **Professional Oversight** - CPA and legal review of all transactions
+
+## Risk Management and Compliance
+
+### Audit Defense Strategies
+
+**Documentation Excellence:**
+• **Professional Studies** - Cost segregation and engineering reports
+• **Business Purpose** - Clear operational justification for investments
+• **Fair Market Value** - Independent valuations and market comparisons
+• **Separate Entity Maintenance** - Distinct MSO operations and governance
+
+**Conservative Approaches:**
+• **Professional Guidance** - Work with qualified CPAs and tax attorneys
+• **IRS-Approved Methods** - Use established, defensible strategies
+• **Regular Reviews** - Annual compliance and optimization assessments
+• **Documentation Systems** - Comprehensive record-keeping and audit preparation
+
+### Common Mistakes to Avoid
+
+**Mistake 1: Inadequate Business Purpose**
+• **Problem:** Investments made solely for tax benefits
+• **Solution:** Ensure legitimate business operations and income potential
+
+**Mistake 2: Aggressive Valuations**
+• **Problem:** Inflated cost segregation or investment valuations
+• **Solution:** Conservative, professional valuations with market support
+
+**Mistake 3: Poor Entity Separation**
+• **Problem:** Mixing personal and MSO activities
+• **Solution:** Maintain strict separation and documentation
+
+**Mistake 4: Inadequate Professional Support**
+• **Problem:** DIY approach to complex tax strategies
+• **Solution:** Engage qualified professionals for all implementations
+
+## Homework Assignment: Strategic Deductions Planner
+
+**Before Module 3, complete the Strategic Deductions Planner to map your optimization opportunities:**
+
+### Section 1: Current Position Analysis
+• **Income Mapping** - Document current business income and tax treatment
+• **Deduction Inventory** - List existing deductions and their limitations
+• **Entity Structure** - Analyze current business structure effectiveness
+• **Tax Rate Calculation** - Determine current effective tax rates
+
+### Section 2: REPS Eligibility Assessment
+• **Time Availability** - Assess ability to meet 750+ hour requirement
+• **Material Participation** - Evaluate capacity for active real estate involvement
+• **Professional Coordination** - Plan integration with existing business activities
+• **Portfolio Planning** - Identify optimal real estate investment strategies
+
+### Section 3: Cost Segregation Potential
+• **Property Inventory** - List existing and planned real estate acquisitions
+• **Engineering Assessment** - Estimate cost segregation potential for properties
+• **Timing Analysis** - Plan optimal implementation timing for maximum benefit
+• **Professional Resources** - Identify qualified cost segregation providers
+
+### Section 4: Oil & Gas Evaluation
+• **Risk Tolerance** - Assess comfort with energy investment volatility
+• **Capital Availability** - Determine appropriate investment amounts
+• **Due Diligence Framework** - Plan operator evaluation and selection process
+• **Diversification Strategy** - Balance energy investments with other assets
+
+### Section 5: MSO Funding Capacity
+• **Income Projection** - Estimate MSO income available for strategic investments
+• **Cash Flow Planning** - Balance tax optimization with operational needs
+• **Growth Coordination** - Plan strategic investments to support business growth
+• **Professional Integration** - Coordinate with existing advisory team
+
+**Deliverable:** Complete planner serves as your blueprint for reducing taxes while building wealth — simultaneously.
+
+## Key Glossary Terms
+
+Understanding these terms is essential for strategic deduction mastery:
+
+• **Strategic Deductions** - Investments that provide tax benefits while building long-term wealth
+• **Cost Segregation** - Engineering study reclassifying building components for accelerated depreciation
+• **Bonus Depreciation** - 100% first-year deduction for qualified business property
+• **REPS (Real Estate Professional Status)** - IRS designation allowing active treatment of real estate activities
+• **Intangible Drilling Costs (IDC)** - Oil & gas development costs eligible for immediate deduction
+
+---
+
+🎯 **Ready to transform your tax strategy?** Complete the Strategic Deductions Planner and continue to Module 3 to learn advanced wealth protection strategies.""",
                 duration_minutes=50,
                 order_index=2,
                 xp_available=150
             ),
             CourseContent(
+                title="Business Structure Tax Implications",
+                description="Module 3 of 12 - Choosing the right business structure for tax benefits",
+                content="Compare sole proprietorship, LLC, S-Corp, and C-Corp structures and their tax implications.",
+                duration_minutes=50,
+                order_index=3,
+                xp_available=150
+            ),
+            CourseContent(
                 title="Business Deduction Strategies",
-                description="Module 3 of 12 - Maximizing legitimate business deductions",
+                description="Module 4 of 12 - Maximizing legitimate business deductions",
                 content="Learn about all available business deductions including equipment, travel, meals, and home office expenses.",
                 duration_minutes=55,
-                order_index=3,
+                order_index=4,
                 xp_available=150
             )
         ]
