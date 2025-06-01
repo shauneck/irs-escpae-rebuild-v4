@@ -3188,6 +3188,18 @@ The most successful real estate investors don't just build portfolios—they str
             related_terms=["Real Estate Professional Status (REPS)", "Material Participation", "Tax Documentation"]
         ),
         GlossaryTerm(
+            term="Grouping Election",
+            definition="IRS election under Reg. §1.469-9(g) that allows taxpayers to treat multiple real estate activities as a single activity for material participation purposes, making it easier to meet the requirements across an entire property portfolio.",
+            category="Tax Elections",
+            related_terms=["Real Estate Professional Status (REPS)", "Material Participation", "Passive Activity"]
+        ),
+        GlossaryTerm(
+            term="Contemporaneous Log",
+            definition="Real-time documentation of time spent in business activities, created during or immediately after the activity occurs. Critical for REPS qualification as the IRS requires detailed, contemporaneous records to substantiate time claims during audits.",
+            category="Tax Documentation",
+            related_terms=["Real Estate Professional Status (REPS)", "IRS Time Test", "Tax Documentation"]
+        ),
+        GlossaryTerm(
             term="Advisor Integration",
             definition="The strategic coordination between different tax professionals (CPAs, strategists, attorneys) to ensure compliance while maximizing tax optimization opportunities.",
             category="Professional Services",
