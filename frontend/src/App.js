@@ -950,6 +950,7 @@ const App = () => {
       {activeSection === 'courses' && (
         <>
           <HeroSection />
+          <PricingSection />
           <section className="py-12">
             <div className="container mx-auto px-6">
               <h2 className="text-3xl font-bold text-navy-900 mb-8 text-center">Choose Your Path</h2>
@@ -964,7 +965,6 @@ const App = () => {
               </div>
             </div>
           </section>
-          <PricingSection />
         </>
       )}
       
