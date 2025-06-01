@@ -2239,6 +2239,347 @@ The most successful W-2 earners don't just invest in real estate—they strategi
 🎯 **Ready to master REPS qualification?** Take the Module 4 quiz to earn +50 XP and solidify your understanding before exploring Module 5's advanced entity strategies.""",
                 duration_minutes=60,
                 order_index=4
+            ),
+            CourseContent(
+                title="Real Estate Professional Status (REPS)",
+                description="Module 5 of 8 - Master the advanced REPS strategy to unlock active real estate losses and eliminate W-2 tax burden",
+                content="""**Real Estate Professional Status (REPS)** is the game-changing tax designation that transforms passive real estate losses into active deductions that can completely eliminate your W-2 tax burden. This module teaches you the exact requirements, strategies, and implementation steps to qualify for REPS and unlock unlimited deduction potential.
+
+Helen Park's journey continues. After her STR launch, she paused her consulting work to pursue REPS. By qualifying, she was able to treat passive losses from her long-term rentals as active and apply them directly against W-2 income.
+
+## Understanding REPS: The Tax Strategy That Changes Everything
+
+**Real Estate Professional Status (REPS)** is an IRS designation under Section 469(c)(7) that allows taxpayers to treat real estate activities as active businesses rather than passive investments. This classification removes the **passive loss limitation** that normally prevents real estate losses from offsetting W-2 income.
+
+### The Power of Active vs Passive Treatment
+
+**Without REPS (Passive Treatment):**
+• Real estate losses can only offset passive income
+• Excess losses are suspended until future passive income or property sale
+• W-2 income remains fully taxable regardless of real estate investments
+• Limited tax planning opportunities for high-income earners
+
+**With REPS (Active Treatment):**
+• Real estate losses directly offset W-2 income dollar-for-dollar
+• No **passive loss limitation** restrictions
+• Immediate tax benefits from depreciation and operating losses
+• Unlimited deduction potential against ordinary income
+
+## The IRS Requirements: The Two-Part Test
+
+To qualify for **Real Estate Professional Status (REPS)**, you must satisfy both prongs of the IRS requirements:
+
+### Prong 1: The 750-Hour Test
+**Requirement:** Spend at least 750 hours per year in real estate trade or business activities
+
+**Qualifying Activities:**
+• Property acquisition research and due diligence
+• **Material Participation** in property management activities
+• Marketing and advertising rental properties
+• Property maintenance and improvements
+• Financial record keeping and tax preparation
+• Real estate education and professional development
+• Tenant relations and guest services (for STRs)
+• **Contemporaneous Log** documentation and planning
+
+**Non-Qualifying Activities:**
+• Passive investing in REITs or real estate funds
+• Hiring property managers and remaining uninvolved
+• Occasional property visits or minimal involvement
+• Financial activities unrelated to active management
+
+### Prong 2: The Majority Time Test
+**Requirement:** More than 50% of your personal services during the year must be performed in real estate activities
+
+**Calculation Method:**
+• Compare total real estate hours to ALL other work activities
+• Include W-2 job hours, other business activities, and professional services
+• Must exceed 50% of total combined work time
+• For most W-2 earners, this requires 2,000+ hours in real estate activities
+
+**Strategic Considerations:**
+• Only one spouse needs to qualify if filing jointly
+• Can aggregate time across multiple real estate activities
+• Time must be regular, continuous, and substantial
+
+## The Grouping Election: Maximizing Material Participation
+
+Beyond REPS qualification, you must also achieve **Material Participation** in your real estate activities. The **Grouping Election** under Reg. §1.469-9(g) allows you to treat multiple real estate activities as a single activity for **Material Participation** purposes.
+
+### Benefits of the Grouping Election
+• Combine hours across multiple properties to meet **Material Participation** thresholds
+• Simplify record-keeping and documentation requirements
+• Optimize tax planning across entire real estate portfolio
+• Enable strategic property acquisition and disposition timing
+
+### How to Make the Grouping Election
+• File Form 8582 with your tax return
+• Include a statement describing the grouped activities
+• Must be made by the due date (including extensions) of the return
+• Election is binding for future years unless circumstances materially change
+
+## Case Study: Helen Park - REPS Implementation Success
+
+**Helen's Year 3 Challenge:**
+After building a successful STR portfolio, Helen realized she needed REPS qualification to unlock the full tax benefits of her real estate investments and eliminate her growing W-2 tax burden.
+
+**Helen's Strategic Planning:**
+
+**Time Analysis:**
+• Current W-2 Job: 2,080 hours annually (40 hours/week × 52 weeks)
+• Required Real Estate Hours: 2,100+ hours (to exceed 50% threshold)
+• Target: 2,200 hours in real estate activities for safe qualification
+
+**Activity Breakdown:**
+• **Property Management:** 800 hours annually
+  - Guest communication and booking management: 300 hours
+  - Property maintenance and improvements: 250 hours
+  - Marketing and listing optimization: 150 hours
+  - Inventory management and restocking: 100 hours
+
+• **Property Acquisition:** 600 hours annually
+  - Market research and property analysis: 200 hours
+  - Property tours and due diligence: 150 hours
+  - Contract negotiation and closing processes: 150 hours
+  - Financing coordination and documentation: 100 hours
+
+• **Education & Professional Development:** 400 hours annually
+  - Real estate investment courses and certifications: 200 hours
+  - Industry conferences and networking events: 100 hours
+  - Professional association participation: 100 hours
+
+• **Financial Management & Analysis:** 400 hours annually
+  - Daily bookkeeping and expense tracking: 150 hours
+  - Monthly financial analysis and reporting: 100 hours
+  - Annual tax preparation and planning: 150 hours
+
+**REPS Qualification Results:**
+• ✅ Total Real Estate Hours: 2,200 (exceeded 750-hour requirement)
+• ✅ Real Estate Percentage: 51.4% (exceeded majority time test)
+• ✅ Comprehensive **Contemporaneous Log** documentation
+• ✅ Successful **Grouping Election** for all properties
+
+**Tax Impact Results:**
+• W-2 Income: $240K (promotion and bonus)
+• Real Estate Depreciation Available: $267K
+• **Passive Loss Limitation** Removed: Full deduction against W-2 income
+• Final Taxable Income: $0 (with $27K carryforward loss)
+• Federal Tax Savings: $81K annually
+
+## Advanced REPS Strategies
+
+### Optimizing for High-Hour W-2 Jobs
+
+**For W-2 Jobs Requiring 2,500+ Hours:**
+• **Strategy:** Maximize qualifying real estate activities through intensive management
+• **Approach:** Focus on high-value activities like acquisition and major improvements
+• **Consideration:** May require reducing W-2 hours through strategic time management
+
+**For Standard W-2 Jobs (2,000-2,100 Hours):**
+• **Strategy:** Target 2,200+ real estate hours for comfortable qualification
+• **Approach:** Comprehensive activity documentation and systematic time tracking
+• **Consideration:** Front-load activities in high-income years for maximum benefit
+
+### Documentation Excellence: Audit-Proof Your REPS Claim
+
+**REPS is heavily audited by the IRS.** Your documentation must be detailed, contemporaneous, and defensible.
+
+**Required Documentation Elements:**
+• **Contemporaneous Log** with daily time entries
+• Specific activity descriptions and business purposes
+• Location and duration of each activity
+• Participants and outcomes achieved
+• Supporting documents (contracts, emails, receipts)
+
+**Technology Solutions:**
+• Specialized time tracking apps (Toggl, TimeLog, QuickBooks Time)
+• Calendar integration with activity coding
+• Photo documentation of property activities
+• Automated expense and mileage tracking
+• Cloud-based storage for audit protection
+
+**Best Practices:**
+• Record time daily, not retrospectively
+• Use consistent activity categories
+• Include detailed notes on accomplishments
+• Maintain supporting documentation
+• Regular backups and secure storage
+
+### Material Participation Optimization
+
+**Test 1: 500-Hour Test (Most Common)**
+• Participate in the activity for more than 500 hours during the year
+• Best for primary investment properties with significant management needs
+• Easy to document and defend in audits
+
+**Test 4: Significant Participation Test (Multi-Property Strategy)**
+• Participate more than 100 hours in multiple significant participation activities
+• Total significant participation must exceed 500 hours
+• Optimal for diversified real estate portfolios
+
+**Strategic Application:**
+• Focus intensive time on highest-depreciation properties
+• Use **Grouping Election** to optimize across portfolio
+• Document activities separately for each property or group
+
+## Common REPS Mistakes and How to Avoid Them
+
+### Mistake 1: Inadequate Time Documentation
+**Problem:** Poor record-keeping leads to REPS disallowance in audits
+**Solution:** Implement systematic daily time tracking from day one
+**Best Practice:** Use technology tools for **Contemporaneous Log** accuracy
+
+### Mistake 2: Including Non-Qualifying Activities
+**Problem:** Counting passive or non-real estate activities toward REPS hours
+**Solution:** Focus exclusively on active real estate trade or business activities
+**Best Practice:** Regular training on IRS guidelines and qualifying activities
+
+### Mistake 3: Majority Time Test Miscalculation
+**Problem:** Underestimating total work time or overestimating real estate time
+**Solution:** Include ALL work activities in total time calculation
+**Best Practice:** Conservative approach with detailed annual time planning
+
+### Mistake 4: Inconsistent Year-to-Year Qualification
+**Problem:** Qualifying sporadically creates planning complications and audit risks
+**Solution:** Systematic approach to maintain consistent annual qualification
+**Best Practice:** Annual planning with quarterly progress reviews
+
+## REPS and Long-Term Tax Strategy
+
+### Multi-Year Coordination
+
+**High-Income Years:**
+• Ensure REPS qualification to maximize deduction benefits
+• Coordinate property acquisitions with income spikes
+• Plan major capital improvements for maximum depreciation impact
+
+**Income Fluctuation Management:**
+• May strategically not qualify in lower-income years to preserve losses
+• Focus on property appreciation and cash flow optimization
+• Prepare for future REPS qualification in higher-income years
+
+### Career Transition Planning
+
+**Transitioning from W-2 to Real Estate:**
+• Reduced W-2 hours make REPS qualification easier over time
+• Plan gradual transition to real estate as primary income source
+• Leverage REPS benefits for financial independence acceleration
+
+**Retirement Planning Integration:**
+• REPS qualification affects long-term retirement tax planning
+• Coordinate with 401(k) and IRA distribution strategies
+• Plan for step-up in basis benefits at death
+
+## Advanced Entity Integration
+
+### Combining REPS with Business Entities
+
+**LLC Structures:**
+• Single-member LLCs provide liability protection without tax complexity
+• Multi-member LLCs can optimize **Material Participation** across partners
+• Series LLCs enable property-by-property liability segregation
+
+**Corporate Structures:**
+• S-Corp elections can provide payroll tax savings on management fees
+• C-Corp structures enable income retention and timing strategies
+• Management company arrangements optimize deduction allocation
+
+### Professional Property Management
+
+**When Professional Management Makes Sense:**
+• Large portfolios requiring specialized expertise
+• Out-of-state properties with local management needs
+• Complex commercial properties requiring professional oversight
+
+**Maintaining REPS with Professional Management:**
+• Focus qualifying time on acquisition, planning, and oversight activities
+• Document strategic decision-making and portfolio management time
+• Maintain active involvement in major property decisions
+
+## Measuring REPS Success
+
+### Qualification Metrics
+• **Time Tracking Accuracy:** 100% of required hours documented contemporaneously
+• **Activity Legitimacy:** All activities clearly tied to real estate business purposes
+• **Documentation Quality:** Detailed records capable of surviving IRS audit
+
+### Tax Benefit Realization
+• **Deduction Utilization:** Full real estate losses offset against W-2 income
+• **Effective Tax Rate:** Measurable reduction in overall tax burden
+• **Cash Flow Enhancement:** Increased after-tax cash flow from tax savings
+
+### Long-Term Wealth Building
+• **Portfolio Growth:** Expanded real estate holdings supported by tax benefits
+• **Income Diversification:** Reduced dependency on W-2 income over time
+• **Financial Independence:** Progress toward retirement through real estate wealth
+
+## REPS Quiz Questions and XP Structure
+
+Understanding REPS qualification is critical for W-2 earners seeking to unlock unlimited real estate loss deductions. Test your knowledge and earn XP:
+
+### Quiz Questions:
+1. **What are the two IRS tests required to qualify for REPS?**
+   - ✅ **750+ hours AND more time in real estate than any other activity**
+
+2. **Why should you make a grouping election for your real estate activities?**
+   - ✅ **To meet the material participation threshold across multiple properties**
+
+3. **Can REPS qualification be satisfied by just one spouse in a married filing jointly situation?**
+   - ✅ **Yes, only one spouse needs to qualify**
+
+4. **Why is documentation so critical for REPS?**
+   - ✅ **REPS is high-risk for audit — hours must be contemporaneous and defensible**
+
+### XP Rewards:
+• Complete Module 5 lesson: +10 XP
+• Score 100% on quiz: +15 XP
+• View Helen's full case study: +5 XP
+
+## Key Glossary Terms
+
+Understanding these terms is essential for REPS mastery:
+
+• **REPS (Real Estate Professional Status)** - IRS designation allowing active treatment of real estate activities
+• **Material Participation** - Active involvement in business activities meeting IRS tests
+• **Grouping Election** - Election to treat multiple activities as single activity for participation purposes
+• **Passive Activity** - Investment activities without material participation
+• **Contemporaneous Log** - Real-time documentation of time and activities
+
+## The REPS Outcome: Helen's Success
+
+Helen's REPS qualification transformed her tax situation:
+
+**Before REPS:**
+• W-2 Income: $240K fully taxable
+• Real Estate Losses: $267K suspended (passive limitation)
+• Federal Tax Burden: $81K annually
+
+**After REPS:**
+• W-2 Income: $240K offset by real estate losses
+• Real Estate Losses: $267K fully deductible (active treatment)
+• Federal Tax Burden: $0 (plus $27K carryforward)
+• Annual Tax Savings: $81K
+
+**Long-Term Impact:**
+• Built substantial real estate wealth through tax-advantaged investment
+• Achieved financial independence acceleration through tax optimization
+• Created sustainable income diversification beyond W-2 employment
+
+## What's Next: Advanced Entity Strategies
+
+Module 5 has equipped you with the knowledge to qualify for **Real Estate Professional Status (REPS)** and unlock unlimited deduction potential for your real estate investments. Helen's example demonstrates how proper REPS implementation can completely eliminate W-2 tax burden while building long-term wealth.
+
+In Module 6, we'll explore sophisticated entity structuring strategies that enhance REPS benefits, optimize liability protection, and create additional tax planning opportunities through advanced business structures.
+
+**Key Takeaway:** **Real Estate Professional Status (REPS)** requires dedication and meticulous documentation, but the tax benefits are transformational. The combination of 750+ hours of **Material Participation** and majority time commitment unlocks active loss treatment that can eliminate your entire W-2 tax burden.
+
+The most successful real estate investors don't just build portfolios—they strategically structure their involvement to qualify for REPS and maximize the tax optimization potential of their investments.
+
+---
+
+🎯 **Ready to implement REPS in your situation?** Take the Module 5 quiz to earn +25 XP and solidify your understanding before exploring Module 6's advanced entity optimization strategies.""",
+                duration_minutes=65,
+                order_index=5
             )
         ]
     )
