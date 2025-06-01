@@ -974,4 +974,152 @@ const App = () => {
   );
 };
 
+// Premium Pricing Section Component
+const PricingSection = () => {
+  const plans = [
+    {
+      name: "W-2 Escape Plan",
+      accent: "teal",
+      oneTimePrice: "$997",
+      monthlyPrice: "$49/mo",
+      monthlyDescription: "for tools + AI support",
+      description: "High-income W-2 earners unlock deduction stacking, REPS access, and repositioning strategies.",
+      features: [
+        "Complete W-2 tax optimization course",
+        "REPS qualification strategies", 
+        "Offset stacking frameworks",
+        "RSU repositioning tactics",
+        "Advanced tax tools access",
+        "AI-powered tax support"
+      ],
+      ctaText: "Unlock W-2 Plan",
+      gradient: "from-teal-500 to-teal-600",
+      border: "border-teal-200",
+      bg: "bg-teal-50"
+    },
+    {
+      name: "Business Owner Plan", 
+      accent: "yellow",
+      oneTimePrice: "$1,497",
+      monthlyPrice: "$69/mo", 
+      monthlyDescription: "for tools + AI support",
+      description: "Entity optimization, MSO design, QBI qualification, and asset-backed exit strategies.",
+      features: [
+        "Complete business optimization course",
+        "Entity structure design",
+        "MSO implementation strategies",
+        "QBI qualification methods",
+        "Asset-backed exit planning",
+        "Premium AI tax strategist"
+      ],
+      ctaText: "Join Business Plan",
+      gradient: "from-yellow-500 to-yellow-600", 
+      border: "border-yellow-200",
+      bg: "bg-yellow-50"
+    },
+    {
+      name: "All Access + AI",
+      accent: "pink", 
+      oneTimePrice: "$1,997",
+      monthlyPrice: "$99/mo",
+      monthlyDescription: "for everything",
+      description: "Full access to all courses, tools, XP tracking, and your personal AI tax strategist.",
+      features: [
+        "All courses and content",
+        "Complete tool library access", 
+        "Full XP tracking system",
+        "Personal AI tax strategist",
+        "Priority support access",
+        "Exclusive strategy updates"
+      ],
+      ctaText: "Get All Access",
+      gradient: "from-pink-500 to-pink-600",
+      border: "border-pink-200", 
+      bg: "bg-pink-50",
+      popular: true
+    }
+  ];
+
+  return (
+    <section className="py-16 bg-navy-900">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-white mb-4">
+            Choose Your <span className="text-emerald-400">Tax Freedom</span> Plan
+          </h2>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            Professional tax strategies used by high-income earners to minimize tax burden and build wealth
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {plans.map((plan, index) => (
+            <div key={index} className={`relative bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-all duration-300 ${plan.popular ? 'ring-4 ring-emerald-400' : ''}`}>
+              {plan.popular && (
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                  <span className="bg-emerald-400 text-navy-900 px-4 py-1 rounded-full text-sm font-bold">
+                    MOST POPULAR
+                  </span>
+                </div>
+              )}
+              
+              <div className={`${plan.bg} px-6 py-8 border-b ${plan.border}`}>
+                <h3 className="text-2xl font-bold text-navy-900 mb-2">{plan.name}</h3>
+                <p className="text-gray-600 text-sm mb-6">{plan.description}</p>
+                
+                <div className="space-y-2">
+                  <div className="flex items-baseline">
+                    <span className="text-3xl font-bold text-navy-900">{plan.oneTimePrice}</span>
+                    <span className="text-gray-500 ml-2">one-time</span>
+                  </div>
+                  <div className="text-sm text-gray-600">
+                    or <span className="font-semibold text-navy-900">{plan.monthlyPrice}</span> {plan.monthlyDescription}
+                  </div>
+                </div>
+              </div>
+              
+              <div className="px-6 py-6">
+                <ul className="space-y-3 mb-8">
+                  {plan.features.map((feature, featureIndex) => (
+                    <li key={featureIndex} className="flex items-start">
+                      <svg className="w-5 h-5 text-emerald-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <span className="text-gray-700 text-sm">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                
+                <button className={`w-full bg-gradient-to-r ${plan.gradient} text-white py-4 px-6 rounded-xl font-bold text-lg hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200`}>
+                  {plan.ctaText}
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+        
+        <div className="text-center mt-12">
+          <p className="text-gray-400 text-sm mb-4">
+            All plans include 30-day money-back guarantee • Cancel anytime • Secure payment
+          </p>
+          <div className="flex items-center justify-center space-x-6 text-gray-500">
+            <div className="flex items-center">
+              <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
+              </svg>
+              Secure SSL
+            </div>
+            <div className="flex items-center">
+              <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              </svg>
+              Money-back Guarantee
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 export default App;
