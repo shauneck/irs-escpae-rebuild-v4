@@ -1076,6 +1076,37 @@ In Module 2, we'll dive deep into the specific deduction strategies available to
             explanation="The goal of an Escape Plan is to use the tax code's existing incentives proactively to legally minimize your lifetime tax burden through strategic planning.",
             course_id=primer_course.id,
             module_id=5
+        ),
+        # W-2 Escape Plan Module 1 Questions (50 XP each, 3 questions)
+        QuizQuestion(
+            question="What is the primary disadvantage of W-2 income compared to other income types?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["It's taxed at lower rates", "It has limited deduction opportunities and no timing control", "It requires more paperwork", "It's subject to capital gains tax"],
+            correct_answer="It has limited deduction opportunities and no timing control",
+            explanation="W-2 income faces the highest effective tax rates with limited deduction opportunities, no control over timing, and immediate tax recognition through payroll withholding.",
+            points=50,
+            course_id=w2_course.id,
+            module_id=1
+        ),
+        QuizQuestion(
+            question="In Olivia's case study, what strategy helped her reduce her effective tax rate from 34% to 21%?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["Maximizing 401(k) contributions", "Using QOF investment and STR depreciation to offset W-2 income", "Switching to contractor status", "Moving to a lower tax state"],
+            correct_answer="Using QOF investment and STR depreciation to offset W-2 income",
+            explanation="Olivia used RSU gains to fund a Qualified Opportunity Fund investment in short-term rental properties, then used the depreciation from those properties to offset her W-2 income through REPS qualification.",
+            points=50,
+            course_id=w2_course.id,
+            module_id=1
+        ),
+        QuizQuestion(
+            question="What is the key difference between forward-looking planning and traditional CPA approaches for W-2 earners?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["Forward-looking planning costs more", "Forward-looking planning proactively structures additional income sources and deduction opportunities", "Traditional CPAs file earlier", "There is no significant difference"],
+            correct_answer="Forward-looking planning proactively structures additional income sources and deduction opportunities",
+            explanation="Forward-looking planning focuses on proactively creating structures and opportunities for tax optimization, while traditional CPA approaches typically focus on compliance and filing based on existing income and deductions.",
+            points=50,
+            course_id=w2_course.id,
+            module_id=1
         )
     ]
     
