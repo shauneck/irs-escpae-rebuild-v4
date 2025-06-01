@@ -4588,8 +4588,8 @@ The most successful tax strategists don't just minimize taxes—they use tax opt
         description="Comprehensive tax strategies for business owners and entrepreneurs",
         thumbnail_url="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400",
         is_free=False,
-        total_lessons=5,
-        estimated_hours=5,
+        total_lessons=6,
+        estimated_hours=6,
         lessons=[
             CourseContent(
                 title="Who This Is For & What You're About to Learn",
@@ -5117,19 +5117,389 @@ Understanding these terms is essential for strategic deduction mastery:
                 xp_available=150
             ),
             CourseContent(
-                title="Business Structure Tax Implications",
-                description="Module 3 of 12 - Choosing the right business structure for tax benefits",
-                content="Compare sole proprietorship, LLC, S-Corp, and C-Corp structures and their tax implications.",
-                duration_minutes=50,
+                title="Long-Term Wealth Creation & Legacy Structuring",
+                description="Module 3 of 12 - Build protected, transferable wealth using irrevocable trusts, split-dollar insurance, and strategic MSO co-investments",
+                content="""**Module 3: Long-Term Wealth Creation & Legacy Structuring**
+
+Tax savings are only part of the game. The next level is converting tax savings into **long-term, protected, and transferable wealth** — outside your estate and off your 1040.
+
+This module shows you how to use:
+• **Irrevocable trusts**  
+• **Loan-based split-dollar insurance**  
+• **Strategic co-investments via your MSO**  
+
+To create a legacy structure that compounds for decades and shields your family from tax, liability, and loss.
+
+## Beyond Tax Optimization: Building Protected Wealth
+
+### The Limitation of Traditional Tax Planning
+
+**Traditional Approach Problems:**
+• Tax savings often remain in taxable accounts
+• Wealth stays in personal name with estate tax exposure
+• Assets subject to liability and creditor claims
+• No systematic wealth transfer planning
+• Growth compounds but remains fully taxable
+
+**Next-Level Wealth Creation:**
+• Tax-advantaged growth outside personal estate
+• Asset protection from lawsuits and creditors
+• Systematic wealth transfer to next generation
+• Compound growth in tax-free environments
+• Maintained control without direct ownership
+
+### The Wealth Creation Stack
+
+When layered correctly:
+• **The MSO becomes a finance arm**  
+• **The trust becomes a tax-sheltered vault**  
+• **The insurance policy becomes the engine**  
+• **And you remain in control — without being the legal owner**
+
+**This is how billion-dollar family offices structure wealth. Now it's your turn.**
+
+## Real Client Success Stories
+
+### Dr. N - Full-Stack Legacy Setup
+
+**Background:** Dr. N had successfully implemented his C-Corp MSO and was capturing significant income at 21% corporate rates. He had strong income flow and significant retained earnings inside his MSO — but everything still ran through him personally. That created exposure across taxes, estate, and liability.
+
+**Strategic Challenge:**
+• **Estate Exposure:** All assets in personal name subject to estate taxes
+• **Liability Risk:** Professional and business liability threatening personal wealth
+• **Tax Inefficiency:** Future growth would compound in taxable environment
+• **Transfer Planning:** No systematic approach for wealth transfer to children
+
+**Implementation Strategy:**
+
+**Phase 1: Irrevocable Trust Structure**
+• **Trust Formation:** Created irrevocable trust outside personal estate
+• **Beneficiary Design:** Children as beneficiaries with flexible distribution powers
+• **Trustee Selection:** Independent trustee with Dr. N retaining advisory role
+• **Trust Powers:** Strategic powers allowing influence without ownership
+
+**Phase 2: Loan-Based Split-Dollar Insurance**
+• **MSO Loan Structure:** MSO loans premium payments to the trust
+• **Insurance Acquisition:** Trust purchases life insurance policy on Dr. N
+• **Growth Projection:** Policy projected to grow at 6-7% tax-free annually
+• **Split-Dollar Agreement:** MSO retains loan repayment rights, trust owns growth
+
+**Phase 3: Strategic Co-Investment Structure**
+• **Trust Equity Participation:** Trust co-invests with MSO in strategic opportunities
+• **Real Estate Ventures:** Joint ventures in commercial real estate development
+• **Business Investments:** Equity participation in portfolio companies
+• **Control Maintenance:** Dr. N retains control through board seats and management agreements
+
+**Results:**
+• **Estate Removal:** Significant wealth moved outside personal estate
+• **Tax-Free Growth:** Policy and trust investments compound without taxation
+• **Asset Protection:** Trust assets protected from personal and professional liability
+• **Maintained Control:** Dr. N retains operational control through strategic structures
+• **Legacy Creation:** Systematic wealth transfer to children with tax efficiency
+
+**Dr. N's Transformation:**
+His retained earnings became **tax-free capital growing off-books**, protected from lawsuits and the IRS, while he maintained practical control over strategic decisions.
+
+### Sabrina - Early-Stage Legacy Builder
+
+**Background:** Sabrina runs a boutique fitness brand earning ~$260K annually, with $75K in retained earnings in her S-Corp. She recognized the need to start building protected wealth early in her business success.
+
+**Constraint-Based Approach:**
+• **Limited Capital:** Needed strategies appropriate for her income level
+• **Growth Trajectory:** Business expanding rapidly requiring scalable structures
+• **Simplicity Focus:** Wanted effective strategies without excessive complexity
+• **Future Planning:** Building foundation for larger wealth as business grows
+
+**Implementation Steps:**
+
+**Step 1: Entity Optimization**
+• **MSO Creation:** Spun up C-Corp MSO for admin and licensing functions
+• **Income Repositioning:** Routed $60K through MSO structure
+• **Tax Savings:** $9,600 annual savings (16% rate differential)
+• **Retained Earnings:** Built MSO cash position for strategic deployment
+
+**Step 2: Basic Trust Structure**
+• **Irrevocable Trust Formation:** Created basic irrevocable trust for future equity
+• **Beneficiary Design:** Trust structured for her children's benefit
+• **Flexible Framework:** Trust designed to accommodate future business growth
+• **Professional Management:** Independent trustee with Sabrina as trust advisor
+
+**Step 3: Loan-Based Insurance Funding**
+• **Insurance Selection:** Basic life insurance policy appropriate for her age and income
+• **MSO Loan Structure:** MSO loans $12K annually in insurance premiums to trust
+• **Growth Foundation:** Policy creates tax-free growth foundation for future wealth
+• **Scalable Design:** Structure can accommodate increased funding as income grows
+
+**Sabrina's Current Position:**
+• **Asset Protection:** Trust provides liability protection for growing wealth
+• **Off-1040 Growth:** Insurance policy grows tax-free outside personal estate
+• **Scalable Structure:** Trust can accommodate significant future business growth
+• **Control Maintenance:** Sabrina maintains practical control through advisor role
+
+**Sabrina's Quote:**
+> "I didn't want to wait until I had millions to start protecting my wealth. This structure grows with my business and protects my family from day one."
+
+## Advanced Legacy Structuring Components
+
+### Irrevocable Trust: The Foundation
+
+**Core Benefits:**
+• **Estate Exclusion** - Assets removed from personal estate for tax purposes
+• **Asset Protection** - Protection from personal and professional creditors
+• **Tax Efficiency** - Growth occurs outside personal tax return
+• **Wealth Transfer** - Systematic transfer to beneficiaries with control
+
+**Trust Design Considerations:**
+
+**Beneficiary Structure:**
+• **Primary Beneficiaries** - Children or other family members
+• **Successor Beneficiaries** - Grandchildren and future generations
+• **Charitable Beneficiaries** - Optional charitable remainder interests
+• **Flexible Distributions** - Trustee discretion for changing needs
+
+**Control vs. Ownership:**
+• **Trustee Selection** - Independent trustee for legal compliance
+• **Trust Advisor** - Grantor advisory role for practical influence
+• **Distribution Committee** - Family involvement in distribution decisions
+• **Investment Committee** - Professional investment management oversight
+
+### Split-Dollar Life Insurance: The Growth Engine
+
+**Split-Dollar Fundamentals:**
+• **Loan-Based Structure** - MSO loans premiums to trust for policy purchase
+• **Economic Split** - MSO recovers loan amount, trust owns remaining value
+• **Tax-Free Growth** - Policy cash value grows without current taxation
+• **Estate Benefits** - Death benefit passes to beneficiaries estate-tax-free
+
+**Policy Design Optimization:**
+
+**Insurance Type Selection:**
+• **Variable Universal Life (VUL)** - Investment control and growth potential
+• **Indexed Universal Life (IUL)** - Market upside with downside protection
+• **Whole Life** - Guaranteed growth with dividend potential
+• **Term Conversion** - Flexible conversion options for changing needs
+
+**Funding Strategy:**
+• **MSO Loan Capacity** - Coordinate with MSO cash flow and retained earnings
+• **Loan Terms** - Competitive interest rates and flexible repayment
+• **Policy Performance** - Target 6-7% annual growth for optimal results
+• **Exit Strategies** - Multiple options for loan satisfaction and policy optimization
+
+### Strategic Co-Investment Opportunities
+
+**MSO-Trust Joint Ventures:**
+• **Real Estate Development** - Commercial and residential projects
+• **Business Acquisitions** - Equity stakes in portfolio companies
+• **Energy Investments** - Oil & gas partnerships with tax benefits
+• **Technology Ventures** - Growth investments in emerging sectors
+
+**Structure Benefits:**
+• **Risk Diversification** - Spread investment risk across multiple assets
+• **Control Maintenance** - MSO operational control with trust financial participation
+• **Tax Optimization** - Trust growth outside taxable environment
+• **Legacy Building** - Assets appreciate for benefit of future generations
+
+## Implementation Process and Timeline
+
+### Phase 1: Foundation Setup (Months 1-2)
+
+**Legal Structure Creation:**
+• **Trust Formation** - Draft and execute irrevocable trust documents
+• **Trustee Selection** - Identify and engage qualified independent trustee
+• **MSO Coordination** - Modify MSO structure for loan and investment capabilities
+• **Professional Team** - Assemble attorneys, CPAs, and insurance professionals
+
+**Documentation and Compliance:**
+• **Trust Agreement** - Comprehensive trust document with appropriate powers
+• **Loan Agreements** - Split-dollar and other loan documentation
+• **Investment Policies** - Trust investment guidelines and restrictions
+• **Governance Structure** - Board representation and advisory arrangements
+
+### Phase 2: Insurance Implementation (Months 2-3)
+
+**Policy Selection and Design:**
+• **Insurance Analysis** - Evaluate policy types and performance projections
+• **Underwriting Process** - Complete medical and financial underwriting
+• **Policy Customization** - Optimize death benefit and cash value growth
+• **Split-Dollar Structure** - Implement loan-based premium funding
+
+**Initial Funding and Operations:**
+• **Premium Loans** - Begin MSO loans to trust for premium payments
+• **Policy Management** - Establish ongoing policy monitoring and optimization
+• **Performance Tracking** - Implement reporting systems for policy growth
+• **Compliance Monitoring** - Ensure ongoing tax and legal compliance
+
+### Phase 3: Investment Integration (Months 3-6)
+
+**Co-Investment Opportunities:**
+• **Investment Evaluation** - Identify suitable joint venture opportunities
+• **Due Diligence** - Professional analysis of investment prospects
+• **Structure Documentation** - Legal agreements for co-investment arrangements
+• **Capital Deployment** - Begin strategic investments through trust structure
+
+**Ongoing Management:**
+• **Investment Oversight** - Professional management of trust investments
+• **Performance Monitoring** - Regular reporting on investment and policy performance
+• **Strategic Adjustments** - Optimize structure based on performance and opportunities
+• **Family Education** - Educate beneficiaries on trust purpose and management
+
+## Risk Management and Compliance
+
+### Legal and Tax Compliance
+
+**IRS Compliance Requirements:**
+• **Documented Loans** - Proper loan documentation with market interest rates
+• **Separate Legal Entities** - Maintain distinct operations between MSO and trust
+• **Board Control** - Legitimate business governance and decision-making
+• **Fair Market Value** - All transactions at arm's length pricing
+
+**Estate Planning Coordination:**
+• **Gift Tax Planning** - Coordinate trust funding with annual and lifetime exemptions
+• **Estate Tax Optimization** - Structure to minimize estate tax on remaining assets
+• **Generation-Skipping Planning** - Design for multi-generational wealth transfer
+• **Charitable Integration** - Optional charitable components for additional benefits
+
+### Asset Protection Strategies
+
+**Creditor Protection:**
+• **Trust Design** - Irrevocable structure provides protection from grantor's creditors
+• **Jurisdiction Selection** - Favorable trust jurisdictions for enhanced protection
+• **Spendthrift Provisions** - Protection of trust assets from beneficiary creditors
+• **Professional Oversight** - Independent trustee provides additional protection layer
+
+**Operational Security:**
+• **Entity Separation** - Clear boundaries between personal, MSO, and trust activities
+• **Documentation Excellence** - Comprehensive records for all transactions and decisions
+• **Professional Advice** - Ongoing consultation with legal and tax professionals
+• **Regular Reviews** - Annual assessments of structure and compliance
+
+## Advanced Strategies and Optimization
+
+### Multi-Generational Planning
+
+**Dynasty Trust Considerations:**
+• **Perpetual Duration** - Trusts designed to last multiple generations
+• **Generation-Skipping Benefits** - Minimize transfer taxes across generations
+• **Flexible Distribution Powers** - Adapt to changing family needs over time
+• **Educational Integration** - Family governance and wealth education programs
+
+**Family Office Development:**
+• **Professional Management** - Transition to family office services as wealth grows
+• **Investment Sophistication** - Access to institutional investment opportunities
+• **Comprehensive Services** - Tax, legal, investment, and administrative coordination
+• **Next Generation Preparation** - Leadership development and succession planning
+
+### Exit Planning Integration
+
+**Business Exit Coordination:**
+• **QSBS Planning** - Coordinate with Qualified Small Business Stock strategies
+• **Installment Sales** - Use trust structure for optimized business sale transactions
+• **Charitable Planning** - Integrate charitable giving with business exit planning
+• **Liquidity Management** - Plan for liquidity needs during business transition
+
+**Wealth Transition Strategies:**
+• **Gradual Transfer** - Systematic wealth transfer over multiple years
+• **Control Retention** - Maintain operational control during wealth transfer
+• **Tax Optimization** - Minimize transfer taxes through strategic planning
+• **Family Harmony** - Structure to promote family unity and shared values
+
+## Measuring Legacy Success
+
+### Performance Metrics
+
+**Financial Performance:**
+• **Trust Asset Growth** - Annual appreciation of trust investments and insurance
+• **Tax Efficiency** - Tax savings from off-estate growth and strategic structuring
+• **Insurance Performance** - Policy cash value growth relative to projections
+• **Co-Investment Returns** - Performance of MSO-trust joint ventures
+
+**Strategic Objectives:**
+• **Estate Tax Savings** - Reduction in projected estate tax liability
+• **Asset Protection** - Successful protection from creditor claims and litigation
+• **Family Engagement** - Beneficiary education and involvement in trust governance
+• **Legacy Preservation** - Successful wealth transfer to future generations
+
+### Long-Term Optimization
+
+**Annual Review Process:**
+• **Performance Assessment** - Evaluate all components of legacy structure
+• **Strategic Adjustments** - Optimize based on tax law changes and family needs
+• **Professional Coordination** - Annual meetings with full advisory team
+• **Family Education** - Ongoing education for beneficiaries and next generation
+
+**Succession Planning:**
+• **Leadership Development** - Prepare next generation for wealth stewardship
+• **Governance Evolution** - Transition governance as family and wealth mature
+• **Professional Transition** - Plan for changes in professional advisory team
+• **Value Preservation** - Maintain family values and wealth building principles
+
+## Homework Assignment: Legacy Planning Map
+
+**Before Module 4, complete the Legacy Planning Map to identify your wealth protection and transfer opportunities:**
+
+### Section 1: Asset and Ownership Inventory
+• **Current Asset Analysis** - Catalog all significant personal and business assets
+• **Ownership Structure** - Document how assets are currently owned and titled
+• **Estate Exposure** - Calculate current estate tax exposure and vulnerability
+• **Liability Assessment** - Identify creditor and lawsuit risks to current assets
+
+### Section 2: Estate and Liability Risk Assessment
+• **Estate Tax Projections** - Estimate future estate tax liability based on growth projections
+• **Professional Liability** - Assess malpractice and professional creditor risks
+• **Business Liability** - Evaluate business-related litigation and creditor exposure
+• **Family Protection** - Identify family wealth protection needs and objectives
+
+### Section 3: MSO + Trust Opportunity Evaluation
+• **MSO Capital Capacity** - Assess MSO retained earnings and loan capacity
+• **Trust Structure Options** - Evaluate irrevocable trust designs for family situation
+• **Insurance Analysis** - Determine appropriate life insurance coverage and structure
+• **Co-Investment Potential** - Identify opportunities for MSO-trust joint ventures
+
+### Section 4: Split-Dollar Insurance Planning
+• **Coverage Needs** - Determine appropriate life insurance death benefit amounts
+• **Premium Funding** - Calculate MSO loan capacity for premium funding
+• **Policy Design** - Evaluate insurance types and investment options
+• **Growth Projections** - Model tax-free growth potential over time
+
+### Section 5: Implementation Timeline
+• **Priority Ranking** - Prioritize legacy planning objectives based on urgency and impact
+• **Professional Resources** - Identify qualified attorneys, CPAs, and insurance professionals
+• **Family Coordination** - Plan family discussions and beneficiary education
+• **Integration Planning** - Coordinate with existing business and tax strategies
+
+**Deliverable:** Completed Legacy Planning Map serves as your roadmap for building protected, transferable wealth that grows outside your estate while maintaining control.
+
+## Key Glossary Terms
+
+Understanding these terms is essential for legacy structuring mastery:
+
+• **Irrevocable Trust** - Trust structure that removes assets from grantor's estate while providing beneficiary protection
+• **Split-Dollar Insurance** - Life insurance arrangement where premium costs and benefits are split between parties
+• **Loan-Based Premium Funding** - Structure where MSO loans premium payments to trust for policy acquisition
+• **Ownership vs. Control** - Distinction between legal ownership and practical control of assets and decisions
+• **Tax-Free Wrapper** - Structure that allows growth and income without current taxation
+
+---
+
+🎯 **Ready to build protected legacy wealth?** Complete the Legacy Planning Map and continue to Module 4 to learn advanced business exit and succession strategies.""",
+                duration_minutes=55,
                 order_index=3,
                 xp_available=150
             ),
             CourseContent(
+                title="Business Structure Tax Implications",
+                description="Module 4 of 12 - Choosing the right business structure for tax benefits",
+                content="Compare sole proprietorship, LLC, S-Corp, and C-Corp structures and their tax implications.",
+                duration_minutes=50,
+                order_index=4,
+                xp_available=150
+            ),
+            CourseContent(
                 title="Business Deduction Strategies",
-                description="Module 4 of 12 - Maximizing legitimate business deductions",
+                description="Module 5 of 12 - Maximizing legitimate business deductions",
                 content="Learn about all available business deductions including equipment, travel, meals, and home office expenses.",
                 duration_minutes=55,
-                order_index=4,
+                order_index=5,
                 xp_available=150
             )
         ]
