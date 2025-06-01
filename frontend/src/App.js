@@ -623,7 +623,7 @@ const CourseViewer = ({ course, onBack }) => {
                     <h3 className="text-xl font-bold text-navy-900 mb-4">Quiz Complete!</h3>
                     <div className="mb-4">
                       <span className="text-2xl font-bold text-emerald-600">
-                        +{quizResults.filter(r => r.correct).length * 10} XP Earned
+                        +{quizResults.filter(r => r.correct).reduce((total, result) => total + result.points, 0)} XP Earned
                       </span>
                     </div>
                     <div className="space-y-4">
