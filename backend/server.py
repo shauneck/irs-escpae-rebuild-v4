@@ -1149,7 +1149,7 @@ The most successful W-2 earners don't just earn and save—they systematically *
                 description="Employee-specific deductions and strategies",
                 content="Learn about deductions available to W-2 employees, including unreimbursed business expenses, home office deductions for remote work, and more.",
                 duration_minutes=45,
-                order_index=2
+                order_index=3
             )
         ]
     )
