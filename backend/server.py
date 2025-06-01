@@ -6033,6 +6033,47 @@ Understanding these terms is essential for legacy structuring mastery:
             course_id=business_course.id,
             module_id=2
         ),
+        # Business Owner Escape Plan Module 3 Questions (4 questions, 50 XP each)
+        QuizQuestion(
+            question="What does an irrevocable trust allow you to do?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["Maintain full ownership of assets", "Hold assets outside your estate and 1040", "Avoid all taxes permanently", "Control assets without restrictions"],
+            correct_answer="Hold assets outside your estate and 1040",
+            explanation="An irrevocable trust removes assets from your personal estate for tax purposes while providing asset protection and systematic wealth transfer to beneficiaries outside your 1040 return.",
+            points=50,
+            course_id=business_course.id,
+            module_id=3
+        ),
+        QuizQuestion(
+            question="What's the role of the MSO in a split-dollar strategy?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["It owns the insurance policy directly", "It loans premiums to the trust to fund a tax-free insurance policy", "It pays taxes on policy growth", "It receives all death benefits"],
+            correct_answer="It loans premiums to the trust to fund a tax-free insurance policy",
+            explanation="In a split-dollar strategy, the MSO loans premium payments to the trust, which purchases the life insurance policy. This allows tax-free growth in the policy while maintaining MSO loan repayment rights.",
+            points=50,
+            course_id=business_course.id,
+            module_id=3
+        ),
+        QuizQuestion(
+            question="What makes this strategy IRS-compliant?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["It avoids all documentation", "It uses documented loans, separate legal entities, and board control", "It eliminates all taxes", "It requires no professional oversight"],
+            correct_answer="It uses documented loans, separate legal entities, and board control",
+            explanation="IRS compliance requires proper loan documentation with market interest rates, maintaining separate legal entities with distinct operations, and legitimate business governance and decision-making.",
+            points=50,
+            course_id=business_course.id,
+            module_id=3
+        ),
+        QuizQuestion(
+            question="Who retains real control in this setup?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["The insurance company", "The business owner via trust powers and MSO governance", "The IRS", "The beneficiaries only"],
+            correct_answer="The business owner via trust powers and MSO governance",
+            explanation="The business owner maintains practical control through trust advisory powers, MSO governance structures, board seats, and management agreements while not being the legal owner of the assets.",
+            points=50,
+            course_id=business_course.id,
+            module_id=3
+        ),
         QuizQuestion(
             question="What role did Qualified Opportunity Zones play?",
             type=QuizQuestionType.MULTIPLE_CHOICE,
