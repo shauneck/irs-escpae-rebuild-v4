@@ -4588,171 +4588,251 @@ The most successful tax strategists don't just minimize taxes—they use tax opt
         description="Comprehensive tax strategies for business owners and entrepreneurs",
         thumbnail_url="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400",
         is_free=False,
-        total_lessons=3,
-        estimated_hours=3,
+        total_lessons=4,
+        estimated_hours=4,
         lessons=[
             CourseContent(
                 title="Who This Is For & What You're About to Learn",
-                description="Module 0 of 12 - Introduction to the Business Owner Escape Plan and what high-income entrepreneurs need to know",
+                description="Module 0 of 12 - Course introduction and strategic overview for high-income business owners",
                 content="""**Module 0: Who This Is For & What You're About to Learn**
 
-Welcome to the Business Owner Escape Plan.
+This course is built for **business owners earning six figures or more in profit** who are tired of overpaying taxes and ready for a complete strategic system.
 
-This course was built for **business owners earning six figures or more in net profit** who are tired of watching their hard-earned money disappear to taxes — year after year — with no real plan to fix it.
-
-You might already have a competent CPA. Your returns get filed on time. You're not missing deductions — at least not the obvious ones. And yet… you're still writing six- or even seven-figure checks to the IRS, wondering why nothing is changing.
-
-That's because **traditional tax filing is reactive.** It's compliance-based. And it was never designed to protect builders like you.
-
-## This Course Is Different
-
-The Business Owner Escape Plan is a system designed specifically for **high-income entrepreneurs** who are ready to move beyond generic advice and into a coordinated, multi-layered strategy.
-
-### What You'll Master by the End of This Program
-
-By the end of this program, you'll know how to:
-
-• **Restructure your income** so less of it ever lands on your 1040  
-• **Reposition capital** into deductible, income-producing assets  
-• **Shield that wealth** from future taxes, lawsuits, and probate  
-• **Exit your business** with a zero-capital-gains outcome — legally, and by design
-
-## Real Client Stories, Real Results
-
-Each module is built around **real client stories** — complete with numbers, timelines, and the exact code sections that made it work.
-
-### Advanced Strategies You'll Learn
+## What You'll Learn
 
 You'll learn how to:
+• **Restructure income** so less hits your 1040  
+• **Reposition income** into deductible, income-producing assets  
+• **Shield your income** from future taxes, lawsuits, and probate  
+• **Exit your business** with zero capital gains — legally
 
-• **Use a C-Corp MSO** to shift income out of your personal return  
-• **Unlock six- and even seven-figure deductions** using real estate, energy, and advanced depreciation  
-• **Stack trusts, insurance, and legacy structures** to build multi-generational wealth  
-• **Prepare your business for a tax-advantaged exit** using QSBS, Opportunity Zones, and installment-based payout strategies
+## Real Case Studies, Real Results
 
-## This Isn't About Hacks — It's About Infrastructure
+Each module includes **real case studies, backed by the tax code,** not gimmicks.
 
-This isn't about hacks. **It's about building infrastructure.**
+## Your Strategic Arsenal
 
-The same infrastructure we've used with clients paying **$500K, $1M, or even $2M+ per year in taxes** — and helping them cut that burden in half or more, while creating wealth that lasts.
+By the end of this course, you'll have:
+• **A C-Corp MSO** to shift income  
+• **A deduction strategy** using real estate and energy  
+• **A trust + insurance stack** to protect capital  
+• **An exit plan** using QSBS and Opportunity Funds
 
-### Who This Course Is Designed For
+## Key Glossary Terms
 
-**You're the perfect fit for this course if:**
+Understanding these terms is essential for business owner tax mastery:
 
-✅ **High Net Profit Business Owner** - You're earning six figures or more in net business profit annually
-
-✅ **Tax Burden Frustration** - You're tired of writing large tax checks year after year with no strategic plan
-
-✅ **Beyond Basic Compliance** - You have a competent CPA but need advanced tax strategy, not just filing
-
-✅ **Growth-Minded** - You want to build wealth and protect it, not just minimize current taxes
-
-✅ **Implementation Ready** - You're ready to move beyond generic advice into coordinated, multi-layered strategies
-
-### What Makes Business Owner Taxation Different
-
-**Business owners face unique challenges:**
-
-• **Multiple Income Streams** - Business income, capital gains, passive investments, real estate
-• **Entity Structure Complexity** - Choosing optimal business structures for tax efficiency
-• **Exit Planning Requirements** - Planning for business sale or transition with minimal tax impact
-• **Estate Planning Needs** - Protecting and transferring business wealth to next generation
-• **Cash Flow Management** - Balancing business reinvestment with personal wealth building
-
-### The Business Owner Tax Problem
-
-**Traditional tax advice fails business owners because:**
-
-• **Generic Solutions** - Most advice is designed for W-2 employees, not entrepreneurs
-• **Reactive Approach** - Focus on compliance and filing, not proactive strategy
-• **Single-Year Thinking** - Missing long-term wealth building and exit planning
-• **Limited Scope** - Not coordinating business structure, personal taxes, and estate planning
-
-## The Business Owner Escape Plan Solution
-
-**Our systematic approach addresses:**
-
-### Income Restructuring
-• **Entity Optimization** - Choosing and implementing optimal business structures
-• **Income Shifting** - Moving income between personal and business returns strategically
-• **Timing Strategies** - Controlling when income hits your personal return
-
-### Deduction Maximization
-• **Business Deductions** - Maximizing legitimate business expenses and write-offs
-• **Real Estate Integration** - Using business real estate for massive depreciation benefits
-• **Energy Investments** - Leveraging business capital for oil & gas deduction opportunities
-
-### Wealth Protection
-• **Asset Protection** - Shielding business and personal assets from litigation
-• **Estate Planning** - Minimizing estate taxes while preserving family wealth
-• **Insurance Strategies** - Using life insurance for tax-advantaged wealth building
-
-### Exit Optimization
-• **QSBS Planning** - Qualifying for $10M+ in tax-free business sale proceeds
-• **Installment Sales** - Spreading capital gains over multiple years
-• **Opportunity Zones** - Deferring and eliminating capital gains through strategic reinvestment
-
-## Your Investment in Tax Freedom
-
-**What this course represents:**
-
-This course contains strategies typically available only through:
-• **$50,000+ annual advisory fees** with top-tier tax strategists
-• **$500+ per hour** consultations with specialized tax attorneys
-• **Exclusive wealth management** services for ultra-high-net-worth families
-
-**For business owners generating significant profits,** the strategies in this course can save hundreds of thousands or even millions in taxes over time.
-
-## Real Client Example: The Power of Integration
-
-**Case Study Preview:**
-A software business owner earning $2.3M annually reduced his tax burden from $780,000 to $290,000 through:
-• C-Corp MSO structure shifting $800K in income
-• Real estate cost segregation generating $340K in deductions  
-• Oil & gas investments providing $180K in IDC deductions
-• Insurance strategies creating $1.2M in tax-deferred wealth building
-
-**Total Annual Tax Savings: $490,000**
-
-## What's Next: Your Business Transformation Journey
-
-**This course will take you through:**
-
-• **Module 1-3:** Foundation and entity structuring for maximum efficiency
-• **Module 4-6:** Advanced deduction strategies using real estate and energy investments  
-• **Module 7-9:** Wealth protection through trusts, insurance, and estate planning
-• **Module 10-12:** Exit planning and multi-generational wealth transfer
-
-## Ready to Begin?
-
-If you want **not just lower taxes, but more control, more protection, and more growth** — you're exactly where you need to be.
-
-**The Business Owner Escape Plan** will give you the infrastructure that the wealthiest business families use to build and preserve multi-generational wealth.
-
-Let's get started.
+• **1040** - Individual tax return where personal income is reported and taxed
+• **Income Repositioning** - Strategic movement of income between entities for tax optimization
+• **C-Corp MSO** - Management Services Organization using C-Corporation structure for income shifting
+• **Tax Shielding** - Protecting income and assets from future taxation through strategic structures
+• **Qualified Opportunity Fund (QOF)** - Investment vehicle for deferring and reducing capital gains taxes
 
 ---
 
-🎯 **Ready to transform your business tax strategy?** Continue to Module 1 to begin building your tax optimization infrastructure.""",
-                duration_minutes=25,
+Let's get started.""",
+                duration_minutes=15,
                 order_index=0,
                 xp_available=150
             ),
             CourseContent(
-                title="Business Structure Tax Implications",
-                description="Module 1 of 12 - Choosing the right business structure for tax benefits",
-                content="Compare sole proprietorship, LLC, S-Corp, and C-Corp structures and their tax implications.",
-                duration_minutes=50,
+                title="Entity Structuring & Income Capture",
+                description="Module 1 of 12 - Master C-Corp MSO structures to shift income from 37% personal rates to 21% corporate rates",
+                content="""**Module 1: Entity Structuring & Income Capture**
+
+Most business owners are set up to fail — not by intention, but by default.
+
+They rely on **S-Corps and LLCs** because that's what their CPA suggested. But those are compliance tools, not strategy vehicles.
+
+This module introduces the **C-Corp MSO** — a structure that allows you to capture income at **21% corporate rates** instead of **37% personal rates**.
+
+## Why Filing ≠ Planning
+
+**Filing is about history. Planning is about leverage.**
+
+Your CPA might be doing everything right — but if they're not helping you restructure, you're still playing defense.
+
+## Real Client Success Stories
+
+### Dr. Ben - Medical Practice Owner
+
+**Challenge:** $2M in practice income hitting personal return at maximum rates
+
+**Solution Implementation:**
+• Created **C-Corp MSO** for practice management services
+• **$2M routed through** the newly created C-Corp MSO structure
+• **Saved $320,000** in taxes year one through income repositioning
+• **Extracted capital** using split-dollar life insurance — no dividend or capital gains tax
+• **Result:** Cash off the books, structured legally, and redeployed into new assets
+
+**Tax Impact:**
+• **Before:** $2M × 37% = $740,000 in personal income taxes
+• **After:** $2M × 21% = $420,000 in corporate taxes
+• **Annual Savings:** $320,000
+
+### Kim - Marketing Firm Owner
+
+**Challenge:** Boutique marketing firm with $250K net income, all flowing to personal return
+
+**Solution Implementation:**
+• **Routed $100K** through an MSO at 21% corporate rate
+• **Saved $16K** in year one through strategic income shifting
+• **Reinvested** savings into lead generation and part-time staff
+• **Result:** Accelerating growth while reducing tax burden
+
+**Tax Impact:**
+• **Income Shifted:** $100,000 from personal to corporate rates
+• **Tax Savings:** ($100K × 37%) - ($100K × 21%) = $16,000 annually
+• **Growth Investment:** Used savings for business expansion
+
+## MSO / C-Corp Capture Strategy
+
+### How It Works
+
+**Strategic Structure:**
+• A **C-Corp MSO** performs real operational functions (admin, marketing, licensing)
+• It charges your operating entity **management fees** for legitimate services
+• That fee becomes **income taxed at 21%** instead of flowing to your 1040 at 37%
+• Structured correctly, it's **legal, defensible, and repeatable**
+
+### Qualifying Services for MSO
+
+**Legitimate MSO Functions:**
+• **Administrative Services** - HR, payroll, accounting, legal coordination
+• **Marketing Services** - Brand management, digital marketing, lead generation
+• **Technology Services** - IT support, software licensing, data management
+• **Strategic Services** - Business development, consulting, planning
+
+### Implementation Requirements
+
+**Legal and Tax Compliance:**
+• **Substance over Form** - MSO must perform real, valuable services
+• **Fair Market Value** - Management fees must reflect legitimate market rates
+• **Documentation** - Service agreements, time tracking, deliverable records
+• **Separate Operations** - Distinct business purpose and operational independence
+
+## Advanced MSO Strategies
+
+### Income Optimization Through Multiple Entities
+
+**Dual-Entity Design:**
+• **Operating Entity** - Generates revenue and operational income
+• **Management Entity** - Provides services and captures strategic income
+• **Income Flow** - Operating entity pays management fees to MSO
+• **Tax Arbitrage** - 16% rate differential (37% personal vs 21% corporate)
+
+### Capital Extraction Strategies
+
+**Beyond Income Shifting:**
+• **Split-Dollar Life Insurance** - Tax-free capital extraction method
+• **Corporate-Owned Life Insurance (COLI)** - Tax-deferred wealth building
+• **Bonus and Benefit Programs** - Tax-advantaged employee compensation
+• **Equipment Leasing** - Additional income streams and depreciation benefits
+
+## Implementation Timeline and Process
+
+### Phase 1: Entity Formation (Weeks 1-2)
+• **Legal Structure** - Form C-Corp MSO with appropriate state registration
+• **Operating Agreements** - Draft service agreements between entities
+• **Tax Elections** - File necessary elections and registrations
+• **Banking Setup** - Establish separate banking and financial accounts
+
+### Phase 2: Service Implementation (Weeks 3-4)
+• **Service Definition** - Clearly define MSO services and deliverables
+• **Pricing Strategy** - Establish fair market value pricing for services
+• **Documentation Systems** - Implement tracking and reporting systems
+• **Compliance Framework** - Ensure ongoing legal and tax compliance
+
+### Phase 3: Optimization and Monitoring (Ongoing)
+• **Performance Tracking** - Monitor tax savings and business performance
+• **Strategic Adjustments** - Refine structure based on results and opportunities
+• **Compliance Maintenance** - Ongoing legal and tax compliance management
+• **Growth Planning** - Scale structure as business grows and evolves
+
+## Common MSO Mistakes to Avoid
+
+### Mistake 1: Inadequate Substance
+**Problem:** MSO exists on paper but doesn't perform real services
+**Solution:** Ensure MSO provides legitimate, valuable services with documented results
+
+### Mistake 2: Unreasonable Fees
+**Problem:** Management fees don't reflect fair market value
+**Solution:** Research and document market rates for comparable services
+
+### Mistake 3: Poor Documentation
+**Problem:** Lack of service agreements, time tracking, and deliverable records
+**Solution:** Implement comprehensive documentation and tracking systems
+
+### Mistake 4: Single-Purpose Focus
+**Problem:** MSO only exists for tax benefits without business purpose
+**Solution:** Develop multiple legitimate business functions and revenue streams
+
+## MSO vs. Traditional Structures
+
+### S-Corp Limitations
+• **Pass-Through Taxation** - All income flows to personal return
+• **Limited Deduction Opportunities** - Fewer business expense categories
+• **No Income Retention** - Cannot retain earnings for future use
+• **Single Tax Strategy** - Limited optimization opportunities
+
+### C-Corp MSO Advantages
+• **Rate Arbitrage** - 21% corporate vs 37% personal rates
+• **Income Retention** - Ability to retain earnings for future use
+• **Enhanced Deductions** - Broader business expense categories
+• **Strategic Flexibility** - Multiple tax planning opportunities
+
+## Homework Assignment
+
+**Before Module 2, complete this strategic analysis:**
+
+1. **Current Income Flow Analysis**
+   • Sketch your current income flow (even if it's a napkin sketch)
+   • Note where the money lands — which entity and which return
+   • Calculate current effective tax rates on business income
+
+2. **Audit Defense Preparation**
+   • Ask: If audited, could I defend how and why my income flows this way?
+   • Document current business structure and tax treatment
+   • Identify potential vulnerabilities or optimization opportunities
+
+3. **MSO Opportunity Assessment**
+   • Identify services your business could provide through an MSO
+   • Calculate potential tax savings from income repositioning
+   • Consider operational benefits beyond tax optimization
+
+**If the answer to audit defense is no — that's your upside.**
+
+## Key Glossary Terms
+
+Understanding these terms is essential for entity structuring mastery:
+
+• **Entity Trap** - Being stuck in suboptimal business structure without strategic planning
+• **QBI (Qualified Business Income)** - 20% deduction for pass-through business income
+• **MSO (Management Services Organization)** - Entity providing management services to other businesses
+• **Dual-Entity Design** - Strategic use of multiple entities for tax optimization
+• **Owner Compensation Strategy** - Optimizing how business owners extract value from companies
+
+---
+
+🎯 **Ready to restructure for maximum efficiency?** Complete the homework assignment and continue to Module 2 to learn advanced deduction strategies.""",
+                duration_minutes=45,
                 order_index=1,
                 xp_available=150
             ),
             CourseContent(
+                title="Business Structure Tax Implications",
+                description="Module 2 of 12 - Choosing the right business structure for tax benefits",
+                content="Compare sole proprietorship, LLC, S-Corp, and C-Corp structures and their tax implications.",
+                duration_minutes=50,
+                order_index=2,
+                xp_available=150
+            ),
+            CourseContent(
                 title="Business Deduction Strategies",
-                description="Module 2 of 12 - Maximizing legitimate business deductions",
+                description="Module 3 of 12 - Maximizing legitimate business deductions",
                 content="Learn about all available business deductions including equipment, travel, meals, and home office expenses.",
                 duration_minutes=55,
-                order_index=2,
+                order_index=3,
                 xp_available=150
             )
         ]
