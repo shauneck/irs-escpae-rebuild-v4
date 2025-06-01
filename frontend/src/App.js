@@ -378,7 +378,7 @@ const CourseViewer = ({ course, onBack }) => {
                   <div>
                     <div className="flex items-center mb-2">
                       <span className="bg-emerald-500 text-white text-sm px-3 py-1 rounded-full mr-3">
-                        XP Available: {course.type === 'w2' && (lesson.order_index === 1 || lesson.order_index === 2 || lesson.order_index === 3) ? '150' : lesson.order_index * 10}
+                        XP Available: {course.type === 'w2' && (lesson.order_index === 1 || lesson.order_index === 2 || lesson.order_index === 3 || lesson.order_index === 4) ? '150' : lesson.order_index * 10}
                       </span>
                       <span className="text-emerald-700 font-semibold">
                         {lesson.description}
