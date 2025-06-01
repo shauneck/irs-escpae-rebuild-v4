@@ -1029,12 +1029,12 @@ const PricingSection = () => {
       monthlyDescription: "premium subscription",
       description: "Complete access to both courses, all tools, XP tracking, and your personal AI tax strategist.",
       features: [
-        "Lifetime access to ALL courses",
-        "Complete premium tool library", 
-        "Full XP tracking & gamification",
-        "Personal AI tax strategist",
-        "Weekly office hours & advisor chat",
-        "Document analyzer & mobile app"
+        "Lifetime access to ALL courses & content",
+        "Full AI Strategy Assistant (TaxBot) - unlimited access", 
+        "Complete strategy simulator suite (Roth, REPS, W-2)",
+        "Advanced Playbook Generator with custom blueprints",
+        "Premium Document Analyzer for all tax forms",
+        "Mobile app + priority advisor chat + office hours"
       ],
       ctaText: "Get All Access",
       gradient: "from-pink-500 to-pink-600",
