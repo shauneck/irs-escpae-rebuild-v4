@@ -2580,6 +2580,476 @@ The most successful real estate investors don't just build portfolios—they str
 🎯 **Ready to implement REPS in your situation?** Take the Module 5 quiz to earn +25 XP and solidify your understanding before exploring Module 6's advanced entity optimization strategies.""",
                 duration_minutes=65,
                 order_index=5
+            ),
+            CourseContent(
+                title="Short-Term Rentals (STRs)",
+                description="Module 6 of 8 - Master the STR exemption strategy to convert passive losses into active deductions without REPS qualification",
+                content="""**Short-Term Rentals (STRs)** represent one of the most accessible and powerful tax strategies available to high-income W-2 earners. Unlike REPS, which requires significant time commitment and lifestyle changes, the **STR exemption** allows you to treat rental income as **non-passive income** and losses as active deductions through strategic property management and material participation.
+
+Helen Park's case study continues here. After repositioning into real estate, she launched her first STR and discovered a powerful tax advantage: by materially participating in the property, she could deduct real estate losses against her W-2 income — without REPS.
+
+## Understanding the STR Exemption: Active Treatment Without REPS
+
+The **Short-Term Rental (STR) exemption** is a specialized provision under IRS regulations that allows certain rental activities to be treated as active businesses rather than passive investments. This exemption provides a pathway to active loss treatment without the demanding requirements of **Real Estate Professional Status (REPS)**.
+
+### The Power of STR Classification
+
+**Traditional Rental (Passive Treatment):**
+• Rental income and losses are classified as passive activities
+• **Passive Activity** limitations prevent losses from offsetting W-2 income
+• Excess losses are suspended until future passive income or property disposition
+• Limited tax planning opportunities for active income earners
+
+**STR Exemption (Active Treatment):**
+• Rental income becomes **Non-Passive Income** 
+• Losses are treated as active deductions against ordinary income
+• Immediate tax benefits from **Bonus Depreciation** and operating expenses
+• No REPS qualification required — accessible to full-time W-2 employees
+
+## The IRS Requirements: STR Exemption Qualification
+
+To qualify for the **STR exemption**, your property must satisfy two critical requirements:
+
+### Requirement 1: Average Stay Test
+**Rule:** The average period of customer use must be 7 days or less
+
+**Calculation Method:**
+• Total customer nights ÷ Total bookings = Average stay
+• Must maintain detailed booking records for annual average calculation
+• Even occasional longer stays are acceptable if the annual average remains ≤7 days
+
+**Strategic Considerations:**
+• Market positioning affects average stay length
+• Pricing strategies can influence booking duration
+• Location and amenities impact guest behavior patterns
+
+### Requirement 2: Material Participation Test
+**Rule:** The taxpayer must **materially participate** in the rental activity
+
+**Most Common Tests for STR:**
+
+**Test 1: 500-Hour Test**
+• Participate in the activity for more than 500 hours during the year
+• Highest certainty for qualification
+• Ideal for intensive self-management approach
+
+**Test 4: Significant Participation Test** 
+• Participate more than 100 hours AND more than any other individual
+• Most practical for W-2 earners with property managers
+• Allows delegation while maintaining control
+
+**Test 7: Participation for 5 of 10 Years**
+• For properties with historical **Material Participation**
+• Provides flexibility for year-to-year management changes
+
+### What Constitutes Qualifying Participation
+
+**Qualifying STR Activities:**
+• Guest communication and booking management
+• Property maintenance and cleaning oversight
+• Marketing and listing optimization
+• Check-in/check-out coordination
+• Inventory management and restocking
+• Financial record keeping and reporting
+• Strategic planning and market analysis
+
+**Non-Qualifying Activities:**
+• Hiring full-service property management companies
+• Passive oversight of professional managers
+• Financial activities unrelated to operations
+• Routine property ownership tasks
+
+## Strategic Implementation: Self-Management vs. Professional Management
+
+### The Self-Management Advantage
+
+**Complete Control Strategy:**
+• Handle all guest communications directly
+• Manage booking platforms and pricing strategies
+• Coordinate cleaning and maintenance personally
+• Maintain detailed activity logs for **Material Participation**
+
+**Benefits:**
+• Guaranteed qualification for **Material Participation**
+• Higher profit margins through reduced management fees
+• Direct guest relationships and reputation management
+• Enhanced property control and quality standards
+
+**Considerations:**
+• Time-intensive approach requiring daily attention
+• Learning curve for platform management and guest services
+• 24/7 availability expectations from guests
+• Direct responsibility for problem resolution
+
+### The Hybrid Management Approach
+
+**Strategic Delegation Model:**
+• Retain control of key activities (booking, pricing, guest communication)
+• Delegate routine tasks (cleaning, basic maintenance)
+• Maintain oversight and decision-making authority
+• Document personal involvement for **Material Participation**
+
+**Benefits:**
+• Reduced time commitment while maintaining qualification
+• Professional service quality through specialists
+• Scalability for multiple property management
+• Focused involvement in highest-value activities
+
+**Implementation Requirements:**
+• Clear service agreements maintaining taxpayer control
+• Detailed documentation of personal participation hours
+• Regular oversight and strategic decision involvement
+• Independent contractors rather than full-service management
+
+## Case Study: Helen Park - STR Implementation Success
+
+**Helen's Strategic Context:**
+After building initial real estate experience, Helen identified Short-Term Rentals as the optimal strategy to generate active real estate income while maintaining her W-2 career progression.
+
+**Property Acquisition Strategy:**
+
+**Market Research:**
+• Target Market: Phoenix, AZ (high tourism, favorable STR regulations)
+• Property Type: 3-bedroom single-family home near tourist attractions
+• Purchase Price: $670,000 with 20% down payment
+• Financing: Conventional investment property loan at 6.5% interest
+
+**Property Preparation:**
+• Professional staging and interior design: $25,000
+• Technology upgrades (smart locks, WiFi, security): $8,000
+• Furniture and amenities package: $35,000
+• Initial marketing and photography: $3,000
+
+**Operational Implementation:**
+
+**Platform Strategy:**
+• Primary listing on Airbnb with Superhost focus
+• Secondary presence on Vrbo for market diversification
+• Dynamic pricing strategy using market analysis tools
+• Professional photography and compelling listing descriptions
+
+**Self-Management Approach:**
+• Personal guest communication through automated systems
+• Direct booking management and calendar coordination
+• Cleaning service coordination and quality oversight
+• Maintenance vendor relationships and project management
+
+**Time Investment Tracking:**
+• Guest Communication: 45 hours annually
+• Booking and Calendar Management: 35 hours annually
+• Property Maintenance Coordination: 25 hours annually
+• Cleaning Oversight and Quality Control: 20 hours annually
+• Marketing and Listing Optimization: 15 hours annually
+• Financial Management and Reporting: 10 hours annually
+• **Total Annual Participation:** 150 hours
+
+**Material Participation Results:**
+• ✅ Exceeded 100-hour minimum requirement significantly
+• ✅ Participated more than any other individual (no property manager)
+• ✅ Maintained detailed contemporaneous logs
+• ✅ Qualified under Test 4: Significant Participation
+
+**STR Performance Metrics:**
+• Average Stay: 4.2 days (qualified for exemption)
+• Occupancy Rate: 78% annually
+• Average Daily Rate: $185
+• Gross Rental Income: $52,670
+• Operating Expenses: $31,200
+• **Net Operating Income:** $21,470
+
+**Tax Optimization Through Cost Segregation:**
+
+Helen invested in a **Cost Segregation** study to maximize first-year depreciation benefits:
+
+**Cost Segregation Results:**
+• Total Property Basis: $670,000
+• 5-year property (carpets, window treatments, appliances): $89,000
+• 7-year property (furniture, fixtures, equipment): $59,000
+• **Total Accelerated Depreciation:** $148,000
+• **Bonus Depreciation Benefit:** 100% first-year deduction
+
+**Tax Impact Analysis:**
+
+**STR Financial Performance:**
+• Net Operating Income: $21,470
+• **Bonus Depreciation**: $148,000
+• Interest Expense: $32,180
+• Other Deductions: $8,300
+• **Total Active Loss:** $166,810
+
+**W-2 Income Offset:**
+• W-2 Income: $240,000
+• STR Active Loss Applied: $52,000 (strategic limitation for optimal benefit)
+• **Adjusted Taxable Income:** $188,000
+• **Federal Tax Savings:** $18,720 (at 36% marginal rate)
+
+**Strategic Loss Management:**
+• Remaining Loss: $114,810 carried forward
+• Future years: Continue offsetting W-2 income
+• Property appreciation: Building long-term wealth
+• Cash flow positive: $21,470 annual income after depreciation
+
+## Advanced STR Strategies
+
+### Cost Segregation Optimization
+
+**Understanding Cost Segregation:**
+**Cost Segregation** is an advanced tax strategy that reclassifies components of real estate from 27.5-year depreciation to accelerated 5-year, 7-year, and 15-year schedules, enabling immediate **Bonus Depreciation** benefits.
+
+**Typical Cost Segregation Results:**
+• Traditional Depreciation: $24,364 annually over 27.5 years
+• Cost Segregation + **Bonus Depreciation**: $148,000 in year one
+• Tax Benefit Acceleration: $123,636 moved to first year
+• Investment ROI: 300-500% return on study cost
+
+**When Cost Segregation Makes Sense:**
+• Property values above $500,000
+• Significant furnishing and equipment investments
+• Need for immediate tax benefits
+• Long-term property holding strategy
+
+### Multi-Property Portfolio Strategy
+
+**Scaling STR Operations:**
+• Acquire multiple properties in diverse markets
+• Implement systematic management processes
+• Leverage technology for efficiency and compliance
+• Maintain **Material Participation** across portfolio
+
+**Portfolio Management Considerations:**
+• Maximum 2-3 properties for self-management approach
+• Geographic diversification for market risk mitigation
+• Seasonal coordination for occupancy optimization
+• Integrated financial reporting and tax planning
+
+### Technology Integration for Efficiency
+
+**Essential STR Technology Stack:**
+• **Property Management Software:** Integrated booking and communication
+• **Dynamic Pricing Tools:** Market-responsive rate optimization
+• **Automated Messaging:** Guest communication and review management
+• **Financial Tracking:** Expense categorization and tax reporting
+• **Time Tracking Apps:** **Material Participation** documentation
+
+**Benefits of Technology Integration:**
+• Reduced time investment while maintaining participation
+• Enhanced guest experience and review performance
+• Streamlined financial reporting and tax compliance
+• Scalability for portfolio growth
+
+## STR Market Analysis and Selection
+
+### Optimal Market Characteristics
+
+**Regulatory Environment:**
+• STR-friendly local ordinances and zoning laws
+• Reasonable licensing and permit requirements
+• Stable regulatory environment with predictable rules
+• Active tourism boards and destination marketing
+
+**Economic Fundamentals:**
+• Strong tourism and business travel demand
+• Diverse economic base reducing seasonal volatility
+• Growing population and employment markets
+• Transportation accessibility and infrastructure
+
+**Competition Analysis:**
+• Balanced supply and demand dynamics
+• Opportunity for differentiation and premium positioning
+• Professional management gaps for self-managed properties
+• Sustainable market growth trends
+
+### Property Selection Criteria
+
+**Location Factors:**
+• Proximity to attractions, business districts, or event venues
+• Walkability and transportation access
+• Neighborhood safety and amenities
+• Future development and appreciation potential
+
+**Property Characteristics:**
+• 3+ bedrooms for optimal guest capacity and revenue
+• Unique features or amenities for competitive advantage
+• Condition allowing for immediate rental operation
+• Layout optimized for guest experience and cleaning efficiency
+
+## Risk Management and Compliance
+
+### STR-Specific Risk Considerations
+
+**Operational Risks:**
+• Guest property damage and liability exposure
+• Seasonal demand fluctuations affecting cash flow
+• Regulatory changes impacting operations
+• Competition from professional operators and hotels
+
+**Financial Risks:**
+• Mortgage obligations during low occupancy periods
+• Capital expenditure requirements for maintenance and updates
+• Insurance premium increases and coverage limitations
+• Market downturns affecting both rental income and property values
+
+### Insurance and Legal Protection
+
+**Essential Insurance Coverage:**
+• STR-specific liability insurance beyond homeowner's coverage
+• Guest injury and property damage protection
+• Business interruption coverage for lost rental income
+• Umbrella policies for additional liability protection
+
+**Legal Structure Optimization:**
+• LLC formation for liability protection and tax benefits
+• Professional legal review of rental agreements and policies
+• Compliance with local licensing and tax requirements
+• Regular review of regulatory changes and compliance obligations
+
+## STR vs. REPS: Strategic Comparison
+
+### When STR Strategy is Optimal
+
+**Ideal Candidate Profile:**
+• Full-time W-2 employee not ready for REPS commitment
+• Limited time availability for extensive real estate activities
+• Preference for higher-income, lower-time-commitment approach
+• Geographic constraints limiting property acquisition and management
+
+**Strategic Advantages:**
+• Immediate qualification without lifestyle changes
+• Higher income potential per property
+• Enhanced appreciation in tourist markets
+• Flexible time commitment and management approach
+
+### When REPS Strategy is Superior
+
+**Ideal Candidate Profile:**
+• Ability to commit 750+ hours annually to real estate
+• Multiple property portfolio or plans for expansion
+• Desire for maximum tax optimization across all properties
+• Long-term real estate career transition planning
+
+**Strategic Advantages:**
+• Unlimited property types and strategies
+• Maximum depreciation and loss utilization
+• Portfolio scaling without participation limitations
+• Long-term wealth building optimization
+
+### Hybrid Strategy Implementation
+
+**Progressive Approach:**
+• Begin with STR properties for immediate active treatment
+• Build real estate experience and time management systems
+• Gradually increase portfolio and time commitment
+• Transition to REPS when lifestyle and portfolio support qualification
+
+**Benefits of Progressive Strategy:**
+• Reduced risk through gradual real estate involvement
+• Learning curve management with lower stakes
+• Cash flow generation supporting portfolio expansion
+• Flexibility to adjust strategy based on results and preferences
+
+## Measuring STR Success
+
+### Performance Metrics
+
+**Financial Performance:**
+• **Revenue per Available Room (RevPAR):** Industry benchmark comparison
+• **Net Operating Income:** Property-level profitability analysis
+• **Cash-on-Cash Return:** Investment performance measurement
+• **Tax-Adjusted Return:** Total return including tax benefits
+
+**Operational Performance:**
+• **Occupancy Rate:** Market competitiveness indicator
+• **Average Daily Rate (ADR):** Pricing strategy effectiveness
+• **Guest Satisfaction Scores:** Long-term sustainability measure
+• **Booking Conversion Rate:** Marketing and listing optimization success
+
+### Tax Optimization Measurement
+
+**Active Loss Utilization:**
+• Percentage of losses offset against W-2 income
+• Effective tax rate reduction achieved
+• **Bonus Depreciation** benefit realization
+• Multi-year tax planning coordination
+
+**Compliance and Documentation:**
+• **Material Participation** hour tracking accuracy
+• Average stay calculation and record keeping
+• Financial record organization and accessibility
+• Professional advisor coordination and communication
+
+## STR Quiz Questions and XP Structure
+
+Understanding Short-Term Rental strategies is essential for W-2 earners seeking active loss treatment without REPS qualification. Test your knowledge and earn XP:
+
+### Quiz Questions:
+1. **What is the average stay requirement for STR exemption?**
+   - ✅ **Less than 7 days**
+
+2. **What disqualifies you from STR exemption?**
+   - ✅ **Hiring a third-party property manager**
+
+3. **What does a cost segregation study do?**
+   - ✅ **Accelerates depreciation deductions into year one**
+
+4. **Why is STR exemption powerful for W-2 earners?**
+   - ✅ **Allows losses to offset W-2 income without REPS**
+
+### XP Rewards:
+• Complete Module 6 lesson: +10 XP
+• Score 100% on quiz: +15 XP
+• View Helen's full STR case study: +5 XP
+• Reach 150 XP across Modules 5–6: Unlock "Offset Pro" badge
+
+## Key Glossary Terms
+
+Understanding these terms is essential for STR strategy mastery:
+
+• **Short-Term Rental (STR)** - Rental property with average guest stay of 7 days or less
+• **Material Participation** - Active involvement in business activities meeting IRS tests
+• **Cost Segregation** - Tax strategy accelerating depreciation through asset reclassification
+• **Bonus Depreciation** - 100% first-year deduction for qualified property improvements
+• **Non-Passive Income** - Active business income not subject to passive activity limitations
+
+## The STR Outcome: Helen's Strategic Success
+
+Helen's STR implementation delivered exceptional results:
+
+**Financial Performance:**
+• Property Value: $670,000 investment
+• Annual Cash Flow: $21,470 positive
+• Tax Savings: $18,720 annually
+• **Total First-Year Benefit:** $40,190
+
+**Tax Optimization:**
+• W-2 Income: $240,000 reduced to $188,000 taxable
+• **Bonus Depreciation**: $148,000 first-year deduction
+• Active Loss Treatment: No passive limitations
+• Multi-Year Benefits: $114,810 loss carryforward
+
+**Strategic Advantages:**
+• No REPS qualification required
+• Maintained full-time W-2 career
+• Built real estate expertise and confidence
+• Created foundation for portfolio expansion
+
+**Quote from Helen:**
+> "I wasn't ready to quit my job just to qualify for REPS. This strategy gave me the same benefit without making the leap."
+
+## What's Next: Advanced Entity Optimization
+
+Module 6 has equipped you with the knowledge to implement the **STR exemption** strategy, allowing you to convert passive real estate losses into active deductions without the demanding requirements of REPS qualification. Helen's example demonstrates how strategic STR implementation can deliver immediate tax benefits while building long-term real estate wealth.
+
+In Module 7, we'll explore sophisticated entity structuring strategies that enhance both STR and REPS benefits, optimize liability protection, and create additional tax planning opportunities through advanced business structures and professional coordination.
+
+**Key Takeaway:** **Short-Term Rentals (STRs)** offer high-income W-2 earners an accessible pathway to active real estate loss treatment. The combination of strategic property management, **Material Participation**, and **Cost Segregation** creates powerful tax optimization without requiring lifestyle changes or REPS qualification.
+
+The most successful STR investors don't just buy properties—they strategically structure their involvement to qualify for active treatment and maximize the tax benefits of their real estate investments while building sustainable income streams.
+
+---
+
+🎯 **Ready to implement STR strategies in your portfolio?** Take the Module 6 quiz to earn +25 XP and prepare for Module 7's advanced entity optimization strategies.""",
+                duration_minutes=70,
+                order_index=6
             )
         ]
     )
