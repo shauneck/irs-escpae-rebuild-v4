@@ -241,6 +241,6 @@ def run_tests():
     return result.wasSuccessful()
 
 if __name__ == "__main__":
-    print("🔍 Testing W-2 Escape Plan Module 2 API functionality...")
+    print("🔍 Testing W-2 Escape Plan Module 3 API functionality...")
     success = run_tests()
     sys.exit(0 if success else 1)
