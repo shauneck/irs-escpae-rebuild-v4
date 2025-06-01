@@ -2164,6 +2164,30 @@ The most successful W-2 earners don't just find one good tax strategy — they b
             related_terms=["Offset Stacking", "Tax Planning", "Depreciation Offset"]
         ),
         GlossaryTerm(
+            term="Real Estate Professional Status (REPS)",
+            definition="IRS designation that allows taxpayers to treat real estate activities as active business income rather than passive investments, removing passive loss limitations and enabling real estate losses to offset W-2 income.",
+            category="Tax Status",
+            related_terms=["Material Participation", "Passive Loss Limitation", "Active vs Passive Income", "IRS Time Test"]
+        ),
+        GlossaryTerm(
+            term="Passive Loss Limitation",
+            definition="IRS rule that restricts passive activity losses from offsetting ordinary income (like W-2 wages), requiring passive losses to only offset passive income unless certain exceptions apply (like REPS qualification).",
+            category="Tax Rules",
+            related_terms=["Real Estate Professional Status (REPS)", "Active vs Passive Income", "Material Participation"]
+        ),
+        GlossaryTerm(
+            term="Active vs Passive Income",
+            definition="Tax classification distinguishing between income from business activities where the taxpayer materially participates (active) versus investments with limited involvement (passive). Active income can be offset by any deductions, while passive income has special limitation rules.",
+            category="Tax Classification",
+            related_terms=["Real Estate Professional Status (REPS)", "Material Participation", "Passive Loss Limitation"]
+        ),
+        GlossaryTerm(
+            term="IRS Time Test",
+            definition="Two-part requirement for REPS qualification: (1) spend at least 750 hours in real estate activities, and (2) more than 50% of personal services must be in real estate trade or business activities.",
+            category="Tax Requirements",
+            related_terms=["Real Estate Professional Status (REPS)", "Material Participation", "Tax Documentation"]
+        ),
+        GlossaryTerm(
             term="Advisor Integration",
             definition="The strategic coordination between different tax professionals (CPAs, strategists, attorneys) to ensure compliance while maximizing tax optimization opportunities.",
             category="Professional Services",
