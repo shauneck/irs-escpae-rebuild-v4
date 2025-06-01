@@ -39,20 +39,20 @@ class W2EscapePlanModuleTest(unittest.TestCase):
         self.assertEqual(course["type"], "w2", "Course type mismatch")
         self.assertEqual(len(course["lessons"]), 3, "Course should have 3 modules")
         
-        # Verify Module 2 exists
-        module_2 = None
+        # Verify Module 3 exists
+        module_3 = None
         for lesson in course["lessons"]:
-            if lesson["order_index"] == 2:
-                module_2 = lesson
-                self.module_2_id = lesson["id"]
+            if lesson["order_index"] == 3:
+                module_3 = lesson
+                self.module_3_id = lesson["id"]
                 break
         
-        self.assertIsNotNone(module_2, "Module 2 not found in W-2 course")
-        self.assertEqual(module_2["title"], "Repositioning W-2 Income for Strategic Impact", "Module 2 title mismatch")
-        self.assertEqual(module_2["description"], "Module 2 of 8 - Repositioning RSUs & Bonus Income - Learn advanced strategies to reposition already-taxed W-2 income for maximum tax benefits", "Module 2 description mismatch")
-        self.assertEqual(module_2["duration_minutes"], 50, "Module 2 duration mismatch")
+        self.assertIsNotNone(module_3, "Module 3 not found in W-2 course")
+        self.assertEqual(module_3["title"], "Stacking Offsets — The Tax Strategy Most W-2 Earners Miss", "Module 3 title mismatch")
+        self.assertEqual(module_3["description"], "Module 3 of 8 - Offset Layering", "Module 3 description mismatch")
+        self.assertEqual(module_3["duration_minutes"], 55, "Module 3 duration mismatch")
         
-        print("✅ W-2 Escape Plan course and Module 2 exist with correct metadata")
+        print("✅ W-2 Escape Plan course and Module 3 exist with correct metadata")
 
     def test_module_2_content(self):
         """Test that Module 2 content is complete and contains all required sections"""
