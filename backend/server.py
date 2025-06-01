@@ -394,9 +394,9 @@ async def update_user_subscription(user_id: str, subscription: UserSubscription)
     )
     return subscription
 
-# AI Response Generation (Placeholder)
+# AI Response Generation (QGPT - Quantus Group Tax Strategist)
 async def generate_ai_response(user_message: str, user_id: str):
-    """Generate AI response with contextual links and access gating"""
+    """Generate QGPT response with Quantus Group behavior model"""
     user_subscription = await get_user_subscription(user_id)
     user_progress = await get_user_progress(user_id)
     
@@ -406,16 +406,10 @@ async def generate_ai_response(user_message: str, user_id: str):
     
     # Check access permissions
     has_full_access = user_subscription.plan_type == "all_access" and user_subscription.has_active_subscription
+    has_subscription = user_subscription.has_active_subscription
     
-    # Generate response based on access level
-    if has_full_access:
-        response = f"Based on your question about '{user_message[:50]}...', here's a comprehensive strategy breakdown..."
-    else:
-        locked_topics = check_locked_topics(user_message, user_progress)
-        if locked_topics:
-            response = f"That strategy is covered in Module {locked_topics[0]}. Complete the earlier modules to unlock it."
-        else:
-            response = f"Here's what I can share about '{user_message[:50]}...' with your current access level..."
+    # Generate QGPT response based on question type and access level
+    response = generate_qgpt_response(user_message, has_full_access, has_subscription, detected_terms, related_modules)
     
     return {
         "response": response,
@@ -424,43 +418,174 @@ async def generate_ai_response(user_message: str, user_id: str):
         "locked_content": not has_full_access
     }
 
+def generate_qgpt_response(message: str, has_full_access: bool, has_subscription: bool, terms: List[str], modules: List[str]) -> str:
+    """Generate QGPT responses following Quantus Group behavior model"""
+    
+    # Common QGPT responses based on question patterns
+    qgpt_responses = {
+        "reps": {
+            "strategy": "**Real Estate Professional Status (REPS)**",
+            "what_it_does": "Transforms your real estate losses from passive to active, letting them offset W-2 income dollar-for-dollar.",
+            "when_applies": "W-2 earners with rental properties who can dedicate 750+ hours annually to real estate activities.",
+            "key_rules": "Two tests: 750-hour minimum AND more than 50% of your total work time in real estate.",
+            "example": "Sarah, a $200K software engineer, qualified for REPS and used $180K in rental depreciation to zero out her W-2 taxes.",
+            "next_step": "Start with Module 4: REPS Qualification, then use the REPS Hour Tracker."
+        },
+        "w2_offset": {
+            "strategy": "**W-2 Income Offset Strategy**",
+            "what_it_does": "Uses business depreciation and real estate losses to legally eliminate taxes on your salary.",
+            "when_applies": "High-income W-2 earners ($150K+) who want to keep their job while minimizing taxes.",
+            "key_rules": "Must qualify for material participation (750+ hours for STR) or have legitimate business expenses.",
+            "example": "Tech executive earning $300K used STR depreciation to reduce taxable income to $50K.",
+            "next_step": "See Module 2: Repositioning W-2 Income, then try the W-2 Offset Planner."
+        },
+        "cost_segregation": {
+            "strategy": "**Cost Segregation Study**",
+            "what_it_does": "Accelerates depreciation by reclassifying building components into shorter asset lives (5-7 years vs 27.5 years).",
+            "when_applies": "Real estate investors with properties over $500K who want massive first-year deductions.",
+            "key_rules": "Requires professional study, works best on commercial or high-value residential properties.",
+            "example": "Investor bought $2M rental, cost seg generated $400K first-year depreciation vs $72K standard.",
+            "next_step": "Review Module 3: Offset Stacking, then use the Cost Segregation ROI Estimator."
+        },
+        "qof": {
+            "strategy": "**Qualified Opportunity Fund (QOF)**",
+            "what_it_does": "Defers capital gains taxes while investing in opportunity zone real estate or businesses.",
+            "when_applies": "Anyone with significant capital gains (RSUs, property sales, crypto) looking to defer taxes.",
+            "key_rules": "Must invest within 180 days, hold for 10+ years for maximum benefits.",
+            "example": "Helen invested $500K RSU gains into QOF, deferred $170K in taxes while building rental portfolio.",
+            "next_step": "Study Module 2: Repositioning strategies, then explore QOF investment options."
+        }
+    }
+    
+    # Detect question intent
+    message_lower = message.lower()
+    
+    # Handle gated content
+    if not has_subscription:
+        return "That strategy requires an active subscription. **Upgrade to unlock full QGPT support and access all premium tools.**"
+    
+    if not has_full_access and any(topic in message_lower for topic in ["split-dollar", "installment sales", "qsbs", "advanced"]):
+        return "That advanced strategy is covered in our premium modules. **Upgrade to All Access ($69/mo) to unlock complete QGPT guidance.**"
+    
+    # Generate contextual responses
+    if any(term in message_lower for term in ["reps", "real estate professional"]):
+        strategy = qgpt_responses["reps"]
+    elif any(term in message_lower for term in ["w-2 offset", "w2 offset", "salary offset"]):
+        strategy = qgpt_responses["w2_offset"]
+    elif any(term in message_lower for term in ["cost segregation", "cost seg", "depreciation study"]):
+        strategy = qgpt_responses["cost_segregation"]
+    elif any(term in message_lower for term in ["qof", "opportunity fund", "opportunity zone"]):
+        strategy = qgpt_responses["qof"]
+    elif any(term in message_lower for term in ["help", "start", "begin", "new"]):
+        return """I'm **QGPT**, your AI tax strategist for the IRS Escape Plan.
+
+I help you understand and apply advanced tax strategies from your courses. Here's how to get started:
+
+**Popular Questions:**
+• "How do I qualify for REPS?"
+• "What's the best W-2 offset strategy?"
+• "How does cost segregation work?"
+
+**What I Can Do:**
+• Explain any strategy from your modules
+• Guide you to the right tools and calculators
+• Help you apply concepts to your situation
+
+What specific tax challenge are you trying to solve?"""
+    else:
+        # Generic strategic response
+        return f"""Here's what I know about "{message[:50]}..."
+
+**Strategy Context:** This relates to advanced tax planning that requires specific qualification rules and implementation steps.
+
+**Key Principle:** Most W-2 earners overpay because they don't understand how to legally structure deductions and entity strategies.
+
+**Your Next Step:** Be more specific about your situation. Are you asking about:
+• REPS qualification for real estate losses?
+• W-2 income offset strategies?
+• Entity structuring for business deductions?
+
+The more specific your question, the better I can guide you to the exact strategy and tools you need.
+
+**Related:** {', '.join(terms) if terms else 'General tax strategy'}"""
+    
+    # Format full strategy response
+    if 'strategy' in locals():
+        response = f"""{strategy['strategy']}
+
+**What It Does:** {strategy['what_it_does']}
+
+**When It Applies:** {strategy['when_applies']}
+
+**Key Rules:** {strategy['key_rules']}
+
+**Example:** {strategy['example']}
+
+**Next Step:** {strategy['next_step']}"""
+        
+        return response
+    
+    return "I need more context to give you a strategic answer. What specific tax challenge are you trying to solve?"
+
 def detect_glossary_terms(message: str) -> List[str]:
     """Detect glossary terms mentioned in user message"""
-    # This would integrate with actual glossary data
-    terms = ["REPS", "QBI", "Cost Segregation", "W-2 Income", "Depreciation"]
+    glossary_terms = [
+        "REPS", "Real Estate Professional Status", "QBI", "Cost Segregation", 
+        "W-2 Income", "Depreciation", "QOF", "Qualified Opportunity Fund",
+        "Short-Term Rental", "STR", "Material Participation", "Bonus Depreciation",
+        "Offset Stacking", "Repositioning", "Effective Tax Rate", "Forward-Looking Planning"
+    ]
+    
     detected = []
-    for term in terms:
-        if term.lower() in message.lower():
+    message_lower = message.lower()
+    
+    for term in glossary_terms:
+        if term.lower() in message_lower:
             detected.append(term)
-    return detected
+    
+    return list(set(detected))
 
 def detect_related_modules(message: str) -> List[str]:
     """Detect related course modules based on message content"""
     module_keywords = {
-        "REPS": ["w2-escape-plan-module-4"],
-        "offset stacking": ["w2-escape-plan-module-3"],
-        "repositioning": ["w2-escape-plan-module-2"],
-        "W-2": ["w2-escape-plan-module-1"]
+        "reps": ["W-2 Escape Plan - Module 4"],
+        "real estate professional": ["W-2 Escape Plan - Module 4"],
+        "offset stacking": ["W-2 Escape Plan - Module 3"],
+        "repositioning": ["W-2 Escape Plan - Module 2"],
+        "w-2 income": ["W-2 Escape Plan - Module 1"],
+        "cost segregation": ["W-2 Escape Plan - Module 3"],
+        "qof": ["W-2 Escape Plan - Module 2"],
+        "opportunity fund": ["W-2 Escape Plan - Module 2"],
+        "short-term rental": ["W-2 Escape Plan - Module 2"],
+        "str": ["W-2 Escape Plan - Module 2"]
     }
     
     related = []
+    message_lower = message.lower()
+    
     for keyword, modules in module_keywords.items():
-        if keyword.lower() in message.lower():
+        if keyword in message_lower:
             related.extend(modules)
+    
     return list(set(related))
 
 def check_locked_topics(message: str, user_progress: List[UserProgress]) -> List[str]:
     """Check if user is asking about locked premium topics"""
     premium_topics = {
-        "split-dollar": "Module 6",
-        "installment sales": "Module 7", 
-        "qsbs": "Module 8"
+        "split-dollar": "Advanced Module 6",
+        "installment sales": "Advanced Module 7", 
+        "qsbs": "Advanced Module 8",
+        "estate planning": "Advanced Module 9",
+        "international": "Advanced Module 10"
     }
     
     locked = []
+    message_lower = message.lower()
+    
     for topic, module in premium_topics.items():
-        if topic.replace("-", " ") in message.lower():
+        if topic.replace("-", " ") in message_lower:
             locked.append(module)
+    
     return locked
 @api_router.post("/progress")
 async def update_progress(progress: UserProgress):
