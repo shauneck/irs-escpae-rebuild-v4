@@ -45,6 +45,417 @@ const Header = ({ activeSection, setActiveSection }) => {
   );
 };
 
+// TaxBot AI Assistant Component
+const TaxBotSection = () => {
+  const [chatThreads, setChatThreads] = useState([]);
+  const [currentThread, setCurrentThread] = useState(null);
+  const [newMessage, setNewMessage] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [filteredThreads, setFilteredThreads] = useState([]);
+
+  useEffect(() => {
+    loadChatThreads();
+  }, []);
+
+  useEffect(() => {
+    if (searchQuery) {
+      const filtered = chatThreads.filter(thread => 
+        thread.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        thread.messages.some(msg => 
+          msg.message.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          msg.response.toLowerCase().includes(searchQuery.toLowerCase())
+        )
+      );
+      setFilteredThreads(filtered);
+    } else {
+      setFilteredThreads(chatThreads);
+    }
+  }, [searchQuery, chatThreads]);
+
+  const loadChatThreads = async () => {
+    try {
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/users/default_user/chat-threads`);
+      if (response.ok) {
+        const threads = await response.json();
+        setChatThreads(threads);
+        setFilteredThreads(threads);
+      }
+    } catch (error) {
+      console.error('Failed to load chat threads:', error);
+    }
+  };
+
+  const createNewThread = async () => {
+    const newThread = {
+      id: Date.now().toString(),
+      user_id: 'default_user',
+      title: 'New Strategy Discussion',
+      messages: [],
+      created_at: new Date().toISOString(),
+      last_updated: new Date().toISOString(),
+      is_starred: false
+    };
+
+    try {
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/users/default_user/chat-threads`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(newThread)
+      });
+
+      if (response.ok) {
+        const thread = await response.json();
+        setChatThreads([thread, ...chatThreads]);
+        setCurrentThread(thread);
+      }
+    } catch (error) {
+      console.error('Failed to create thread:', error);
+    }
+  };
+
+  const sendMessage = async () => {
+    if (!newMessage.trim() || !currentThread) return;
+
+    setIsLoading(true);
+    const message = {
+      id: Date.now().toString(),
+      user_id: 'default_user',
+      message: newMessage,
+      response: '',
+      timestamp: new Date().toISOString(),
+      is_starred: false,
+      context_modules: [],
+      context_glossary: []
+    };
+
+    try {
+      const response = await fetch(
+        `${process.env.REACT_APP_BACKEND_URL}/api/users/default_user/chat-threads/${currentThread.id}/messages`,
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(message)
+        }
+      );
+
+      if (response.ok) {
+        const updatedMessage = await response.json();
+        const updatedThread = {
+          ...currentThread,
+          messages: [...currentThread.messages, updatedMessage],
+          last_updated: new Date().toISOString()
+        };
+        setCurrentThread(updatedThread);
+        
+        // Update threads list
+        setChatThreads(threads => 
+          threads.map(t => t.id === currentThread.id ? updatedThread : t)
+        );
+        
+        setNewMessage('');
+      }
+    } catch (error) {
+      console.error('Failed to send message:', error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const toggleMessageStar = async (messageId) => {
+    if (!currentThread) return;
+
+    try {
+      await fetch(
+        `${process.env.REACT_APP_BACKEND_URL}/api/users/default_user/chat-threads/${currentThread.id}/messages/${messageId}/star`,
+        { method: 'PUT' }
+      );
+
+      const updatedThread = {
+        ...currentThread,
+        messages: currentThread.messages.map(msg =>
+          msg.id === messageId ? { ...msg, is_starred: !msg.is_starred } : msg
+        )
+      };
+      setCurrentThread(updatedThread);
+    } catch (error) {
+      console.error('Failed to star message:', error);
+    }
+  };
+
+  const exportToPDF = () => {
+    if (!currentThread) return;
+    
+    const content = currentThread.messages.map(msg => 
+      `Q: ${msg.message}\nA: ${msg.response}\n\n`
+    ).join('');
+    
+    const blob = new Blob([content], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${currentThread.title}.txt`;
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
+  const copyToClipboard = () => {
+    if (!currentThread) return;
+    
+    const content = currentThread.messages.map(msg => 
+      `Q: ${msg.message}\nA: ${msg.response}\n\n`
+    ).join('');
+    
+    navigator.clipboard.writeText(content);
+    alert('Chat transcript copied to clipboard!');
+  };
+
+  const renderGlossaryLinks = (text) => {
+    const glossaryTerms = ['REPS', 'QBI', 'Cost Segregation', 'W-2 Income', 'Depreciation'];
+    let linkedText = text;
+    
+    glossaryTerms.forEach(term => {
+      const regex = new RegExp(`\\b${term}\\b`, 'gi');
+      linkedText = linkedText.replace(regex, `<span class="glossary-link" title="Click to view definition">${term}</span>`);
+    });
+    
+    return <div dangerouslySetInnerHTML={{ __html: linkedText }} />;
+  };
+
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <div className="container mx-auto px-6 py-8">
+        <div className="mb-8">
+          <h1 className="text-4xl font-bold text-navy-900 mb-2">
+            🤖 AI Strategy Assistant (TaxBot)
+          </h1>
+          <p className="text-xl text-gray-600">
+            Get personalized tax strategy guidance with contextual links to your courses and glossary
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 h-[80vh]">
+          {/* Chat Threads Sidebar */}
+          <div className="lg:col-span-1 bg-white rounded-xl shadow-lg p-6 overflow-y-auto">
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-lg font-bold text-navy-900">My Strategy Notes</h2>
+              <button
+                onClick={createNewThread}
+                className="bg-emerald-500 text-white p-2 rounded-lg hover:bg-emerald-600 transition-colors"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                </svg>
+              </button>
+            </div>
+
+            {/* Search */}
+            <div className="mb-4">
+              <input
+                type="text"
+                placeholder="Search conversations..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"
+              />
+            </div>
+
+            {/* Thread List */}
+            <div className="space-y-2">
+              {filteredThreads.map((thread) => (
+                <div
+                  key={thread.id}
+                  onClick={() => setCurrentThread(thread)}
+                  className={`p-3 rounded-lg cursor-pointer transition-colors ${
+                    currentThread?.id === thread.id
+                      ? 'bg-emerald-100 border-emerald-500 border'
+                      : 'bg-gray-50 hover:bg-gray-100'
+                  }`}
+                >
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-medium text-sm text-navy-900 truncate">
+                      {thread.title}
+                    </h3>
+                    {thread.is_starred && (
+                      <svg className="w-4 h-4 text-yellow-500" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                      </svg>
+                    )}
+                  </div>
+                  <p className="text-xs text-gray-500 mt-1">
+                    {new Date(thread.last_updated).toLocaleDateString()}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Chat Interface */}
+          <div className="lg:col-span-3 bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+            {currentThread ? (
+              <>
+                {/* Chat Header */}
+                <div className="bg-gradient-to-r from-blue-500 to-blue-600 text-white p-4">
+                  <div className="flex items-center justify-between">
+                    <h2 className="text-lg font-bold">{currentThread.title}</h2>
+                    <div className="flex space-x-2">
+                      <button
+                        onClick={exportToPDF}
+                        className="bg-blue-400 hover:bg-blue-300 p-2 rounded-lg transition-colors"
+                        title="Export as PDF"
+                      >
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                      </button>
+                      <button
+                        onClick={copyToClipboard}
+                        className="bg-blue-400 hover:bg-blue-300 p-2 rounded-lg transition-colors"
+                        title="Copy to Clipboard"
+                      >
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Messages */}
+                <div className="flex-1 overflow-y-auto p-4 space-y-4">
+                  {currentThread.messages.map((message) => (
+                    <div key={message.id} className="space-y-4">
+                      {/* User Message */}
+                      <div className="flex justify-end">
+                        <div className="bg-emerald-500 text-white p-3 rounded-lg max-w-md">
+                          <p>{message.message}</p>
+                        </div>
+                      </div>
+
+                      {/* AI Response */}
+                      <div className="flex justify-start">
+                        <div className="bg-gray-100 p-4 rounded-lg max-w-2xl">
+                          <div className="flex items-start justify-between mb-2">
+                            <div className="flex items-center">
+                              <span className="text-2xl mr-2">🤖</span>
+                              <span className="font-bold text-navy-900">TaxBot</span>
+                            </div>
+                            <button
+                              onClick={() => toggleMessageStar(message.id)}
+                              className="text-gray-400 hover:text-yellow-500 transition-colors"
+                            >
+                              <svg className={`w-4 h-4 ${message.is_starred ? 'text-yellow-500 fill-current' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                              </svg>
+                            </button>
+                          </div>
+                          
+                          <div className="text-gray-700 mb-3">
+                            {renderGlossaryLinks(message.response)}
+                          </div>
+
+                          {/* Context Links */}
+                          {(message.context_modules.length > 0 || message.context_glossary.length > 0) && (
+                            <div className="border-t pt-3 mt-3">
+                              <p className="text-sm font-medium text-gray-600 mb-2">Related Resources:</p>
+                              <div className="flex flex-wrap gap-2">
+                                {message.context_modules.map((module, idx) => (
+                                  <span key={idx} className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">
+                                    📚 {module.replace('-', ' ')}
+                                  </span>
+                                ))}
+                                {message.context_glossary.map((term, idx) => (
+                                  <span key={idx} className="bg-teal-100 text-teal-800 text-xs px-2 py-1 rounded-full">
+                                    💡 {term}
+                                  </span>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+
+                  {isLoading && (
+                    <div className="flex justify-start">
+                      <div className="bg-gray-100 p-4 rounded-lg">
+                        <div className="flex items-center">
+                          <span className="text-2xl mr-2">🤖</span>
+                          <span className="text-gray-600">TaxBot is thinking...</span>
+                          <div className="ml-2 flex space-x-1">
+                            <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
+                            <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{animationDelay: '0.1s'}}></div>
+                            <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{animationDelay: '0.2s'}}></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+
+                {/* Message Input */}
+                <div className="border-t p-4">
+                  <div className="flex space-x-2">
+                    <input
+                      type="text"
+                      value={newMessage}
+                      onChange={(e) => setNewMessage(e.target.value)}
+                      onKeyPress={(e) => e.key === 'Enter' && sendMessage()}
+                      placeholder="Ask TaxBot about tax strategies, REPS qualification, offset planning..."
+                      className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                      disabled={isLoading}
+                    />
+                    <button
+                      onClick={sendMessage}
+                      disabled={isLoading || !newMessage.trim()}
+                      className="bg-emerald-500 text-white px-6 py-2 rounded-lg hover:bg-emerald-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                      Send
+                    </button>
+                  </div>
+                  <p className="text-xs text-gray-500 mt-2">
+                    💡 Try asking: "How do I qualify for REPS?" or "What's the best W-2 offset strategy?"
+                  </p>
+                </div>
+              </>
+            ) : (
+              <div className="flex-1 flex items-center justify-center">
+                <div className="text-center">
+                  <span className="text-6xl mb-4 block">🤖</span>
+                  <h2 className="text-2xl font-bold text-navy-900 mb-2">Welcome to TaxBot</h2>
+                  <p className="text-gray-600 mb-4">Select a conversation or start a new one to get personalized tax strategy guidance</p>
+                  <button
+                    onClick={createNewThread}
+                    className="bg-emerald-500 text-white px-6 py-3 rounded-lg hover:bg-emerald-600 transition-colors"
+                  >
+                    Start New Conversation
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+
+      <style jsx>{`
+        .glossary-link {
+          color: #0d9488;
+          background-color: #ccfbf1;
+          padding: 2px 6px;
+          border-radius: 4px;
+          cursor: pointer;
+          font-weight: 500;
+          border-bottom: 1px dotted #0d9488;
+        }
+        .glossary-link:hover {
+          background-color: #99f6e4;
+        }
+      `}</style>
+    </div>
+  );
+};
+
 // Hero Section Component
 const HeroSection = () => {
   return (
