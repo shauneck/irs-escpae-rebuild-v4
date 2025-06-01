@@ -229,9 +229,9 @@ class W2EscapePlanModuleTest(unittest.TestCase):
 def run_tests():
     suite = unittest.TestSuite()
     suite.addTest(W2EscapePlanModuleTest('test_w2_course_exists'))
-    suite.addTest(W2EscapePlanModuleTest('test_module_2_content'))
-    suite.addTest(W2EscapePlanModuleTest('test_module_2_glossary_terms'))
-    suite.addTest(W2EscapePlanModuleTest('test_module_2_quiz'))
+    suite.addTest(W2EscapePlanModuleTest('test_module_3_content'))
+    suite.addTest(W2EscapePlanModuleTest('test_module_3_glossary_terms'))
+    suite.addTest(W2EscapePlanModuleTest('test_module_3_quiz'))
     suite.addTest(W2EscapePlanModuleTest('test_quiz_submission'))
     suite.addTest(W2EscapePlanModuleTest('test_xp_tracking'))
     
