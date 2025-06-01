@@ -2580,7 +2580,8 @@ The most successful real estate investors don't just build portfolios—they str
 
 🎯 **Ready to implement REPS in your situation?** Take the Module 5 quiz to earn +25 XP and solidify your understanding before exploring Module 6's advanced entity optimization strategies.""",
                 duration_minutes=65,
-                order_index=5
+                order_index=5,
+                xp_available=150
             ),
             CourseContent(
                 title="Short-Term Rentals (STRs)",
