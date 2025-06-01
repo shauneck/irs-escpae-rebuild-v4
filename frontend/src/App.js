@@ -1696,6 +1696,7 @@ const App = () => {
           </section>
         </>
       )}
+      {activeSection === 'taxbot' && <TaxBotSection />}
       {activeSection === 'premium-tools' && <PremiumToolsOverview />}
       
       {activeSection === 'tools' && <ToolsSection tools={tools} />}
