@@ -923,6 +923,165 @@ const PremiumToolsSection = () => {
   );
 };
 
+// Premium Tools Overview Component
+const PremiumToolsSection = () => {
+  const tools = [
+    {
+      name: "AI Strategy Assistant",
+      subtitle: "TaxBot",
+      icon: "🤖",
+      description: "GPT-powered assistant trained on IRS Escape Plan modules, glossary, and client case studies. Ask personalized questions and get strategy breakdowns with citations.",
+      features: ["Personalized tax guidance", "Module citations & links", "Strategy breakdowns", "24/7 availability"],
+      gradient: "from-blue-500 to-blue-600"
+    },
+    {
+      name: "Strategy Simulators", 
+      subtitle: "Interactive Calculators",
+      icon: "📊",
+      description: "Five powerful calculators including Roth Conversion impact, REPS Hour Tracker, Cost Segregation ROI, W-2 Offset Planner, and Bonus Depreciation Forecast.",
+      features: ["Downloadable summaries", "Tax impact estimates", "Real-time calculations", "Multiple scenarios"],
+      gradient: "from-emerald-500 to-emerald-600"
+    },
+    {
+      name: "Advisor Chat + Office Hours",
+      subtitle: "Live Expert Support", 
+      icon: "🧑‍💼",
+      description: "Live Zoom Q&A sessions twice per week plus private in-app advisor messaging with 1 question per day limit for implementation support.",
+      features: ["Live Zoom sessions 2x/week", "Private advisor messaging", "Implementation guidance", "Complex tax question support"],
+      gradient: "from-purple-500 to-purple-600"
+    },
+    {
+      name: "Playbook Generator",
+      subtitle: "Custom Tax Blueprint",
+      icon: "🛠️", 
+      description: "Customized tax blueprint based on your income, real estate, investments, and goals. Links to relevant modules and adapts as laws change.",
+      features: ["Custom tax blueprints", "Module integration", "Dynamic updates", "Goal-based planning"],
+      gradient: "from-orange-500 to-orange-600"
+    },
+    {
+      name: "Document Analyzer",
+      subtitle: "AI Tax Form Analysis",
+      icon: "📄",
+      description: "Upload W-2, 1040, K-1, or entity returns for AI analysis. Detects missed deductions, audit risks, and eligible strategies with clear action plans.",
+      features: ["Multi-format support", "Missed deduction detection", "Audit risk analysis", "Actionable recommendations"],
+      gradient: "from-red-500 to-red-600"
+    },
+    {
+      name: "Gamification + XP System",
+      subtitle: "Progress Tracking",
+      icon: "🎮",
+      description: "Earn XP and badges by completing content, using tools, uploading documents, and community engagement. Includes leaderboard and milestone rewards.",
+      features: ["XP & badge system", "Community leaderboard", "Milestone rewards", "1-on-1 strategy calls"],
+      gradient: "from-pink-500 to-pink-600"
+    },
+    {
+      name: "Mobile Dashboard",
+      subtitle: "iOS & Android App",
+      icon: "📱",
+      description: "Mobile-first access to all tools, REPS logging on the go, push alerts for law changes, and personalized strategy reminders.",
+      features: ["iOS & Android apps", "REPS activity logging", "Push notifications", "Strategy reminders"],
+      gradient: "from-indigo-500 to-indigo-600"
+    }
+  ];
+
+  return (
+    <section className="py-16 bg-gray-50">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-navy-900 mb-4">
+            Premium <span className="text-emerald-500">Tools Bundle</span>
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-6">
+            Advanced AI-powered tools and personalized features that unlock with your monthly subscription
+          </p>
+          <div className="bg-red-50 border border-red-200 rounded-lg p-4 max-w-2xl mx-auto">
+            <div className="flex items-center justify-center mb-2">
+              <svg className="w-5 h-5 text-red-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+              </svg>
+              <span className="text-red-700 font-bold text-sm">Subscription Required</span>
+            </div>
+            <p className="text-red-600 text-sm">
+              These tools require an active monthly subscription to access. Course content remains available forever.
+            </p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          {tools.map((tool, index) => (
+            <div key={index} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
+              <div className={`bg-gradient-to-r ${tool.gradient} p-6 text-white`}>
+                <div className="flex items-center mb-3">
+                  <span className="text-3xl mr-3">{tool.icon}</span>
+                  <div>
+                    <h3 className="text-xl font-bold">{tool.name}</h3>
+                    <p className="text-sm opacity-90">{tool.subtitle}</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="p-6">
+                <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+                  {tool.description}
+                </p>
+                
+                <div className="space-y-2">
+                  <h4 className="font-semibold text-navy-900 text-sm">Key Features:</h4>
+                  <ul className="space-y-1">
+                    {tool.features.map((feature, featureIndex) => (
+                      <li key={featureIndex} className="flex items-start text-sm text-gray-600">
+                        <svg className="w-4 h-4 text-emerald-500 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                        </svg>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                
+                <div className="mt-6 pt-4 border-t border-gray-100">
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-gray-500">Requires subscription</span>
+                    <div className="flex items-center">
+                      <svg className="w-4 h-4 text-red-400 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
+                      </svg>
+                      <span className="text-xs text-red-500 font-medium">Premium</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <div className="bg-navy-900 rounded-2xl p-8 max-w-4xl mx-auto">
+            <h3 className="text-2xl font-bold text-white mb-4">Ready to Unlock Premium Tools?</h3>
+            <p className="text-gray-300 mb-6">
+              Get instant access to all premium tools with any active subscription plan
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="bg-gradient-to-r from-teal-500 to-teal-600 text-white px-8 py-3 rounded-xl font-bold hover:shadow-lg transition-all duration-200">
+                Start W-2 Plan ($49/mo)
+              </button>
+              <button className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-8 py-3 rounded-xl font-bold hover:shadow-lg transition-all duration-200">
+                Start Business Plan ($49/mo)
+              </button>
+              <button className="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-8 py-3 rounded-xl font-bold hover:shadow-lg transition-all duration-200">
+                Get All Access ($69/mo)
+              </button>
+            </div>
+            <p className="text-gray-400 text-sm mt-4">
+              All plans require one-time course fee + monthly subscription • Cancel anytime
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 // Tools Section Component
 const ToolsSection = ({ tools }) => {
   return (
