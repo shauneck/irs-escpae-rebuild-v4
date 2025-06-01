@@ -5622,6 +5622,47 @@ Understanding these terms is essential for strategic deduction mastery:
             course_id=business_course.id,
             module_id=1
         ),
+        # Business Owner Escape Plan Module 2 Questions (4 questions, 50 XP each)
+        QuizQuestion(
+            question="What's a common limitation of traditional deductions?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["They're too complex to claim", "They don't build long-term wealth", "They require too much documentation", "They're only for large businesses"],
+            correct_answer="They don't build long-term wealth",
+            explanation="Traditional deductions like meals, vehicles, and office expenses are consumed and gone. They provide limited tax benefit without building wealth or generating ongoing income.",
+            points=50,
+            course_id=business_course.id,
+            module_id=2
+        ),
+        QuizQuestion(
+            question="What does a cost seg study do?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["Reduces property purchase price", "Reclassifies building components to accelerate depreciation", "Eliminates property taxes", "Provides financing options"],
+            correct_answer="Reclassifies building components to accelerate depreciation",
+            explanation="A cost segregation study is an engineering-based analysis that reclassifies building components from long-term depreciation (27.5/39 years) to accelerated depreciation (5/7/15 years), enabling bonus depreciation benefits.",
+            points=50,
+            course_id=business_course.id,
+            module_id=2
+        ),
+        QuizQuestion(
+            question="Why is oil & gas valuable for tax planning?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["It's risk-free", "It provides high deductions that offset active income", "It guarantees profits", "It requires no documentation"],
+            correct_answer="It provides high deductions that offset active income",
+            explanation="Oil & gas working interests provide Intangible Drilling Costs (IDC) deductions of 70-90% of investment, which are treated as active losses that can offset business income without passive activity limitations.",
+            points=50,
+            course_id=business_course.id,
+            module_id=2
+        ),
+        QuizQuestion(
+            question="What's the benefit of routing asset purchases through an MSO?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["Assets cost less", "The income is taxed at 21% instead of personal rates", "No documentation required", "Guaranteed depreciation"],
+            correct_answer="The income is taxed at 21% instead of personal rates",
+            explanation="By routing asset purchases through a C-Corp MSO, the income used for purchases is taxed at 21% corporate rates instead of personal rates up to 37%, creating a 16% rate arbitrage benefit.",
+            points=50,
+            course_id=business_course.id,
+            module_id=2
+        ),
         QuizQuestion(
             question="What role did Qualified Opportunity Zones play?",
             type=QuizQuestionType.MULTIPLE_CHOICE,
