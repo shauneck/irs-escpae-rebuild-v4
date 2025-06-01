@@ -4573,7 +4573,8 @@ The most successful tax strategists don't just minimize taxes—they use tax opt
 
 🎯 **You have achieved IRS Escape Mastery!** Take the final Module 9 quiz to complete your certification and unlock the "IRS Escape Certified" badge with downloadable certificate, marking your achievement as an elite tax strategist and wealth builder.""",
                 duration_minutes=85,
-                order_index=9
+                order_index=9,
+                xp_available=150
             )
         ]
     )
