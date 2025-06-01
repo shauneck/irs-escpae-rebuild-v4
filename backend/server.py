@@ -149,6 +149,13 @@ async def get_glossary():
     terms = await db.glossary.find().to_list(1000)
     return [GlossaryTerm(**term) for term in terms]
 
+@api_router.get("/glossary/{term_id}", response_model=GlossaryTerm)
+async def get_glossary_term(term_id: str):
+    term = await db.glossary.find_one({"id": term_id})
+    if not term:
+        raise HTTPException(status_code=404, detail="Glossary term not found")
+    return GlossaryTerm(**term)
+
 @api_router.get("/glossary/search")
 async def search_glossary(q: str):
     terms = await db.glossary.find({
