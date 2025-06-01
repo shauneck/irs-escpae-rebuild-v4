@@ -495,6 +495,8 @@ async def initialize_sample_data():
     await db.tools.delete_many({})
     await db.marketplace.delete_many({})
     await db.user_xp.delete_many({})
+    await db.chat_threads.delete_many({})
+    await db.user_subscriptions.delete_many({})
     
     # Sample courses
     primer_course = Course(
