@@ -70,13 +70,14 @@ class W2EscapePlanModuleTest(unittest.TestCase):
         
         # Check for required sections in content
         required_sections = [
-            "Understanding Offset Stacking",
+            "Understanding **Offset Stacking**",
+            "The Three Pillars of Effective Offset Stacking",
             "Why Single-Strategy Approaches Fall Short",
             "Case Study: Helen",
-            "Advanced Offset Stacking Strategies",
-            "Building Your Deduction Portfolio",
-            "Common Offset Stacking Mistakes to Avoid",
-            "Measuring Offset Stacking Success",
+            "Advanced **Offset Stacking** Strategies",
+            "Building Your **Deduction Portfolio**",
+            "Common **Offset Stacking** Mistakes to Avoid",
+            "Measuring **Offset Stacking** Success",
             "Advanced Coordination Strategies",
             "What's Next: Entity Structure Optimization"
         ]
@@ -86,17 +87,16 @@ class W2EscapePlanModuleTest(unittest.TestCase):
         
         # Check for Helen case study details
         helen_case_study_details = [
-            "Year 1 Recap: $156K STR depreciation success",
-            "Year 2 Challenge: $220K W-2 + $150K bonus = $370K income",
-            "3-Phase Strategy",
-            "STR expansion",
-            "Energy investments",
-            "Equipment depreciation",
-            "$443K total deductions",
-            "$370K income",
-            "$0 taxes",
-            "$73K carryforward",
-            "$2M+ assets",
+            "Year 1 Recap",
+            "$156K in annual STR depreciation",
+            "Year 2 Challenge",
+            "$220K W-2 income",
+            "$150K equity bonus",
+            "Total Taxable Income: $370K",
+            "Total Deductions: $443K",
+            "Net Taxable Income: $0",
+            "$73K carryforward loss",
+            "$2M+ asset portfolio",
             "$127K annual cash flow"
         ]
         
