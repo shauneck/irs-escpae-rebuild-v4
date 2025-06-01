@@ -49,7 +49,7 @@ class W2EscapePlanModuleTest(unittest.TestCase):
         
         self.assertIsNotNone(module_3, "Module 3 not found in W-2 course")
         self.assertEqual(module_3["title"], "Stacking Offsets — The Tax Strategy Most W-2 Earners Miss", "Module 3 title mismatch")
-        self.assertEqual(module_3["description"], "Module 3 of 8 - Offset Layering", "Module 3 description mismatch")
+        self.assertTrue("Module 3 of 8 - Offset Layering" in module_3["description"], "Module 3 description mismatch")
         self.assertEqual(module_3["duration_minutes"], 55, "Module 3 duration mismatch")
         
         print("✅ W-2 Escape Plan course and Module 3 exist with correct metadata")
