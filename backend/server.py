@@ -109,6 +109,7 @@ class MarketplaceItem(BaseModel):
     is_featured: bool = False
     image_url: Optional[str] = None
 
+# User progress and chat models
 class UserProgress(BaseModel):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     user_id: str
@@ -117,6 +118,34 @@ class UserProgress(BaseModel):
     completed: bool = False
     score: Optional[int] = None
     completed_at: Optional[datetime] = None
+
+class ChatMessage(BaseModel):
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    user_id: str
+    message: str
+    response: str
+    timestamp: datetime = Field(default_factory=datetime.utcnow)
+    is_starred: bool = False
+    context_modules: List[str] = []
+    context_glossary: List[str] = []
+
+class ChatThread(BaseModel):
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    user_id: str
+    title: str
+    messages: List[ChatMessage] = []
+    created_at: datetime = Field(default_factory=datetime.utcnow)
+    last_updated: datetime = Field(default_factory=datetime.utcnow)
+    is_starred: bool = False
+
+class UserSubscription(BaseModel):
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    user_id: str = "default_user"
+    plan_type: str  # "w2", "business", "all_access"
+    course_access: List[str] = []  # List of course IDs user has access to
+    has_active_subscription: bool = True
+    subscription_tier: str = "standard"  # "standard" or "premium"
+    created_at: datetime = Field(default_factory=datetime.utcnow)
 
 # Course endpoints
 @api_router.get("/courses", response_model=List[Course])
