@@ -1148,12 +1148,12 @@ const PricingSection = () => {
               <div className="bg-navy-700 rounded-lg p-4">
                 <h4 className="text-emerald-400 font-bold mb-2">Monthly Subscription Unlocks:</h4>
                 <ul className="text-gray-300 text-sm space-y-1">
-                  <li>• AI-powered tax assistant</li>
-                  <li>• Strategy simulators (Roth, REPS, W-2 offset)</li>
-                  <li>• Personalized dashboards & custom tools</li>
-                  <li>• Playbook Generator & Document analyzer</li>
-                  <li>• Weekly office hours + advisor chat</li>
-                  <li>• XP tracking, badges & mobile app</li>
+                  <li>• AI Strategy Assistant (TaxBot) - personalized guidance</li>
+                  <li>• Strategy simulators (Roth, REPS, W-2 offset, etc.)</li>
+                  <li>• Playbook Generator with custom tax blueprints</li>
+                  <li>• Document Analyzer for tax form optimization</li>
+                  <li>• Weekly office hours + in-app advisor chat</li>
+                  <li>• Mobile app with push alerts & progress tracking</li>
                 </ul>
               </div>
             </div>
