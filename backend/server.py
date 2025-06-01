@@ -1830,6 +1830,36 @@ The most successful W-2 earners don't just find one good tax strategy — they b
             related_terms=["Qualified Opportunity Fund (QOF)", "Repositioning", "Tax Planning"]
         ),
         GlossaryTerm(
+            term="Offset Stacking",
+            definition="The strategic combination of multiple tax deduction sources to maximize overall tax benefit. Rather than relying on a single deduction type, offset stacking builds portfolios of complementary strategies.",
+            category="Tax Strategy",
+            related_terms=["Depreciation Offset", "Deduction Portfolio", "Tax Planning"]
+        ),
+        GlossaryTerm(
+            term="Depreciation Offset",
+            definition="Tax strategy using depreciation deductions from business assets (primarily real estate) to offset ordinary income, effectively reducing overall tax liability.",
+            category="Tax Strategy",
+            related_terms=["Short-Term Rental (STR)", "Material Participation", "Offset Stacking"]
+        ),
+        GlossaryTerm(
+            term="Intangible Drilling Costs (IDCs)",
+            definition="Immediate tax deductions available for expenses related to oil and gas drilling operations, including labor, materials, and equipment used in drilling wells.",
+            category="Investment Strategy",
+            related_terms=["Offset Stacking", "Carryforward Loss", "Energy Investments"]
+        ),
+        GlossaryTerm(
+            term="Carryforward Loss",
+            definition="Tax losses that exceed current year income and can be carried forward to offset income in future tax years, providing ongoing tax planning opportunities.",
+            category="Tax Terms",
+            related_terms=["Offset Stacking", "Tax Planning", "Deduction Portfolio"]
+        ),
+        GlossaryTerm(
+            term="Deduction Portfolio",
+            definition="Strategic collection of diverse tax deduction sources designed to work together synergistically, providing comprehensive tax optimization and risk diversification.",
+            category="Tax Strategy",
+            related_terms=["Offset Stacking", "Tax Planning", "Depreciation Offset"]
+        ),
+        GlossaryTerm(
             term="Advisor Integration",
             definition="The strategic coordination between different tax professionals (CPAs, strategists, attorneys) to ensure compliance while maximizing tax optimization opportunities.",
             category="Professional Services",
