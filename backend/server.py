@@ -4988,6 +4988,7 @@ The most successful tax strategists don't just minimize taxes—they use tax opt
             type=QuizQuestionType.MULTIPLE_CHOICE,
             options=["It eliminates all taxes permanently", "It defers capital gains tax by rolling into a new property", "It converts ordinary income to capital gains", "It provides immediate tax deductions"],
             correct_answer="It defers capital gains tax by rolling into a new property",
+            explanation="A 1031 exchange allows investors to defer capital gains taxation by exchanging like-kind properties, enabling wealth preservation and continued growth without immediate tax consequences.",
             points=50,
             course_id=w2_course.id,
             module_id=8
