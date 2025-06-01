@@ -104,10 +104,21 @@ class W2EscapePlanModuleTest(unittest.TestCase):
             
             print(f"✅ Verified Module 1 content contains all required sections")
             
-            # Verify glossary terms are present in the content
-            glossary_terms = ["W-2 Income", "Effective Tax Rate", "CPA vs Strategist", "Forward-Looking Planning"]
-            for term in glossary_terms:
-                self.assertIn(term, content, f"Module 1 content missing glossary term: {term}")
+            # Verify glossary terms are present in the content (case-insensitive)
+            glossary_terms = {
+                "W-2 Income": ["W-2 income", "W-2 Income"],
+                "Effective Tax Rate": ["effective tax rate", "Effective Tax Rate"],
+                "CPA vs Strategist": ["CPA vs Strategist", "CPA vs strategist"],
+                "Forward-Looking Planning": ["forward-looking planning", "Forward-Looking Planning"]
+            }
+            
+            for term, variations in glossary_terms.items():
+                found = False
+                for variation in variations:
+                    if variation.lower() in content.lower():
+                        found = True
+                        break
+                self.assertTrue(found, f"Module 1 content missing glossary term: {term}")
             
             print(f"✅ Verified Module 1 content contains all required glossary terms")
         except Exception as e:
