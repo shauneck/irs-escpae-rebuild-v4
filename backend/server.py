@@ -2880,6 +2880,47 @@ The most successful real estate investors don't just build portfolios—they str
             points=50,
             course_id=w2_course.id,
             module_id=4
+        ),
+        # W-2 Escape Plan Module 5 Questions (REPS) (50 XP each, 4 questions)
+        QuizQuestion(
+            question="What are the two IRS tests required to qualify for REPS?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["Own 5+ properties and have real estate license", "750+ hours AND more time in RE than any other activity", "Manage properties full-time and live in rental", "$500K+ investment and professional management"],
+            correct_answer="750+ hours AND more time in RE than any other activity",
+            explanation="REPS requires satisfying both prongs of the IRS Time Test: (1) at least 750 hours in real estate trade or business activities, and (2) more than 50% of all personal services performed in real estate activities.",
+            points=50,
+            course_id=w2_course.id,
+            module_id=5
+        ),
+        QuizQuestion(
+            question="Why group your real estate activities under the Grouping Election?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["To reduce total time requirements", "To meet the material participation threshold across multiple properties", "To avoid documentation requirements", "To qualify for lower tax rates"],
+            correct_answer="To meet the material participation threshold across multiple properties",
+            explanation="The Grouping Election under Reg. §1.469-9(g) allows you to treat multiple real estate activities as a single activity, making it easier to meet material participation requirements across your entire portfolio.",
+            points=50,
+            course_id=w2_course.id,
+            module_id=5
+        ),
+        QuizQuestion(
+            question="Can REPS qualification be satisfied by just one spouse?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["No, both spouses must qualify", "Yes, only one spouse needs to qualify", "Only if filing separately", "Only for community property states"],
+            correct_answer="Yes, only one spouse needs to qualify",
+            explanation="For married couples filing jointly, only one spouse needs to satisfy the REPS requirements. The qualifying spouse's real estate activities can benefit the entire household's tax situation.",
+            points=50,
+            course_id=w2_course.id,
+            module_id=5
+        ),
+        QuizQuestion(
+            question="Why is documentation critical for REPS?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["It's required by state law", "REPS is high-risk for audit — hours must be defensible", "It reduces time requirements", "It eliminates the majority time test"],
+            correct_answer="REPS is high-risk for audit — hours must be defensible",
+            explanation="REPS is heavily audited by the IRS because of the significant tax benefits. Your contemporaneous log and documentation must be detailed, defensible, and clearly demonstrate qualifying real estate activities.",
+            points=50,
+            course_id=w2_course.id,
+            module_id=5
         )
     ]
     
