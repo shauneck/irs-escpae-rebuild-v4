@@ -1285,7 +1285,7 @@ const App = () => {
           </section>
         </>
       )}
-      {activeSection === 'premium-tools' && <PremiumToolsSection />}
+      {activeSection === 'premium-tools' && <PremiumToolsOverview />}
       
       {activeSection === 'tools' && <ToolsSection tools={tools} />}
       {activeSection === 'glossary' && <GlossarySection glossaryTerms={glossaryTerms} />}
