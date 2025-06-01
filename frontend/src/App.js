@@ -992,7 +992,7 @@ const PricingSection = () => {
         "Offset stacking frameworks",
         "RSU repositioning tactics",
         "AI-powered tax assistant",
-        "Custom strategy tools & dashboards"
+        "Strategy simulators & custom tools"
       ],
       ctaText: "Start W-2 Plan",
       gradient: "from-teal-500 to-teal-600",
@@ -1013,7 +1013,7 @@ const PricingSection = () => {
         "MSO implementation frameworks",
         "QBI qualification methods",
         "AI-powered tax assistant",
-        "Premium strategy tools & updates"
+        "Premium strategy tools & simulators"
       ],
       ctaText: "Start Business Plan",
       gradient: "from-yellow-500 to-yellow-600", 
@@ -1023,25 +1023,25 @@ const PricingSection = () => {
     {
       name: "All Access + AI",
       accent: "pink", 
-      oneTimePrice: "$2,494",
+      oneTimePrice: "$1,994",
       oneTimeDescription: "one-time course bundle",
-      monthlyPrice: "$49/mo",
-      monthlyDescription: "platform subscription",
+      monthlyPrice: "$69/mo",
+      monthlyDescription: "premium subscription",
       description: "Complete access to both courses, all tools, XP tracking, and your personal AI tax strategist.",
       features: [
         "Lifetime access to ALL courses",
         "Complete premium tool library", 
         "Full XP tracking & gamification",
         "Personal AI tax strategist",
-        "Community office hours access",
-        "Priority advisor chat support"
+        "Weekly office hours & advisor chat",
+        "Document analyzer & mobile app"
       ],
       ctaText: "Get All Access",
       gradient: "from-pink-500 to-pink-600",
       border: "border-pink-200", 
       bg: "bg-pink-50",
       popular: true,
-      savings: "Save $1,000"
+      savings: "Save $500"
     }
   ];
 
@@ -1057,7 +1057,7 @@ const PricingSection = () => {
           </p>
           <div className="bg-emerald-900/50 border border-emerald-400/30 rounded-lg p-4 max-w-2xl mx-auto">
             <p className="text-emerald-300 text-sm">
-              <strong>Complete Access Requires:</strong> One-time course fee + Monthly platform subscription
+              <strong>Full Platform Access Requires:</strong> One-time course fee + Active monthly subscription
             </p>
           </div>
         </div>
@@ -1096,12 +1096,14 @@ const PricingSection = () => {
                   
                   <div className="text-center text-gray-500 font-bold">+</div>
                   
-                  <div className="bg-white rounded-lg p-3 border-2 border-navy-200">
+                  <div className={`bg-white rounded-lg p-3 border-2 ${plan.accent === 'pink' ? 'border-pink-200' : 'border-navy-200'}`}>
                     <div className="flex items-baseline justify-between">
                       <span className="text-2xl font-bold text-navy-900">{plan.monthlyPrice}</span>
                       <span className="text-gray-500 text-sm">{plan.monthlyDescription}</span>
                     </div>
-                    <p className="text-xs text-gray-600 mt-1">AI tools & platform features</p>
+                    <p className="text-xs text-gray-600 mt-1">
+                      {plan.accent === 'pink' ? 'Premium AI tools & features' : 'AI tools & platform features'}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -1123,7 +1125,7 @@ const PricingSection = () => {
                 </button>
                 
                 <p className="text-xs text-gray-500 text-center mt-3">
-                  Cancel subscription anytime • Keep course access forever
+                  Cancel anytime • Keep course access forever
                 </p>
               </div>
             </div>
@@ -1147,11 +1149,25 @@ const PricingSection = () => {
                 <h4 className="text-emerald-400 font-bold mb-2">Monthly Subscription Unlocks:</h4>
                 <ul className="text-gray-300 text-sm space-y-1">
                   <li>• AI-powered tax assistant</li>
-                  <li>• Custom strategy tools & calculators</li>
-                  <li>• Personalized dashboards & tracking</li>
-                  <li>• New strategy updates & community access</li>
+                  <li>• Strategy simulators (Roth, REPS, W-2 offset)</li>
+                  <li>• Personalized dashboards & custom tools</li>
+                  <li>• Playbook Generator & Document analyzer</li>
+                  <li>• Weekly office hours + advisor chat</li>
+                  <li>• XP tracking, badges & mobile app</li>
                 </ul>
               </div>
+            </div>
+            
+            <div className="mt-6 bg-navy-600 rounded-lg p-4">
+              <div className="flex items-center justify-center mb-2">
+                <svg className="w-5 h-5 text-red-400 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+                </svg>
+                <span className="text-red-400 font-bold text-sm">Important:</span>
+              </div>
+              <p className="text-gray-300 text-sm text-center">
+                <strong>Full platform functionality requires both payments.</strong> Canceling your subscription means you keep lifetime course access but lose AI features, tools, and premium support.
+              </p>
             </div>
           </div>
         </div>
