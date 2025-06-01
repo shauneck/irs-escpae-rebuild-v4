@@ -90,6 +90,25 @@ class Tool(BaseModel):
     is_free: bool
     config: Dict[str, Any] = {}
 
+# User XP and tracking models
+class UserXP(BaseModel):
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    user_id: str = "default_user"  # For demo purposes
+    total_xp: int = 0
+    quiz_xp: int = 0
+    glossary_xp: int = 0
+    created_at: datetime = Field(default_factory=datetime.utcnow)
+    last_updated: datetime = Field(default_factory=datetime.utcnow)
+
+class MarketplaceItem(BaseModel):
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    name: str
+    description: str
+    price: float
+    category: str
+    is_featured: bool = False
+    image_url: Optional[str] = None
+
 class UserProgress(BaseModel):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     user_id: str
