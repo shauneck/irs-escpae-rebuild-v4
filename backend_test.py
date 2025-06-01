@@ -54,51 +54,56 @@ class W2EscapePlanModuleTest(unittest.TestCase):
         
         print("✅ W-2 Escape Plan course and Module 3 exist with correct metadata")
 
-    def test_module_2_content(self):
-        """Test that Module 2 content is complete and contains all required sections"""
+    def test_module_3_content(self):
+        """Test that Module 3 content is complete and contains all required sections"""
         response = requests.get(f"{self.base_url}/courses/{self.w2_course_id}")
         self.assertEqual(response.status_code, 200, "Failed to fetch W-2 course")
         
         course = response.json()
-        module_2 = None
+        module_3 = None
         for lesson in course["lessons"]:
-            if lesson["order_index"] == 2:
-                module_2 = lesson
+            if lesson["order_index"] == 3:
+                module_3 = lesson
                 break
         
-        self.assertIsNotNone(module_2, "Module 2 not found in W-2 course")
+        self.assertIsNotNone(module_3, "Module 3 not found in W-2 course")
         
         # Check for required sections in content
         required_sections = [
-            "The Repositioning Framework",
-            "Understanding Qualified Opportunity Funds",
-            "Short-Term Rental (STR) Strategy for W-2 Earners",
+            "Understanding Offset Stacking",
+            "Why Single-Strategy Approaches Fall Short",
             "Case Study: Helen",
-            "Advanced Repositioning Strategies",
-            "Implementation Timeline for W-2 Repositioning",
-            "Common W-2 Repositioning Mistakes to Avoid",
-            "Measuring Repositioning Success",
-            "What's Next: Advanced Entity Strategies"
+            "Advanced Offset Stacking Strategies",
+            "Building Your Deduction Portfolio",
+            "Common Offset Stacking Mistakes to Avoid",
+            "Measuring Offset Stacking Success",
+            "Advanced Coordination Strategies",
+            "What's Next: Entity Structure Optimization"
         ]
         
         for section in required_sections:
-            self.assertIn(section, module_2["content"], f"Section '{section}' not found in Module 2 content")
+            self.assertIn(section, module_3["content"], f"Section '{section}' not found in Module 3 content")
         
         # Check for Helen case study details
         helen_case_study_details = [
-            "$160K in W-2 wages plus $180K annually in RSU vesting",
-            "$540K in accumulated RSU gains",
-            "$183K in capital gains taxes",
-            "QOF Capital Gain Deferral",
-            "STR Property Acquisition",
-            "Material Participation & Depreciation",
-            "W-2 Income Offset"
+            "Year 1 Recap: $156K STR depreciation success",
+            "Year 2 Challenge: $220K W-2 + $150K bonus = $370K income",
+            "3-Phase Strategy",
+            "STR expansion",
+            "Energy investments",
+            "Equipment depreciation",
+            "$443K total deductions",
+            "$370K income",
+            "$0 taxes",
+            "$73K carryforward",
+            "$2M+ assets",
+            "$127K annual cash flow"
         ]
         
         for detail in helen_case_study_details:
-            self.assertIn(detail, module_2["content"], f"Helen case study detail '{detail}' not found in Module 2 content")
+            self.assertIn(detail, module_3["content"], f"Helen case study detail '{detail}' not found in Module 3 content")
         
-        print("✅ Module 2 content contains all required sections and Helen case study details")
+        print("✅ Module 3 content contains all required sections and Helen case study details")
 
     def test_module_2_glossary_terms(self):
         """Test that required glossary terms for Module 2 exist"""
