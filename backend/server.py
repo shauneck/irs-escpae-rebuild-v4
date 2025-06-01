@@ -5637,6 +5637,48 @@ Understanding these terms is essential for entity structuring mastery:
             definition="The strategic coordination between different tax professionals (CPAs, strategists, attorneys) to ensure compliance while maximizing tax optimization opportunities.",
             category="Professional Services",
             related_terms=["CPA vs Strategist", "Tax Planning", "Personalized Planning"]
+        ),
+        GlossaryTerm(
+            term="1040",
+            definition="Individual income tax return form filed annually with the IRS to report personal income and calculate tax liability.",
+            category="Tax Forms",
+            related_terms=["W-2 Income", "Tax Planning", "Income Repositioning"]
+        ),
+        GlossaryTerm(
+            term="C-Corp MSO",
+            definition="Management Services Organization structured as a C-Corporation that provides management services to other businesses, enabling income shifting from personal rates (up to 37%) to corporate rates (21%).",
+            category="Business Structures",
+            related_terms=["MSO (Management Services Organization)", "Entity Trap", "Income Repositioning"]
+        ),
+        GlossaryTerm(
+            term="Tax Shielding",
+            definition="Protecting income and assets from future taxation through strategic structures such as trusts, insurance, and legal entity arrangements.",
+            category="Tax Strategy",
+            related_terms=["Asset Protection", "Estate Planning", "Tax Planning"]
+        ),
+        GlossaryTerm(
+            term="Qualified Opportunity Fund (QOF)",
+            definition="Investment vehicle designed to encourage investment in designated low-income communities through tax incentives including capital gains deferral and potential elimination.",
+            category="Investment Vehicles",
+            related_terms=["Capital Gains", "Tax Strategy", "Investment Planning"]
+        ),
+        GlossaryTerm(
+            term="Entity Trap",
+            definition="Being stuck in a suboptimal business structure without strategic tax planning, typically resulting in unnecessary tax burden and missed optimization opportunities.",
+            category="Business Structures",
+            related_terms=["C-Corp MSO", "MSO (Management Services Organization)", "Tax Planning"]
+        ),
+        GlossaryTerm(
+            term="Dual-Entity Design",
+            definition="Strategic use of multiple business entities to optimize tax treatment, typically involving an operating entity and a management entity for income shifting and deduction optimization.",
+            category="Business Structures",
+            related_terms=["C-Corp MSO", "MSO (Management Services Organization)", "Tax Strategy"]
+        ),
+        GlossaryTerm(
+            term="Owner Compensation Strategy",
+            definition="Systematic approach to optimizing how business owners extract value from their companies through salary, distributions, benefits, and other compensation methods.",
+            category="Business Strategy",
+            related_terms=["C-Corp MSO", "Tax Planning", "Business Structures"]
         )
     ]
     
