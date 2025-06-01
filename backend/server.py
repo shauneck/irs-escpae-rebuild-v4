@@ -4476,6 +4476,47 @@ The most successful wealth builders don't just minimize taxes—they multiply th
             points=50,
             course_id=w2_course.id,
             module_id=7
+        ),
+        # W-2 Escape Plan Module 8 Questions (Wealth Multiplier Loop) (50 XP each, 4 questions)
+        QuizQuestion(
+            question="What is the Wealth Multiplier Loop designed to do?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["Reduce current year taxes only", "Turn tax savings into long-term compounding wealth", "Eliminate all investment risk", "Replace W-2 income immediately"],
+            correct_answer="Turn tax savings into long-term compounding wealth",
+            explanation="The Wealth Multiplier Loop is designed to systematically transform annual tax savings into compounding long-term wealth through strategic asset cycling and leverage optimization.",
+            points=50,
+            course_id=w2_course.id,
+            module_id=8
+        ),
+        QuizQuestion(
+            question="What is a key feature of the life insurance used in this strategy?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["Maximum death benefit with minimum cash value", "High cash value with minimum death benefit", "Term life insurance only", "Group life insurance through employer"],
+            correct_answer="High cash value with minimum death benefit",
+            explanation="The strategy uses cash value life insurance designed with high cash value accumulation and minimum death benefit to maximize the policy's leverage and loan capacity.",
+            points=50,
+            course_id=w2_course.id,
+            module_id=8
+        ),
+        QuizQuestion(
+            question="How are STRs used in the loop?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["As passive investments only", "As a reinvestment target that provides depreciation and income", "To eliminate all taxes permanently", "To replace oil & gas investments"],
+            correct_answer="As a reinvestment target that provides depreciation and income",
+            explanation="STRs serve as reinvestment targets within the loop, providing both depreciation benefits for tax optimization and positive cash flow for wealth building.",
+            points=50,
+            course_id=w2_course.id,
+            module_id=8
+        ),
+        QuizQuestion(
+            question="What is the tax benefit of a 1031 exchange at the end of the loop?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["It eliminates all taxes permanently", "It defers capital gains tax by rolling into a new property", "It converts ordinary income to capital gains", "It provides immediate tax deductions"],
+            correct_answer="It defers capital gains tax by rolling into a new property",
+            explanation="A 1031 exchange allows investors to defer capital gains taxation by exchanging like-kind properties, enabling wealth preservation and continued growth without immediate tax consequences.",
+            points=50,
+            course_id=w2_course.id,
+            module_id=8
         )
     ]
     
