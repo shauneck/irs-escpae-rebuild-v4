@@ -236,25 +236,26 @@ async def award_glossary_xp(request: XPRequest):
         return {"status": "success", "xp_earned": 5, "total_xp": new_total_xp}
 
 @api_router.post("/users/xp/quiz")
-async def award_quiz_xp(points: int, user_id: str = "default_user"):
+async def award_quiz_xp(request: XPRequest):
     """Award XP for quiz completion"""
-    user_xp = await db.user_xp.find_one({"user_id": user_id})
+    points = request.points or 10  # Default 10 points for quiz
+    user_xp = await db.user_xp.find_one({"user_id": request.user_id})
     if not user_xp:
-        new_xp = UserXP(user_id=user_id, quiz_xp=points, total_xp=points)
+        new_xp = UserXP(user_id=request.user_id, quiz_xp=points, total_xp=points)
         await db.user_xp.insert_one(new_xp.dict())
-        return {"xp_awarded": points, "total_xp": points}
+        return {"status": "success", "xp_earned": points, "total_xp": points}
     else:
         new_quiz_xp = user_xp["quiz_xp"] + points
         new_total_xp = user_xp["total_xp"] + points
         await db.user_xp.update_one(
-            {"user_id": user_id},
+            {"user_id": request.user_id},
             {"$set": {
                 "quiz_xp": new_quiz_xp,
                 "total_xp": new_total_xp,
                 "last_updated": datetime.utcnow()
             }}
         )
-        return {"xp_awarded": points, "total_xp": new_total_xp}
+        return {"status": "success", "xp_earned": points, "total_xp": new_total_xp}
 
 # Marketplace endpoints
 @api_router.get("/marketplace", response_model=List[MarketplaceItem])
