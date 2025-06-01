@@ -964,6 +964,7 @@ const App = () => {
               </div>
             </div>
           </section>
+          <PricingSection />
         </>
       )}
       
