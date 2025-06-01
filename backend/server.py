@@ -3051,7 +3051,8 @@ The most successful STR investors don't just buy properties—they strategically
 
 🎯 **Ready to implement STR strategies in your portfolio?** Take the Module 6 quiz to earn +25 XP and prepare for Module 7's advanced entity optimization strategies.""",
                 duration_minutes=70,
-                order_index=6
+                order_index=6,
+                xp_available=150
             ),
             CourseContent(
                 title="Oil & Gas Deductions",
