@@ -50,6 +50,7 @@ class CourseContent(BaseModel):
     video_url: Optional[str] = None
     duration_minutes: int
     order_index: int
+    xp_available: int = 150
 
 class Course(BaseModel):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
