@@ -3549,7 +3549,8 @@ The most successful energy investors don't just seek tax deductions—they strat
 
 🎯 **Ready to explore oil & gas strategies for your situation?** Take the Module 7 quiz to earn +25 XP and prepare for Module 8's comprehensive entity optimization and wealth building integration strategies.""",
                 duration_minutes=75,
-                order_index=7
+                order_index=7,
+                xp_available=150
             ),
             CourseContent(
                 title="The Wealth Multiplier Loop",
