@@ -5,8 +5,8 @@ import uuid
 import os
 import sys
 
-# Get the backend URL from the frontend .env file
-BACKEND_URL = "https://2f7b5da6-4045-4afb-968b-f13543c0575b.preview.emergentagent.com"
+# Use the localhost URL for testing
+BACKEND_URL = "http://localhost:8001"
 
 class IRSEscapePlanAPITest(unittest.TestCase):
     """Test suite for the IRS Escape Plan API"""
