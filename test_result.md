@@ -67,6 +67,7 @@ metadata:
 test_plan:
   current_focus:
     - "Complete W-2 Escape Plan Course with 9 Modules"
+    - "Business Owner Escape Plan Module 0 Addition"
   stuck_tasks:
     - "Module 6 - Short-Term Rentals (STRs) Addition"
   test_all: false
