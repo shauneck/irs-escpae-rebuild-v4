@@ -37,6 +37,7 @@ metadata:
 test_plan:
   current_focus:
     - "Module 6 - Short-Term Rentals (STRs) Addition"
+    - "Complete W-2 Escape Plan Course with 8 Modules"
   stuck_tasks:
     - "Module 6 - Short-Term Rentals (STRs) Addition"
   test_all: false
