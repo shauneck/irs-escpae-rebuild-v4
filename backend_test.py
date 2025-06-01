@@ -12,11 +12,12 @@ class CourseAPITester:
 
     def run_test(self, name, method, endpoint, expected_status=200, data=None, expected_data=None):
         """Run a single API test"""
-        url = f"{self.base_url}/{endpoint}"
+        url = f"{self.base_url}/api/{endpoint}"
         headers = {'Content-Type': 'application/json'}
         
         self.tests_run += 1
         print(f"\n🔍 Testing {name}...")
+        print(f"URL: {url}")
         
         try:
             if method == 'GET':
@@ -35,8 +36,9 @@ class CourseAPITester:
             # Try to parse JSON response
             try:
                 response_data = response.json()
-            except:
-                print(f"❌ Failed to parse JSON response")
+            except Exception as e:
+                print(f"❌ Failed to parse JSON response: {str(e)}")
+                print(f"Response text: {response.text[:200]}...")
                 return False, None
             
             # If expected data is provided, check it
