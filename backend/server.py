@@ -4988,10 +4988,50 @@ The most successful tax strategists don't just minimize taxes—they use tax opt
             type=QuizQuestionType.MULTIPLE_CHOICE,
             options=["It eliminates all taxes permanently", "It defers capital gains tax by rolling into a new property", "It converts ordinary income to capital gains", "It provides immediate tax deductions"],
             correct_answer="It defers capital gains tax by rolling into a new property",
-            explanation="A 1031 exchange allows investors to defer capital gains taxation by exchanging like-kind properties, enabling wealth preservation and continued growth without immediate tax consequences.",
             points=50,
             course_id=w2_course.id,
             module_id=8
+        ),
+        # W-2 Escape Plan Module 9 Questions (IRS Escape Plan) (50 XP each, 4 questions)
+        QuizQuestion(
+            question="What were Helen's four strategic pillars?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["Reduce taxes, buy real estate, start business, move abroad", "Reduce active income tax, reinvest capital gains, smooth future income, replace income", "Invest in stocks, bonds, crypto, gold", "Save money, reduce expenses, increase income, retire early"],
+            correct_answer="Reduce active income tax, reinvest capital gains, smooth future income, replace income",
+            explanation="Helen's four strategic pillars were: (1) Reduce current W-2 tax exposure, (2) Reposition capital gains into tax-deferred structures, (3) Create predictable diversified income, and (4) Enable lifestyle design through strategic exits.",
+            points=50,
+            course_id=w2_course.id,
+            module_id=9
+        ),
+        QuizQuestion(
+            question="What role did Qualified Opportunity Zones play?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["Provided immediate tax deductions", "Deferred capital gains and repositioned appreciated equity", "Eliminated all taxes permanently", "Created passive income streams"],
+            correct_answer="Deferred capital gains and repositioned appreciated equity",
+            explanation="Qualified Opportunity Zones allowed Helen to defer capital gains from RSU liquidation and reposition appreciated equity into tax-advantaged investments with potential for tax-free growth after 10 years.",
+            points=50,
+            course_id=w2_course.id,
+            module_id=9
+        ),
+        QuizQuestion(
+            question="What happened by Year 5 of Helen's plan?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["She increased her W-2 income and stayed in the US", "She stepped away from W-2, moved abroad, and consulted selectively", "She retired completely and stopped working", "She started a traditional business and hired employees"],
+            correct_answer="She stepped away from W-2, moved abroad, and consulted selectively",
+            explanation="By Year 5, Helen achieved complete lifestyle transformation: she stepped away from traditional W-2 employment, moved to Portugal with EU residency, and transitioned to selective consulting with premium pricing.",
+            points=50,
+            course_id=w2_course.id,
+            module_id=9
+        ),
+        QuizQuestion(
+            question="What made her plan effective?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["It was based on luck and market timing", "It was structured, calendarized, and sequenced", "It focused on a single strategy only", "It avoided all professional advice"],
+            correct_answer="It was structured, calendarized, and sequenced",
+            explanation="Helen's plan was effective because it was systematic: structured with clear phases, calendarized with specific timing, and sequenced with logical progression. Strategy without sequence is noise.",
+            points=50,
+            course_id=w2_course.id,
+            module_id=9
         )
     ]
     
