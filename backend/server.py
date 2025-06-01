@@ -1921,6 +1921,37 @@ The most successful W-2 earners don't just find one good tax strategy — they b
             points=50,
             course_id=w2_course.id,
             module_id=3
+        ),
+        # W-2 Escape Plan Module 4 Questions (50 XP each, 3 questions)
+        QuizQuestion(
+            question="What is the primary benefit of Real Estate Professional Status (REPS) for W-2 earners?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["It eliminates all real estate taxes", "It removes passive loss limitations allowing real estate losses to offset W-2 income dollar-for-dollar", "It reduces property management requirements", "It guarantees real estate investment returns"],
+            correct_answer="It removes passive loss limitations allowing real estate losses to offset W-2 income dollar-for-dollar",
+            explanation="REPS transforms real estate activities from passive investments to active business income, removing passive loss limitations and enabling unlimited deduction potential against ordinary W-2 income.",
+            points=50,
+            course_id=w2_course.id,
+            module_id=4
+        ),
+        QuizQuestion(
+            question="What are the two requirements of the IRS Time Test for REPS qualification?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["Own 5+ properties and earn $100K+ from real estate", "Spend 750+ hours in real estate activities AND more than 50% of personal services in real estate", "Have a real estate license and manage properties full-time", "Invest $500K+ in real estate and hire property managers"],
+            correct_answer="Spend 750+ hours in real estate activities AND more than 50% of personal services in real estate",
+            explanation="The IRS Time Test requires both prongs: (1) at least 750 hours in real estate trade or business activities, and (2) more than 50% of all personal services performed in real estate activities during the year.",
+            points=50,
+            course_id=w2_course.id,
+            module_id=4
+        ),
+        QuizQuestion(
+            question="In Helen's Year 3 case study, how did she achieve REPS qualification while maintaining her W-2 job?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["She quit her W-2 job to focus on real estate", "She documented 2,200 hours in real estate activities (51.4% of total work time) across property management, acquisition, education, and financial management", "She hired managers to handle all property activities", "She only invested in passive real estate funds"],
+            correct_answer="She documented 2,200 hours in real estate activities (51.4% of total work time) across property management, acquisition, education, and financial management",
+            explanation="Helen strategically expanded her real estate activities to 2,200 hours annually while maintaining her 2,080-hour W-2 job, achieving 51.4% of her total work time in real estate to satisfy both REPS requirements with detailed documentation.",
+            points=50,
+            course_id=w2_course.id,
+            module_id=4
         )
     ]
     
