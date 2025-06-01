@@ -988,11 +988,11 @@ const PricingSection = () => {
       description: "High-income W-2 earners unlock deduction stacking, REPS access, and repositioning strategies.",
       features: [
         "Lifetime access to W-2 course modules",
-        "REPS qualification strategies", 
-        "Offset stacking frameworks",
-        "RSU repositioning tactics",
-        "AI-powered tax assistant",
-        "Strategy simulators & custom tools"
+        "AI Strategy Assistant (TaxBot) for W-2 questions", 
+        "W-2 Offset Planner & REPS Hour Tracker",
+        "Document Analyzer for W-2 & 1040 optimization",
+        "Gamification + XP tracking system",
+        "Mobile dashboard with strategy reminders"
       ],
       ctaText: "Start W-2 Plan",
       gradient: "from-teal-500 to-teal-600",
