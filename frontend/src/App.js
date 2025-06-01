@@ -227,10 +227,10 @@ const TaxBotSection = () => {
       <div className="container mx-auto px-6 py-8">
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-navy-900 mb-2">
-            🤖 AI Strategy Assistant (TaxBot)
+            🧠 QGPT - AI Tax Strategist
           </h1>
           <p className="text-xl text-gray-600">
-            Get personalized tax strategy guidance with contextual links to your courses and glossary
+            Advanced tax strategy guidance from The IRS Escape Plan by Quantus Group
           </p>
         </div>
 
