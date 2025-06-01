@@ -8,7 +8,7 @@ class W2EscapePlanModuleTest(unittest.TestCase):
         super(W2EscapePlanModuleTest, self).__init__(*args, **kwargs)
         self.base_url = "https://5cae3060-20f9-4b8b-b436-5b7713b729a5.preview.emergentagent.com/api"
         self.w2_course_id = None
-        self.module_2_id = None
+        self.module_3_id = None
         self.glossary_terms = []
 
     def setUp(self):
