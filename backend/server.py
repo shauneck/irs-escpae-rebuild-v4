@@ -3391,6 +3391,47 @@ The most successful STR investors don't just buy properties—they strategically
             points=50,
             course_id=w2_course.id,
             module_id=5
+        ),
+        # W-2 Escape Plan Module 6 Questions (STRs) (50 XP each, 4 questions)
+        QuizQuestion(
+            question="What is the average stay requirement for STR exemption?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["Less than 14 days", "Less than 7 days", "Less than 30 days", "Less than 3 days"],
+            correct_answer="Less than 7 days",
+            explanation="For STR exemption qualification, the average period of customer use must be 7 days or less. This average is calculated annually across all bookings.",
+            points=50,
+            course_id=w2_course.id,
+            module_id=6
+        ),
+        QuizQuestion(
+            question="What disqualifies you from STR exemption?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["Having multiple properties", "Hiring a third-party property manager", "Charging premium rates", "Operating seasonally"],
+            correct_answer="Hiring a third-party property manager",
+            explanation="Hiring a full-service third-party property manager typically disqualifies you from material participation, which is required for STR exemption. You must participate more than any other individual.",
+            points=50,
+            course_id=w2_course.id,
+            module_id=6
+        ),
+        QuizQuestion(
+            question="What does a cost segregation study do?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["Reduces property taxes", "Accelerates depreciation deductions into year one", "Eliminates maintenance costs", "Guarantees rental income"],
+            correct_answer="Accelerates depreciation deductions into year one",
+            explanation="Cost segregation reclassifies property components from 27.5-year depreciation to accelerated 5-year, 7-year, and 15-year schedules, enabling immediate bonus depreciation benefits.",
+            points=50,
+            course_id=w2_course.id,
+            module_id=6
+        ),
+        QuizQuestion(
+            question="Why is STR exemption powerful for W-2 earners?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["It guarantees profits", "Allows losses to offset W-2 income without REPS", "Eliminates all taxes", "Provides passive income only"],
+            correct_answer="Allows losses to offset W-2 income without REPS",
+            explanation="STR exemption allows rental activities to be treated as active businesses, enabling losses to offset W-2 income without requiring Real Estate Professional Status (REPS) qualification.",
+            points=50,
+            course_id=w2_course.id,
+            module_id=6
         )
     ]
     
