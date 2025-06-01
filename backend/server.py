@@ -2757,6 +2757,16 @@ The most successful W-2 earners don't just invest in real estate—they strategi
     default_xp = UserXP(user_id="default_user")
     await db.user_xp.insert_one(default_xp.dict())
     
+    # Initialize default user subscription (for demo)
+    default_subscription = UserSubscription(
+        user_id="default_user",
+        plan_type="all_access",
+        course_access=[primer_course.id, w2_course.id, business_course.id],
+        has_active_subscription=True,
+        subscription_tier="premium"
+    )
+    await db.user_subscriptions.insert_one(default_subscription.dict())
+    
     return {"status": "Sample data initialized successfully"}
 
 # Health check endpoint
