@@ -105,16 +105,14 @@ class W2EscapePlanModuleTest(unittest.TestCase):
         
         print("✅ Module 3 content contains all required sections and Helen case study details")
 
-    def test_module_2_glossary_terms(self):
-        """Test that required glossary terms for Module 2 exist"""
+    def test_module_3_glossary_terms(self):
+        """Test that required glossary terms for Module 3 exist"""
         required_terms = [
-            "Repositioning",
-            "Qualified Opportunity Fund",
-            "Short-Term Rental",
-            "Bonus Depreciation",
-            "Material Participation",
-            "Depreciation Loss",
-            "Capital Gain Deferral"
+            "Offset Stacking",
+            "Depreciation Offset",
+            "Intangible Drilling Costs (IDCs)",
+            "Carryforward Loss",
+            "Deduction Portfolio"
         ]
         
         found_terms = []
@@ -127,7 +125,7 @@ class W2EscapePlanModuleTest(unittest.TestCase):
         for term in required_terms:
             self.assertIn(term, found_terms, f"Glossary term '{term}' not found")
         
-        print("✅ All required glossary terms for Module 2 exist")
+        print("✅ All required glossary terms for Module 3 exist")
 
     def test_module_2_quiz(self):
         """Test that Module 2 quiz questions exist and have correct XP values"""
