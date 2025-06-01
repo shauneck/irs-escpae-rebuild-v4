@@ -924,7 +924,7 @@ const PremiumToolsSection = () => {
 };
 
 // Premium Tools Overview Component
-const PremiumToolsSection = () => {
+const PremiumToolsOverview = () => {
   const tools = [
     {
       name: "AI Strategy Assistant",
