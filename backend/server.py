@@ -1968,7 +1968,8 @@ The most successful W-2 earners don't just find one good tax strategy — they b
 
 🎯 **Ready to test your offset stacking knowledge?** Take the Module 3 quiz to earn +50 XP and master these advanced coordination concepts before exploring Module 4's entity strategies.""",
                 duration_minutes=55,
-                order_index=3
+                order_index=3,
+                xp_available=150
             ),
             CourseContent(
                 title="Qualifying for REPS — The Gateway to Strategic Offsets",
