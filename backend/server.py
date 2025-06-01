@@ -1357,6 +1357,37 @@ The most successful W-2 earners don't just earn and save—they systematically *
             points=50,
             course_id=w2_course.id,
             module_id=1
+        ),
+        # W-2 Escape Plan Module 2 Questions (50 XP each, 3 questions)
+        QuizQuestion(
+            question="What is the primary purpose of 'repositioning' already-taxed W-2 income?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["To avoid paying taxes on future income", "To transform passive income into active, tax-advantaged investments that generate ongoing deductions", "To convert W-2 income into business income", "To defer all current year taxes"],
+            correct_answer="To transform passive income into active, tax-advantaged investments that generate ongoing deductions",
+            explanation="Repositioning involves strategically deploying already-taxed W-2 income into investments and structures that generate immediate tax deductions, ongoing passive income, and long-term wealth building opportunities.",
+            points=50,
+            course_id=w2_course.id,
+            module_id=2
+        ),
+        QuizQuestion(
+            question="In Helen's case study, what was the key strategy that allowed her to eliminate her W-2 tax burden?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["Using QOF to defer capital gains and STR depreciation to offset W-2 income", "Converting to contractor status", "Moving to a tax-free state", "Maximizing 401k contributions"],
+            correct_answer="Using QOF to defer capital gains and STR depreciation to offset W-2 income",
+            explanation="Helen used a Qualified Opportunity Fund to defer $183K in capital gains taxes, then invested in Short-Term Rental properties to generate $156K in depreciation losses that offset her $160K W-2 wages through material participation.",
+            points=50,
+            course_id=w2_course.id,
+            module_id=2
+        ),
+        QuizQuestion(
+            question="What is the key requirement to use Short-Term Rental depreciation losses against W-2 income?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["Own more than 10 properties", "Material participation with 750+ documented hours annually", "Hire a property management company", "Live in one of the rental properties"],
+            correct_answer="Material participation with 750+ documented hours annually",
+            explanation="To use STR depreciation losses against W-2 income, you must qualify for material participation by spending 750+ hours annually in short-term rental activities and maintaining detailed documentation of these activities.",
+            points=50,
+            course_id=w2_course.id,
+            module_id=2
         )
     ]
     
