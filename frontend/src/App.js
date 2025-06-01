@@ -1009,11 +1009,11 @@ const PricingSection = () => {
       description: "Entity optimization, MSO design, QBI qualification, and asset-backed exit strategies.",
       features: [
         "Lifetime access to Business Owner course",
-        "Entity structure design strategies",
-        "MSO implementation frameworks",
-        "QBI qualification methods",
-        "AI-powered tax assistant",
-        "Premium strategy tools & simulators"
+        "AI Strategy Assistant (TaxBot) for entity questions",
+        "Cost Segregation ROI & Bonus Depreciation tools",
+        "Playbook Generator for business structures",
+        "Document Analyzer for K-1 & entity returns",
+        "Weekly office hours + advisor chat support"
       ],
       ctaText: "Start Business Plan",
       gradient: "from-yellow-500 to-yellow-600", 
