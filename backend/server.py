@@ -5243,6 +5243,88 @@ Understanding these terms is essential for entity structuring mastery:
             course_id=w2_course.id,
             module_id=9
         ),
+        # Business Owner Escape Plan Module 0 Questions (4 questions, 50 XP each)
+        QuizQuestion(
+            question="Who is this course designed for?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["W-2 employees only", "High-income business owners earning six figures or more", "Anyone wanting tax advice", "Small business startups"],
+            correct_answer="High-income business owners earning six figures or more",
+            explanation="This course is specifically designed for business owners earning six figures or more in profit who are tired of overpaying taxes and ready for a complete strategic system.",
+            points=50,
+            course_id=business_course.id,
+            module_id=0
+        ),
+        QuizQuestion(
+            question="What is the course *not* about?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["Building infrastructure", "Fluff or one-time gimmicks like buying a G-Waggon", "Real case studies", "Strategic tax planning"],
+            correct_answer="Fluff or one-time gimmicks like buying a G-Waggon",
+            explanation="This course focuses on building legitimate tax infrastructure and strategies, not gimmicks or superficial tax tricks that don't create lasting value.",
+            points=50,
+            course_id=business_course.id,
+            module_id=0
+        ),
+        QuizQuestion(
+            question="What's a core promise of the course?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["To eliminate all taxes completely", "To reduce taxes and build long-term wealth using structure", "To provide quick tax hacks", "To replace your CPA"],
+            correct_answer="To reduce taxes and build long-term wealth using structure",
+            explanation="The course promises to help business owners reduce taxes and build long-term wealth through strategic infrastructure and systematic approaches, not quick fixes.",
+            points=50,
+            course_id=business_course.id,
+            module_id=0
+        ),
+        QuizQuestion(
+            question="What's the first strategic move in the course?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["Buying real estate", "Restructuring income to reduce 1040 exposure", "Starting an insurance policy", "Investing in oil and gas"],
+            correct_answer="Restructuring income to reduce 1040 exposure",
+            explanation="The first strategic move is restructuring income so less of it hits your personal 1040 return, setting the foundation for all other tax optimization strategies.",
+            points=50,
+            course_id=business_course.id,
+            module_id=0
+        ),
+        # Business Owner Escape Plan Module 1 Questions (4 questions, 50 XP each)
+        QuizQuestion(
+            question="What's the most common mistake business owners make?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["Not hiring enough employees", "Assuming an S-Corp is the final answer", "Working too many hours", "Not advertising enough"],
+            correct_answer="Assuming an S-Corp is the final answer",
+            explanation="Most business owners rely on S-Corps and LLCs because that's what their CPA suggested, but these are compliance tools, not strategy vehicles. There are often better structures for tax optimization.",
+            points=50,
+            course_id=business_course.id,
+            module_id=1
+        ),
+        QuizQuestion(
+            question="What does MSO stand for?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["Management Services Organization", "Medical Support Office", "Multi-State Operations", "Managed Service Outsourcing"],
+            correct_answer="Management Services Organization",
+            explanation="MSO stands for Management Services Organization - a strategic entity structure that provides management services to other businesses and can be used for tax optimization.",
+            points=50,
+            course_id=business_course.id,
+            module_id=1
+        ),
+        QuizQuestion(
+            question="Why create a C-Corp MSO?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["To avoid all taxes", "To shift income and capture deductions at 21%", "To replace your existing business", "To hire more employees"],
+            correct_answer="To shift income and capture deductions at 21%",
+            explanation="A C-Corp MSO allows you to shift income from personal rates (up to 37%) to corporate rates (21%), creating significant tax arbitrage opportunities for business owners.",
+            points=50,
+            course_id=business_course.id,
+            module_id=1
+        ),
+        QuizQuestion(
+            question="What's the risk of not reviewing your structure regularly?",
+            type=QuizQuestionType.MULTIPLE_CHOICE,
+            options=["Your business will fail", "Overpaying and missing strategic leverage", "You'll lose all your money", "Nothing significant"],
+            correct_answer="Overpaying and missing strategic leverage",
+            explanation="Not reviewing your business structure regularly means you're likely overpaying taxes and missing opportunities for strategic leverage and optimization as your business grows and tax laws change.",
+            points=50,
+            course_id=business_course.id,
+            module_id=1
+        ),
         QuizQuestion(
             question="What role did Qualified Opportunity Zones play?",
             type=QuizQuestionType.MULTIPLE_CHOICE,
