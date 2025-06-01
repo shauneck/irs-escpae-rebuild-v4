@@ -1731,7 +1731,8 @@ The most successful W-2 earners don't just earn and save—they systematically *
 
 🎯 **Ready to test your repositioning knowledge?** Take the Module 2 quiz to earn +50 XP and solidify these advanced concepts before diving into Module 3's entity strategies.""",
                 duration_minutes=50,
-                order_index=2
+                order_index=2,
+                xp_available=150
             ),
             CourseContent(
                 title="Stacking Offsets — The Tax Strategy Most W-2 Earners Miss",
