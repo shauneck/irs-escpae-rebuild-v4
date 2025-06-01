@@ -339,6 +339,175 @@ class IRSEscapePlanAPITest(unittest.TestCase):
         except Exception as e:
             print(f"❌ Get user progress test failed: {str(e)}")
             raise
+            
+    def test_13_get_glossary_term_by_id(self):
+        """Test getting a specific glossary term by ID"""
+        if not self.glossary_terms:
+            self.test_07_get_glossary()
+        
+        try:
+            if self.glossary_terms:
+                term_id = self.glossary_terms[0]["id"]
+                response = requests.get(f"{self.api_url}/glossary/{term_id}")
+                self.assertEqual(response.status_code, 200)
+                term = response.json()
+                self.assertEqual(term["id"], term_id)
+                print(f"✅ Retrieved glossary term: {term['term']}")
+            else:
+                print("⚠️ No glossary terms found, skipping test")
+        except Exception as e:
+            print(f"❌ Get glossary term by ID test failed: {str(e)}")
+            raise
+            
+    def test_14_get_user_xp(self):
+        """Test getting user XP"""
+        try:
+            # First, submit a quiz answer to earn some XP
+            self.test_06_submit_quiz_answer()
+            
+            # Then, view a glossary term to earn some XP
+            if self.glossary_terms:
+                term_id = self.glossary_terms[0]["id"]
+                response = requests.post(
+                    f"{self.api_url}/users/xp/glossary",
+                    json={"user_id": self.test_user_id, "term_id": term_id}
+                )
+                self.assertEqual(response.status_code, 200)
+                
+            # Now get the user's XP
+            response = requests.get(f"{self.api_url}/users/xp/{self.test_user_id}")
+            self.assertEqual(response.status_code, 200)
+            xp_data = response.json()
+            
+            # Verify XP structure
+            required_fields = ["total_xp", "quiz_xp", "glossary_xp"]
+            for field in required_fields:
+                self.assertIn(field, xp_data)
+                
+            print(f"✅ Retrieved user XP: Total={xp_data['total_xp']}, Quiz={xp_data['quiz_xp']}, Glossary={xp_data['glossary_xp']}")
+        except Exception as e:
+            print(f"❌ Get user XP test failed: {str(e)}")
+            raise
+            
+    def test_15_update_glossary_xp(self):
+        """Test updating glossary XP"""
+        if not self.glossary_terms:
+            self.test_07_get_glossary()
+            
+        try:
+            if self.glossary_terms:
+                term_id = self.glossary_terms[0]["id"]
+                
+                # Create XP data
+                xp_data = {
+                    "user_id": self.test_user_id,
+                    "term_id": term_id
+                }
+                
+                response = requests.post(f"{self.api_url}/users/xp/glossary", json=xp_data)
+                self.assertEqual(response.status_code, 200)
+                result = response.json()
+                self.assertEqual(result["status"], "success")
+                self.assertEqual(result["xp_earned"], 5)  # Glossary terms should award 5 XP
+                print(f"✅ Updated glossary XP successfully")
+            else:
+                print("⚠️ No glossary terms found, skipping test")
+        except Exception as e:
+            print(f"❌ Update glossary XP test failed: {str(e)}")
+            raise
+            
+    def test_16_update_quiz_xp(self):
+        """Test updating quiz XP"""
+        if not self.courses:
+            self.test_02_get_courses()
+            
+        try:
+            # Use the free primer course which should have quiz questions
+            primer_course = next((c for c in self.courses if c["type"] == "primer"), None)
+            if not primer_course:
+                print("⚠️ No primer course found, using first course")
+                primer_course = self.courses[0]
+                
+            course_id = primer_course["id"]
+            response = requests.get(f"{self.api_url}/courses/{course_id}/quiz")
+            
+            if response.status_code == 200:
+                questions = response.json()
+                if questions:
+                    question = questions[0]
+                    question_id = question["id"]
+                    
+                    # Create XP data
+                    xp_data = {
+                        "user_id": self.test_user_id,
+                        "course_id": course_id,
+                        "question_id": question_id,
+                        "correct": True
+                    }
+                    
+                    response = requests.post(f"{self.api_url}/users/xp/quiz", json=xp_data)
+                    self.assertEqual(response.status_code, 200)
+                    result = response.json()
+                    self.assertEqual(result["status"], "success")
+                    self.assertEqual(result["xp_earned"], 10)  # Quiz questions should award 10 XP
+                    print(f"✅ Updated quiz XP successfully")
+                else:
+                    print(f"⚠️ No quiz questions found for course {course_id}, skipping test")
+            else:
+                print(f"⚠️ Failed to get quiz questions, skipping test")
+        except Exception as e:
+            print(f"❌ Update quiz XP test failed: {str(e)}")
+            raise
+            
+    def test_17_get_marketplace_items(self):
+        """Test getting all marketplace items"""
+        try:
+            response = requests.get(f"{self.api_url}/marketplace")
+            self.assertEqual(response.status_code, 200)
+            self.marketplace_items = response.json()
+            self.assertGreaterEqual(len(self.marketplace_items), 1)
+            print(f"✅ Retrieved {len(self.marketplace_items)} marketplace items")
+            
+            # Verify marketplace item structure
+            item = self.marketplace_items[0]
+            required_fields = ["id", "name", "description", "price", "is_featured"]
+            for field in required_fields:
+                self.assertIn(field, item)
+                
+            # Verify expected marketplace items
+            expected_items = [
+                "Advanced Tax Strategy Consultation",
+                "Entity Structure Analysis",
+                "Tax Planning Template Library"
+            ]
+            
+            found_items = [item["name"] for item in self.marketplace_items]
+            for expected_item in expected_items:
+                self.assertIn(expected_item, found_items, f"Expected marketplace item '{expected_item}' not found")
+                
+            print(f"✅ Verified marketplace items: {', '.join(found_items)}")
+        except Exception as e:
+            print(f"❌ Get marketplace items test failed: {str(e)}")
+            raise
+            
+    def test_18_get_marketplace_item_by_id(self):
+        """Test getting a specific marketplace item by ID"""
+        if not self.marketplace_items:
+            self.test_17_get_marketplace_items()
+        
+        try:
+            if self.marketplace_items:
+                item_id = self.marketplace_items[0]["id"]
+                response = requests.get(f"{self.api_url}/marketplace/{item_id}")
+                self.assertEqual(response.status_code, 200)
+                item = response.json()
+                self.assertEqual(item["id"], item_id)
+                print(f"✅ Retrieved marketplace item: {item['name']}")
+            else:
+                print("⚠️ No marketplace items found, skipping test")
+        except Exception as e:
+            print(f"❌ Get marketplace item by ID test failed: {str(e)}")
+            raise
 
 def run_tests():
     """Run all tests and print a summary"""
