@@ -1528,6 +1528,48 @@ The most successful W-2 earners don't just earn and save—they systematically *
             related_terms=["Tax Planning", "CPA vs Strategist", "Strategic Planning"]
         ),
         GlossaryTerm(
+            term="Repositioning",
+            definition="The strategic deployment of already-taxed income into investments and structures that generate immediate tax deductions, ongoing passive income, and long-term wealth building opportunities.",
+            category="Tax Strategy",
+            related_terms=["Tax Planning", "W-2 Income", "Capital Gain Deferral"]
+        ),
+        GlossaryTerm(
+            term="Qualified Opportunity Fund (QOF)",
+            definition="Investment vehicles designed to spur economic development in distressed communities. QOFs allow investors to defer capital gains taxes and potentially eliminate taxes on appreciation after 10 years.",
+            category="Investment Strategy",
+            related_terms=["Capital Gain Deferral", "Tax Planning", "Repositioning"]
+        ),
+        GlossaryTerm(
+            term="Short-Term Rental (STR)",
+            definition="Rental properties rented for periods of less than 30 days, typically managed like hotel accommodations. STRs offer higher income potential and enhanced depreciation benefits compared to traditional rentals.",
+            category="Real Estate",
+            related_terms=["Material Participation", "Bonus Depreciation", "Depreciation Loss"]
+        ),
+        GlossaryTerm(
+            term="Bonus Depreciation",
+            definition="Tax provision allowing businesses to immediately deduct 100% of the cost of qualifying business assets in the year they are purchased, rather than depreciating them over several years.",
+            category="Tax Terms",
+            related_terms=["Depreciation Loss", "Business Expenses", "Short-Term Rental (STR)"]
+        ),
+        GlossaryTerm(
+            term="Material Participation",
+            definition="IRS test requiring taxpayers to be involved in business operations on a regular, continuous, and substantial basis (typically 750+ hours for rental activities) to use losses against other income.",
+            category="Tax Terms",
+            related_terms=["Short-Term Rental (STR)", "Depreciation Loss", "Business Income"]
+        ),
+        GlossaryTerm(
+            term="Depreciation Loss",
+            definition="Tax losses generated from the depreciation of business assets that can be used to offset other income, effectively reducing overall tax liability.",
+            category="Tax Terms",
+            related_terms=["Material Participation", "Bonus Depreciation", "Business Expenses"]
+        ),
+        GlossaryTerm(
+            term="Capital Gain Deferral",
+            definition="Strategy to postpone paying taxes on capital gains by reinvesting proceeds into qualifying investments like Qualified Opportunity Funds or 1031 exchanges.",
+            category="Tax Strategy",
+            related_terms=["Qualified Opportunity Fund (QOF)", "Repositioning", "Tax Planning"]
+        ),
+        GlossaryTerm(
             term="Advisor Integration",
             definition="The strategic coordination between different tax professionals (CPAs, strategists, attorneys) to ensure compliance while maximizing tax optimization opportunities.",
             category="Professional Services",
