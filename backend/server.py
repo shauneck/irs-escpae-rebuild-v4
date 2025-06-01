@@ -4097,7 +4097,8 @@ The most successful wealth builders don't just minimize taxes—they multiply th
 
 🎯 **Congratulations on completing the W-2 Escape Plan!** Take the Module 8 quiz to earn +25 XP and unlock the "Multiplier Architect" badge, marking your mastery of the most sophisticated wealth building strategies available.""",
                 duration_minutes=80,
-                order_index=8
+                order_index=8,
+                xp_available=150
             ),
             CourseContent(
                 title="The IRS Escape Plan",
