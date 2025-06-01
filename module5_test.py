@@ -6,7 +6,7 @@ import os
 import sys
 
 # Get the backend URL from the frontend .env file
-BACKEND_URL = "https://2f7b5da6-4045-4afb-968b-f13543c0575b.preview.emergentagent.com"
+BACKEND_URL = "https://990325ad-971f-441f-a0fd-260295cad6cf.preview.emergentagent.com"
 
 class Module5Test(unittest.TestCase):
     """Test suite for Module 5 of The Escape Blueprint course"""

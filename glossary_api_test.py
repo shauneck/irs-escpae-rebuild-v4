@@ -3,7 +3,7 @@ import sys
 import json
 
 # Get the backend URL from the frontend .env file
-BACKEND_URL = "https://2f7b5da6-4045-4afb-968b-f13543c0575b.preview.emergentagent.com"
+BACKEND_URL = "https://990325ad-971f-441f-a0fd-260295cad6cf.preview.emergentagent.com"
 
 def test_glossary_api():
     """Test the glossary API endpoints and verify the expected terms"""
