@@ -982,18 +982,19 @@ const PricingSection = () => {
       name: "W-2 Escape Plan",
       accent: "teal",
       oneTimePrice: "$997",
+      oneTimeDescription: "one-time course fee",
       monthlyPrice: "$49/mo",
-      monthlyDescription: "for tools + AI support",
+      monthlyDescription: "platform subscription",
       description: "High-income W-2 earners unlock deduction stacking, REPS access, and repositioning strategies.",
       features: [
-        "Complete W-2 tax optimization course",
+        "Lifetime access to W-2 course modules",
         "REPS qualification strategies", 
         "Offset stacking frameworks",
         "RSU repositioning tactics",
-        "Advanced tax tools access",
-        "AI-powered tax support"
+        "AI-powered tax assistant",
+        "Custom strategy tools & dashboards"
       ],
-      ctaText: "Unlock W-2 Plan",
+      ctaText: "Start W-2 Plan",
       gradient: "from-teal-500 to-teal-600",
       border: "border-teal-200",
       bg: "bg-teal-50"
@@ -1002,18 +1003,19 @@ const PricingSection = () => {
       name: "Business Owner Plan", 
       accent: "yellow",
       oneTimePrice: "$1,497",
-      monthlyPrice: "$69/mo", 
-      monthlyDescription: "for tools + AI support",
+      oneTimeDescription: "one-time course fee",
+      monthlyPrice: "$49/mo",
+      monthlyDescription: "platform subscription",
       description: "Entity optimization, MSO design, QBI qualification, and asset-backed exit strategies.",
       features: [
-        "Complete business optimization course",
-        "Entity structure design",
-        "MSO implementation strategies",
+        "Lifetime access to Business Owner course",
+        "Entity structure design strategies",
+        "MSO implementation frameworks",
         "QBI qualification methods",
-        "Asset-backed exit planning",
-        "Premium AI tax strategist"
+        "AI-powered tax assistant",
+        "Premium strategy tools & updates"
       ],
-      ctaText: "Join Business Plan",
+      ctaText: "Start Business Plan",
       gradient: "from-yellow-500 to-yellow-600", 
       border: "border-yellow-200",
       bg: "bg-yellow-50"
@@ -1021,23 +1023,25 @@ const PricingSection = () => {
     {
       name: "All Access + AI",
       accent: "pink", 
-      oneTimePrice: "$1,997",
-      monthlyPrice: "$99/mo",
-      monthlyDescription: "for everything",
-      description: "Full access to all courses, tools, XP tracking, and your personal AI tax strategist.",
+      oneTimePrice: "$2,494",
+      oneTimeDescription: "one-time course bundle",
+      monthlyPrice: "$49/mo",
+      monthlyDescription: "platform subscription",
+      description: "Complete access to both courses, all tools, XP tracking, and your personal AI tax strategist.",
       features: [
-        "All courses and content",
-        "Complete tool library access", 
-        "Full XP tracking system",
+        "Lifetime access to ALL courses",
+        "Complete premium tool library", 
+        "Full XP tracking & gamification",
         "Personal AI tax strategist",
-        "Priority support access",
-        "Exclusive strategy updates"
+        "Community office hours access",
+        "Priority advisor chat support"
       ],
       ctaText: "Get All Access",
       gradient: "from-pink-500 to-pink-600",
       border: "border-pink-200", 
       bg: "bg-pink-50",
-      popular: true
+      popular: true,
+      savings: "Save $1,000"
     }
   ];
 
@@ -1048,9 +1052,14 @@ const PricingSection = () => {
           <h2 className="text-4xl font-bold text-white mb-4">
             Choose Your <span className="text-emerald-400">Tax Freedom</span> Plan
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-6">
             Professional tax strategies used by high-income earners to minimize tax burden and build wealth
           </p>
+          <div className="bg-emerald-900/50 border border-emerald-400/30 rounded-lg p-4 max-w-2xl mx-auto">
+            <p className="text-emerald-300 text-sm">
+              <strong>Complete Access Requires:</strong> One-time course fee + Monthly platform subscription
+            </p>
+          </div>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -1064,17 +1073,35 @@ const PricingSection = () => {
                 </div>
               )}
               
+              {plan.savings && (
+                <div className="absolute top-4 right-4">
+                  <span className="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold">
+                    {plan.savings}
+                  </span>
+                </div>
+              )}
+              
               <div className={`${plan.bg} px-6 py-8 border-b ${plan.border}`}>
                 <h3 className="text-2xl font-bold text-navy-900 mb-2">{plan.name}</h3>
                 <p className="text-gray-600 text-sm mb-6">{plan.description}</p>
                 
-                <div className="space-y-2">
-                  <div className="flex items-baseline">
-                    <span className="text-3xl font-bold text-navy-900">{plan.oneTimePrice}</span>
-                    <span className="text-gray-500 ml-2">one-time</span>
+                <div className="space-y-3">
+                  <div className="bg-white rounded-lg p-3 border-2 border-gray-200">
+                    <div className="flex items-baseline justify-between">
+                      <span className="text-2xl font-bold text-navy-900">{plan.oneTimePrice}</span>
+                      <span className="text-gray-500 text-sm">{plan.oneTimeDescription}</span>
+                    </div>
+                    <p className="text-xs text-gray-600 mt-1">Lifetime course access</p>
                   </div>
-                  <div className="text-sm text-gray-600">
-                    or <span className="font-semibold text-navy-900">{plan.monthlyPrice}</span> {plan.monthlyDescription}
+                  
+                  <div className="text-center text-gray-500 font-bold">+</div>
+                  
+                  <div className="bg-white rounded-lg p-3 border-2 border-navy-200">
+                    <div className="flex items-baseline justify-between">
+                      <span className="text-2xl font-bold text-navy-900">{plan.monthlyPrice}</span>
+                      <span className="text-gray-500 text-sm">{plan.monthlyDescription}</span>
+                    </div>
+                    <p className="text-xs text-gray-600 mt-1">AI tools & platform features</p>
                   </div>
                 </div>
               </div>
@@ -1094,14 +1121,44 @@ const PricingSection = () => {
                 <button className={`w-full bg-gradient-to-r ${plan.gradient} text-white py-4 px-6 rounded-xl font-bold text-lg hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200`}>
                   {plan.ctaText}
                 </button>
+                
+                <p className="text-xs text-gray-500 text-center mt-3">
+                  Cancel subscription anytime • Keep course access forever
+                </p>
               </div>
             </div>
           ))}
         </div>
         
-        <div className="text-center mt-12">
+        <div className="max-w-4xl mx-auto mt-12">
+          <div className="bg-navy-800 border border-navy-600 rounded-xl p-6">
+            <h3 className="text-white text-lg font-bold mb-4 text-center">What You Get With Your Investment</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-navy-700 rounded-lg p-4">
+                <h4 className="text-emerald-400 font-bold mb-2">One-Time Course Fee Includes:</h4>
+                <ul className="text-gray-300 text-sm space-y-1">
+                  <li>• Lifetime access to course modules</li>
+                  <li>• Downloadable resources & worksheets</li>
+                  <li>• Case studies & implementation guides</li>
+                  <li>• Static course content forever</li>
+                </ul>
+              </div>
+              <div className="bg-navy-700 rounded-lg p-4">
+                <h4 className="text-emerald-400 font-bold mb-2">Monthly Subscription Unlocks:</h4>
+                <ul className="text-gray-300 text-sm space-y-1">
+                  <li>• AI-powered tax assistant</li>
+                  <li>• Custom strategy tools & calculators</li>
+                  <li>• Personalized dashboards & tracking</li>
+                  <li>• New strategy updates & community access</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div className="text-center mt-8">
           <p className="text-gray-400 text-sm mb-4">
-            All plans include 30-day money-back guarantee • Cancel anytime • Secure payment
+            30-day money-back guarantee on course fee • Cancel subscription anytime • Secure payment
           </p>
           <div className="flex items-center justify-center space-x-6 text-gray-500">
             <div className="flex items-center">
@@ -1114,7 +1171,7 @@ const PricingSection = () => {
               <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              Money-back Guarantee
+              Course Access Forever
             </div>
           </div>
         </div>
