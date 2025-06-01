@@ -127,27 +127,27 @@ class W2EscapePlanModuleTest(unittest.TestCase):
         
         print("✅ All required glossary terms for Module 3 exist")
 
-    def test_module_2_quiz(self):
-        """Test that Module 2 quiz questions exist and have correct XP values"""
-        response = requests.get(f"{self.base_url}/courses/{self.w2_course_id}/quiz?module_id=2")
-        self.assertEqual(response.status_code, 200, "Failed to fetch Module 2 quiz questions")
+    def test_module_3_quiz(self):
+        """Test that Module 3 quiz questions exist and have correct XP values"""
+        response = requests.get(f"{self.base_url}/courses/{self.w2_course_id}/quiz?module_id=3")
+        self.assertEqual(response.status_code, 200, "Failed to fetch Module 3 quiz questions")
         
         questions = response.json()
-        self.assertEqual(len(questions), 3, "Module 2 should have 3 quiz questions")
+        self.assertEqual(len(questions), 3, "Module 3 should have 3 quiz questions")
         
         # Verify the specific questions
         expected_questions = [
-            "What is the primary purpose of 'repositioning' already-taxed W-2 income?",
-            "In Helen's case study, what was the key strategy that allowed her to eliminate her W-2 tax burden?",
-            "What is the key requirement to use Short-Term Rental depreciation losses against W-2 income?"
+            "What is the primary benefit of 'offset stacking' compared to single-strategy tax planning?",
+            "In Helen's Year 2 case study, how did she eliminate taxes on $370K of income?",
+            "What is the strategic purpose of generating 'carryforward losses' in offset stacking?"
         ]
         
         for question in questions:
             self.assertIn(question["question"], expected_questions, f"Unexpected quiz question: {question['question']}")
             self.assertEqual(question["points"], 50, f"Quiz question should be worth 50 XP: {question['question']}")
-            self.assertEqual(question["module_id"], 2, f"Quiz question should be for module 2: {question['question']}")
+            self.assertEqual(question["module_id"], 3, f"Quiz question should be for module 3: {question['question']}")
         
-        print("✅ Module 2 quiz has 3 questions worth 50 XP each (150 XP total)")
+        print("✅ Module 3 quiz has 3 questions worth 50 XP each (150 XP total)")
 
     def test_quiz_submission(self):
         """Test that quiz submission works and awards correct XP"""
