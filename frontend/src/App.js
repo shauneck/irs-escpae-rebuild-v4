@@ -708,7 +708,7 @@ const CourseViewer = ({ course, onBack }) => {
                     {(index <= 4 || (course.type === 'w2' && index === 0)) && (
                       <div className="flex items-center mt-2">
                         <span className="text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded">
-                          XP Available: {course.type === 'w2' && lessonItem.order_index === 1 ? '150' : lessonItem.order_index * 10}
+                          XP Available: {course.type === 'w2' && (lessonItem.order_index === 1 || lessonItem.order_index === 2) ? '150' : lessonItem.order_index * 10}
                         </span>
                       </div>
                     )}
