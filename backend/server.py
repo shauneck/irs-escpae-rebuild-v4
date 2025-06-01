@@ -4588,22 +4588,172 @@ The most successful tax strategists don't just minimize taxes—they use tax opt
         description="Comprehensive tax strategies for business owners and entrepreneurs",
         thumbnail_url="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400",
         is_free=False,
-        total_lessons=12,
-        estimated_hours=6,
+        total_lessons=3,
+        estimated_hours=3,
         lessons=[
             CourseContent(
+                title="Who This Is For & What You're About to Learn",
+                description="Module 0 of 12 - Introduction to the Business Owner Escape Plan and what high-income entrepreneurs need to know",
+                content="""**Module 0: Who This Is For & What You're About to Learn**
+
+Welcome to the Business Owner Escape Plan.
+
+This course was built for **business owners earning six figures or more in net profit** who are tired of watching their hard-earned money disappear to taxes — year after year — with no real plan to fix it.
+
+You might already have a competent CPA. Your returns get filed on time. You're not missing deductions — at least not the obvious ones. And yet… you're still writing six- or even seven-figure checks to the IRS, wondering why nothing is changing.
+
+That's because **traditional tax filing is reactive.** It's compliance-based. And it was never designed to protect builders like you.
+
+## This Course Is Different
+
+The Business Owner Escape Plan is a system designed specifically for **high-income entrepreneurs** who are ready to move beyond generic advice and into a coordinated, multi-layered strategy.
+
+### What You'll Master by the End of This Program
+
+By the end of this program, you'll know how to:
+
+• **Restructure your income** so less of it ever lands on your 1040  
+• **Reposition capital** into deductible, income-producing assets  
+• **Shield that wealth** from future taxes, lawsuits, and probate  
+• **Exit your business** with a zero-capital-gains outcome — legally, and by design
+
+## Real Client Stories, Real Results
+
+Each module is built around **real client stories** — complete with numbers, timelines, and the exact code sections that made it work.
+
+### Advanced Strategies You'll Learn
+
+You'll learn how to:
+
+• **Use a C-Corp MSO** to shift income out of your personal return  
+• **Unlock six- and even seven-figure deductions** using real estate, energy, and advanced depreciation  
+• **Stack trusts, insurance, and legacy structures** to build multi-generational wealth  
+• **Prepare your business for a tax-advantaged exit** using QSBS, Opportunity Zones, and installment-based payout strategies
+
+## This Isn't About Hacks — It's About Infrastructure
+
+This isn't about hacks. **It's about building infrastructure.**
+
+The same infrastructure we've used with clients paying **$500K, $1M, or even $2M+ per year in taxes** — and helping them cut that burden in half or more, while creating wealth that lasts.
+
+### Who This Course Is Designed For
+
+**You're the perfect fit for this course if:**
+
+✅ **High Net Profit Business Owner** - You're earning six figures or more in net business profit annually
+
+✅ **Tax Burden Frustration** - You're tired of writing large tax checks year after year with no strategic plan
+
+✅ **Beyond Basic Compliance** - You have a competent CPA but need advanced tax strategy, not just filing
+
+✅ **Growth-Minded** - You want to build wealth and protect it, not just minimize current taxes
+
+✅ **Implementation Ready** - You're ready to move beyond generic advice into coordinated, multi-layered strategies
+
+### What Makes Business Owner Taxation Different
+
+**Business owners face unique challenges:**
+
+• **Multiple Income Streams** - Business income, capital gains, passive investments, real estate
+• **Entity Structure Complexity** - Choosing optimal business structures for tax efficiency
+• **Exit Planning Requirements** - Planning for business sale or transition with minimal tax impact
+• **Estate Planning Needs** - Protecting and transferring business wealth to next generation
+• **Cash Flow Management** - Balancing business reinvestment with personal wealth building
+
+### The Business Owner Tax Problem
+
+**Traditional tax advice fails business owners because:**
+
+• **Generic Solutions** - Most advice is designed for W-2 employees, not entrepreneurs
+• **Reactive Approach** - Focus on compliance and filing, not proactive strategy
+• **Single-Year Thinking** - Missing long-term wealth building and exit planning
+• **Limited Scope** - Not coordinating business structure, personal taxes, and estate planning
+
+## The Business Owner Escape Plan Solution
+
+**Our systematic approach addresses:**
+
+### Income Restructuring
+• **Entity Optimization** - Choosing and implementing optimal business structures
+• **Income Shifting** - Moving income between personal and business returns strategically
+• **Timing Strategies** - Controlling when income hits your personal return
+
+### Deduction Maximization
+• **Business Deductions** - Maximizing legitimate business expenses and write-offs
+• **Real Estate Integration** - Using business real estate for massive depreciation benefits
+• **Energy Investments** - Leveraging business capital for oil & gas deduction opportunities
+
+### Wealth Protection
+• **Asset Protection** - Shielding business and personal assets from litigation
+• **Estate Planning** - Minimizing estate taxes while preserving family wealth
+• **Insurance Strategies** - Using life insurance for tax-advantaged wealth building
+
+### Exit Optimization
+• **QSBS Planning** - Qualifying for $10M+ in tax-free business sale proceeds
+• **Installment Sales** - Spreading capital gains over multiple years
+• **Opportunity Zones** - Deferring and eliminating capital gains through strategic reinvestment
+
+## Your Investment in Tax Freedom
+
+**What this course represents:**
+
+This course contains strategies typically available only through:
+• **$50,000+ annual advisory fees** with top-tier tax strategists
+• **$500+ per hour** consultations with specialized tax attorneys
+• **Exclusive wealth management** services for ultra-high-net-worth families
+
+**For business owners generating significant profits,** the strategies in this course can save hundreds of thousands or even millions in taxes over time.
+
+## Real Client Example: The Power of Integration
+
+**Case Study Preview:**
+A software business owner earning $2.3M annually reduced his tax burden from $780,000 to $290,000 through:
+• C-Corp MSO structure shifting $800K in income
+• Real estate cost segregation generating $340K in deductions  
+• Oil & gas investments providing $180K in IDC deductions
+• Insurance strategies creating $1.2M in tax-deferred wealth building
+
+**Total Annual Tax Savings: $490,000**
+
+## What's Next: Your Business Transformation Journey
+
+**This course will take you through:**
+
+• **Module 1-3:** Foundation and entity structuring for maximum efficiency
+• **Module 4-6:** Advanced deduction strategies using real estate and energy investments  
+• **Module 7-9:** Wealth protection through trusts, insurance, and estate planning
+• **Module 10-12:** Exit planning and multi-generational wealth transfer
+
+## Ready to Begin?
+
+If you want **not just lower taxes, but more control, more protection, and more growth** — you're exactly where you need to be.
+
+**The Business Owner Escape Plan** will give you the infrastructure that the wealthiest business families use to build and preserve multi-generational wealth.
+
+Let's get started.
+
+---
+
+🎯 **Ready to transform your business tax strategy?** Continue to Module 1 to begin building your tax optimization infrastructure.""",
+                duration_minutes=25,
+                order_index=0,
+                xp_available=150
+            ),
+            CourseContent(
                 title="Business Structure Tax Implications",
-                description="Choosing the right business structure for tax benefits",
+                description="Module 1 of 12 - Choosing the right business structure for tax benefits",
                 content="Compare sole proprietorship, LLC, S-Corp, and C-Corp structures and their tax implications.",
                 duration_minutes=50,
-                order_index=1
+                order_index=1,
+                xp_available=150
             ),
             CourseContent(
                 title="Business Deduction Strategies",
-                description="Maximizing legitimate business deductions",
+                description="Module 2 of 12 - Maximizing legitimate business deductions",
                 content="Learn about all available business deductions including equipment, travel, meals, and home office expenses.",
                 duration_minutes=55,
-                order_index=2
+                order_index=2,
+                xp_available=150
             )
         ]
     )
