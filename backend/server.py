@@ -1145,10 +1145,239 @@ The most successful W-2 earners don't just earn and save—they systematically *
                 order_index=2
             ),
             CourseContent(
-                title="Maximizing Deductions",
-                description="Employee-specific deductions and strategies",
-                content="Learn about deductions available to W-2 employees, including unreimbursed business expenses, home office deductions for remote work, and more.",
-                duration_minutes=45,
+                title="Stacking Offsets — The Tax Strategy Most W-2 Earners Miss",
+                description="Module 3 of 8 - Offset Layering - Learn advanced offset stacking strategies to maximize deductions and continue Helen's Year 2 implementation",
+                content="""Most W-2 earners who discover one tax strategy stop there. They find **depreciation offset** from short-term rentals and think they've maximized their opportunities. But the most sophisticated W-2 tax planners understand **offset stacking** — systematically layering multiple deduction strategies to create a comprehensive **deduction portfolio**.
+
+**Offset stacking** allows high-income W-2 earners to build multiple streams of tax deductions that work together synergistically, creating far more tax savings than any single strategy alone.
+
+## Understanding **Offset Stacking**
+
+**Offset stacking** is the strategic combination of multiple tax deduction sources to maximize overall tax benefit. Rather than relying on a single deduction type, successful W-2 earners build portfolios of complementary strategies.
+
+### The Three Pillars of Effective Offset Stacking
+
+**1. Primary Offset (Real Estate Depreciation)**
+• **Short-Term Rental (STR)** depreciation as the foundation
+• Reliable, recurring annual deductions
+• Material participation qualification for W-2 offset capability
+
+**2. Secondary Offset (Energy/Resource Investments)**
+• **Intangible Drilling Costs (IDCs)** from oil and gas investments
+• Renewable energy depreciation and tax credits
+• Equipment and infrastructure depreciation
+
+**3. Tertiary Offset (Business and Equipment)**
+• Business entity depreciation and expenses
+• Equipment purchases with **bonus depreciation**
+• Professional development and training deductions
+
+### Why Single-Strategy Approaches Fall Short
+
+**The Depreciation Limitation Problem:**
+Even with substantial STR investments, **depreciation offset** alone may not fully optimize tax savings for high-income W-2 earners earning $300K+ annually.
+
+**Income Growth Challenges:**
+• As W-2 income increases, single-strategy deductions become insufficient
+• Bonus years and equity compensation create tax spikes requiring additional offsets
+• **Carryforward loss** limitations restrict single-year deduction benefits
+
+**Risk Concentration Issues:**
+• Over-reliance on real estate market performance
+• Single asset class exposure
+• Limited diversification of deduction sources
+
+## Case Study: Helen (Part 3 of 9) - Year 2 Offset Stacking Implementation
+
+**Helen's Year 1 Recap:**
+• Successfully implemented QOF + STR strategy
+• Generated $156K in annual STR depreciation
+• Offset her $160K W-2 income to near-zero taxable income
+• Built $1.2M real estate portfolio generating $84K annual cash flow
+
+**The Year 2 Challenge:**
+Helen received a promotion increasing her W-2 income to $220K plus a $150K equity bonus. Her existing STR depreciation, while substantial, would no longer fully offset her increased income.
+
+**Year 2 Strategy: Systematic Offset Stacking**
+
+**Phase 1: STR Portfolio Expansion**
+• Acquired additional $800K in STR properties using Year 1 cash flow
+• Generated additional $67K in annual **depreciation offset**
+• Total STR depreciation: $223K annually ($156K + $67K)
+
+**Phase 2: Energy Investment Integration**
+• Invested $250K in qualified oil and gas drilling projects
+• Utilized **Intangible Drilling Costs (IDCs)** for immediate deductions
+• Generated $175K in first-year **IDCs** deductions
+• Ongoing depletion deductions for future years
+
+**Phase 3: Equipment and Technology Offset**
+• Purchased $45K in STR property equipment and technology
+• Applied **bonus depreciation** for 100% first-year deduction
+• Enhanced property management efficiency and guest experience
+
+**Year 2 Total Deduction Strategy:**
+• STR Depreciation: $223K
+• Energy IDCs: $175K
+• Equipment Depreciation: $45K
+• **Total Offset Capacity: $443K**
+
+**Year 2 Income vs. Deductions:**
+• W-2 Income: $220K
+• Equity Bonus: $150K
+• **Total Taxable Income: $370K**
+• **Total Deductions: $443K**
+• **Net Taxable Income: $0** (with $73K **carryforward loss** for Year 3)
+
+**Results After Two Years:**
+• **$0 federal income tax** on $370K of Year 2 income
+• **$73K carryforward loss** available for future high-income years
+• **$2M+ asset portfolio** generating $127K annual cash flow
+• **Diversified deduction sources** reducing single-strategy risk
+
+## Advanced **Offset Stacking** Strategies
+
+### **Depreciation Offset** Optimization
+
+**Cost Segregation Maximization:**
+• Accelerate depreciation on real estate improvements
+• Separate land improvements from building basis
+• Maximize short-term depreciation categories
+
+**Asset Classification Strategies:**
+• Separate personal property from real property
+• Optimize furniture, fixtures, and equipment depreciation
+• Coordinate timing for maximum current-year benefit
+
+### **Intangible Drilling Costs (IDCs)** Integration
+
+**Strategic IDC Deployment:**
+• Time investments to coordinate with high-income years
+• Stack IDCs with existing depreciation strategies
+• Utilize working interest structures for maximum deduction benefit
+
+**Risk Management Approaches:**
+• Diversify across multiple drilling projects
+• Balance exploration vs. development opportunities
+• Coordinate with overall investment portfolio risk profile
+
+### **Carryforward Loss** Management
+
+**Multi-Year Tax Planning:**
+• Generate excess deductions in high-income years
+• Carry forward losses to offset future income spikes
+• Coordinate with equity compensation timing
+
+**Loss Utilization Optimization:**
+• Prioritize highest-rate income for offset
+• Coordinate state and federal tax benefits
+• Plan for potential tax law changes
+
+## Building Your **Deduction Portfolio**
+
+### Year 1: Foundation Building
+**Primary Focus: STR Implementation**
+• Establish material participation qualification
+• Generate base **depreciation offset** of $100K-200K annually
+• Build operational systems and professional relationships
+
+**Secondary Preparation:**
+• Research energy investment opportunities
+• Establish business entities for future strategies
+• Build liquidity for additional investments
+
+### Year 2: Portfolio Expansion
+**Primary Expansion: Additional STR Properties**
+• Scale existing successful strategies
+• Optimize for cash flow and depreciation balance
+• Enhance property management efficiencies
+
+**Secondary Integration: Energy Investments**
+• Add **IDCs** for immediate deduction benefits
+• Diversify offset sources beyond real estate
+• Create **carryforward loss** buffer for future years
+
+### Year 3+: Advanced Optimization
+**Strategy Refinement:**
+• Optimize timing of various deduction strategies
+• Coordinate with income spikes and equity compensation
+• Build systematic approach to ongoing **offset stacking**
+
+**Portfolio Management:**
+• Monitor and adjust deduction mix based on income changes
+• Plan for asset sales and basis recovery
+• Prepare for long-term wealth transition strategies
+
+## Common **Offset Stacking** Mistakes to Avoid
+
+### **Over-Concentration in Single Strategy**
+• **Problem:** Relying too heavily on STR depreciation alone
+• **Solution:** Systematically diversify deduction sources
+• **Best Practice:** Target 3-4 different offset strategies
+
+### **Poor Timing Coordination**
+• **Problem:** Generating deductions when income is low
+• **Solution:** Time large deductions with high-income years
+• **Best Practice:** Maintain 2-3 year income and deduction forecasts
+
+### **Inadequate **Carryforward Loss** Planning**
+• **Problem:** Losing excess deductions due to poor planning
+• **Solution:** Generate strategic excess for future high-income years
+• **Best Practice:** Build deduction capacity 120-150% of current income
+
+### **Insufficient Professional Coordination**
+• **Problem:** Managing complex strategies without proper guidance
+• **Solution:** Integrate tax strategist, CPA, and financial advisor
+• **Best Practice:** Annual strategy review and adjustment sessions
+
+## Measuring **Offset Stacking** Success
+
+### **Tax Efficiency Metrics**
+• **Effective Tax Rate:** Target under 15% on total income
+• **Deduction Utilization Rate:** Optimize current vs. carryforward use
+• **Strategy Diversification:** Maintain 3+ independent deduction sources
+
+### **Wealth Building Indicators**
+• **Asset Portfolio Growth:** Target 15-25% annual appreciation
+• **Cash Flow Coverage:** Ensure positive cash flow across all investments
+• **Risk-Adjusted Returns:** Balance tax benefits with investment returns
+
+### **Strategic Positioning Goals**
+• **Income Independence:** Build deduction capacity exceeding W-2 income
+• **Flexibility Maintenance:** Preserve ability to adjust strategies
+• **Long-Term Optimization:** Plan for changing income and tax scenarios
+
+## Advanced Coordination Strategies
+
+### **Income Timing Optimization**
+• Coordinate equity compensation exercises with deduction availability
+• Time asset sales to maximize deduction offset benefits
+• Plan retirement account distributions around **offset stacking** capacity
+
+### **Multi-State Tax Planning**
+• Consider state tax implications of various deduction strategies
+• Optimize domicile and asset location for maximum benefit
+• Coordinate federal and state **carryforward loss** utilization
+
+### **Estate and Succession Planning Integration**
+• Build deduction strategies that enhance long-term wealth transfer
+• Consider stepped-up basis opportunities
+• Plan for charitable giving coordination with offset strategies
+
+## What's Next: Entity Structure Optimization
+
+Module 3 has introduced you to the power of **offset stacking** — systematically building multiple deduction sources that work together for maximum tax benefit. Helen's Year 2 example shows how sophisticated W-2 earners can eliminate tax liability on $370K+ of income while building substantial wealth.
+
+In Module 4, we'll explore advanced entity structuring strategies that allow W-2 earners to optimize business structures, enhance deduction opportunities, and create additional layers of tax planning sophistication.
+
+**Key Takeaway:** Single-strategy tax planning leaves money on the table. **Offset stacking** creates a comprehensive **deduction portfolio** that adapts to income changes while maximizing wealth building opportunities.
+
+The most successful W-2 earners don't just find one good tax strategy — they build systematic approaches that stack multiple strategies for compounding benefits.
+
+---
+
+🎯 **Ready to test your offset stacking knowledge?** Take the Module 3 quiz to earn +50 XP and master these advanced coordination concepts before exploring Module 4's entity strategies.""",
+                duration_minutes=55,
                 order_index=3
             )
         ]
