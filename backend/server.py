@@ -895,6 +895,256 @@ In Module 2, we'll dive deep into the specific deduction strategies available to
                 order_index=1
             ),
             CourseContent(
+                title="Repositioning W-2 Income for Strategic Impact",
+                description="Module 2 of 8 - Repositioning RSUs & Bonus Income - Learn advanced strategies to reposition already-taxed W-2 income for maximum tax benefits",
+                content="""After understanding the fundamental limitations of **W-2 income** in Module 1, the next step is learning how to **reposition** already-taxed income for strategic tax advantages. This isn't about avoiding the initial tax hit—it's about ensuring every dollar you've already paid taxes on works as hard as possible to reduce your future tax burden.
+
+**Repositioning** transforms passive, already-taxed income into active, tax-advantaged investments that generate ongoing deductions and long-term wealth building opportunities.
+
+## The Repositioning Framework
+
+Most W-2 earners think their tax planning ends when they receive their paycheck. Strategic repositioning shows that's actually where the real opportunities begin.
+
+### What is **Repositioning**?
+
+**Repositioning** is the strategic deployment of already-taxed W-2 income into investments and structures that generate:
+• **Immediate tax deductions** through depreciation and business expenses
+• **Ongoing passive income** with favorable tax treatment
+• **Long-term wealth building** through appreciating assets
+• **Future tax deferral** opportunities through strategic timing
+
+### The Three Pillars of W-2 Repositioning
+
+**1. Capital Gain Optimization**
+Using equity compensation and bonuses to fund tax-advantaged investments like **Qualified Opportunity Funds (QOF)** for **capital gain deferral**.
+
+**2. Depreciation Harvesting**
+Converting cash into depreciable assets (primarily **Short-Term Rental (STR)** properties) to generate **depreciation losses** that offset W-2 income.
+
+**3. Business Structure Integration**
+Creating legitimate business activities that allow personal expenses to become business deductions while building long-term asset value.
+
+## Understanding **Qualified Opportunity Funds (QOF)**
+
+**Qualified Opportunity Funds (QOF)** represent one of the most powerful tools for W-2 earners with significant capital gains from equity compensation.
+
+### QOF Benefits for W-2 Earners:
+
+**Immediate Capital Gain Deferral:**
+• Defer capital gains taxes until December 31, 2026 (or sale of QOF investment)
+• No limits on the amount of gains that can be deferred
+• Works with RSU sales, ESPP gains, and other equity compensation
+
+**Step-Up in Basis Benefits:**
+• 10% step-up in basis after 5 years of investment
+• 15% step-up in basis after 7 years of investment
+• Complete elimination of capital gains tax on QOF appreciation after 10 years
+
+**Strategic W-2 Integration:**
+• Use QOF proceeds to invest in **Short-Term Rental (STR)** properties
+• Generate **material participation** income to offset W-2 wages
+• Create systematic **depreciation losses** for ongoing tax benefits
+
+## **Short-Term Rental (STR)** Strategy for W-2 Earners
+
+**Short-Term Rental (STR)** properties offer W-2 earners the most direct path to generating **depreciation losses** that can offset ordinary income.
+
+### STR Advantages Over Traditional Rentals:
+
+**Higher Income Potential:**
+• 2-4x rental income compared to long-term rentals
+• Premium pricing for furnished, managed properties
+• Multiple revenue streams (nightly, weekly, monthly bookings)
+
+**Enhanced Depreciation Benefits:**
+• **Bonus depreciation** on furniture, fixtures, and equipment
+• Shorter depreciable lives for personal property (5-7 years vs 27.5 years)
+• Cost segregation opportunities for maximum first-year deductions
+
+**Business Expense Opportunities:**
+• Travel to properties for "inspection and maintenance"
+• Professional development and education expenses
+• Technology and software for property management
+
+### **Material Participation** Requirements
+
+To use **STR** **depreciation losses** against W-2 income, you must qualify for **material participation**:
+
+**750-Hour Rule:**
+• Spend 750+ hours annually in short-term rental activities
+• Document time through detailed logs and records
+• Include property search, management, maintenance, and guest services
+
+**Business Activities That Count:**
+• Property research and acquisition
+• Guest communication and booking management
+• Property maintenance and improvements
+• Marketing and listing optimization
+• Financial record keeping and tax preparation
+
+## Case Study: Helen (Part 2 of 9) - RSUs + STR + QOF Strategy
+
+**Background:**
+Helen is a senior software engineer at a tech company earning $160K in W-2 wages plus $180K annually in RSU vesting. She's been accumulating RSUs for three years and wants to optimize her tax strategy while building long-term wealth.
+
+**The Challenge:**
+• $540K in accumulated RSU gains ready to vest
+• Facing $183K in capital gains taxes (34% effective rate)
+• Limited deduction opportunities as a W-2 employee
+• Wants to build real estate wealth while reducing current tax burden
+
+**The Repositioning Strategy:**
+
+**Phase 1: QOF Capital Gain Deferral**
+• Sell $540K in RSUs and immediately invest proceeds in a **Qualified Opportunity Fund (QOF)**
+• **Defer $183K in capital gains taxes** until December 31, 2026
+• QOF invests in opportunity zone real estate development projects
+
+**Phase 2: STR Property Acquisition**
+• Use QOF investment returns and additional savings to acquire $1.2M in **Short-Term Rental (STR)** properties
+• Purchase 3 properties in high-demand vacation rental markets
+• Finance with 25% down payments to maximize leverage and cash flow
+
+**Phase 3: Material Participation & Depreciation**
+• Establish **material participation** by logging 800+ hours annually in STR activities
+• Generate $156K in annual **depreciation losses** through:
+  - Building depreciation: $87K annually
+  - **Bonus depreciation** on furnishings: $45K first year
+  - Equipment and technology: $24K annually
+
+**Phase 4: W-2 Income Offset**
+• Use $156K in **depreciation losses** to offset $160K in W-2 wages
+• Effectively reduce taxable income from $160K to $4K
+• Maintain full STR cash flow while eliminating W-2 tax burden
+
+**The Results After 18 Months:**
+
+**Tax Savings:**
+• **$183K in capital gains taxes deferred** through QOF strategy
+• **$53K annual W-2 tax savings** through STR depreciation offset
+• **$89K in total tax burden reduction** in first 18 months
+
+**Wealth Building:**
+• $1.2M in appreciating real estate assets
+• $84K annual cash flow from STR operations
+• $540K QOF investment with potential for tax-free growth after 10 years
+
+**Strategic Position:**
+• Diversified investment portfolio beyond tech stock concentration
+• Multiple income streams reducing W-2 dependency
+• Established business activities creating ongoing deduction opportunities
+
+**Key Insight:** Helen transformed $540K in taxable capital gains into a comprehensive wealth-building strategy that eliminated her W-2 tax burden while creating multiple streams of passive income and long-term asset appreciation.
+
+## Advanced Repositioning Strategies
+
+### **Bonus Depreciation** Optimization
+
+**Equipment and Technology Purchases:**
+• Computer equipment and software for STR management
+• Furniture and fixtures for rental properties
+• Vehicles used for property management activities
+
+**Timing Strategies:**
+• Purchase qualifying assets before December 31st for current-year deductions
+• Coordinate large purchases with high-income years
+• Use cost segregation studies to maximize depreciable basis
+
+### **Capital Gain Deferral** Through Strategic Timing
+
+**RSU Vesting Coordination:**
+• Time RSU sales to coordinate with QOF investment opportunities
+• Stagger sales across multiple years to optimize tax brackets
+• Use tax-loss harvesting to offset gains in non-QOF years
+
+**1031 Exchange Integration:**
+• Use like-kind exchanges for traditional rental properties
+• Coordinate with STR acquisition for maximum deferral benefits
+• Build portfolio diversity through strategic property exchanges
+
+### Business Entity Integration
+
+**LLC Structure for STR Activities:**
+• Establish separate LLCs for each property or property group
+• Optimize for liability protection and tax efficiency
+• Enable pass-through taxation while maintaining business expense deductions
+
+**Professional Development Deductions:**
+• Real estate education and certification programs
+• Property management conferences and networking events
+• Technology and software training for business optimization
+
+## Implementation Timeline for W-2 Repositioning
+
+### **Months 1-3: Foundation Building**
+• **Asset Assessment:** Calculate total equity compensation and capital gains exposure
+• **Strategy Selection:** Choose between QOF, direct STR investment, or hybrid approach
+• **Professional Team:** Assemble tax strategist, real estate agent, and property manager
+
+### **Months 4-6: Strategic Execution**
+• **Capital Deployment:** Execute QOF investment or direct property acquisition
+• **Structure Setup:** Establish business entities and operational systems
+• **Documentation Systems:** Implement time tracking and expense recording procedures
+
+### **Months 7-12: Optimization & Scaling**
+• **Material Participation:** Meet and document 750+ hour requirements
+• **Depreciation Maximization:** Implement cost segregation and bonus depreciation strategies
+• **Performance Monitoring:** Track cash flow, tax savings, and asset appreciation
+
+### **Year 2+: Advanced Strategies**
+• **Portfolio Expansion:** Add properties or increase QOF investments
+• **Entity Optimization:** Refine business structures for maximum efficiency
+• **Exit Planning:** Prepare for QOF step-up benefits and long-term wealth realization
+
+## Common W-2 Repositioning Mistakes to Avoid
+
+### **Insufficient Material Participation Documentation**
+• **Problem:** Failing to meet or document 750+ hour requirement
+• **Solution:** Implement systematic time tracking from day one
+• **Best Practice:** Log activities in real-time using dedicated apps or spreadsheets
+
+### **Over-Leveraging on Property Acquisition**
+• **Problem:** Taking on too much debt relative to cash flow capacity
+• **Solution:** Maintain conservative loan-to-value ratios (75% or less)
+• **Best Practice:** Ensure properties cash flow positive even during low occupancy periods
+
+### **Mixing Personal and Business Activities**
+• **Problem:** Using STR properties for personal vacations without proper documentation
+• **Solution:** Establish clear business use policies and maintain detailed records
+• **Best Practice:** Treat STR activities as legitimate business operations from day one
+
+## Measuring Repositioning Success
+
+### **Tax Efficiency Metrics**
+• **Effective Tax Rate Reduction:** Target 15-25% reduction in overall tax burden
+• **Depreciation Utilization:** Maximize allowable depreciation against W-2 income
+• **Capital Gain Deferral:** Optimize timing and amount of deferred gains
+
+### **Wealth Building Indicators**
+• **Cash Flow Growth:** Target 8-12% annual cash-on-cash returns from STR properties
+• **Asset Appreciation:** Monitor property value growth and QOF performance
+• **Portfolio Diversification:** Reduce dependency on W-2 income over time
+
+### **Strategic Positioning Goals**
+• **Income Stream Diversity:** Build multiple sources of passive income
+• **Tax Strategy Sophistication:** Develop repeatable systems for ongoing optimization
+• **Long-Term Financial Independence:** Create pathway to reduce W-2 dependency
+
+## What's Next: Advanced Entity Strategies
+
+Module 2 has shown you how to **reposition** your already-taxed W-2 income for maximum strategic impact. In Module 3, we'll explore advanced entity strategies that allow W-2 earners to create additional income streams while accessing business-level tax deductions.
+
+**Key Takeaway:** **Repositioning** isn't about avoiding taxes—it's about ensuring every tax dollar you've already paid works strategically to reduce your future tax burden while building long-term wealth.
+
+The most successful W-2 earners don't just earn and save—they systematically **reposition** their income for maximum tax advantage and wealth creation.
+
+---
+
+🎯 **Ready to test your repositioning knowledge?** Take the Module 2 quiz to earn +50 XP and solidify these advanced concepts before diving into Module 3's entity strategies.""",
+                duration_minutes=50,
+                order_index=2
+            ),
+            CourseContent(
                 title="Maximizing Deductions",
                 description="Employee-specific deductions and strategies",
                 content="Learn about deductions available to W-2 employees, including unreimbursed business expenses, home office deductions for remote work, and more.",
