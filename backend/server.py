@@ -304,6 +304,164 @@ async def get_marketplace_item(item_id: str):
     return MarketplaceItem(**item)
 
 # User progress endpoints
+@api_router.get("/users/{user_id}/progress")
+async def get_user_progress(user_id: str):
+    progress = await db.user_progress.find({"user_id": user_id}).to_list(1000)
+    return [UserProgress(**p) for p in progress]
+
+@api_router.post("/users/{user_id}/progress")
+async def update_user_progress(user_id: str, progress: UserProgress):
+    await db.user_progress.insert_one(progress.dict())
+    return {"status": "Progress updated"}
+
+# Chat endpoints
+@api_router.get("/users/{user_id}/chat-threads")
+async def get_chat_threads(user_id: str):
+    threads = await db.chat_threads.find({"user_id": user_id}).sort("last_updated", -1).to_list(1000)
+    return [ChatThread(**thread) for thread in threads]
+
+@api_router.post("/users/{user_id}/chat-threads")
+async def create_chat_thread(user_id: str, thread: ChatThread):
+    thread.user_id = user_id
+    await db.chat_threads.insert_one(thread.dict())
+    return thread
+
+@api_router.get("/users/{user_id}/chat-threads/{thread_id}")
+async def get_chat_thread(user_id: str, thread_id: str):
+    thread = await db.chat_threads.find_one({"id": thread_id, "user_id": user_id})
+    if not thread:
+        raise HTTPException(status_code=404, detail="Chat thread not found")
+    return ChatThread(**thread)
+
+@api_router.post("/users/{user_id}/chat-threads/{thread_id}/messages")
+async def add_chat_message(user_id: str, thread_id: str, message: ChatMessage):
+    # Simulate AI response with contextual links
+    ai_response = await generate_ai_response(message.message, user_id)
+    
+    message.user_id = user_id
+    message.response = ai_response["response"]
+    message.context_modules = ai_response.get("modules", [])
+    message.context_glossary = ai_response.get("glossary", [])
+    
+    # Add message to thread
+    await db.chat_threads.update_one(
+        {"id": thread_id, "user_id": user_id},
+        {
+            "$push": {"messages": message.dict()},
+            "$set": {"last_updated": datetime.utcnow()}
+        }
+    )
+    return message
+
+@api_router.put("/users/{user_id}/chat-threads/{thread_id}/messages/{message_id}/star")
+async def toggle_message_star(user_id: str, thread_id: str, message_id: str):
+    result = await db.chat_threads.update_one(
+        {"id": thread_id, "user_id": user_id, "messages.id": message_id},
+        {"$set": {"messages.$.is_starred": True}}
+    )
+    return {"status": "Message starred"}
+
+@api_router.get("/users/{user_id}/chat-threads/search")
+async def search_chat_messages(user_id: str, query: str):
+    threads = await db.chat_threads.find({
+        "user_id": user_id,
+        "$or": [
+            {"title": {"$regex": query, "$options": "i"}},
+            {"messages.message": {"$regex": query, "$options": "i"}},
+            {"messages.response": {"$regex": query, "$options": "i"}}
+        ]
+    }).to_list(1000)
+    return [ChatThread(**thread) for thread in threads]
+
+# User subscription endpoints
+@api_router.get("/users/{user_id}/subscription")
+async def get_user_subscription(user_id: str):
+    subscription = await db.user_subscriptions.find_one({"user_id": user_id})
+    if not subscription:
+        # Create default subscription
+        default_sub = UserSubscription(user_id=user_id, plan_type="none", has_active_subscription=False)
+        await db.user_subscriptions.insert_one(default_sub.dict())
+        return default_sub
+    return UserSubscription(**subscription)
+
+@api_router.post("/users/{user_id}/subscription")
+async def update_user_subscription(user_id: str, subscription: UserSubscription):
+    subscription.user_id = user_id
+    await db.user_subscriptions.replace_one(
+        {"user_id": user_id},
+        subscription.dict(),
+        upsert=True
+    )
+    return subscription
+
+# AI Response Generation (Placeholder)
+async def generate_ai_response(user_message: str, user_id: str):
+    """Generate AI response with contextual links and access gating"""
+    user_subscription = await get_user_subscription(user_id)
+    user_progress = await get_user_progress(user_id)
+    
+    # Detect strategy terms and modules
+    detected_terms = detect_glossary_terms(user_message)
+    related_modules = detect_related_modules(user_message)
+    
+    # Check access permissions
+    has_full_access = user_subscription.plan_type == "all_access" and user_subscription.has_active_subscription
+    
+    # Generate response based on access level
+    if has_full_access:
+        response = f"Based on your question about '{user_message[:50]}...', here's a comprehensive strategy breakdown..."
+    else:
+        locked_topics = check_locked_topics(user_message, user_progress)
+        if locked_topics:
+            response = f"That strategy is covered in Module {locked_topics[0]}. Complete the earlier modules to unlock it."
+        else:
+            response = f"Here's what I can share about '{user_message[:50]}...' with your current access level..."
+    
+    return {
+        "response": response,
+        "modules": related_modules,
+        "glossary": detected_terms,
+        "locked_content": not has_full_access
+    }
+
+def detect_glossary_terms(message: str) -> List[str]:
+    """Detect glossary terms mentioned in user message"""
+    # This would integrate with actual glossary data
+    terms = ["REPS", "QBI", "Cost Segregation", "W-2 Income", "Depreciation"]
+    detected = []
+    for term in terms:
+        if term.lower() in message.lower():
+            detected.append(term)
+    return detected
+
+def detect_related_modules(message: str) -> List[str]:
+    """Detect related course modules based on message content"""
+    module_keywords = {
+        "REPS": ["w2-escape-plan-module-4"],
+        "offset stacking": ["w2-escape-plan-module-3"],
+        "repositioning": ["w2-escape-plan-module-2"],
+        "W-2": ["w2-escape-plan-module-1"]
+    }
+    
+    related = []
+    for keyword, modules in module_keywords.items():
+        if keyword.lower() in message.lower():
+            related.extend(modules)
+    return list(set(related))
+
+def check_locked_topics(message: str, user_progress: List[UserProgress]) -> List[str]:
+    """Check if user is asking about locked premium topics"""
+    premium_topics = {
+        "split-dollar": "Module 6",
+        "installment sales": "Module 7", 
+        "qsbs": "Module 8"
+    }
+    
+    locked = []
+    for topic, module in premium_topics.items():
+        if topic.replace("-", " ") in message.lower():
+            locked.append(module)
+    return locked
 @api_router.post("/progress")
 async def update_progress(progress: UserProgress):
     existing = await db.user_progress.find_one({
