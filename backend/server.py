@@ -1109,6 +1109,41 @@ From here, you unlock access to:
     for tool in tools:
         await db.tools.insert_one(tool.dict())
     
+    # Sample marketplace items
+    marketplace_items = [
+        MarketplaceItem(
+            name="Advanced Tax Strategy Consultation",
+            description="One-on-one consultation with a tax strategist to review your specific situation",
+            price=497.00,
+            category="Consultation",
+            is_featured=True,
+            image_url="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=400"
+        ),
+        MarketplaceItem(
+            name="Entity Structure Analysis",
+            description="Comprehensive analysis of your current entity structure with optimization recommendations",
+            price=297.00,
+            category="Analysis",
+            is_featured=False,
+            image_url="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400"
+        ),
+        MarketplaceItem(
+            name="Tax Planning Template Library",
+            description="Access to 25+ proven tax planning templates and checklists",
+            price=197.00,
+            category="Templates",
+            is_featured=True,
+            image_url="https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400"
+        )
+    ]
+    
+    for item in marketplace_items:
+        await db.marketplace.insert_one(item.dict())
+    
+    # Initialize default user XP
+    default_xp = UserXP(user_id="default_user")
+    await db.user_xp.insert_one(default_xp.dict())
+    
     return {"status": "Sample data initialized successfully"}
 
 # Health check endpoint
