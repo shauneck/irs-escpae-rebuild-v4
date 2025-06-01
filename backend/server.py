@@ -198,6 +198,72 @@ async def get_tool(tool_id: str):
         raise HTTPException(status_code=404, detail="Tool not found")
     return Tool(**tool)
 
+# XP tracking endpoints
+@api_router.get("/users/xp")
+async def get_user_xp(user_id: str = "default_user"):
+    user_xp = await db.user_xp.find_one({"user_id": user_id})
+    if not user_xp:
+        # Create default XP record if it doesn't exist
+        new_xp = UserXP(user_id=user_id)
+        await db.user_xp.insert_one(new_xp.dict())
+        return new_xp
+    return UserXP(**user_xp)
+
+@api_router.post("/users/xp/glossary")
+async def award_glossary_xp(term_id: str, user_id: str = "default_user"):
+    """Award 5 XP for viewing a glossary term"""
+    user_xp = await db.user_xp.find_one({"user_id": user_id})
+    if not user_xp:
+        new_xp = UserXP(user_id=user_id, glossary_xp=5, total_xp=5)
+        await db.user_xp.insert_one(new_xp.dict())
+        return {"xp_awarded": 5, "total_xp": 5}
+    else:
+        new_glossary_xp = user_xp["glossary_xp"] + 5
+        new_total_xp = user_xp["total_xp"] + 5
+        await db.user_xp.update_one(
+            {"user_id": user_id},
+            {"$set": {
+                "glossary_xp": new_glossary_xp,
+                "total_xp": new_total_xp,
+                "last_updated": datetime.utcnow()
+            }}
+        )
+        return {"xp_awarded": 5, "total_xp": new_total_xp}
+
+@api_router.post("/users/xp/quiz")
+async def award_quiz_xp(points: int, user_id: str = "default_user"):
+    """Award XP for quiz completion"""
+    user_xp = await db.user_xp.find_one({"user_id": user_id})
+    if not user_xp:
+        new_xp = UserXP(user_id=user_id, quiz_xp=points, total_xp=points)
+        await db.user_xp.insert_one(new_xp.dict())
+        return {"xp_awarded": points, "total_xp": points}
+    else:
+        new_quiz_xp = user_xp["quiz_xp"] + points
+        new_total_xp = user_xp["total_xp"] + points
+        await db.user_xp.update_one(
+            {"user_id": user_id},
+            {"$set": {
+                "quiz_xp": new_quiz_xp,
+                "total_xp": new_total_xp,
+                "last_updated": datetime.utcnow()
+            }}
+        )
+        return {"xp_awarded": points, "total_xp": new_total_xp}
+
+# Marketplace endpoints
+@api_router.get("/marketplace", response_model=List[MarketplaceItem])
+async def get_marketplace():
+    items = await db.marketplace.find().to_list(1000)
+    return [MarketplaceItem(**item) for item in items]
+
+@api_router.get("/marketplace/{item_id}", response_model=MarketplaceItem)
+async def get_marketplace_item(item_id: str):
+    item = await db.marketplace.find_one({"id": item_id})
+    if not item:
+        raise HTTPException(status_code=404, detail="Marketplace item not found")
+    return MarketplaceItem(**item)
+
 # User progress endpoints
 @api_router.post("/progress")
 async def update_progress(progress: UserProgress):
