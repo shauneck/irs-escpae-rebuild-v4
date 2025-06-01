@@ -1480,7 +1480,8 @@ In Module 2, we'll dive deep into the specific deduction strategies available to
 
 🎯 **Ready to test your knowledge?** Take the Module 1 quiz to earn +50 XP and reinforce these key concepts before moving to Module 2.""",
                 duration_minutes=45,
-                order_index=1
+                order_index=1,
+                xp_available=150
             ),
             CourseContent(
                 title="Repositioning W-2 Income for Strategic Impact",
