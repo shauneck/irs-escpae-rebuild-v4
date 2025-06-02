@@ -4,7 +4,7 @@ import json
 from datetime import datetime
 
 class GlossaryAPITester:
-    def __init__(self, base_url="https://9fa09691-ae14-4c36-b3bb-c36b68d2573b.preview.emergentagent.com/api"):
+    def __init__(self, base_url="https://2509541f-404c-4ef1-acc6-ed11dcdd6898.preview.emergentagent.com/api"):
         self.base_url = base_url
         self.tests_run = 0
         self.tests_passed = 0

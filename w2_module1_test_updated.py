@@ -6,7 +6,7 @@ import os
 import sys
 
 # Use the public endpoint for testing
-BACKEND_URL = "https://9fa09691-ae14-4c36-b3bb-c36b68d2573b.preview.emergentagent.com"
+BACKEND_URL = "https://2509541f-404c-4ef1-acc6-ed11dcdd6898.preview.emergentagent.com"
 
 class W2EscapePlanModuleTest(unittest.TestCase):
     """Test suite for the W-2 Escape Plan Module 1 API"""
