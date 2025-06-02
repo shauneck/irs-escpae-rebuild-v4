@@ -1683,15 +1683,25 @@ const App = () => {
           <section className="py-12">
             <div className="container mx-auto px-6">
               <h2 className="text-3xl font-bold text-navy-900 mb-8 text-center">Choose Your Path</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {courses.map((course) => (
-                  <CourseCard 
-                    key={course.id} 
-                    course={course} 
-                    onCourseClick={handleCourseClick}
-                  />
-                ))}
-              </div>
+              {loading ? (
+                <div className="flex items-center justify-center py-12">
+                  <div className="text-lg text-gray-600">Loading courses...</div>
+                </div>
+              ) : courses.length > 0 ? (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {courses.map((course) => (
+                    <CourseCard 
+                      key={course.id} 
+                      course={course} 
+                      onCourseClick={handleCourseClick}
+                    />
+                  ))}
+                </div>
+              ) : (
+                <div className="flex items-center justify-center py-12">
+                  <div className="text-lg text-gray-600">No courses available.</div>
+                </div>
+              )}
             </div>
           </section>
         </>
