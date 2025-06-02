@@ -1625,36 +1625,26 @@ const App = () => {
   
   const fetchData = async () => {
     try {
-      console.log('Starting fetchData...');
       setLoading(true);
       
       // Fetch courses
-      console.log('Fetching courses from:', `${API_BASE_URL}/api/courses`);
       const coursesResponse = await fetch(`${API_BASE_URL}/api/courses`);
-      console.log('Courses response status:', coursesResponse.status);
       const coursesData = await coursesResponse.json();
-      console.log('Courses data:', coursesData);
       setCourses(coursesData);
       
       // Fetch tools  
-      console.log('Fetching tools...');
       const toolsResponse = await fetch(`${API_BASE_URL}/api/tools`);
       const toolsData = await toolsResponse.json();
-      console.log('Tools data:', toolsData);
       setTools(toolsData);
       
       // Fetch glossary
-      console.log('Fetching glossary...');
       const glossaryResponse = await fetch(`${API_BASE_URL}/api/glossary`);
       const glossaryData = await glossaryResponse.json();
-      console.log('Glossary data:', glossaryData);
       setGlossaryTerms(glossaryData);
       
-      console.log('fetchData completed successfully');
     } catch (error) {
       console.error('Error fetching data:', error);
     } finally {
-      console.log('Setting loading to false');
       setLoading(false);
     }
   };
